@@ -99,7 +99,7 @@ server_app() {
     while [ -z "$apikey" ]; do read -p "Masukkan API KEY: " saweria_email; done
 
     # Simpan konfigurasi ke file .vars.json
-    cat >/root/BotVPN2/.vars.json <<EOF
+    cat >/root/botsell/.vars.json <<EOF
 {
   "BOT_TOKEN": "$token",
   "USER_ID": "$adminid",
