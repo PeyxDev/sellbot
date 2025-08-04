@@ -17,7 +17,7 @@ hapus_bot_lama() {
     systemctl disable sellvpn.service 2>/dev/null
     rm -f /etc/systemd/system/sellvpn.service
     rm -f /usr/bin/sellvpn /usr/bin/server_sellvpn /etc/cron.d/server_sellvpn
-    rm -rf /root/BotVPN2
+    rm -rf /root/botsell
 
     if command -v pm2 &> /dev/null; then
         pm2 delete sellvpn &> /dev/null
@@ -51,11 +51,11 @@ setup_bot() {
 
     # Clone Bot
     if [ ! -d /root/BotVPN2 ]; then
-        git clone https://github.com/myridwan/BotVPN2.git /root/BotVPN2
+        git clone https://github.com/p3yx/botsell.git /root/botsell
     fi
 
     # Install dependencies
-    cd /root/BotVPN2
+    cd /root/botsell
     npm install sqlite3 express crypto telegraf axios dotenv canvas node-fetch form-data
     npm rebuild canvas
     rm -rf node_modules
@@ -68,7 +68,7 @@ setup_bot() {
 server_app() {
     clear
     echo -e "${orange}─────────────────────────────────────────${neutral}"
-    echo -e "${green}- BOT SELLVPN TELEGRAM MOD BY LITE & XWAN${neutral}"
+    echo -e "${green}-   BOT SELLVPN TELEGRAM MOD PEYX${neutral}"
     echo -e "${orange}─────────────────────────────────────────${neutral}"
 
     read -p "Masukkan token bot: " token
@@ -125,7 +125,7 @@ EOF
     # Buat file autorun menggunakan path node absolut
     cat >/usr/bin/sellvpn <<EOF
 #!/bin/bash
-cd /root/BotVPN2 || exit 1
+cd /root/botsell || exit 1
 $NODE_PATH app.js
 EOF
     chmod +x /usr/bin/sellvpn
@@ -137,8 +137,8 @@ Description=App Bot sellvpn Service
 After=network.target
 
 [Service]
-ExecStart=$NODE_PATH /root/BotVPN2/app.js
-WorkingDirectory=/root/BotVPN2
+ExecStart=$NODE_PATH /root/botsell/app.js
+WorkingDirectory=/root/botsell
 Restart=always
 RestartSec=3
 User=root
