@@ -65,7 +65,7 @@ const SAWERIA_EMAIL = vars.SAWERIA_EMAIL;
 const BOT_TOKEN = vars.BOT_TOKEN;
 const port = vars.PORT || 50123;
 const ADMIN = vars.USER_ID;
-const NAMA_STORE = vars.NAMA_STORE || 'XWANSTORE';
+const NAMA_STORE = vars.NAMA_STORE || 'PXSTORE';
 const DATA_QRIS = vars.DATA_QRIS;
 const MERCHANT_ID = vars.MERCHANT_ID;
 const API_KEY = vars.API_KEY;
@@ -586,7 +586,7 @@ const tombolSewaScriptAktif = await new Promise((resolve) => {
   // Pesan utama dengan format yang sudah padat dan rapi
   const messageText = `
 ━━━━━━━━━━━━━━━━━━━━━━
-≡                         <b>ROBOT VPN</b>                           ≡
+≡                       <b>PX STORE VPN</b>                           ≡
 ━━━━━━━━━━━━━━━━━━━━━━
 Selamat datang di <b>${NAMA_STORE}</b> 🚀
 Bot otomatis untuk membeli Akun VPN dengan mudah dan cepat.
@@ -613,7 +613,7 @@ ${statusText}
 🧭 <b>» Waktu:</b> <code>${timeNow} WIB</code>
 🏷️ <b>» Tanggal:</b> <code>${currentDay}, ${currentDate}</code>
 🏷️ <b>» Server:</b> <code>${jumlahServer}</code> <b>|️ Total User:</b> <code>${jumlahPengguna}</code>
-☎️ <b>» Contact Admin:</b> <a href="https://t.me/kytxz">@kytxz</a>
+☎️ <b>» Contact Admin:</b> <a href="https://t.me/frel01">@frel01</a>
 ━━━━━━━━━━━━━━━━━━━━━━`;
 
 

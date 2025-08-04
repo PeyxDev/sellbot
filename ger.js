@@ -578,7 +578,7 @@ const showUpgradeReseller = await new Promise((resolve) => {
   // Pesan utama dengan format yang sudah padat dan rapi
   const messageText = `
 ━━━━━━━━━━━━━━━━━━━━━━
-≡                         <b>ROBOT VPN</b>                           ≡
+≡                         <b>PX STORE VPN</b>                           ≡
 ━━━━━━━━━━━━━━━━━━━━━━
 Selamat datang di <b>${NAMA_STORE}</b> 🚀
 Bot otomatis untuk membeli Akun VPN dengan mudah dan cepat.
