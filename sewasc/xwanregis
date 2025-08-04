@@ -7,7 +7,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/myridwan/izinvps/ipuk/ipx"
+data_ip="https://raw.githubusercontent.com/p3yx/newsc/main/ipx"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -28,20 +28,20 @@ checking_sc() {
   fi
 }
 checking_sc
-Repo1="https://raw.githubusercontent.com/myridwan/izinvps/ipuk/"
+Repo1="https://raw.githubusercontent.com/p3yx/newsc/main/"
 export MYIP=$( curl -sS ipv4.icanhazip.com/ )
 SELLER=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
 Exp100=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
-data_ip="https://raw.githubusercontent.com/myridwan/izinvps/ipuk/ipx"
+data_ip="https://raw.githubusercontent.com/p3yx/newsc/main/ipx"
 d2=$(date -d "$date_list" +"+%s")
 d1=$(date -d "$Exp" +"+%s")
 dayleft=$(( ($d1 - $d2) / 86400 ))
 ####
 mkdir -p /etc/sewasc
-REPO="https://github.com/myridwan/izinvps.git"
-curl -s https://v4.serverpremium.web.id:81/token > /etc/sewasc/api
-  curl -s https://v4.serverpremium.web.id:81/email > /etc/sewasc/email
-  curl -s https://v4.serverpremium.web.id:81/nama > /etc/sewasc/username
+REPO="https://github.com/p3yx/newc.git"
+curl -s https://raw.githubusercontent.com/p3yx/newsc/token > /etc/sewasc/api
+  curl -s https://raw.githubusercontent.com/p3yx/newsc/email > /etc/sewasc/email
+  curl -s https://raw.githubusercontent.com/p3yx/newsc/nama > /etc/sewasc/username
 clear
 TOKEN=$(cat /etc/sewasc/api)
 EMAIL=$(cat /etc/sewasc/email)
@@ -73,8 +73,8 @@ git init &> /dev/null
 git add . &> /dev/null
 git commit -m xwanregist &> /dev/null
 git branch -M ipuk &> /dev/null
-git remote add origin https://github.com/myridwan/izinvps.git
-git push -f https://${TOKEN}@github.com/myridwan/izinvps.git &> /dev/null
+git remote add origin https://github.com/p3yx/newsc.git
+git push -f https://${TOKEN}@github.com/p3yx/newsc.git &> /dev/null
 rm -rf /root/ipvps
 
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

@@ -40,9 +40,9 @@ dayleft=$((($d1 - $d2) / 86400))
 ####
 mkdir -p /etc/sewasc
 REPO="https://github.com/p3yx/newsc.git"
-curl -s https://v4.serverpremium.web.id:81/token > /etc/sewasc/api
-  curl -s https://v4.serverpremium.web.id:81/email > /etc/sewasc/email
-  curl -s https://v4.serverpremium.web.id:81/nama > /etc/sewasc/username
+curl -s https://raw.githubusercontent.com/p3yx/newsc/token > /etc/sewasc/api
+  curl -s https://raw.githubusercontent.com/p3yx/newsc/email > /etc/sewasc/email
+  curl -s https://raw.githubusercontent.com/p3yx/newsc/nama > /etc/sewasc/username
 clear
 TOKEN=$(cat /etc/sewasc/api)
 EMAIL=$(cat /etc/sewasc/email)
