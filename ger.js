@@ -65,7 +65,7 @@ const SAWERIA_EMAIL = vars.SAWERIA_EMAIL;
 const BOT_TOKEN = vars.BOT_TOKEN;
 const port = vars.PORT || 50123;
 const ADMIN = vars.USER_ID;
-const NAMA_STORE = vars.NAMA_STORE || 'XWANSTORE';
+const NAMA_STORE = vars.NAMA_STORE || 'PXSTORE';
 const DATA_QRIS = vars.DATA_QRIS;
 const MERCHANT_ID = vars.MERCHANT_ID;
 const API_KEY = vars.API_KEY;
@@ -578,7 +578,7 @@ const showUpgradeReseller = await new Promise((resolve) => {
   // Pesan utama dengan format yang sudah padat dan rapi
   const messageText = `
 ━━━━━━━━━━━━━━━━━━━━━━
-≡                         <b>ROBOT VPN</b>                           ≡
+≡                         <b>PX STORE VPN</b>                           ≡
 ━━━━━━━━━━━━━━━━━━━━━━
 Selamat datang di <b>${NAMA_STORE}</b> 🚀
 Bot otomatis untuk membeli Akun VPN dengan mudah dan cepat.
@@ -1462,9 +1462,9 @@ async function handleServiceAction(ctx, action) {
   let keyboard;
   if (action === 'trial') {
     keyboard = [
-      [{ text: '💠 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💠 Vmess', callback_data: 'trial_vmess' }, { text: '💠 Vless', callback_data: 'trial_vless' }],
-      [{ text: '💠 Trojan', callback_data: 'trial_trojan' }, { text: '💠 Shadowsocks', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
+      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 Vless', callback_data: 'trial_vless' }],
+      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 Shadowsocks', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
