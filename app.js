@@ -8,7 +8,7 @@ const QRISPayment = require('autoft-qris');
 const winston = require('winston');
 const fetch = require("node-fetch");
 const FormData = require("form-data");
-const FOLDER_TEMPATDB = "/root/BotVPN2/sellvpn.db";
+const FOLDER_TEMPATDB = "/root/botsell/sellvpn.db";
 const UPGRADE_RESELLER_TOPUP_THRESHOLD = 30000; // Minimal topup untuk upgrade reseller otomatis
 const logger = winston.createLogger({
   level: 'info',
@@ -620,7 +620,7 @@ ${statusText}
   const keyboard = [];
 
 if (bolehLihatTrial) {
-  keyboard.push([{ text: '💠 Trial Akun', callback_data: 'service_trial' }]);
+  keyboard.push([{ text: '💥 Trial Akun', callback_data: 'service_trial' }]);
 }
 keyboard.push([
   { text: '✏️ Buat Akun', callback_data: 'service_create' },
@@ -1472,9 +1472,9 @@ async function handleServiceAction(ctx, action) {
   let keyboard;
   if (action === 'trial') {
     keyboard = [
-      [{ text: '💠 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💠 Vmess', callback_data: 'trial_vmess' }, { text: '💠 Vless', callback_data: 'trial_vless' }],
-      [{ text: '💠 Trojan', callback_data: 'trial_trojan' }, { text: '💠 Shadowsocks', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
+      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 Vless', callback_data: 'trial_vless' }],
+      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 Shadowsocks', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
