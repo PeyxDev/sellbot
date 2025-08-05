@@ -62,7 +62,7 @@ setup_bot() {
     npm install
     npm uninstall node-fetch
     npm install node-fetch@2
-    chmod +x /root/BotVPN2/*
+    chmod +x /root/botsell/*
 }
 
 server_app() {
