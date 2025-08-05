@@ -31,13 +31,13 @@ hapus_bot_lama() {
 pasang_package() {
     echo -e "${blue}Memulai pengecekan dan instalasi dependensi...${reset}"
 
-    # Install Node.js v20 (stabil untuk Debian 10+/Ubuntu 20+)
+    # Install Node.js v20
     if ! command -v node >/dev/null 2>&1 || ! node -v | grep -q 'v20'; then
         curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
         apt-get install -y nodejs
     fi
 
-    # Downgrade npm ke versi 10 agar kompatibel
+    # Downgrade npm ke versi 10
     npm install -g npm@10
 
     # Install dependencies APT
@@ -62,7 +62,7 @@ setup_bot() {
     npm install
     npm uninstall node-fetch
     npm install node-fetch@2
-    chmod +x /root/BotVPN2/*
+    chmod +x /root/botsell/*
 }
 
 server_app() {
@@ -90,13 +90,13 @@ server_app() {
     while [ -z "$apikey" ]; do read -p "Masukkan API KEY: " apikey; done
     
     read -p "Masukkan Chat ID Group Telegram: " chatid_group
-    while [ -z "$apikey" ]; do read -p "Masukkan API KEY: " chatid_group; done
+    while [ -z "$chatid_group" ]; do read -p "Masukkan Chat ID Group Telegram: " chatid_group; done
     
     read -p "Masukkan Username Saweria: " username_saweria
-    while [ -z "$apikey" ]; do read -p "Masukkan API KEY: " username_saweria; done
+    while [ -z "$username_saweria" ]; do read -p "Masukkan Username Saweria: " username_saweria; done
     
     read -p "Masukkan Email Saweria: " saweria_email
-    while [ -z "$apikey" ]; do read -p "Masukkan API KEY: " saweria_email; done
+    while [ -z "$saweria_email" ]; do read -p "Masukkan Email Saweria: " saweria_email; done
 
     # Simpan konfigurasi ke file .vars.json
     cat >/root/botsell/.vars.json <<EOF
@@ -109,12 +109,12 @@ server_app() {
   "MERCHANT_ID": "$merchantid",
   "API_KEY": "$apikey",
   "GROUP_CHAT_ID": "$chatid_group",
-  "SAWERIA_USERNAME": "username_saweria",
+  "SAWERIA_USERNAME": "$username_saweria",
   "SAWERIA_EMAIL": "$saweria_email"
 }
 EOF
 
-    # Deteksi lokasi node secara otomatis
+    # Deteksi lokasi node
     NODE_PATH=$(which node)
     if [ -z "$NODE_PATH" ]; then
         echo -e "${red}Node.js tidak ditemukan. Pastikan Node.js sudah terinstall.${neutral}"
@@ -122,7 +122,7 @@ EOF
     fi
     echo -e "${green}Node.js ditemukan di: $NODE_PATH${neutral}"
 
-    # Buat file autorun menggunakan path node absolut
+    # Buat file autorun
     cat >/usr/bin/sellvpn <<EOF
 #!/bin/bash
 cd /root/botsell || exit 1
@@ -130,7 +130,7 @@ $NODE_PATH app.js
 EOF
     chmod +x /usr/bin/sellvpn
 
-    # Buat systemd service file dengan ExecStart menggunakan path node absolut
+    # Buat systemd service
     cat >/etc/systemd/system/sellvpn.service <<EOF
 [Unit]
 Description=App Bot sellvpn Service
