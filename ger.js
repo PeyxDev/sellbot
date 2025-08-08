@@ -65,7 +65,7 @@ const SAWERIA_EMAIL = vars.SAWERIA_EMAIL;
 const BOT_TOKEN = vars.BOT_TOKEN;
 const port = vars.PORT || 50123;
 const ADMIN = vars.USER_ID;
-const NAMA_STORE = vars.NAMA_STORE || 'PXSTORE';
+const NAMA_STORE = vars.NAMA_STORE || 'XWANSTORE';
 const DATA_QRIS = vars.DATA_QRIS;
 const MERCHANT_ID = vars.MERCHANT_ID;
 const API_KEY = vars.API_KEY;
@@ -605,7 +605,7 @@ ${statusText}
 🧭 <b>» Waktu:</b> <code>${timeNow} WIB</code>
 🏷️ <b>» Tanggal:</b> <code>${currentDay}, ${currentDate}</code>
 🏷️ <b>» Server:</b> <code>${jumlahServer}</code> <b>|️ Total User:</b> <code>${jumlahPengguna}</code>
-☎️ <b>» Contact Admin:</b> <a href="https://t.me/Regersays">@Regersays</a>
+☎️ <b>» Contact Admin:</b> <a href="https://t.me/frel01">@frel01</a>
 ━━━━━━━━━━━━━━━━━━━━━━`;
 
 
@@ -1462,9 +1462,9 @@ async function handleServiceAction(ctx, action) {
   let keyboard;
   if (action === 'trial') {
     keyboard = [
-      [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 Vless', callback_data: 'trial_vless' }],
-      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 Shadowsocks', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💠 SSH', callback_data: 'trial_ssh' }],
+      [{ text: '💠 Vmess', callback_data: 'trial_vmess' }, { text: '💠 Vless', callback_data: 'trial_vless' }],
+      [{ text: '💠 Trojan', callback_data: 'trial_trojan' }, { text: '💠 Shadowsocks', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
@@ -2043,14 +2043,14 @@ async function startSelectServer(ctx, action, type, page = 0) {
       }).join('\n\n');
 
       if (ctx.updateType === 'callback_query') {
-        ctx.editMessageText(`📋 *List Server (Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
+        ctx.editMessageText(`📋 *Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
           reply_markup: {
             inline_keyboard: keyboard
           },
           parse_mode: 'Markdown'
         });
       } else {
-        ctx.reply(`📋 *List Server (Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
+        ctx.reply(`📋 *Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
           reply_markup: {
             inline_keyboard: keyboard
           },
@@ -4791,7 +4791,7 @@ const config = {
     auth_username: MERCHANT_ID,
     auth_token: API_KEY,
     baseQrString: DATA_QRIS,
-    logoPath: 'logo.png'
+    logoPath: 'pict.png'
 };
 
 const qris = new QRISPayment(config);
