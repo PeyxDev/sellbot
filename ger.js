@@ -1463,15 +1463,15 @@ async function handleServiceAction(ctx, action) {
   if (action === 'trial') {
     keyboard = [
       [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 Vless', callback_data: 'trial_vless' }],
-      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 Shadowsocks', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💥 VMESS', callback_data: 'trial_vmess' }, { text: '💥 VLESS', callback_data: 'trial_vless' }],
+      [{ text: '💥 TROJAN', callback_data: 'trial_trojan' }, { text: '💥 SHADOWSOCK', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
     keyboard = [
-      [{ text: '✨ SSH', callback_data: 'create_ssh' }],
-      [{ text: '✨ Vmess', callback_data: 'create_vmess' }, { text: '✨ Vless', callback_data: 'create_vless' }],
-      [{ text: '✨ Trojan', callback_data: 'create_trojan' }, { text: '✨ Shadowsocks', callback_data: 'create_shadowsocks' }],
+      [{ text: '💥 SSH', callback_data: 'create_ssh' }],
+      [{ text: '💥 VMESS', callback_data: 'create_vmess' }, { text: '💥 VLESS', callback_data: 'create_vless' }],
+      [{ text: '💥 TROJAN', callback_data: 'create_trojan' }, { text: '💥 SHADDOWSOCK', callback_data: 'create_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'sewascript') {
