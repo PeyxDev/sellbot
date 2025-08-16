@@ -1,3 +1,706 @@
-z="
-";KMz='an(u';GQz='xp, ';APz='ocks';xEz='t ss';rOz='=${a';nz='sswo';PBz='${ip';wIz='});';mNz='a}\`';VMz='piry';YPz='cksD';fCz='et('\''';lFz='swor';AMz='less';iGz='P CU';ROz='owso';WNz='link';EFz='g = ';ODz='k di';oOz='&ipl';fJz='alvm';WOz='p, s';pPz='ates';WHz='a][c';QNz='n-gr';pBz='ame)';fz='c fu';JNz='`${t';nIz=' err';Lz='requ';NDz='tida';aKz=' TLS';KBz='exp}';tLz='g VL';nHz='n}:8';ez='asyn';UNz='jan_';dEz='aram';DPz='ksDa';rz='imit';FJz='g VM';jDz='. Si';kJz='=${e';NFz='ain*';gPz='cks.';kEz='n(re';gFz='{ssh';oBz='sern';uMz='miti';OPz='-${s';rPz='ser=';qIz='memb';cQz='h, c';nMz='p=${';iFz='.use';POz='nti.';gBz='erna';jGz='STOM';jFz='e}\`';PFz='`${s';pz='exp,';qHz='}.tx';iOz='s?us';qPz='sh?u';PIz='se {';QIz=''\''Err';MBz='s, I';fHz='e Ac';bEz='${do';KNz='roja';oEz='resp';JGz='`1-6';ZGz='*Pub';QDz='kan.';DCz='nya ';qNz='=== ';sOz='uth}';sFz=' \`4';OBz='mit ';aJz='dan ';eKz='s_tl';hGz='*HTT';qEz='.dat';KFz='OUNT';XIz='ve(`';cNz='e}.t';bOz=' ${q';RGz='r* :';NQz='t=${';sEz='atus';JJz='${us';tGz='dn-c';PNz=' \`t';TJz='GB, ';gz='ncti';XMz='xp} ';Cz='ios ';ECz='huru';aFz='_dom';nFz='.pas';IGz='SSH*';gNz=' GB'\''';mz=', pa';BBz='g SS';kOz='xp=$';SBz='and ';KEz='ord=';BKz='ssDa';FHz='crlf';eFz='e* :';DBz='coun';SQz='xpor';cEz='}${p';Hz=''\'');';iCz=' FRO';YHz='Upgr';CJz='ta, ';IEz='rnam';dJz='taba';pCz='verI';wNz=''\''Tro';kMz='?use';CHz=' Bug';IOz='r);';aHz=' web';COz='essf';OIz='} el';xGz='P/1.';ZBz='// V';mKz=' gRP';vFz='t HT';NBz='P li';LPz='k_no';Sz=';';ZFz='a.ns';VIz='acco';cGz='sshD';CKz='ta.u';PLz='0'\'' ?';hKz='P:*';qGz='*:';PPz='.txt';Oz='ite3';BGz='086,';kNz='d'\'' :';OGz='2\`';LHz='st][';VJz=' ${l';HOz='t Tr';GMz='t VL';QJz='ta $';AFz='a = ';yIz='s(us';WDz=');';UIz='SSH ';yNz='crea';mDz='ba l';QBz='limi';TEz='}&au';BIz='ed}\';rDz='erve';OEz='${ex';wOz='OCKS';lDz='n co';bMz=' GB,';GLz='nlim';vz='{';iIz=' saa';YNz='/${t';xKz='txt)';ZLz='ccou';OQz='&aut';tBz='❌ Us';gOz='Id}`';Dz='= re';fOz='${se';iEz='l)';KOz='Sila';wHz='*Exp';BNz=' = r';UKz='h gR';UOz='p, q';qOz='ip}&';RKz='h* :';wEz='s") ';VCz='rn n';ONz='an-w';JHz='AY /';BHz='ost:';Tz='t db';EQz='esha';KKz=' \`0';gIz='.cat';AOz='ted ';NJz='iry ';LOz='kan ';rJz='t vm';lCz='RE i';XFz=': \`';Xz='e3.D';tDz='t au';WKz=' \`v';ANz='t tr';OMz=' lim';vPz='evme';eMz='tip}';NNz='uuid';UHz='gent';Ez='quir';HLz='ited';oKz='s_gr';oGz='*Pay';bKz=':*';eDz=': Se';lBz='0-9]';MFz='*Dom';Vz='ew s';Gz='xios';lPz='ord,';sIz='SSH.';fGz='ey}\';xJz='CCOU';GPz=' \`s';dLz='ssfu';SLz=' : v';fLz='VMes';MLz='_lim';EPz='.uui';dHz='f]\`';mGz='80@$';cIz='.mes';jPz='(use';lGz='in}:';MMz=', qu';dOz='IP $';YBz='`);';UBz='word';cBz='if (';wLz='t vl';WEz='h}`;';UPz=''\'' ? ';jMz='altr';CLz='uota';hDz='item';uHz='ip_l';PMz='g Tr';OLz='== '\''';nPz='t, s';uPz='t}&a';eHz='*Sav';kDz='laka';RCz='dari';KPz='k_ws';sKz=':81/';nGz='e}:$';fDz=' tid';vDz=' ser';YOz='g Sh';jHz='ink]';lKz='k}';vHz='}\`';WMz=' ${e';HJz='unt ';qKz='ink}';iDz='ukan';FBz='r ${';QFz='shDa';SHz='f]Us';ADz='chin';tz='rver';RHz='[crl';vGz='race';OFz=' : \';yDz='t pa';yPz='evle';qFz='t TL';mHz='/${s';LBz=' day';mLz='ilak';hz='on t';hCz='CT *';GGz='\`22';bQz='tess';FPz='ss-w';lJz='xp}&';ZMz='ota ';DMz='SS a';OJz='p} d';eIz='}`);';GIz=' cre';QPz=')';Zz='ase(';EKz='.dom';MCz='}';oNz='ta.i';qJz='itip';RQz='le.e';ZKz='*URL';KCz='asi.';bJz=' dar';DKz='`${v';vNz='pire';sCz=') =>';ZQz='ials';VBz=' ${p';kIz='mbua';EOz='Troj';TNz='.tro';LEz='${pa';PCz=' dom';PQz='h=${';aQz='ks, ';QGz='pbea';XOz='rId)';uJz='se.d';JEz='e}&p';lEz='spon';iHz='ck L';YJz='serv';YDz='ver)';fFz=' \`$';YCz='se((';wKz='me}.';hFz='Data';jKz='ntls';yFz='0,80';ICz='tanp';ILz=''\'' : ';HEz='{use';EBz='t fo';dNz='xt)';Az='cons';BDz='g se';hLz='t'\'');';xFz=' \`8';BEz='= `:';iKz='s_no';QKz='*Pat';HMz='ESS:';pJz='{lim';Jz='lite';aMz='${qu';tCz=' {';KHz=' [ho';BCz='naka';gEz='s.ge';LQz='=${q';tEz=' ===';fPz='s:'\'',';pMz='ta=$';SMz=' ${u';uEz=' "su';XHz='rlf]';NIz='sg);';XCz='romi';sDz='r.do';mMz='}&ex';iPz='essh';gJz='ess?';GNz='UNT*';REz='it=$';dIz='sage';sPz='me}&';kFz='*Pas';xOz='{sha';PDz='temu';yOz='dows';ZEz='`htt';ALz='ta*:';THz='er-A';fIz='})';SNz='${tr';pHz='h-${';cPz='Shad';LDz=' Ser';cz='pn.d';gMz='er $';MPz='k_gr';tPz='=${p';IQz='ip, ';cCz='ect)';vOz='DOWS';VOz=', li';gGz='───';tJz='ata ';ZPz=' '\''0'\''';EEz='alss';HIz='ated';PEz='p}&i';LFz='*';iMz='d}`)';uKz='sDat';FEz='h?us';JCz='a sp';KGz='5535';jEz='.the';INz='janD';fBz='t(us';tHz='Limi';gLz='s ac';WIz='unt'\''';QMz='ojan';eGz='pubk';HDz='esol';tKz='s-${';wGz=' HTT';oPz='/cre';lLz='s. S';eBz='.tes';bCz=' rej';RMz=' for';rMz='ipli';ULz='t} I';sz=', se';MGz='\`53';lz='name';hMz='{ser';RJz='{quo';wBz=' val';LGz='*DNS';NHz='nect';WCz='ew P';EHz='ian[';gDz='ak d';wDz='ver.';FFz='`';Qz='erbo';vJz='*VME';oMz='&quo';DOz='ully';uCz='err)';rIz='uat ';SEz='{ipl';FIz='ount';IMz='S. S';tIz='gi n';oHz='1/ss';RDz=' Sil';BMz='${vl';YQz=', tr';TFz='n}\`';dz='b'\'');';DDz='err.';jNz='mite';CEz='5888';gHz='t*: ';yMz='th}`';sBz='rn '\''';cHz='et[c';vIz='.'\'');';LJz='with';DNz='*TRO';uz='Id) ';Bz='t ax';yJz='NT*';RIz='or c';rHz='t)';qMz='ta}&';nNz='anDa';kPz='e, p';KQz='p}&q';GEz='er=$';eJz='se';hNz=' ? '\''';BLz='ta.q';BFz='a.da';LMz='ame,';ZIz='espo';ACz='n gu';MQz='}&ip';oIz='or);';GFz='────';KIz='full';CIz='`;';OHz='ion:';mBz='/.te';JBz='y ${';wCz='r('\''E';AGz='80,2';nLz='an c';uLz='ESS ';WJz='ip} ';rNz=''\''0'\'' ';yz='`Cre';pKz='pc_l';fMz=' on ';uBz='me t';VPz=''\''Unl';MEz='rd}&';nCz='?'\'', ';HPz='s-gr';lHz='ps:/';KDz='gal:';oJz='a}&i';ePz='t Sh';eEz='}`;';ZHz='ade:';vEz='cces';LNz='nDat';gQz=' };';RFz='ta.d';IDz='ve('\''';PHz=' Upg';XPz=': sh';BOz='succ';GOz='nt'\'')';VDz='gi.'\''';hEz='t(ur';HBz='th e';WPz='ed'\'' ';UDz='a la';qDz=' = s';UFz='*Nam';kz='user';ELz='GB'\'' ';MDz='ver ';fQz='n, c';UCz='e';sHz='*IP ';Mz='ire(';HCz='gka ';JQz='ks?u';YGz='7300';TMz=' wit';JOz='an. ';dDz='agal';VNz='tls_';GJz='ess ';lNz=' tro';bz='ellv';WFz='ver*';NKz='y* :';DEz='/tri';GCz='n an';JIz='cess';lMz='r=${';pLz='lagi';XEz='t ur';pIz='gal ';jz='ssh(';AEz='ram ';yKz='*Quo';bNz='jan-';BJz=' quo';dBz='/\s/';aGz=' Key';TQz='ts =';OKz=' \`A';DIz=''\''SSH';ENz='JAN ';UMz='h ex';dKz='${vm';Kz='3 = ';uFz='443\';eCz='db.g';eLz='lly'\''';rBz='retu';EJz='d) {';SDz='akan';bLz='ed s';HKz='uid}';QHz='rade';SIz='reat';FQz='e, e';TBz='pass';DHz='_Kal';QCz='ain ';VHz=': [u';dPz='cks ';SCz=' dat';HGz='*Udp';LLz='a.ip';MKz='urit';SGz=' \`1';UEz='th=$';nOz='ota=';xIz='vmes';WQz=' tri';GKz='D* :';TOz=', ex';kBz='zA-Z';nJz='a=${';iLz='t VM';YFz='${ss';nBz='st(u';dMz='P ${';NCz='// A';ZOz='adow';qCz='d], ';SOz='cks(';rEz='a.st';wFz='TP*:';dCz=' => ';TIz='ing ';fEz='axio';pGz='load';NOz=' lag';IBz='xpir';NLz='it =';wJz='SS A';Rz='se()';XQz='ess,';pNz='p_li';YIz=' ${r';oCz='[ser';RNz='pc\`';bHz='sock';LIz='y'\'');';YMz='days';DFz='t ms';IIz=' suc';PJz='ays,';ZJz='erId';JDz='❌ Ga';HNz='{tro';XDz='!ser';fKz='s_li';pFz='*Por';xHz='ired';eQz='tevl';FMz='S ac';FKz='*UUI';EGz='nSSH';uOz='*SHA';XNz='grpc';oFz='d}\`';Nz=''\''sql';sGz='T /c';uNz='a.ex';EIz=' acc';IHz='ET-R';bPz=''\''Sha';uDz='th =';SFz='omai';bGz='\`${';mFz='d* :';YKz='c\`';OCz='mbil';MJz=' exp';aEz='p://';sLz='vles';TKz='s\`';hBz='me) ';hJz='=${u';gKz='nk}';xz='log(';KJz='me} ';pDz='main';hPz='on c';RLz='ted'\''';kGz='doma';YLz='ss a';lOz='{exp';Pz=''\'').v';nEz='> {';AQz='etro';uGz='gi/t';VEz='{aut';UJz='t IP';ZNz='}:81';IJz='for ';yHz='*: \';wMz='uth=';GHz='][cr';sJz='essD';xNz='jan ';FLz='? '\''U';VGz='*Bad';NMz='ota,';RBz='t}, ';wz='ole.';TCz='abas';kKz='_lin';TGz='09,1';xDz='auth';dQz='ss, ';wPz='ss(u';fNz='= '\''0';cKz='\`\`';vBz='idak';TPz='0 GB';BPz='hado';rLz='ti.'\''';qBz=') {';kCz=' WHE';NEz='exp=';XJz='on s';rKz='/${v';jJz='&exp';WBz='assw';hHz='[Cli';QLz=' '\''Un';aDz='urn ';Fz='e('\''a';AJz='me, ';aCz='lve,';JFz=' ACC';mPz=', ip';aLz='nt c';NPz='pc}';CBz='H ac';JKz='er I';dGz='ata.';OOz='i na';PGz='*Dro';cOz='} GB';qz=' ipl';rGz='\`GE';DJz='tip,';XGz='UDP*';DLz=' '\''0 ';WLz='.exp';CPz='wsoc';HQz='a, l';qLz=' nan';mOz='}&qu';LCz=''\'';';cJz='i da';vLz='alvl';DGz='*Ope';aOz='s, q';bFz='ain}';vCz='erro';GBz='} wi';yLz='{vle';CFz='ta;';QOz='shad';JLz='a.qu';uIz='anti';aNz='/tro';nDz='agi.';PKz='uto\';VLz='P\`';MNz='a.do';XLz=''\''VMe';pEz='onse';sMz='mit=';jLz='ess:';ZDz=' ret';aBz='alid';MHz=']Con';dFz='*Use';LKz='*Sec';EMz='VLES';IKz='*Alt';tFz='43,8';VQz='ssh,';bBz='asi ';ABz='atin';HHz='lf]G';jOz='e}&e';TLz='.ip_';FGz='* : ';eNz='a ==';VFz='eser';iz='rial';mCz='d = ';XBz='ord}';yGz='1[cr';CNz='a;';Iz='t sq';eOz='} on';bDz='lve(';UQz=' { t';VKz='PC*:';gCz='SELE';IPz='${sh';jBz='[^a-';ZCz='reso';CQz='atet';Yz='atab';kHz='(htt';FNz='ACCO';EDz='mess';QQz='modu';NGz=',222';KLz='ota}';cFz='\`';mEz='se =';az=''\''./s';AKz='{vme';xMz='${au';Uz=' = n';cMz='it I';tOz='t sh';HFz='──';SJz='ta} ';IFz='*SSH';yEz='hDat';xLz='*VLE';WGz='VPN ';QEz='plim';oz='rd, ';AIz='ta.e';UGz='10\`';CGz='8880';nKz='C:*';tNz=' IP\';vKz='a.us';BQz='jan(';AHz='lf]H';kLz=''\'', e';cLz='ucce';mIz='H:'\'',';xPz='atev';aIz='nse.';Wz='qlit';CCz='n ha';cDz=''\''❌ G';jCz='M Se';GDz='rn r';hOz='alsh';iNz='Unli';MIz='ve(m';FOz='an a';yCz=' fet';xBz='id. ';yBz='Moho';YEz='l = ';JMz='troj';XKz='-grp';iBz='|| /';FCz='f da';jIz='t me';SKz=' \`/';FDz='age)';xCz='rror';MOz='coba';iJz='ame}';oDz='t do';sNz='mit}';vMz='p}&a';TDz=' cob';CMz=''\''VLE';tMz='${li';DQz='n?us';lIz='t SS';CDz=':'\'', ';mJz='quot';RPz='.quo';hIz='ch(e';SPz='ta =';JPz='a.ss';rCz='(err';oLz='oba ';pOz='=${l';bIz='data';aPz=' sha';rFz='S* :';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$z$Az$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$z$Az$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$z$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$z$Az$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$kz$lz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$z$ZBz$aBz$bBz$kz$lz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$NCz$OCz$PCz$QCz$RCz$SCz$TCz$UCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$DEz$EEz$FEz$GEz$HEz$IEz$JEz$WBz$KEz$LEz$nz$MEz$NEz$OEz$PEz$QEz$REz$SEz$rz$TEz$UEz$VEz$WEz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$xEz$yEz$AFz$oEz$pEz$qEz$BFz$CFz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$IFz$JFz$KFz$LFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$MFz$NFz$OFz$PFz$QFz$RFz$SFz$TFz$z$UFz$VFz$WFz$XFz$YFz$yEz$ZFz$aFz$bFz$cFz$z$dFz$IEz$eFz$fFz$gFz$hFz$iFz$IEz$jFz$z$kFz$lFz$mFz$fFz$gFz$hFz$nFz$lFz$oFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$DGz$EGz$FGz$GGz$cFz$z$HGz$IGz$OFz$JGz$KGz$cFz$z$LGz$FGz$MGz$NGz$OGz$z$PGz$QGz$RGz$SGz$TGz$UGz$z$VGz$WGz$XGz$XFz$YGz$cFz$z$ZGz$aGz$FGz$bGz$cGz$dGz$eGz$fGz$FFz$z$GFz$GFz$GFz$GFz$GFz$gGz$z$hGz$iGz$jGz$LFz$z$bGz$cGz$dGz$kGz$lGz$mGz$gFz$hFz$iFz$IEz$nGz$gFz$hFz$nFz$lFz$oFz$z$GFz$GFz$GFz$GFz$GFz$gGz$z$oGz$pGz$qGz$z$rGz$sGz$tGz$uGz$vGz$wGz$xGz$yGz$AHz$BHz$CHz$DHz$EHz$FHz$GHz$HHz$IHz$JHz$wGz$xGz$yGz$AHz$BHz$KHz$LHz$FHz$MHz$NHz$OHz$PHz$QHz$RHz$SHz$THz$UHz$VHz$WHz$XHz$YHz$ZHz$aHz$bHz$cHz$XHz$RHz$dHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$mHz$QFz$RFz$SFz$nHz$oHz$pHz$cGz$dGz$kz$lz$qHz$rHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$sHz$tHz$gHz$bGz$cGz$dGz$uHz$rz$vHz$z$wHz$xHz$yHz$PFz$QFz$AIz$IBz$BIz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$DIz$EIz$FIz$GIz$HIz$IIz$JIz$KIz$LIz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$UIz$VIz$WIz$WDz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$lIz$mIz$nIz$oIz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$sIz$RDz$SDz$TDz$UDz$tIz$uIz$vIz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hz$iz$xIz$yIz$gBz$AJz$pz$BJz$CJz$QBz$DJz$vDz$pCz$EJz$z$Az$wz$xz$yz$ABz$FJz$GJz$VIz$HJz$IJz$JJz$gBz$KJz$LJz$MJz$NJz$OEz$OJz$PJz$BJz$QJz$RJz$SJz$TJz$QBz$UJz$VJz$rz$WJz$XJz$rDz$FBz$YJz$ZJz$eIz$z$ZBz$aBz$bBz$kz$lz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$NCz$OCz$PCz$QCz$aJz$xDz$bJz$cJz$dJz$eJz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$DEz$fJz$gJz$kz$hJz$oBz$iJz$jJz$kJz$lJz$mJz$nJz$mJz$oJz$QEz$REz$pJz$qJz$TEz$UEz$VEz$WEz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$rJz$sJz$tJz$Dz$lEz$uJz$dGz$bIz$Sz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$vJz$wJz$xJz$yJz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$AKz$BKz$CKz$oBz$iJz$cFz$z$MFz$NFz$OFz$DKz$EDz$hFz$EKz$bFz$cFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$AKz$BKz$CKz$HKz$cFz$z$IKz$JKz$GKz$KKz$cFz$z$LKz$MKz$NKz$OKz$PKz$FFz$z$QKz$RKz$SKz$xIz$TKz$z$QKz$UKz$VKz$WKz$EDz$XKz$YKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$eKz$fKz$gKz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$iKz$jKz$kKz$lKz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$oKz$pKz$qKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$rKz$EDz$hFz$EKz$bFz$sKz$xIz$tKz$xIz$uKz$vKz$gBz$wKz$xKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$AKz$BKz$BLz$CLz$tEz$DLz$ELz$FLz$GLz$HLz$ILz$xIz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$xIz$uKz$LLz$MLz$NLz$OLz$PLz$QLz$QBz$RLz$SLz$EDz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$DKz$EDz$hFz$WLz$xHz$vHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$XLz$YLz$ZLz$aLz$SIz$bLz$cLz$dLz$eLz$WDz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$fLz$gLz$DBz$hLz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$iLz$jLz$kLz$xCz$WDz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$fLz$lLz$mLz$nLz$oLz$pLz$qLz$rLz$WDz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hz$iz$sLz$yIz$gBz$AJz$pz$BJz$CJz$QBz$DJz$vDz$pCz$EJz$z$Az$wz$xz$yz$ABz$tLz$uLz$VIz$HJz$IJz$JJz$gBz$KJz$LJz$MJz$NJz$OEz$OJz$PJz$BJz$QJz$RJz$SJz$TJz$QBz$UJz$VJz$rz$WJz$XJz$rDz$FBz$YJz$ZJz$eIz$z$ZBz$aBz$bBz$kz$lz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$NCz$OCz$PCz$QCz$RCz$SCz$TCz$UCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$DEz$vLz$gJz$kz$hJz$oBz$iJz$jJz$kJz$lJz$mJz$nJz$mJz$oJz$QEz$REz$pJz$qJz$TEz$UEz$VEz$WEz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$wLz$sJz$tJz$Dz$lEz$uJz$dGz$bIz$Sz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$xLz$wJz$xJz$yJz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$yLz$BKz$CKz$oBz$iJz$cFz$z$MFz$NFz$OFz$DKz$AMz$hFz$EKz$bFz$cFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$yLz$BKz$CKz$HKz$cFz$z$QKz$RKz$SKz$sLz$TKz$z$QKz$UKz$VKz$WKz$AMz$XKz$YKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$eKz$fKz$gKz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$iKz$jKz$kKz$lKz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$oKz$pKz$qKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$rKz$AMz$hFz$EKz$bFz$sKz$sLz$tKz$sLz$uKz$vKz$gBz$wKz$xKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$yLz$BKz$BLz$CLz$tEz$DLz$ELz$FLz$GLz$HLz$ILz$sLz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$sLz$uKz$LLz$MLz$NLz$OLz$PLz$QLz$QBz$RLz$SLz$AMz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$DKz$AMz$hFz$WLz$xHz$vHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$CMz$DMz$ZLz$aLz$SIz$bLz$cLz$dLz$eLz$WDz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$EMz$FMz$DBz$hLz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$GMz$HMz$kLz$xCz$WDz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$EMz$IMz$mLz$nLz$oLz$pLz$qLz$rLz$WDz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hz$iz$JMz$KMz$oBz$LMz$MJz$MMz$NMz$OMz$qJz$sz$tz$uz$vz$z$Az$wz$xz$yz$ABz$PMz$QMz$EIz$FIz$RMz$SMz$oBz$iJz$TMz$UMz$VMz$WMz$XMz$YMz$MMz$ZMz$aMz$KLz$bMz$OMz$cMz$dMz$QBz$eMz$fMz$YJz$gMz$hMz$pCz$iMz$Sz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$NCz$OCz$PCz$QCz$RCz$SCz$TCz$UCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$DEz$jMz$QMz$kMz$lMz$kz$lz$mMz$nMz$KBz$oMz$pMz$RJz$qMz$rMz$sMz$tMz$uMz$vMz$wMz$xMz$yMz$Sz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$ANz$QMz$hFz$BNz$ZIz$aIz$bIz$qEz$CNz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$DNz$ENz$FNz$GNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$HNz$INz$dGz$kz$lz$vHz$z$MFz$NFz$OFz$JNz$KNz$LNz$MNz$pDz$vHz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$HNz$INz$dGz$NNz$vHz$z$QKz$RKz$SKz$JMz$ONz$TKz$z$QKz$UKz$VKz$PNz$KNz$QNz$RNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$SNz$QMz$hFz$TNz$UNz$VNz$WNz$MCz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$SNz$QMz$hFz$TNz$UNz$XNz$kKz$lKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$YNz$KNz$LNz$MNz$pDz$ZNz$aNz$bNz$SNz$QMz$hFz$iFz$IEz$cNz$dNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$HNz$INz$dGz$mJz$eNz$fNz$gNz$hNz$iNz$jNz$kNz$lNz$INz$dGz$mJz$mNz$z$sHz$tHz$gHz$bGz$JMz$nNz$oNz$pNz$OBz$qNz$rNz$FLz$GLz$HLz$ILz$JMz$nNz$oNz$pNz$sNz$tNz$FFz$z$wHz$xHz$yHz$JNz$KNz$LNz$uNz$vNz$oFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$wNz$xNz$VIz$HJz$yNz$AOz$BOz$COz$DOz$Hz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$EOz$FOz$ZLz$GOz$Sz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$HOz$QMz$CDz$vCz$IOz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$EOz$JOz$KOz$LOz$MOz$NOz$OOz$POz$Hz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hz$iz$QOz$ROz$SOz$kz$lz$TOz$UOz$CLz$VOz$uMz$WOz$rDz$XOz$tCz$z$Az$wz$xz$yz$ABz$YOz$ZOz$bHz$gLz$DBz$EBz$FBz$kz$lz$GBz$HBz$IBz$JBz$KBz$LBz$aOz$CLz$bOz$CLz$cOz$VOz$OBz$dOz$pJz$qJz$eOz$vDz$MDz$fOz$tz$gOz$WDz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$DEz$hOz$ZOz$bHz$iOz$GEz$HEz$IEz$jOz$kOz$lOz$mOz$nOz$aMz$KLz$oOz$rz$pOz$rz$qOz$xDz$rOz$sOz$CIz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$tOz$ZOz$bHz$uKz$AFz$oEz$pEz$qEz$BFz$CFz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$uOz$vOz$wOz$JFz$KFz$LFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$xOz$yOz$APz$hFz$iFz$IEz$jFz$z$MFz$NFz$OFz$PFz$BPz$CPz$DPz$RFz$SFz$TFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$xOz$yOz$APz$hFz$EPz$oFz$z$QKz$RKz$SKz$FPz$TKz$z$QKz$UKz$VKz$GPz$HPz$RNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$KPz$MCz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$LPz$jKz$MCz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$MPz$NPz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$mHz$BPz$CPz$DPz$RFz$SFz$nHz$oHz$OPz$BPz$CPz$DPz$CKz$oBz$iJz$PPz$QPz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$xOz$yOz$APz$hFz$RPz$SPz$OLz$TPz$UPz$VPz$rz$WPz$XPz$ZOz$bHz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$QOz$ROz$YPz$dGz$uHz$rz$tEz$ZPz$hNz$iNz$jNz$kNz$aPz$yOz$APz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$PFz$BPz$CPz$DPz$AIz$IBz$BIz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$bPz$yOz$APz$EIz$FIz$GIz$HIz$IIz$JIz$KIz$LIz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$cPz$ROz$dPz$VIz$WIz$WDz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$ePz$ZOz$bHz$fPz$nIz$oIz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$cPz$ROz$gPz$RDz$SDz$TDz$UDz$tIz$uIz$vIz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hPz$SIz$iPz$jPz$IEz$kPz$WBz$lPz$MJz$mPz$QBz$nPz$rDz$XOz$tCz$z$Az$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$kz$lz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$oPz$pPz$qPz$rPz$JJz$gBz$sPz$TBz$UBz$tPz$WBz$XBz$jJz$kJz$lJz$rMz$sMz$PBz$QBz$uPz$wMz$xMz$yMz$Sz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$xEz$yEz$AFz$oEz$pEz$qEz$BFz$CFz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$IFz$JFz$KFz$LFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$MFz$NFz$OFz$PFz$QFz$RFz$SFz$TFz$z$UFz$VFz$WFz$XFz$YFz$yEz$ZFz$aFz$bFz$cFz$z$dFz$IEz$eFz$fFz$gFz$hFz$iFz$IEz$jFz$z$kFz$lFz$mFz$fFz$gFz$hFz$nFz$lFz$oFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$DGz$EGz$FGz$GGz$cFz$z$HGz$IGz$OFz$JGz$KGz$cFz$z$LGz$FGz$MGz$NGz$OGz$z$PGz$QGz$RGz$SGz$TGz$UGz$z$VGz$WGz$XGz$XFz$YGz$cFz$z$ZGz$aGz$FGz$bGz$cGz$dGz$eGz$fGz$FFz$z$GFz$GFz$GFz$GFz$GFz$gGz$z$hGz$iGz$jGz$LFz$z$bGz$cGz$dGz$kGz$lGz$mGz$gFz$hFz$iFz$IEz$nGz$gFz$hFz$nFz$lFz$oFz$z$GFz$GFz$GFz$GFz$GFz$gGz$z$oGz$pGz$qGz$z$rGz$sGz$tGz$uGz$vGz$wGz$xGz$yGz$AHz$BHz$CHz$DHz$EHz$FHz$GHz$HHz$IHz$JHz$wGz$xGz$yGz$AHz$BHz$KHz$LHz$FHz$MHz$NHz$OHz$PHz$QHz$RHz$SHz$THz$UHz$VHz$WHz$XHz$YHz$ZHz$aHz$bHz$cHz$XHz$RHz$dHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$mHz$QFz$RFz$SFz$nHz$oHz$pHz$cGz$dGz$kz$lz$qHz$rHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$sHz$tHz$gHz$bGz$cGz$dGz$uHz$rz$vHz$z$wHz$xHz$yHz$PFz$QFz$AIz$IBz$BIz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$DIz$EIz$FIz$GIz$HIz$IIz$JIz$KIz$LIz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$UIz$VIz$WIz$WDz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$lIz$mIz$nIz$oIz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$sIz$RDz$SDz$TDz$UDz$tIz$uIz$vIz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hPz$SIz$vPz$wPz$oBz$LMz$MJz$MMz$NMz$OMz$qJz$sz$tz$uz$vz$z$Az$wz$xz$yz$ABz$FJz$GJz$VIz$HJz$IJz$JJz$gBz$KJz$LJz$MJz$NJz$OEz$OJz$PJz$BJz$QJz$RJz$SJz$TJz$QBz$UJz$VJz$rz$WJz$XJz$rDz$FBz$YJz$ZJz$eIz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$oPz$xPz$EDz$kMz$lMz$kz$lz$mMz$nMz$KBz$oMz$pMz$RJz$qMz$rMz$sMz$tMz$uMz$vMz$wMz$xMz$yMz$Sz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$rJz$sJz$tJz$Dz$lEz$uJz$dGz$bIz$Sz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$vJz$wJz$xJz$yJz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$AKz$BKz$CKz$oBz$iJz$cFz$z$MFz$NFz$OFz$DKz$EDz$hFz$EKz$bFz$cFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$AKz$BKz$CKz$HKz$cFz$z$IKz$JKz$GKz$KKz$cFz$z$LKz$MKz$NKz$OKz$PKz$FFz$z$QKz$RKz$SKz$xIz$TKz$z$QKz$UKz$VKz$WKz$EDz$XKz$YKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$eKz$fKz$gKz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$iKz$jKz$kKz$lKz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$dKz$sJz$dGz$xIz$oKz$pKz$qKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$rKz$EDz$hFz$EKz$bFz$sKz$xIz$tKz$xIz$uKz$vKz$gBz$wKz$xKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$AKz$BKz$BLz$CLz$tEz$DLz$ELz$FLz$GLz$HLz$ILz$xIz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$xIz$uKz$LLz$MLz$NLz$OLz$PLz$QLz$QBz$RLz$SLz$EDz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$DKz$EDz$hFz$WLz$xHz$vHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$XLz$YLz$ZLz$aLz$SIz$bLz$cLz$dLz$eLz$WDz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$fLz$gLz$DBz$hLz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$iLz$jLz$kLz$xCz$WDz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$fLz$lLz$mLz$nLz$oLz$pLz$qLz$rLz$WDz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hPz$SIz$yPz$wPz$oBz$LMz$MJz$MMz$NMz$OMz$qJz$sz$tz$uz$vz$z$Az$wz$xz$yz$ABz$tLz$uLz$VIz$HJz$IJz$JJz$gBz$KJz$LJz$MJz$NJz$OEz$OJz$PJz$BJz$QJz$RJz$SJz$TJz$QBz$UJz$VJz$rz$WJz$XJz$rDz$FBz$YJz$ZJz$eIz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$oPz$xPz$AMz$kMz$lMz$kz$lz$mMz$nMz$KBz$oMz$pMz$RJz$qMz$rMz$sMz$tMz$uMz$vMz$wMz$xMz$yMz$Sz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$wLz$sJz$tJz$Dz$lEz$uJz$dGz$bIz$Sz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$xLz$wJz$xJz$yJz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$yLz$BKz$CKz$oBz$iJz$cFz$z$MFz$NFz$OFz$DKz$AMz$hFz$EKz$bFz$cFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$yLz$BKz$CKz$HKz$cFz$z$QKz$RKz$SKz$sLz$TKz$z$QKz$UKz$VKz$WKz$AMz$XKz$YKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$eKz$fKz$gKz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$iKz$jKz$kKz$lKz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$BMz$sJz$dGz$sLz$oKz$pKz$qKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$rKz$AMz$hFz$EKz$bFz$sKz$sLz$tKz$sLz$uKz$vKz$gBz$wKz$xKz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$yLz$BKz$BLz$CLz$tEz$DLz$ELz$FLz$GLz$HLz$ILz$sLz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$sLz$uKz$LLz$MLz$NLz$OLz$PLz$QLz$QBz$RLz$SLz$AMz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$DKz$AMz$hFz$WLz$xHz$vHz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$CMz$DMz$ZLz$aLz$SIz$bLz$cLz$dLz$eLz$WDz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$EMz$FMz$DBz$hLz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$GMz$HMz$kLz$xCz$WDz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$EMz$IMz$mLz$nLz$oLz$pLz$qLz$rLz$WDz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hPz$SIz$AQz$BQz$kz$lz$TOz$UOz$CLz$VOz$uMz$WOz$rDz$XOz$tCz$z$Az$wz$xz$yz$ABz$PMz$QMz$EIz$FIz$RMz$SMz$oBz$iJz$TMz$UMz$VMz$WMz$XMz$YMz$MMz$ZMz$aMz$KLz$bMz$OMz$cMz$dMz$QBz$eMz$fMz$YJz$gMz$hMz$pCz$iMz$Sz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$oPz$CQz$KNz$DQz$GEz$HEz$IEz$jOz$kOz$lOz$mOz$nOz$aMz$KLz$oOz$rz$pOz$rz$qOz$xDz$rOz$sOz$CIz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$ANz$QMz$hFz$BNz$ZIz$aIz$bIz$qEz$CNz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$DNz$ENz$FNz$GNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$HNz$INz$dGz$kz$lz$vHz$z$MFz$NFz$OFz$JNz$KNz$LNz$MNz$pDz$vHz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$HNz$INz$dGz$NNz$vHz$z$QKz$RKz$SKz$JMz$ONz$TKz$z$QKz$UKz$VKz$PNz$KNz$QNz$RNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$SNz$QMz$hFz$TNz$UNz$VNz$WNz$MCz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$SNz$QMz$hFz$TNz$UNz$XNz$kKz$lKz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$YNz$KNz$LNz$MNz$pDz$ZNz$aNz$bNz$SNz$QMz$hFz$iFz$IEz$cNz$dNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$HNz$INz$dGz$mJz$eNz$fNz$gNz$hNz$iNz$jNz$kNz$lNz$INz$dGz$mJz$mNz$z$sHz$tHz$gHz$bGz$JMz$nNz$oNz$pNz$OBz$qNz$rNz$FLz$GLz$HLz$ILz$JMz$nNz$oNz$pNz$sNz$tNz$FFz$z$wHz$xHz$yHz$JNz$KNz$LNz$uNz$vNz$oFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$wNz$xNz$VIz$HJz$yNz$AOz$BOz$COz$DOz$Hz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$EOz$FOz$ZLz$GOz$Sz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$HOz$QMz$CDz$vCz$IOz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$EOz$JOz$KOz$LOz$MOz$NOz$OOz$POz$Hz$z$wIz$z$wIz$z$wIz$z$MCz$z$ez$fz$gz$hPz$SIz$EQz$yOz$APz$jPz$IEz$FQz$GQz$mJz$HQz$rz$IQz$YJz$ZJz$qBz$z$Az$wz$xz$yz$ABz$YOz$ZOz$bHz$gLz$DBz$EBz$FBz$kz$lz$GBz$HBz$IBz$JBz$KBz$LBz$aOz$CLz$bOz$CLz$cOz$VOz$OBz$dOz$pJz$qJz$eOz$vDz$MDz$fOz$tz$gOz$WDz$z$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$z$rBz$sBz$tBz$gBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$z$MCz$z$rBz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$vz$z$eCz$fCz$gCz$hCz$iCz$jCz$tz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sz$tz$sCz$tCz$z$cBz$uCz$tCz$z$Az$wz$vCz$wCz$xCz$yCz$ADz$BDz$tz$CDz$DDz$EDz$FDz$Sz$z$rBz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$MCz$z$cBz$XDz$YDz$ZDz$aDz$ZCz$bDz$cDz$dDz$eDz$tz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$Hz$z$Az$oDz$pDz$qDz$rDz$sDz$pDz$Sz$z$Az$tDz$uDz$vDz$wDz$xDz$Sz$z$Az$yDz$AEz$BEz$CEz$oPz$pPz$BPz$CPz$JQz$rPz$JJz$gBz$sPz$NEz$OEz$KQz$CLz$LQz$CLz$MQz$QBz$NQz$QBz$eMz$OQz$PQz$xDz$eEz$z$Az$XEz$YEz$ZEz$aEz$bEz$pDz$cEz$dEz$eEz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$nEz$z$cBz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$vz$z$Az$tOz$ZOz$bHz$uKz$AFz$oEz$pEz$qEz$BFz$CFz$z$Az$DFz$EFz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$uOz$vOz$wOz$JFz$KFz$LFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$dFz$IEz$eFz$fFz$xOz$yOz$APz$hFz$iFz$IEz$jFz$z$MFz$NFz$OFz$PFz$BPz$CPz$DPz$RFz$SFz$TFz$z$pFz$qFz$rFz$sFz$tFz$uFz$FFz$z$pFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$cFz$z$FKz$GKz$fFz$xOz$yOz$APz$hFz$EPz$oFz$z$QKz$RKz$SKz$FPz$TKz$z$QKz$UKz$VKz$GPz$HPz$RNz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$ZKz$aKz$bKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$KPz$MCz$z$cKz$cFz$z$ZKz$wGz$hKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$LPz$jKz$MCz$z$cKz$cFz$z$ZKz$mKz$nKz$z$cKz$cFz$z$IPz$ZOz$bHz$uKz$JPz$kKz$MPz$NPz$z$cKz$cFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$eHz$fHz$DBz$gHz$hHz$iHz$jHz$kHz$lHz$mHz$BPz$CPz$DPz$RFz$SFz$nHz$oHz$OPz$BPz$CPz$DPz$CKz$oBz$iJz$PPz$QPz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$yKz$ALz$fFz$xOz$yOz$APz$hFz$RPz$SPz$OLz$TPz$UPz$VPz$rz$WPz$XPz$ZOz$bHz$uKz$JLz$KLz$cFz$z$sHz$tHz$gHz$bGz$QOz$ROz$YPz$dGz$uHz$rz$tEz$ZPz$hNz$iNz$jNz$kNz$aPz$yOz$APz$hFz$TLz$QBz$ULz$VLz$z$wHz$xHz$yHz$PFz$BPz$CPz$DPz$AIz$IBz$BIz$FFz$z$GFz$GFz$GFz$GFz$GFz$HFz$z$CIz$z$Az$wz$xz$bPz$yOz$APz$EIz$FIz$GIz$HIz$IIz$JIz$KIz$LIz$z$rBz$GDz$HDz$MIz$NIz$z$OIz$PIz$z$Az$wz$xz$QIz$RIz$SIz$TIz$cPz$ROz$dPz$VIz$WIz$WDz$z$rBz$GDz$HDz$XIz$JDz$KDz$YIz$ZIz$aIz$bIz$cIz$dIz$eIz$z$MCz$z$fIz$z$gIz$hIz$xCz$dCz$vz$z$Az$wz$vCz$wCz$xCz$iIz$jIz$kIz$ePz$ZOz$bHz$fPz$nIz$oIz$z$rBz$GDz$HDz$IDz$JDz$pIz$qIz$rIz$cPz$ROz$gPz$RDz$SDz$TDz$UDz$tIz$uIz$vIz$z$wIz$z$wIz$z$wIz$z$MCz$z$QQz$RQz$SQz$TQz$UQz$iz$VQz$WQz$fJz$XQz$WQz$vLz$XQz$WQz$jMz$QMz$YQz$ZQz$BPz$CPz$aQz$yNz$bQz$cQz$SIz$vPz$dQz$yNz$eQz$XQz$GIz$CQz$KNz$fQz$SIz$EQz$yOz$APz$gQz"
+const axios = require('axios');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./sellvpn.db');
+
+async function trialssh(username, password, exp, iplimit, serverId) {
+  console.log(`Creating SSH account for ${username} with expiry ${exp} days, IP limit ${iplimit}, and password ${password}`);
+  
+  // Validasi username
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  // Ambil domain dari database
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/trialssh?user=${username}&password=${password}&exp=${exp}&iplimit=${iplimit}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const sshData = response.data.data;
+            const msg = `
+──────────────────────           
+                 *SSH ACCOUNT*
+──────────────────────
+*Domain* : \`${sshData.domain}\`
+*Nameserver*: \`${sshData.ns_domain}\`
+*Username* : \`${sshData.username}\`
+*Password* : \`${sshData.password}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*OpenSSH* : \`22\`
+*UdpSSH* : \`1-65535\`
+*DNS* : \`53,2222\`
+*Dropbear* : \`109,110\`
+*BadVPN UDP*: \`7300\`
+*Pub Key* : \`${sshData.pubkey}\`
+───────────────────────
+*HTTP CUSTOM*
+\`${sshData.domain}:80@${sshData.username}:${sshData.password}\`
+───────────────────────
+*Payload*: 
+\`GET /cdn-cgi/trace HTTP/1.1[crlf]Host: Bug_Kalian[crlf][crlf]GET-RAY / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\`
+──────────────────────
+*Save Account*: [Click Link](https://${sshData.domain}:81/ssh-${sshData.username}.txt)
+──────────────────────
+*IP Limit*: \`${sshData.ip_limit}\`
+*Expired*: \`${sshData.expired}\`
+──────────────────────
+`;
+              console.log('SSH account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating SSH account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat SSH:', error);
+          return resolve('❌ Gagal membuat SSH. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function trialvmess(username, exp, quota, limitip, serverId) {
+  console.log(`Creating VMess account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  // Validasi username
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  // Ambil domain dan auth dari database
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/trialvmess?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const vmessData = response.data.data;
+            const msg = `
+────────────────────── 
+              *VMESS ACCOUNT*
+──────────────────────
+*Username* : \`${vmessData.username}\`
+*Domain* : \`${vmessData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${vmessData.uuid}\`
+*Alter ID* : \`0\`
+*Security* : \`Auto\`
+*Path* : \`/vmess\`
+*Path gRPC*: \`vmess-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${vmessData.vmess_tls_link}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${vmessData.vmess_nontls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${vmessData.vmess_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${vmessData.domain}:81/vmess-${vmessData.username}.txt)
+──────────────────────
+*Quota*: \`${vmessData.quota === '0 GB' ? 'Unlimited' : vmessData.quota}\`
+*IP Limit*: \`${vmessData.ip_limit === '0' ? 'Unlimited' : vmessData.ip_limit} IP\`
+*Expired*: \`${vmessData.expired}\`
+──────────────────────
+`;
+              console.log('VMess account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating VMess account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat VMess:', error);
+          return resolve('❌ Gagal membuat VMess. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function trialvless(username, exp, quota, limitip, serverId) {
+  console.log(`Creating VLESS account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  // Validasi username
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  // Ambil domain dari database
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/trialvless?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const vlessData = response.data.data;
+            const msg = `
+────────────────────── 
+               *VLESS ACCOUNT*
+──────────────────────
+*Username* : \`${vlessData.username}\`
+*Domain* : \`${vlessData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${vlessData.uuid}\`
+*Path* : \`/vless\`
+*Path gRPC*: \`vless-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${vlessData.vless_tls_link}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${vlessData.vless_nontls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${vlessData.vless_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${vlessData.domain}:81/vless-${vlessData.username}.txt)
+──────────────────────
+*Quota*: \`${vlessData.quota === '0 GB' ? 'Unlimited' : vlessData.quota}\`
+*IP Limit*: \`${vlessData.ip_limit === '0' ? 'Unlimited' : vlessData.ip_limit} IP\`
+*Expired*: \`${vlessData.expired}\`
+──────────────────────
+`;
+              console.log('VLESS account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating VLESS account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat VLESS:', error);
+          return resolve('❌ Gagal membuat VLESS. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function trialtrojan(username, exp, quota, limitip, serverId) {
+  console.log(`Creating Trojan account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  // Ambil domain dari database
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/trialtrojan?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const trojanData = response.data.data;
+            const msg = `
+────────────────────── 
+            *TROJAN ACCOUNT*
+──────────────────────
+*Username* : \`${trojanData.username}\`
+*Domain* : \`${trojanData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${trojanData.uuid}\`
+*Path* : \`/trojan-ws\`
+*Path gRPC*: \`trojan-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${trojanData.trojan_tls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${trojanData.trojan_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${trojanData.domain}:81/trojan-${trojanData.username}.txt)
+──────────────────────
+*Quota*: \`${trojanData.quota === '0 GB' ? 'Unlimited' : trojanData.quota}\`
+*IP Limit*: \`${trojanData.ip_limit === '0' ? 'Unlimited' : trojanData.ip_limit} IP\`
+*Expired*: \`${trojanData.expired}\`
+──────────────────────
+`;
+              console.log('Trojan account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating Trojan account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat Trojan:', error);
+          return resolve('❌ Gagal membuat Trojan. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+
+async function trialshadowsocks(username, exp, quota, limitip, serverId) {
+  console.log(`Creating Shadowsocks account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/trialshadowsocks?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const shadowsocksData = response.data.data;
+            const msg = `
+────────────────────── 
+      *SHADOWSOCKS ACCOUNT*
+──────────────────────
+*Username* : \`${shadowsocksData.username}\`
+*Domain* : \`${shadowsocksData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${shadowsocksData.uuid}\`
+*Path* : \`/ss-ws\`
+*Path gRPC*: \`ss-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${shadowsocksData.ss_link_ws}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${shadowsocksData.ss_link_nontls}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${shadowsocksData.ss_link_grpc}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${shadowsocksData.domain}:81/ss-${shadowsocksData.username}.txt)
+──────────────────────
+*Quota*: \`${shadowsocksData.quota === '0 GB' ? 'Unlimited' : shadowsocksData.quota}\`
+*IP Limit*: \`${shadowsocksData.ip_limit === '0' ? 'Unlimited' : shadowsocksData.ip_limit} IP\`
+*Expired*: \`${shadowsocksData.expired}\`
+──────────────────────
+`;
+              console.log('Shadowsocks account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating Shadowsocks account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat Shadowsocks:', error);
+          return resolve('❌ Gagal membuat Shadowsocks. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+
+async function createssh(username, password, exp, iplimit, serverId) {
+  console.log(`Creating SSH account for ${username} with expiry ${exp} days, IP limit ${iplimit}, and password ${password}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/createssh?user=${username}&password=${password}&exp=${exp}&iplimit=${iplimit}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const sshData = response.data.data;
+            const msg = `
+──────────────────────           
+                 *SSH ACCOUNT*
+──────────────────────
+*Domain* : \`${sshData.domain}\`
+*Nameserver*: \`${sshData.ns_domain}\`
+*Username* : \`${sshData.username}\`
+*Password* : \`${sshData.password}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*OpenSSH* : \`22\`
+*UdpSSH* : \`1-65535\`
+*DNS* : \`53,2222\`
+*Dropbear* : \`109,110\`
+*BadVPN UDP*: \`7300\`
+*Pub Key* : \`${sshData.pubkey}\`
+───────────────────────
+*HTTP CUSTOM*
+\`${sshData.domain}:80@${sshData.username}:${sshData.password}\`
+───────────────────────
+*Payload*: 
+\`GET /cdn-cgi/trace HTTP/1.1[crlf]Host: Bug_Kalian[crlf][crlf]GET-RAY / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\`
+──────────────────────
+*Save Account*: [Click Link](https://${sshData.domain}:81/ssh-${sshData.username}.txt)
+──────────────────────
+*IP Limit*: \`${sshData.ip_limit}\`
+*Expired*: \`${sshData.expired}\`
+──────────────────────
+`;
+              console.log('SSH account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating SSH account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat SSH:', error);
+          return resolve('❌ Gagal membuat SSH. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function createvmess(username, exp, quota, limitip, serverId) {
+  console.log(`Creating VMess account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/createvmess?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const vmessData = response.data.data;
+            const msg = `
+────────────────────── 
+              *VMESS ACCOUNT*
+──────────────────────
+*Username* : \`${vmessData.username}\`
+*Domain* : \`${vmessData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${vmessData.uuid}\`
+*Alter ID* : \`0\`
+*Security* : \`Auto\`
+*Path* : \`/vmess\`
+*Path gRPC*: \`vmess-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${vmessData.vmess_tls_link}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${vmessData.vmess_nontls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${vmessData.vmess_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${vmessData.domain}:81/vmess-${vmessData.username}.txt)
+──────────────────────
+*Quota*: \`${vmessData.quota === '0 GB' ? 'Unlimited' : vmessData.quota}\`
+*IP Limit*: \`${vmessData.ip_limit === '0' ? 'Unlimited' : vmessData.ip_limit} IP\`
+*Expired*: \`${vmessData.expired}\`
+──────────────────────
+`;
+              console.log('VMess account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating VMess account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat VMess:', error);
+          return resolve('❌ Gagal membuat VMess. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function createvless(username, exp, quota, limitip, serverId) {
+  console.log(`Creating VLESS account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/createvless?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const vlessData = response.data.data;
+            const msg = `
+────────────────────── 
+               *VLESS ACCOUNT*
+──────────────────────
+*Username* : \`${vlessData.username}\`
+*Domain* : \`${vlessData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${vlessData.uuid}\`
+*Path* : \`/vless\`
+*Path gRPC*: \`vless-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${vlessData.vless_tls_link}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${vlessData.vless_nontls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${vlessData.vless_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${vlessData.domain}:81/vless-${vlessData.username}.txt)
+──────────────────────
+*Quota*: \`${vlessData.quota === '0 GB' ? 'Unlimited' : vlessData.quota}\`
+*IP Limit*: \`${vlessData.ip_limit === '0' ? 'Unlimited' : vlessData.ip_limit} IP\`
+*Expired*: \`${vlessData.expired}\`
+──────────────────────
+`;
+              console.log('VLESS account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating VLESS account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat VLESS:', error);
+          return resolve('❌ Gagal membuat VLESS. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function createtrojan(username, exp, quota, limitip, serverId) {
+  console.log(`Creating Trojan account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/createtrojan?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const trojanData = response.data.data;
+            const msg = `
+────────────────────── 
+            *TROJAN ACCOUNT*
+──────────────────────
+*Username* : \`${trojanData.username}\`
+*Domain* : \`${trojanData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${trojanData.uuid}\`
+*Path* : \`/trojan-ws\`
+*Path gRPC*: \`trojan-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${trojanData.trojan_tls_link}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${trojanData.trojan_grpc_link}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${trojanData.domain}:81/trojan-${trojanData.username}.txt)
+──────────────────────
+*Quota*: \`${trojanData.quota === '0 GB' ? 'Unlimited' : trojanData.quota}\`
+*IP Limit*: \`${trojanData.ip_limit === '0' ? 'Unlimited' : trojanData.ip_limit} IP\`
+*Expired*: \`${trojanData.expired}\`
+──────────────────────
+`;
+              console.log('Trojan account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating Trojan account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat Trojan:', error);
+          return resolve('❌ Gagal membuat Trojan. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+
+async function createshadowsocks(username, exp, quota, limitip, serverId) {
+  console.log(`Creating Shadowsocks account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/createshadowsocks?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const shadowsocksData = response.data.data;
+            const msg = `
+────────────────────── 
+      *SHADOWSOCKS ACCOUNT*
+──────────────────────
+*Username* : \`${shadowsocksData.username}\`
+*Domain* : \`${shadowsocksData.domain}\`
+*Port TLS* : \`443,8443\`
+*Port HTTP*: \`80,8080,2086,8880\`
+*UUID* : \`${shadowsocksData.uuid}\`
+*Path* : \`/ss-ws\`
+*Path gRPC*: \`ss-grpc\`
+──────────────────────
+*URL TLS:*
+\`\`\`
+${shadowsocksData.ss_link_ws}
+\`\`\`
+*URL HTTP:*
+\`\`\`
+${shadowsocksData.ss_link_nontls}
+\`\`\`
+*URL gRPC:*
+\`\`\`
+${shadowsocksData.ss_link_grpc}
+\`\`\`
+──────────────────────
+*Save Account*: [Click Link](https://${shadowsocksData.domain}:81/ss-${shadowsocksData.username}.txt)
+──────────────────────
+*Quota*: \`${shadowsocksData.quota === '0 GB' ? 'Unlimited' : shadowsocksData.quota}\`
+*IP Limit*: \`${shadowsocksData.ip_limit === '0' ? 'Unlimited' : shadowsocksData.ip_limit} IP\`
+*Expired*: \`${shadowsocksData.expired}\`
+──────────────────────
+`;
+              console.log('Shadowsocks account created successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error creating Shadowsocks account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat membuat Shadowsocks:', error);
+          return resolve('❌ Gagal membuat Shadowsocks. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+
+module.exports = { trialssh, trialvmess, trialvless, trialtrojan, trialshadowsocks, createssh, createvmess, createvless, createtrojan, createshadowsocks };

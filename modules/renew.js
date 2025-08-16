@@ -1,3 +1,264 @@
-z="
-";KDz=' ret';TGz='memp';vz='`Ren';DGz='data';nIz='{vle';vHz=''\'' : ';KFz='ata.';GCz='romi';lFz='cess';YEz=' ===';XLz=''\''Sha';aIz='s. S';lDz='5888';xDz='t=${';GEz='p://';DLz='ip}&';PIz='nt r';KGz=' saa';PKz='wed ';BGz='espo';kJz='W TR';UKz='an a';xHz='a.qu';Fz='e('\''a';MLz='ocks';TFz='rui*';bCz='(err';hGz='d) {';RGz='or);';eJz='uth=';DKz='a}\`';aJz='ta}&';bKz='coba';nHz='ssDa';LIz='P\`';ZKz='Sila';gFz=' acc';Dz='= re';DEz='t ur';pz='ip, ';XEz='atus';XJz='p=${';NFz='✅ *A';uEz='me: ';XBz='t(us';pDz='er=$';nJz='MIUM';YHz='se.d';lLz='news';vBz='f da';FJz='h ex';Az='cons';lHz=' \`$';GFz='│ Ba';JGz='ch(e';yBz='tanp';qHz=' '\''0 ';ZFz='akai';WCz='d = ';MDz='lve(';qFz='} el';Oz='ite3';kCz='chin';kFz=' suc';WFz='asih';xEz='│ Ka';YCz='[ser';nEz='W SS';oBz='id. ';eDz='th =';JBz='s, l';IFz='IP: ';wIz='ota,';Bz='t ax';HBz='exp}';bJz='ipli';VCz='RE i';ADz='temu';pKz='s, q';dDz='t au';uDz='{exp';NLz='.quo';nBz=' val';aDz='main';gKz='owso';XIz='i VM';IKz='=== ';IHz='=${e';qJz='.exp';sCz='ve('\''';fCz='err)';BKz='d'\'' :';rGz='${ex';OCz='db.g';uCz='gal:';QJz='er $';dHz='IUM*';dIz='oba ';Zz='ase(';sDz='e}&e';EDz=' cob';oz='imit';fBz='st(u';UCz=' WHE';YFz='ah p';ez='asyn';KJz='ota ';GKz='p_li';vGz='{quo';qBz='n gu';wEz='}\`';BIz='_lim';mCz=':'\'', ';jIz='ewvl';iFz=' ren';LLz='dows';xBz='gka ';DDz='akan';rFz='se {';bBz='[^a-';DBz='} wi';BHz='ip} ';ZDz='t do';LCz='ect)';Lz='requ';xJz=' ? '\''';SKz='ully';RFz=' dip';Iz='t sq';XDz='ba l';PBz='rver';RLz=''\''Unl';sJz='{tro';kIz='t vl';Ez='quir';gLz='ts =';SIz='ssfu';hIz='vles';XKz='r);';LJz='${qu';eIz='lagi';rCz='esol';oKz='sock';tJz='janD';fJz='${au';gJz='th}`';aHz='W VM';ZCz='verI';yJz='Unli';KKz='mit}';bEz='s") ';kHz='ota:';TCz='M Se';xIz=' lim';Mz='ire(';MCz=' => ';MEz='t(ur';UGz='rui ';mHz='{vme';LBz='${li';HIz=' : v';MKz=''\''Tro';MJz=' GB,';XCz='?'\'', ';IBz=' day';DIz='== '\''';vDz='}&ip';TJz='ewtr';NHz='plim';yGz='t IP';hEz='t ms';jKz=', li';YJz='&quo';WIz='t'\'');';CLz='=${l';HHz='&exp';OKz='rene';KHz='quot';JCz='lve,';OGz='i SS';EBz='th e';yCz='k di';oGz='with';PHz='{lim';JKz=''\''0'\'' ';VGz='SSH.';cKz=' lag';LDz='urn ';lz='name';mJz=' PRE';QKz='succ';kLz='newv';jDz='ram ';CIz='it =';yz='H ac';jCz=' fet';rJz='ired';mDz='/ren';PCz='et('\''';lKz='rId)';wBz='n an';tEz='│ Us';HDz=');';rDz='rnam';rBz='naka';jz='ssh(';xz='g SS';Rz='se()';vEz='\`${';qEz='M* ❇';tDz='xp=$';mLz='sh }';uz='log(';jEz='`';JIz='.ip_';cHz='PREM';aGz='vmes';BLz='&ipl';HFz='tas ';nGz='me} ';cEz='t ss';VLz=' '\''0'\''';aLz='i Sh';YLz='Shad';kz='user';IDz='!ser';OIz='ccou';hKz='cks(';nFz='y'\'');';yHz='ota}';AFz='arsa';fHz='${vm';RJz='{ser';ECz='rn n';CJz=' for';PFz='berh';iIz='g VL';qGz='iry ';sBz='n ha';nKz='adow';FCz='ew P';gCz='erro';EIz='0'\'' ?';ZBz='me) ';pJz='${tr';pCz='age)';BJz='ojan';eLz='le.e';OEz='.the';tIz='an(u';rEz='️';gBz='sern';AKz='mite';HEz='${do';NIz='ss a';iHz='\`';NDz=''\''❌ G';AHz=' ${l';fDz=' ser';pHz='uota';bIz='ilak';dLz='modu';gGz='tip,';IJz='xp} ';dKz='i na';KLz='{sha';FIz=' '\''Un';wDz='limi';oCz='mess';DFz='a.ex';mKz='g Sh';eGz=' quo';sHz='? '\''U';hHz='red}';NKz='jan ';AGz=' ${r';BDz='kan.';uGz='ta $';QDz=' tid';iGz='g VM';Cz='ios ';QLz=''\'' ? ';Wz='qlit';WHz='essD';GGz='}`);';mBz='idak';LFz='ip_l';TLz=': sh';ZHz='─';OBz='n se';CFz='${ss';cJz='mit=';TIz='lly'\''';MHz='a}&i';ZJz='ta=$';dGz='exp,';CGz='nse.';hJz='t tr';VDz='laka';Tz='t db';mGz='${us';bHz='ESS ';cLz='cks.';fz='c fu';hCz='r('\''E';XFz=' sud';fKz='shad';THz='{aut';iEz='g = ';QIz='ed s';fIz=' nan';jJz='a;';lGz='for ';tHz='nlim';vCz=' Ser';yDz='tip}';ABz='coun';VJz='r=${';xCz='tida';cz='pn.d';WDz='n co';pEz='EMIU';ICz='reso';SCz=' FRO';iBz='retu';FFz='d}\`';NBz='p} o';aFz=' lay';BBz='t fo';BEz='h=${';LHz='a=${';lJz='OJAN';RKz='essf';OFz='kun ';xKz='s?us';Qz='erbo';dEz='hDat';bDz=' = s';UEz='onse';uJz='a ==';Uz=' = n';EJz=' wit';wFz='acco';wJz=' GB'\''';cCz=', se';YDz='agi.';WKz='i Tr';VKz='nt'\'')';QGz=' err';Yz='atab';bz='ellv';rIz='i VL';mIz='${vl';sEz='┌───';tFz='or r';KEz='axio';YKz='an. ';SBz='rId}';Jz='lite';eKz='nti.';LKz=' IP\';RBz='erve';yIz='Id) ';kDz='= `:';Gz='xios';fGz='ta, ';AJz='g Tr';mFz='full';pIz=''\''VLe';JDz='ver)';REz='se =';iz='enew';SEz='> {';lBz='me t';vIz=', qu';sz=') {';GJz='piry';PEz='n(re';CBz='r ${';iCz='rror';VFz='*Mak';UHz='h}`;';FDz='a la';DHz='ewvm';WLz=' sha';JLz='${sh';IGz='.cat';HJz=' ${e';hz='on r';SGz='gal ';tCz='❌ Ga';KCz=' rej';HLz='W SH';WGz='gi n';GIz='ted'\''';LEz='s.ge';oFz='ve(m';yFz='ve(`';SLz='ed'\'' ';TKz='Troj';ILz='DWSK';fFz=''\''SSH';qz='serv';hFz='ount';OHz='it=$';Vz='ew s';uBz='huru';mz=', ex';UFz=' ✨';uFz='ing ';lCz='g se';CEz='}`;';dBz='0-9]';CCz=''\'';';FKz='ta.i';ZGz='});';dz='b'\'');';IEz='}${p';EKz='anDa';rHz='GB'\'' ';mEz='RENE';wHz='sDat';BCz='asi.';Pz=''\'').v';jGz='ess ';hDz='auth';Xz='e3.D';aBz='|| /';Hz=''\'');';eBz='/.te';vFz='SSH ';GLz='t sh';SDz='item';nCz='err.';KBz=' IP ';HKz='mit ';IIz='Data';UBz='if (';sFz=''\''Err';UDz='. Si';UIz='VMes';TBz='`);';kBz='❌ Us';eCz=' {';JFz='sshD';yEz='dalu';bLz='s:'\'',';TEz='resp';hBz='ame)';uKz='${se';ODz='agal';Nz=''\''sql';gz='ncti';iJz=' = r';UJz='?use';tGz='ays,';DCz='}';uHz='ited';vJz='= '\''0';VHz='t vm';VIz='s ac';wCz='ver ';XGz='anti';PJz=' on ';SJz='d}`)';ZEz=' "su';hLz=' { r';MGz='mper';EFz='pire';YBz='erna';nz='p, l';QCz='SELE';RIz='ucce';RDz='ak d';gHz='expi';dJz='p}&a';ALz='ota=';FLz='uth}';pBz='Moho';ACz='a sp';EHz='ess?';rz='erId';VBz='/\s/';HGz='})';WBz='.tes';XHz='ata ';ZLz='cks ';NJz='it I';dFz='i*';wz='ewin';SFz='erba';JHz='xp}&';AEz='&aut';JJz='days';jHz='│ Ku';DJz=' ${u';NCz='{';GBz='y ${';ULz='cksD';GDz='gi.'\''';qCz='rn r';FGz='sage';nDz='ewss';BFz=': \`';oDz='h?us';QEz='spon';ZIz=''\'', e';eEz='a = ';VEz='.dat';CKz=' tro';fEz='a.da';oIz='less';kKz='p, s';oJz='* ❇️';NGz='baru';eFz='`;';bFz='anan';FBz='xpir';xGz='GB, ';jLz=', re';lIz='W VL';Kz='3 = ';pGz=' exp';gEz='ta;';oEz='H PR';OLz='ta =';ELz='=${a';bGz='s(us';KIz='t} I';qIz='VLes';FHz='=${u';Sz=';';sGz='p} d';lEz='❇️ *';PDz=': Se';YGz='.'\'');';qDz='{use';SHz='th=$';sIz='troj';tKz='} on';AIz='a.ip';xFz='unt'\''';wKz='ewsh';aKz='kan ';MIz=''\''VMe';HCz='se((';pFz='sg);';kEz='────';iDz='t pa';PLz='0 GB';QBz=' ${s';jFz='ewed';EEz='l = ';GHz='ame}';RHz='}&au';dCz=') =>';WEz='a.st';OJz='P ${';NEz='l)';cFz=' kam';YIz='ess:';sKz='IP $';iKz='p, q';aEz='cces';iLz='cks,';TDz='ukan';oHz='ta.q';fLz='xpor';vKz='Id}`';RCz='CT *';uIz='ame,';az=''\''./s';rKz='} GB';cGz='me, ';aCz='d], ';cBz='zA-Z';MFz='└───';kGz='unt ';eHz=' ❇️';WJz='}&ex';JEz='aram';QHz='itip';CHz='on s';CDz=' Sil';tBz='nya ';LGz='t me';FEz='`htt';gIz='ti.'\''';MBz='miti';cIz='an c';QFz='asil';jBz='rn '\''';EGz='.mes';tz='ole.';gDz='ver.';PGz='H:'\'',';yKz='}&qu';qKz=' ${q';cDz='r.do';wGz='ta} ';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$z$Az$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$z$Az$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$z$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$z$Az$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$kz$lz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$oz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$z$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$sz$z$iBz$jBz$kBz$YBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$z$iBz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$QCz$RCz$SCz$TCz$PBz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$PBz$dCz$eCz$z$UBz$fCz$eCz$z$Az$tz$gCz$hCz$iCz$jCz$kCz$lCz$PBz$mCz$nCz$oCz$pCz$Sz$z$iBz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$z$DCz$z$UBz$IDz$JDz$KDz$LDz$ICz$MDz$NDz$ODz$PDz$PBz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$Hz$z$Az$ZDz$aDz$bDz$RBz$cDz$aDz$Sz$z$Az$dDz$eDz$fDz$gDz$hDz$Sz$z$Az$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$vDz$wDz$xDz$wDz$yDz$AEz$BEz$hDz$CEz$z$Az$DEz$EEz$FEz$GEz$HEz$aDz$IEz$JEz$CEz$z$KEz$LEz$MEz$NEz$z$OEz$PEz$QEz$REz$SEz$z$UBz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$NCz$z$Az$cEz$dEz$eEz$TEz$UEz$VEz$fEz$gEz$z$Az$hEz$iEz$jEz$z$kEz$kEz$kEz$kEz$kEz$z$lEz$mEz$nEz$oEz$pEz$qEz$rEz$z$kEz$kEz$kEz$kEz$kEz$z$sEz$kEz$kEz$kEz$kEz$z$tEz$YBz$uEz$vEz$kz$lz$wEz$z$xEz$yEz$AFz$BFz$CFz$dEz$DFz$EFz$FFz$z$GFz$HFz$IFz$vEz$JFz$KFz$LFz$oz$wEz$z$MFz$kEz$kEz$kEz$kEz$z$NFz$OFz$PFz$QFz$RFz$SFz$TFz$UFz$z$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$z$eFz$z$Az$tz$uz$fFz$gFz$hFz$iFz$jFz$kFz$lFz$mFz$nFz$z$iBz$qCz$rCz$oFz$pFz$z$qFz$rFz$z$Az$tz$uz$sFz$tFz$iz$uFz$vFz$wFz$xFz$HDz$z$iBz$qCz$rCz$yFz$tCz$uCz$AGz$BGz$CGz$DGz$EGz$FGz$GGz$z$DCz$z$HGz$z$IGz$JGz$iCz$MCz$NCz$z$Az$tz$gCz$hCz$iCz$KGz$LGz$MGz$NGz$OGz$PGz$QGz$RGz$z$iBz$qCz$rCz$sCz$tCz$SGz$TGz$SFz$UGz$VGz$CDz$DDz$EDz$FDz$WGz$XGz$YGz$z$ZGz$z$ZGz$z$ZGz$z$DCz$z$ez$fz$gz$hz$iz$aGz$bGz$YBz$cGz$dGz$eGz$fGz$wDz$gGz$fDz$ZCz$hGz$z$Az$tz$uz$vz$wz$iGz$jGz$wFz$kGz$lGz$mGz$YBz$nGz$oGz$pGz$qGz$rGz$sGz$tGz$eGz$uGz$vGz$wGz$xGz$wDz$yGz$AHz$oz$BHz$CHz$RBz$CBz$qz$rz$GGz$z$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$sz$z$iBz$jBz$kBz$YBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$z$iBz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$QCz$RCz$SCz$TCz$PBz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$PBz$dCz$eCz$z$UBz$fCz$eCz$z$Az$tz$gCz$hCz$iCz$jCz$kCz$lCz$PBz$mCz$nCz$oCz$pCz$Sz$z$iBz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$z$DCz$z$UBz$IDz$JDz$KDz$LDz$ICz$MDz$NDz$ODz$PDz$PBz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$Hz$z$Az$ZDz$aDz$bDz$RBz$cDz$aDz$Sz$z$Az$dDz$eDz$fDz$gDz$hDz$Sz$z$Az$iDz$jDz$kDz$lDz$mDz$DHz$EHz$kz$FHz$gBz$GHz$HHz$IHz$JHz$KHz$LHz$KHz$MHz$NHz$OHz$PHz$QHz$RHz$SHz$THz$UHz$z$Az$DEz$EEz$FEz$GEz$HEz$aDz$IEz$JEz$CEz$z$KEz$LEz$MEz$NEz$z$OEz$PEz$QEz$REz$SEz$z$UBz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$NCz$z$Az$VHz$WHz$XHz$Dz$QEz$YHz$KFz$DGz$Sz$z$Az$hEz$iEz$jEz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$lEz$mEz$aHz$bHz$cHz$dHz$eHz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$sEz$kEz$kEz$kEz$kEz$ZHz$z$tEz$YBz$uEz$vEz$kz$lz$wEz$z$xEz$yEz$AFz$BFz$fHz$WHz$KFz$gHz$hHz$iHz$z$jHz$kHz$lHz$mHz$nHz$oHz$pHz$YEz$qHz$rHz$sHz$tHz$uHz$vHz$aGz$wHz$xHz$yHz$iHz$z$GFz$HFz$IFz$vEz$aGz$wHz$AIz$BIz$CIz$DIz$EIz$FIz$wDz$GIz$HIz$oCz$IIz$JIz$wDz$KIz$LIz$z$MFz$kEz$kEz$kEz$kEz$ZHz$z$NFz$OFz$PFz$QFz$RFz$SFz$TFz$UFz$z$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$z$eFz$z$Az$tz$uz$MIz$NIz$OIz$PIz$iz$QIz$RIz$SIz$TIz$HDz$z$iBz$qCz$rCz$oFz$pFz$z$qFz$rFz$z$Az$tz$uz$sFz$tFz$iz$uFz$UIz$VIz$ABz$WIz$z$iBz$qCz$rCz$yFz$tCz$uCz$AGz$BGz$CGz$DGz$EGz$FGz$GGz$z$DCz$z$HGz$z$IGz$JGz$iCz$MCz$NCz$z$Az$tz$gCz$hCz$iCz$KGz$LGz$MGz$NGz$XIz$YIz$ZIz$iCz$HDz$z$iBz$qCz$rCz$sCz$tCz$SGz$TGz$SFz$UGz$UIz$aIz$bIz$cIz$dIz$eIz$fIz$gIz$HDz$z$ZGz$z$ZGz$z$ZGz$z$DCz$z$ez$fz$gz$hz$iz$hIz$bGz$YBz$cGz$dGz$eGz$fGz$wDz$gGz$fDz$ZCz$hGz$z$Az$tz$uz$vz$wz$iIz$jGz$wFz$kGz$lGz$mGz$YBz$nGz$oGz$pGz$qGz$rGz$sGz$tGz$eGz$uGz$vGz$wGz$xGz$wDz$yGz$AHz$oz$BHz$CHz$RBz$CBz$qz$rz$GGz$z$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$sz$z$iBz$jBz$kBz$YBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$z$iBz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$QCz$RCz$SCz$TCz$PBz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$PBz$dCz$eCz$z$UBz$fCz$eCz$z$Az$tz$gCz$hCz$iCz$jCz$kCz$lCz$PBz$mCz$nCz$oCz$pCz$Sz$z$iBz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$z$DCz$z$UBz$IDz$JDz$KDz$LDz$ICz$MDz$NDz$ODz$PDz$PBz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$Hz$z$Az$ZDz$aDz$bDz$RBz$cDz$aDz$Sz$z$Az$dDz$eDz$fDz$gDz$hDz$Sz$z$Az$iDz$jDz$kDz$lDz$mDz$jIz$EHz$kz$FHz$gBz$GHz$HHz$IHz$JHz$KHz$LHz$KHz$MHz$NHz$OHz$PHz$QHz$RHz$SHz$THz$UHz$z$Az$DEz$EEz$FEz$GEz$HEz$aDz$IEz$JEz$CEz$z$KEz$LEz$MEz$NEz$z$OEz$PEz$QEz$REz$SEz$z$UBz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$NCz$z$Az$kIz$WHz$XHz$Dz$QEz$YHz$KFz$DGz$Sz$z$Az$hEz$iEz$jEz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$lEz$mEz$lIz$bHz$cHz$dHz$eHz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$sEz$kEz$kEz$kEz$kEz$ZHz$z$tEz$YBz$uEz$vEz$kz$lz$wEz$z$xEz$yEz$AFz$BFz$mIz$WHz$KFz$gHz$hHz$iHz$z$jHz$kHz$lHz$nIz$nHz$oHz$pHz$YEz$qHz$rHz$sHz$tHz$uHz$vHz$hIz$wHz$xHz$yHz$iHz$z$GFz$HFz$IFz$vEz$hIz$wHz$AIz$BIz$CIz$DIz$EIz$FIz$wDz$GIz$HIz$oIz$IIz$JIz$wDz$KIz$LIz$z$MFz$kEz$kEz$kEz$kEz$ZHz$z$NFz$OFz$PFz$QFz$RFz$SFz$TFz$UFz$z$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$z$eFz$z$Az$tz$uz$pIz$NIz$OIz$PIz$iz$QIz$RIz$SIz$TIz$HDz$z$iBz$qCz$rCz$oFz$pFz$z$qFz$rFz$z$Az$tz$uz$sFz$tFz$iz$uFz$qIz$VIz$ABz$WIz$z$iBz$qCz$rCz$yFz$tCz$uCz$AGz$BGz$CGz$DGz$EGz$FGz$GGz$z$DCz$z$HGz$z$IGz$JGz$iCz$MCz$NCz$z$Az$tz$gCz$hCz$iCz$KGz$LGz$MGz$NGz$rIz$YIz$ZIz$iCz$HDz$z$iBz$qCz$rCz$sCz$tCz$SGz$TGz$SFz$UGz$qIz$aIz$bIz$cIz$dIz$eIz$fIz$gIz$HDz$z$ZGz$z$ZGz$z$ZGz$z$DCz$z$ez$fz$gz$hz$iz$sIz$tIz$gBz$uIz$pGz$vIz$wIz$xIz$QHz$cCz$PBz$yIz$NCz$z$Az$tz$uz$vz$wz$AJz$BJz$gFz$hFz$CJz$DJz$gBz$GHz$EJz$FJz$GJz$HJz$IJz$JJz$vIz$KJz$LJz$yHz$MJz$xIz$NJz$OJz$wDz$yDz$PJz$qz$QJz$RJz$ZCz$SJz$Sz$z$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$sz$z$iBz$jBz$kBz$YBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$z$iBz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$QCz$RCz$SCz$TCz$PBz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$PBz$dCz$eCz$z$UBz$fCz$eCz$z$Az$tz$gCz$hCz$iCz$jCz$kCz$lCz$PBz$mCz$nCz$oCz$pCz$Sz$z$iBz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$z$DCz$z$UBz$IDz$JDz$KDz$LDz$ICz$MDz$NDz$ODz$PDz$PBz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$Hz$z$Az$ZDz$aDz$bDz$RBz$cDz$aDz$Sz$z$Az$dDz$eDz$fDz$gDz$hDz$Sz$z$Az$iDz$jDz$kDz$lDz$mDz$TJz$BJz$UJz$VJz$kz$lz$WJz$XJz$HBz$YJz$ZJz$vGz$aJz$bJz$cJz$LBz$MBz$dJz$eJz$fJz$gJz$Sz$z$Az$DEz$EEz$FEz$GEz$HEz$aDz$IEz$JEz$CEz$z$KEz$LEz$MEz$NEz$z$OEz$PEz$QEz$REz$SEz$z$UBz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$NCz$z$Az$hJz$BJz$IIz$iJz$BGz$CGz$DGz$VEz$jJz$z$Az$hEz$iEz$jEz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$lEz$mEz$kJz$lJz$mJz$nJz$oJz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$sEz$kEz$kEz$kEz$kEz$ZHz$z$tEz$YBz$uEz$vEz$kz$lz$wEz$z$xEz$yEz$AFz$BFz$pJz$BJz$IIz$qJz$rJz$wEz$z$jHz$kHz$lHz$sJz$tJz$KFz$KHz$uJz$vJz$wJz$xJz$yJz$AKz$BKz$CKz$tJz$KFz$KHz$DKz$z$GFz$HFz$IFz$vEz$sIz$EKz$FKz$GKz$HKz$IKz$JKz$sHz$tHz$uHz$vHz$sIz$EKz$FKz$GKz$KKz$LKz$jEz$z$MFz$kEz$kEz$kEz$kEz$ZHz$z$NFz$OFz$PFz$QFz$RFz$SFz$TFz$UFz$z$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$z$eFz$z$Az$tz$uz$MKz$NKz$wFz$kGz$OKz$PKz$QKz$RKz$SKz$Hz$z$iBz$qCz$rCz$oFz$pFz$z$qFz$rFz$z$Az$tz$uz$sFz$tFz$iz$uFz$TKz$UKz$OIz$VKz$Sz$z$iBz$qCz$rCz$yFz$tCz$uCz$AGz$BGz$CGz$DGz$EGz$FGz$GGz$z$DCz$z$HGz$z$IGz$JGz$iCz$MCz$NCz$z$Az$tz$gCz$hCz$iCz$KGz$LGz$MGz$NGz$WKz$BJz$mCz$gCz$XKz$z$iBz$qCz$rCz$sCz$tCz$SGz$TGz$SFz$UGz$TKz$YKz$ZKz$aKz$bKz$cKz$dKz$eKz$Hz$z$ZGz$z$ZGz$z$ZGz$z$DCz$z$ez$fz$gz$hz$iz$fKz$gKz$hKz$kz$lz$mz$iKz$pHz$jKz$MBz$kKz$RBz$lKz$eCz$z$Az$tz$uz$vz$wz$mKz$nKz$oKz$VIz$ABz$BBz$CBz$kz$lz$DBz$EBz$FBz$GBz$HBz$IBz$pKz$pHz$qKz$pHz$rKz$jKz$HKz$sKz$PHz$QHz$tKz$fDz$wCz$uKz$PBz$vKz$HDz$z$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$sz$z$iBz$jBz$kBz$YBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$z$DCz$z$iBz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$QCz$RCz$SCz$TCz$PBz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$PBz$dCz$eCz$z$UBz$fCz$eCz$z$Az$tz$gCz$hCz$iCz$jCz$kCz$lCz$PBz$mCz$nCz$oCz$pCz$Sz$z$iBz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$z$DCz$z$UBz$IDz$JDz$KDz$LDz$ICz$MDz$NDz$ODz$PDz$PBz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$Hz$z$Az$ZDz$aDz$bDz$RBz$cDz$aDz$Sz$z$Az$dDz$eDz$fDz$gDz$hDz$Sz$z$Az$iDz$jDz$kDz$lDz$mDz$wKz$nKz$oKz$xKz$pDz$qDz$rDz$sDz$tDz$uDz$yKz$ALz$LJz$yHz$BLz$oz$CLz$oz$DLz$hDz$ELz$FLz$eFz$z$Az$DEz$EEz$FEz$GEz$HEz$aDz$IEz$JEz$CEz$z$KEz$LEz$MEz$NEz$z$OEz$PEz$QEz$REz$SEz$z$UBz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$NCz$z$Az$GLz$nKz$oKz$wHz$eEz$TEz$UEz$VEz$fEz$gEz$z$Az$hEz$iEz$jEz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$lEz$mEz$HLz$ILz$mJz$nJz$oJz$z$kEz$kEz$kEz$kEz$kEz$ZHz$z$sEz$kEz$kEz$kEz$kEz$ZHz$z$tEz$YBz$uEz$vEz$kz$lz$wEz$z$xEz$yEz$AFz$BFz$JLz$nKz$oKz$wHz$DFz$EFz$FFz$z$jHz$kHz$lHz$KLz$LLz$MLz$IIz$NLz$OLz$DIz$PLz$QLz$RLz$oz$SLz$TLz$nKz$oKz$wHz$xHz$yHz$iHz$z$GFz$HFz$IFz$vEz$fKz$gKz$ULz$KFz$LFz$oz$YEz$VLz$xJz$yJz$AKz$BKz$WLz$LLz$MLz$IIz$JIz$wDz$KIz$LIz$z$MFz$kEz$kEz$kEz$kEz$ZHz$z$NFz$OFz$PFz$QFz$RFz$SFz$TFz$UFz$z$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$z$eFz$z$Az$tz$uz$XLz$LLz$MLz$gFz$hFz$iFz$jFz$kFz$lFz$mFz$nFz$z$iBz$qCz$rCz$oFz$pFz$z$qFz$rFz$z$Az$tz$uz$sFz$tFz$iz$uFz$YLz$gKz$ZLz$wFz$xFz$HDz$z$iBz$qCz$rCz$yFz$tCz$uCz$AGz$BGz$CGz$DGz$EGz$FGz$GGz$z$DCz$z$HGz$z$IGz$JGz$iCz$MCz$NCz$z$Az$tz$gCz$hCz$iCz$KGz$LGz$MGz$NGz$aLz$nKz$oKz$bLz$QGz$RGz$z$iBz$qCz$rCz$sCz$tCz$SGz$TGz$SFz$UGz$YLz$gKz$cLz$CDz$DDz$EDz$FDz$WGz$XGz$YGz$z$ZGz$z$ZGz$z$ZGz$z$DCz$z$dLz$eLz$fLz$gLz$hLz$iz$fKz$gKz$iLz$iFz$TJz$BJz$jLz$kLz$oIz$jLz$kLz$oCz$jLz$lLz$mLz$Sz"
+const axios = require('axios');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./sellvpn.db');
+
+async function renewssh(username, exp, limitip, serverId) {
+  console.log(`Renewing SSH account for ${username} with expiry ${exp} days, limit IP ${limitip} on server ${serverId}`);
+  
+  if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+    return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+  }
+
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+      if (err) {
+        console.error('Error fetching server:', err.message);
+        return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+      }
+
+      if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+
+      const domain = server.domain;
+      const auth = server.auth;
+      const param = `:5888/renewssh?user=${username}&exp=${exp}&iplimit=${limitip}&auth=${auth}`;
+      const url = `http://${domain}${param}`;
+      axios.get(url)
+        .then(response => {
+          if (response.data.status === "success") {
+            const sshData = response.data.data;
+            const msg = `
+────────────────────
+❇️ *RENEW SSH PREMIUM* ❇️
+────────────────────
+┌───────────────────
+│ Username: \`${username}\`
+│ Kadaluarsa: \`${sshData.expired}\`
+│ Batas IP: \`${sshData.ip_limit}\`
+└───────────────────
+✅ *Akun berhasil diperbarui* ✨
+*Makasih sudah pakai layanan kami*
+`;
+         
+              console.log('SSH account renewed successfully');
+              return resolve(msg);
+            } else {
+              console.log('Error renewing SSH account');
+              return resolve(`❌ Gagal: ${response.data.message}`);
+            }
+          })
+        .catch(error => {
+          console.error('Error saat memperbarui SSH:', error);
+          return resolve('❌ Gagal memperbarui SSH. Silakan coba lagi nanti.');
+        });
+    });
+  });
+}
+async function renewvmess(username, exp, quota, limitip, serverId) {
+    console.log(`Renewing VMess account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+    
+    if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+      return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+    }
+  
+    return new Promise((resolve, reject) => {
+      db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+        if (err) {
+          console.error('Error fetching server:', err.message);
+          return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+        }
+  
+        if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+  
+        const domain = server.domain;
+        const auth = server.auth;
+        const param = `:5888/renewvmess?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+        const url = `http://${domain}${param}`;
+        axios.get(url)
+          .then(response => {
+            if (response.data.status === "success") {
+              const vmessData = response.data.data;
+              const msg = `
+─────────────────────
+❇️ *RENEW VMESS PREMIUM* ❇️
+─────────────────────
+┌────────────────────
+│ Username: \`${username}\`
+│ Kadaluarsa: \`${vmessData.expired}\`
+│ Kuota: \`${vmessData.quota === '0 GB' ? 'Unlimited' : vmessData.quota}\`
+│ Batas IP: \`${vmessData.ip_limit === '0' ? 'Unlimited' : vmessData.ip_limit} IP\`
+└────────────────────
+✅ *Akun berhasil diperbarui* ✨
+*Makasih sudah pakai layanan kami*
+  `;
+                console.log('VMess account renewed successfully');
+                return resolve(msg);
+              } else {
+                console.log('Error renewing VMess account');
+                return resolve(`❌ Gagal: ${response.data.message}`);
+              }
+            })
+          .catch(error => {
+            console.error('Error saat memperbarui VMess:', error);
+            return resolve('❌ Gagal memperbarui VMess. Silakan coba lagi nanti.');
+          });
+      });
+    });
+  }
+  async function renewvless(username, exp, quota, limitip, serverId) {
+    console.log(`Renewing VLess account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+    
+    if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+      return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+    }
+  
+    return new Promise((resolve, reject) => {
+      db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+        if (err) {
+          console.error('Error fetching server:', err.message);
+          return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+        }
+  
+        if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+  
+        const domain = server.domain;
+        const auth = server.auth;
+        const param = `:5888/renewvless?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+        const url = `http://${domain}${param}`;
+        axios.get(url)
+          .then(response => {
+            if (response.data.status === "success") {
+              const vlessData = response.data.data;
+              const msg = `
+─────────────────────
+❇️ *RENEW VLESS PREMIUM* ❇️
+─────────────────────
+┌────────────────────
+│ Username: \`${username}\`
+│ Kadaluarsa: \`${vlessData.expired}\`
+│ Kuota: \`${vlessData.quota === '0 GB' ? 'Unlimited' : vlessData.quota}\`
+│ Batas IP: \`${vlessData.ip_limit === '0' ? 'Unlimited' : vlessData.ip_limit} IP\`
+└────────────────────
+✅ *Akun berhasil diperbarui* ✨
+*Makasih sudah pakai layanan kami*
+  `;
+           
+                console.log('VLess account renewed successfully');
+                return resolve(msg);
+              } else {
+                console.log('Error renewing VLess account');
+                return resolve(`❌ Gagal: ${response.data.message}`);
+              }
+            })
+          .catch(error => {
+            console.error('Error saat memperbarui VLess:', error);
+            return resolve('❌ Gagal memperbarui VLess. Silakan coba lagi nanti.');
+          });
+      });
+    });
+  }
+  async function renewtrojan(username, exp, quota, limitip, serverId) {
+    console.log(`Renewing Trojan account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+    
+    if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+      return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+    }
+  
+    return new Promise((resolve, reject) => {
+      db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+        if (err) {
+          console.error('Error fetching server:', err.message);
+          return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+        }
+  
+        if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+  
+        const domain = server.domain;
+        const auth = server.auth;
+        const param = `:5888/renewtrojan?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+        const url = `http://${domain}${param}`;
+        axios.get(url)
+          .then(response => {
+            if (response.data.status === "success") {
+              const trojanData = response.data.data;
+              const msg = `
+─────────────────────
+❇️ *RENEW TROJAN PREMIUM* ❇️
+─────────────────────
+┌────────────────────
+│ Username: \`${username}\`
+│ Kadaluarsa: \`${trojanData.expired}\`
+│ Kuota: \`${trojanData.quota === '0 GB' ? 'Unlimited' : trojanData.quota}\`
+│ Batas IP: \`${trojanData.ip_limit === '0' ? 'Unlimited' : trojanData.ip_limit} IP\`
+└────────────────────
+✅ *Akun berhasil diperbarui* ✨
+*Makasih sudah pakai layanan kami*
+  `;
+           
+                console.log('Trojan account renewed successfully');
+                return resolve(msg);
+              } else {
+                console.log('Error renewing Trojan account');
+                return resolve(`❌ Gagal: ${response.data.message}`);
+              }
+            })
+          .catch(error => {
+            console.error('Error saat memperbarui Trojan:', error);
+            return resolve('❌ Gagal memperbarui Trojan. Silakan coba lagi nanti.');
+          });
+      });
+    });
+  }
+  async function renewshadowsocks(username, exp, quota, limitip, serverId) {
+    console.log(`Renewing Shadowsocks account for ${username} with expiry ${exp} days, quota ${quota} GB, limit IP ${limitip} on server ${serverId}`);
+    
+    if (/\s/.test(username) || /[^a-zA-Z0-9]/.test(username)) {
+      return '❌ Username tidak valid. Mohon gunakan hanya huruf dan angka tanpa spasi.';
+    }
+  
+    return new Promise((resolve, reject) => {
+      db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+        if (err) {
+          console.error('Error fetching server:', err.message);
+          return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+        }
+  
+        if (!server) return resolve('❌ Gagal: Server tidak ditemukan. Silakan coba lagi.');
+  
+        const domain = server.domain;
+        const auth = server.auth;
+        const param = `:5888/renewshadowsocks?user=${username}&exp=${exp}&quota=${quota}&iplimit=${limitip}&auth=${auth}`;
+        const url = `http://${domain}${param}`;
+        axios.get(url)
+          .then(response => {
+            if (response.data.status === "success") {
+              const shadowsocksData = response.data.data;
+              const msg = `
+─────────────────────
+❇️ *RENEW SHDWSK PREMIUM* ❇️
+─────────────────────
+┌────────────────────
+│ Username: \`${username}\`
+│ Kadaluarsa: \`${shadowsocksData.expired}\`
+│ Kuota: \`${shadowsocksData.quota === '0 GB' ? 'Unlimited' : shadowsocksData.quota}\`
+│ Batas IP: \`${shadowsocksData.ip_limit === '0' ? 'Unlimited' : shadowsocksData.ip_limit} IP\`
+└────────────────────
+✅ *Akun berhasil diperbarui* ✨
+*Makasih sudah pakai layanan kami*
+  `;
+           
+                console.log('Shadowsocks account renewed successfully');
+                return resolve(msg);
+              } else {
+                console.log('Error renewing Shadowsocks account');
+                return resolve(`❌ Gagal: ${response.data.message}`);
+              }
+            })
+          .catch(error => {
+            console.error('Error saat memperbarui Shadowsocks:', error);
+            return resolve('❌ Gagal memperbarui Shadowsocks. Silakan coba lagi nanti.');
+          });
+      });
+    });
+  }
+  
+  module.exports = { renewshadowsocks, renewtrojan, renewvless, renewvmess, renewssh };
