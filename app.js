@@ -4801,7 +4801,7 @@ const config = {
     auth_username: MERCHANT_ID,
     auth_token: API_KEY,
     baseQrString: DATA_QRIS,
-    logoPath: 'pict.png'
+    logoPath: 'logo.png'
 };
 
 const qris = new QRISPayment(config);

@@ -51,7 +51,7 @@ setup_bot() {
 
     # Clone Bot
     if [ ! -d /root/botsell ]; then
-        git clone https://github.com/p3yx/botsell.git /root/botsell
+        git clone https://github.com/PeyxDev/sellbot.git /root/botsell
     fi
 
     # Install dependencies
