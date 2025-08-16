@@ -1473,8 +1473,8 @@ async function handleServiceAction(ctx, action) {
   if (action === 'trial') {
     keyboard = [
       [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 VLESS', callback_data: 'trial_vless' }],
-      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 SHADOWSOCK', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💥 VMESS', callback_data: 'trial_vmess' }, { text: '💥 VLESS', callback_data: 'trial_vless' }],
+      [{ text: '💥 TROJAN', callback_data: 'trial_trojan' }, { text: '💥 SHADOWSOCK', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
@@ -1492,8 +1492,8 @@ async function handleServiceAction(ctx, action) {
   } else if (action === 'renew') {
     keyboard = [
       [{ text: '♻️ SSH', callback_data: 'renew_ssh' }],
-      [{ text: '♻️ Vmess', callback_data: 'renew_vmess' }, { text: '♻️ Vless', callback_data: 'renew_vless' }],
-      [{ text: '♻️ Trojan', callback_data: 'renew_trojan' }, { text: '♻️ Shadowsocks', callback_data: 'renew_shadowsocks' }],
+      [{ text: '♻️ VMESS', callback_data: 'renew_vmess' }, { text: '♻️ VLESS', callback_data: 'renew_vless' }],
+      [{ text: '♻️ TROJAN', callback_data: 'renew_trojan' }, { text: '♻️ SHADOWSOCK', callback_data: 'renew_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   }
