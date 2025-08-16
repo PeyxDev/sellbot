@@ -27,7 +27,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
    ```
 2. Masuk ke direktori proyek:
    ```bash
-   cd botsell
+   cd sellbot
    ```
 3. Install dependencies:
    ```bash
