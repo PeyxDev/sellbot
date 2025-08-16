@@ -612,7 +612,7 @@ ${statusText}
   const keyboard = [];
 
 if (bolehLihatTrial) {
-  keyboard.push([{ text: '💠 Trial Akun', callback_data: 'service_trial' }]);
+  keyboard.push([{ text: '💥 Trial Akun', callback_data: 'service_trial' }]);
 }
 keyboard.push([
   { text: '✏️ Buat Akun', callback_data: 'service_create' },
@@ -1462,9 +1462,9 @@ async function handleServiceAction(ctx, action) {
   let keyboard;
   if (action === 'trial') {
     keyboard = [
-      [{ text: '💠 SSH', callback_data: 'trial_ssh' }],
-      [{ text: '💠 Vmess', callback_data: 'trial_vmess' }, { text: '💠 Vless', callback_data: 'trial_vless' }],
-      [{ text: '💠 Trojan', callback_data: 'trial_trojan' }, { text: '💠 Shadowsocks', callback_data: 'trial_shadowsocks' }],
+      [{ text: '💥 SSH', callback_data: 'trial_ssh' }],
+      [{ text: '💥 Vmess', callback_data: 'trial_vmess' }, { text: '💥 Vless', callback_data: 'trial_vless' }],
+      [{ text: '💥 Trojan', callback_data: 'trial_trojan' }, { text: '💥 Shadowsocks', callback_data: 'trial_shadowsocks' }],
       [{ text: '🔙 Kembali', callback_data: 'send_main_menu' }]
     ];
   } else if (action === 'create') {
@@ -4845,8 +4845,8 @@ const caption =
 const inlineKeyboard = [
   [
     {
-      text: "📢 Join Channel",
-      url: "https://t.me/myridtunnel"
+      text: "📢 Join Grup",
+      url: "https://t.me/pxstoree"
     }
   ],
   [
