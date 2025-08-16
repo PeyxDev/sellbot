@@ -1,33 +1,3 @@
-#!/bin/bash
-green="\e[38;5;82m"
-red="\e[38;5;196m"
-NC="\033[0m"
-orange="\e[38;5;130m"
-blue="\e[38;5;39m"
-yellow="\033[1;93m"
-purple="\e[38;5;141m"
-bold_white="\e[1;37m"
-reset="\e[0m"
-white="\033[1;97m"
-pink="\e[38;5;205m"
-
-hapus_bot_lama() {
-    echo -e "${orange}Menghapus bot lama...${NC}"
-    systemctl stop sellvpn.service 2>/dev/null
-    systemctl disable sellvpn.service 2>/dev/null
-    rm -f /etc/systemd/system/sellvpn.service
-    rm -f /usr/bin/sellvpn /usr/bin/server_sellvpn /etc/cron.d/server_sellvpn
-    rm -rf /root/BotVPN
-    rm -rf /root/BotVPN2
-
-    # Hapus dari pm2 jika ada
-    if command -v pm2 &> /dev/null; then
-        pm2 delete sellvpn &> /dev/null
-        pm2 save &> /dev/null
-    fi
-
-    systemctl daemon-reload
-    echo -e "${green}Bot lama berhasil dihapus.${NC}"
-}
-
-hapus_bot_lama
+z="
+";ZBz='n.se';DCz='/Bot';gz='te="';PCz='dele';YBz='llvp';aBz='rvic';RCz='pn &';uz='s_bo';oz='033[';Iz=';196';Pz='\e[3';eBz='l';fz='_whi';uBz='etc/';dz='141m';ez='bold';Lz='\033';QCz='te s';aCz='-rel';CBz='rang';hBz='tc/s';PBz='pn.s';Hz='38;5';tz='hapu';lz='e[0m';Jz='m"';kBz='m/se';Yz='ow="';FBz='pus ';QBz='ervi';OCz='pm2 ';RBz='ce 2';tBz='er_s';jCz='ihap';hCz='rhas';Vz='[38;';rz='5;20';mBz='f /u';HBz='lama';Uz='="\e';mCz='ma';WCz=' &> ';gBz='f /e';lBz='e';qz='pink';cBz='/dev';lCz='}';iBz='yste';ABz=' -e ';Rz='130m';KCz='2 &>';LBz='emct';rBz='bin/';Zz='[1;9';wz='ma()';sz='5m"';xz=' {';Gz='"\e[';WBz='sabl';NBz='op s';jz='rese';Ez='2m"';UBz='ll';FCz='VPN2';yBz='r_se';OBz='ellv';SBz='>/de';VBz='l di';cCz='"${g';oBz='in/s';LCz=' /de';ECz='VPN';pz='1;97';hz='\e[1';Dz=';5;8';HCz='omma';VCz='save';mz='whit';jBz='md/s';ZCz='emon';Nz='oran';GCz='if c';yz='echo';az='3m"';bz='purp';Qz='8;5;';iz=';37m';YCz='l da';KBz='syst';xBz='erve';wBz='.d/s';eCz='}Bot';iCz='il d';BCz='rf /';XBz='e se';IBz='...$';DBz='e}Me';NCz='then';Fz='red=';Az='gree';kz='t="\';cz='le="';vBz='cron';fBz='rm -';JBz='{NC}';vz='t_la';Cz='e[38';nz='e="\';TBz='v/nu';Xz='yell';pBz='pn /';sBz='serv';XCz='fi';TCz='ev/n';Mz='[0m"';Oz='ge="';EBz='ngha';gCz='a be';fCz=' lam';MCz='ll; ';bCz='oad';ICz='nd -';Bz='n="\';kCz='us.$';CCz='root';nBz='sr/b';ACz='n';BBz='"${o';qBz='usr/';GBz='bot ';UCz='ull';Kz='NC="';Sz='"';Wz='5;39';dCz='reen';dBz='/nul';MBz='l st';bBz='e 2>';SCz='> /d';JCz='v pm';Tz='blue';
+eval "$Az$Bz$Cz$Dz$Ez$z$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$z$Nz$Oz$Pz$Qz$Rz$Sz$z$Tz$Uz$Vz$Wz$Jz$z$Xz$Yz$Lz$Zz$az$z$bz$cz$Pz$Qz$dz$Sz$z$ez$fz$gz$hz$iz$Sz$z$jz$kz$lz$Sz$z$mz$nz$oz$pz$Jz$z$qz$Uz$Vz$rz$sz$z$tz$uz$vz$wz$xz$z$yz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$Sz$z$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$z$KBz$LBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$z$fBz$gBz$hBz$iBz$jBz$iBz$kBz$YBz$ZBz$aBz$lBz$z$fBz$mBz$nBz$oBz$OBz$pBz$qBz$rBz$sBz$tBz$OBz$pBz$uBz$vBz$wBz$xBz$yBz$YBz$ACz$z$fBz$BCz$CCz$DCz$ECz$z$fBz$BCz$CCz$DCz$FCz$z$GCz$HCz$ICz$JCz$KCz$LCz$TBz$MCz$NCz$z$OCz$PCz$QCz$OBz$RCz$SCz$TCz$UCz$z$OCz$VCz$WCz$cBz$dBz$eBz$z$XCz$z$KBz$LBz$YCz$ZCz$aCz$bCz$z$yz$ABz$cCz$dCz$eCz$fCz$gCz$hCz$iCz$jCz$kCz$JBz$Sz$z$lCz$z$tz$uz$vz$mCz"
