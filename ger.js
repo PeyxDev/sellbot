@@ -578,19 +578,19 @@ const showUpgradeReseller = await new Promise((resolve) => {
   // Pesan utama dengan format yang sudah padat dan rapi
   const messageText = `
 ━━━━━━━━━━━━━━━━━━━━━━
-≡                         <b>PX STORE VPN</b>                           ≡
+≡       <b>PX PANEL VPN</b>        ≡
 ━━━━━━━━━━━━━━━━━━━━━━
 Selamat datang di <b>${NAMA_STORE}</b> 🚀
 Bot otomatis untuk membeli Akun VPN dengan mudah dan cepat.
 ━━━━━━━━━━━━━━━━━━━━━━
-💲 <b>» Saldo:</b> <code>Rp.${saldo.toLocaleString('id-ID')}</code>
+<b>» Saldo:</b> <code>Rp.${saldo.toLocaleString('id-ID')}</code>
 ━━━━━━━━━━━━━━━━━━━━━━
 ${statusText}
-🌐 <b>» Username:</b> ${userName}
-📋 <b>» Your ID:</b> <code>${userId}</code>
-♻️ <b>» Bot Aktif:</b> <code>${uptimeFormatted}</code>
-✨ <b>» Trial 2x Sehari</b>
-🥇 <b>» Support Wildcard & Enhanced</b>
+<b>» Username:</b> ${userName}
+<b>» Your ID:</b> <code>${userId}</code>
+<b>» Bot Aktif:</b> <code>${uptimeFormatted}</code>
+<b>» Trial 2x Sehari</b>
+<b>» Support Wildcard & Enhanced</b>
 ━━━━━━━━━━━━━━━━━━━━━━
 <blockquote>📚 <b>Statistik Anda</b>
 » Hari Ini: ${userToday} akun
