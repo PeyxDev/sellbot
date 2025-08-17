@@ -1019,7 +1019,7 @@ bot.action('menu_topup', async (ctx) => {
   const config = loadButtonConfig ? loadButtonConfig() : { topup_saldo: true, topup_saweria: true };
   const keyboard = [];
   if (config.topup_saldo)
-    keyboard.push([{ text: "💸 Topup QRIS Orkut", callback_data: "topup_saldo" }]);
+    keyboard.push([{ text: "💸 Topup QRIS", callback_data: "topup_saldo" }]);
   if (config.topup_saweria)
     keyboard.push([{ text: "💸 Topup QRIS Saweria", callback_data: "topup_saweria" }]);
   keyboard.push([{ text: "🔙 Kembali", callback_data: "send_main_menu" }]);
@@ -1029,6 +1029,7 @@ bot.action('menu_topup', async (ctx) => {
 ━━━━━━━━━━━━━━━━━━━━━━
         🏷️ *≡ BOT PANEL VPN ≡* 🏷️
 ━━━━━━━━━━━━━━━━━━━━━━
+*Hubungi admin jika QRIS eror*
 💸 *» Pilih Menu Topup Dibawah Ini:*`;
 
   const sent = await ctx.reply(messageText, {
