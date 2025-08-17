@@ -576,9 +576,9 @@ const tombolSewaScriptAktif = await new Promise((resolve) => {
   // Menentukan teks status berdasarkan role
   let statusText = '';
   if (adminIds.includes(userId)) { // Cek jika user adalah admin
-    statusText = `👑 <b>» Status:</b> <code>Admin</code>`;
+    statusText = `<b>» Status:</b> <code>Admin</code>`;
   } else if (userRole === 'reseller') {
-    statusText = `🏆 <b>» Status:</b> <code>Reseller</code>`;
+    statusText = `<b>» Status:</b> <code>Reseller</code>`;
   } else {
     statusText = `👤 <b>» Status:</b> <code>Member</code>`; // Mengubah emoji untuk Member
   }
@@ -586,7 +586,7 @@ const tombolSewaScriptAktif = await new Promise((resolve) => {
   // Pesan utama dengan format yang sudah padat dan rapi
   const messageText = `
 ━━━━━━━━━━━━━━━━━━━━━━
-≡       <b>PX PANEL VPN</b>        ≡
+≡          <b>PX PANEL VPN</b>           ≡
 ━━━━━━━━━━━━━━━━━━━━━━
 Selamat datang di <b>${NAMA_STORE}</b> 🚀
 Bot otomatis untuk membeli Akun VPN dengan mudah dan cepat.
