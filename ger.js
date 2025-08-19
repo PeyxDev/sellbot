@@ -1,1 +1,5948 @@
-const _0x4e46c9=_0x5858;(function(_0x432494,_0x102fca){const _0x30bd72=_0x5858,_0x450e8b=_0x432494();while(!![]){try{const _0x586917=parseInt(_0x30bd72(0x186))/0x1+parseInt(_0x30bd72(0x14f))/0x2*(parseInt(_0x30bd72(0x4fc))/0x3)+-parseInt(_0x30bd72(0x331))/0x4*(-parseInt(_0x30bd72(0x205))/0x5)+parseInt(_0x30bd72(0xb5))/0x6*(parseInt(_0x30bd72(0x185))/0x7)+-parseInt(_0x30bd72(0x3d2))/0x8+parseInt(_0x30bd72(0x32b))/0x9*(-parseInt(_0x30bd72(0x4a1))/0xa)+-parseInt(_0x30bd72(0x490))/0xb*(parseInt(_0x30bd72(0x4df))/0xc);if(_0x586917===_0x102fca)break;else _0x450e8b['push'](_0x450e8b['shift']());}catch(_0x307154){_0x450e8b['push'](_0x450e8b['shift']());}}}(_0x19e2,0x27906));const os=require('os'),sqlite3=require(_0x4e46c9(0x50b))[_0x4e46c9(0x3d7)](),express=require(_0x4e46c9(0x484)),{Telegraf,session}=require(_0x4e46c9(0x409)),app=express(),axios=require('axios'),QRISPayment=require('autoft-qris'),winston=require(_0x4e46c9(0x1c6)),fetch=require(_0x4e46c9(0xdb)),FormData=require(_0x4e46c9(0x1fb)),FOLDER_TEMPATDB='/root/sellbot/sellvpn.db',UPGRADE_RESELLER_TOPUP_THRESHOLD=0x7530,logger=winston[_0x4e46c9(0x482)]({'level':_0x4e46c9(0x235),'format':winston[_0x4e46c9(0x50a)][_0x4e46c9(0x4b4)](winston[_0x4e46c9(0x50a)][_0x4e46c9(0x400)](),winston[_0x4e46c9(0x50a)][_0x4e46c9(0x1f7)](({timestamp:_0x2f1782,level:_0x3af547,message:_0x1a7658})=>{const _0x30acf7=_0x4e46c9;return _0x2f1782+'\x20['+_0x3af547[_0x30acf7(0x39b)]()+_0x30acf7(0x342)+_0x1a7658;})),'transports':[new winston['transports'][(_0x4e46c9(0x374))]({'filename':_0x4e46c9(0x18e),'level':_0x4e46c9(0x11a)}),new winston[(_0x4e46c9(0x1e2))]['File']({'filename':_0x4e46c9(0x12a)})]});process[_0x4e46c9(0x3f7)]['NODE_ENV']!==_0x4e46c9(0x4ea)&&logger['add'](new winston[(_0x4e46c9(0x1e2))][(_0x4e46c9(0x164))]({'format':winston[_0x4e46c9(0x50a)][_0x4e46c9(0x498)]()}));app[_0x4e46c9(0x534)](express[_0x4e46c9(0x275)]()),app[_0x4e46c9(0x534)](express[_0x4e46c9(0x44b)]({'extended':!![]}));const {trialssh,trialvmess,trialvless,trialtrojan,trialshadowsocks}=require(_0x4e46c9(0x383)),{createssh,createvmess,createvless,createtrojan,createshadowsocks}=require('./modules/create'),{renewssh,renewvmess,renewvless,renewtrojan,renewshadowsocks}=require(_0x4e46c9(0x3c5)),fs=require('fs'),vars=JSON[_0x4e46c9(0x320)](fs[_0x4e46c9(0x162)](_0x4e46c9(0x4ca),_0x4e46c9(0x3c2))),SAWERIA_USERNAME=vars['SAWERIA_USERNAME'],SAWERIA_EMAIL=vars[_0x4e46c9(0x3ba)],BOT_TOKEN=vars['BOT_TOKEN'],port=vars[_0x4e46c9(0x378)]||0xc3cb,ADMIN=vars[_0x4e46c9(0x4cd)],NAMA_STORE=vars[_0x4e46c9(0x3d3)]||_0x4e46c9(0x524),DATA_QRIS=vars['DATA_QRIS'],MERCHANT_ID=vars[_0x4e46c9(0x290)],API_KEY=vars['API_KEY'],groupId=vars[_0x4e46c9(0x4f5)],bot=new Telegraf(BOT_TOKEN),adminIds=ADMIN;logger[_0x4e46c9(0x235)](_0x4e46c9(0x46d));const db=new sqlite3[(_0x4e46c9(0x1fc))](_0x4e46c9(0x157),_0xbdd79a=>{const _0x4540dd=_0x4e46c9;_0xbdd79a?logger[_0x4540dd(0x11a)](_0x4540dd(0xb8),_0xbdd79a['message']):(logger[_0x4540dd(0x235)](_0x4540dd(0x47f)),db[_0x4540dd(0x318)](()=>{const _0x18178c=_0x4540dd;db[_0x18178c(0x39d)](_0x18178c(0x1f4),_0x29411e=>{const _0x89e6ea=_0x18178c;if(_0x29411e)logger[_0x89e6ea(0x11a)]('❌\x20Gagal\x20membuat\x20tabel\x20bonus_config:',_0x29411e[_0x89e6ea(0x4d3)]);else logger['info'](_0x89e6ea(0x1d7));}),db[_0x18178c(0x39d)](_0x18178c(0x217),_0x443135=>{const _0x25cf10=_0x18178c;if(_0x443135)logger[_0x25cf10(0x11a)](_0x25cf10(0x500),_0x443135[_0x25cf10(0x4d3)]);else logger['info'](_0x25cf10(0x410));}),db[_0x18178c(0x39d)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20bonus_log\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20AUTOINCREMENT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20username\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20amount\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bonus\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20timestamp\x20TEXT\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x33f5d1=>{const _0x42cb0a=_0x18178c;if(_0x33f5d1)logger[_0x42cb0a(0x11a)](_0x42cb0a(0x3dc),_0x33f5d1[_0x42cb0a(0x4d3)]);else logger[_0x42cb0a(0x235)](_0x42cb0a(0x30c));}),db['all'](_0x18178c(0x171),(_0x494a57,_0x2bd5aa)=>{const _0xa4e903=_0x18178c;if(_0x494a57)return console[_0xa4e903(0x11a)](_0xa4e903(0x210),_0x494a57[_0xa4e903(0x4d3)]);const _0x221815=_0x2bd5aa[_0xa4e903(0x166)](_0x2ed376=>_0x2ed376['name']===_0xa4e903(0x34e));!_0x221815?db[_0xa4e903(0x39d)]('ALTER\x20TABLE\x20pending_deposits\x20ADD\x20COLUMN\x20username\x20TEXT',_0x1936a8=>{const _0x33784b=_0xa4e903;if(_0x1936a8)console['error'](_0x33784b(0x2f0),_0x1936a8[_0x33784b(0x4d3)]);else console['log'](_0x33784b(0x219));}):console[_0xa4e903(0x2bc)](_0xa4e903(0x4f3));}),db['all'](_0x18178c(0x467),(_0x2c55dc,_0x944b26)=>{const _0xd9af86=_0x18178c;if(_0x2c55dc)return console['error'](_0x2c55dc);const _0xb0fdd2=_0x944b26[_0xd9af86(0x166)](_0x4a0c83=>_0x4a0c83[_0xd9af86(0x508)]===_0xd9af86(0x30e));!_0xb0fdd2&&db[_0xd9af86(0x39d)]('ALTER\x20TABLE\x20ui_config\x20ADD\x20COLUMN\x20show_upgrade_reseller_button\x20INTEGER\x20DEFAULT\x201',_0x1f60d2=>{const _0x5458b=_0xd9af86;if(_0x1f60d2)console['error']('Gagal\x20menambah\x20kolom\x20show_upgrade_reseller_button:',_0x1f60d2[_0x5458b(0x4d3)]);else console[_0x5458b(0x2bc)](_0x5458b(0x18d));});}),db[_0x18178c(0x39d)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20pending_deposits\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20unique_code\x20TEXT\x20PRIMARY\x20KEY,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20username\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20amount\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20original_amount\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20timestamp\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20status\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20qr_message_id\x20INTEGER\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x305ffa=>{const _0x1a6fc5=_0x18178c;_0x305ffa?logger[_0x1a6fc5(0x11a)](_0x1a6fc5(0x19b),_0x305ffa[_0x1a6fc5(0x4d3)]):logger[_0x1a6fc5(0x235)](_0x1a6fc5(0x527));}),db[_0x18178c(0x39d)](_0x18178c(0xba),_0x5583b4=>{const _0x1284b7=_0x18178c;_0x5583b4?logger[_0x1284b7(0x11a)]('❌\x20Gagal\x20membuat\x20tabel\x20log_penjualan:',_0x5583b4['message']):(logger[_0x1284b7(0x235)]('✅\x20Tabel\x20log_penjualan\x20siap'),db[_0x1284b7(0x28e)](_0x1284b7(0x154),(_0x241394,_0x1d25d9)=>{const _0x51528d=_0x1284b7;if(_0x241394){logger[_0x51528d(0x11a)]('Error\x20getting\x20table\x20info\x20for\x20log_penjualan:',_0x241394['message']);return;}if(_0x1d25d9&&Array['isArray'](_0x1d25d9)){const _0x46f301=_0x1d25d9[_0x51528d(0x166)](_0x3226e8=>_0x3226e8[_0x51528d(0x508)]==='user_role');!_0x46f301&&db[_0x51528d(0x39d)](_0x51528d(0x357),_0x48564c=>{const _0x17849d=_0x51528d;if(_0x48564c)logger['error'](_0x17849d(0x4ab),_0x48564c[_0x17849d(0x4d3)]);else logger[_0x17849d(0x235)]('✅\x20Added\x20user_role\x20column\x20to\x20log_penjualan\x20table');});}else logger['warn'](_0x51528d(0xa5));}));}),db[_0x18178c(0x39d)](_0x18178c(0x4d0),_0x559166=>{const _0x521b02=_0x18178c;_0x559166?logger[_0x521b02(0x11a)](_0x521b02(0x321),_0x559166['message']):logger[_0x521b02(0x235)]('✅\x20Tabel\x20unlimited_trial_users\x20siap');}),db[_0x18178c(0x39d)](_0x18178c(0x24d),_0x26f8fb=>{const _0x49a1d8=_0x18178c;_0x26f8fb?logger[_0x49a1d8(0x11a)]('❌\x20Gagal\x20membuat\x20tabel\x20ui_config:',_0x26f8fb[_0x49a1d8(0x4d3)]):logger[_0x49a1d8(0x235)](_0x49a1d8(0x120));}),db[_0x18178c(0x39d)](_0x18178c(0x279),_0x2c5f24=>{const _0x1211f4=_0x18178c;_0x2c5f24?logger[_0x1211f4(0x11a)](_0x1211f4(0x1ec),_0x2c5f24[_0x1211f4(0x4d3)]):logger[_0x1211f4(0x235)]('✅\x20Default\x20ui_config\x20dijamin\x20ada');}),db['all'](_0x18178c(0x467),(_0x28d90c,_0x7d76f6)=>{const _0x3c4128=_0x18178c;if(_0x28d90c){logger['error'](_0x3c4128(0x4c1),_0x28d90c[_0x3c4128(0x4d3)]);return;}const _0x56a9cd=_0x7d76f6[_0x3c4128(0x166)](_0x3c3afc=>_0x3c3afc[_0x3c4128(0x508)]==='show_sewa_script_button');!_0x56a9cd?db['run'](_0x3c4128(0x2b6),_0x2b8f22=>{const _0x3f423a=_0x3c4128;_0x2b8f22?logger[_0x3f423a(0x11a)](_0x3f423a(0x2b9),_0x2b8f22[_0x3f423a(0x4d3)]):logger[_0x3f423a(0x235)](_0x3f423a(0x4da));}):logger[_0x3c4128(0x235)]('ℹ️\x20Kolom\x20show_sewa_script_button\x20sudah\x20tersedia\x20di\x20ui_config');}),db[_0x18178c(0x39d)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20reseller_config\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20CHECK\x20(id\x20=\x201),\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20discount_percent\x20INTEGER\x20DEFAULT\x200\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x5157a1=>{const _0x2f57c1=_0x18178c;if(_0x5157a1)logger[_0x2f57c1(0x11a)]('❌\x20Gagal\x20membuat\x20tabel\x20reseller_config:',_0x5157a1[_0x2f57c1(0x4d3)]);else logger[_0x2f57c1(0x235)]('✅\x20Tabel\x20reseller_config\x20siap');}),db[_0x18178c(0x39d)](_0x18178c(0xf6),_0x816b33=>{const _0xd4cf81=_0x18178c;if(_0x816b33)logger[_0xd4cf81(0x11a)](_0xd4cf81(0x466),_0x816b33[_0xd4cf81(0x4d3)]);else logger['info'](_0xd4cf81(0x10d));}),db[_0x18178c(0x39d)](_0x18178c(0x353),_0x1a909e=>{const _0x504969=_0x18178c;if(_0x1a909e)logger[_0x504969(0x11a)](_0x504969(0x286),_0x1a909e['message']);else logger[_0x504969(0x235)](_0x504969(0xfa));}),db['run']('CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20Server\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20AUTOINCREMENT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20domain\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20auth\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20harga\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20nama_server\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20quota\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20iplimit\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20batas_create_akun\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20total_create_akun\x20INTEGER\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)',_0x421c5a=>{const _0x303633=_0x18178c;_0x421c5a?logger[_0x303633(0x11a)](_0x303633(0x42f),_0x421c5a[_0x303633(0x4d3)]):logger['info'](_0x303633(0xc2));}),db['run']('CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20users\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20AUTOINCREMENT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER\x20UNIQUE,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20saldo\x20INTEGER\x20DEFAULT\x200,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20role\x20TEXT\x20DEFAULT\x20\x27member\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CONSTRAINT\x20unique_user_id\x20UNIQUE\x20(user_id)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)',_0x297296=>{const _0x567ca1=_0x18178c;_0x297296?logger['error']('Kesalahan\x20membuat\x20tabel\x20users:',_0x297296[_0x567ca1(0x4d3)]):(logger[_0x567ca1(0x235)](_0x567ca1(0x2ac)),db['all'](_0x567ca1(0x325),(_0x489eb3,_0x222b85)=>{const _0x458b79=_0x567ca1;if(_0x489eb3){logger[_0x458b79(0x11a)](_0x458b79(0x13f),_0x489eb3[_0x458b79(0x4d3)]);return;}if(_0x222b85&&Array[_0x458b79(0x3d4)](_0x222b85)){const _0x1e2eaa=_0x222b85[_0x458b79(0x166)](_0x1468b5=>_0x1468b5['name']===_0x458b79(0x413));!_0x1e2eaa&&db[_0x458b79(0x39d)](_0x458b79(0xe7),_0x4dba17=>{const _0x55e4fd=_0x458b79;if(_0x4dba17)logger['error'](_0x55e4fd(0x2dc),_0x4dba17[_0x55e4fd(0x4d3)]);else logger[_0x55e4fd(0x235)](_0x55e4fd(0x366));});}else logger[_0x458b79(0x25c)](_0x458b79(0x2aa));}));}),db[_0x18178c(0x39d)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20TrialLog\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20date\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20count\x20INTEGER\x20DEFAULT\x200,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20UNIQUE(user_id,\x20date)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');}));}),lastMenus={},userState={};logger['info'](_0x4e46c9(0x206)),bot[_0x4e46c9(0x263)](['start',_0x4e46c9(0x29f)],async _0x3d90af=>{const _0x5fa076=_0x4e46c9;logger['info'](_0x5fa076(0xbb));const _0x5e1af1=_0x3d90af[_0x5fa076(0x112)]['id'],_0x1a305b=_0x3d90af[_0x5fa076(0x1b9)]['id'];try{await _0x3d90af[_0x5fa076(0x364)][_0x5fa076(0x29c)](_0x1a305b,_0x3d90af['message'][_0x5fa076(0x361)]),logger[_0x5fa076(0x235)]('🧹\x20Pesan\x20command\x20user\x20'+_0x5e1af1+_0x5fa076(0x464));}catch(_0x2b510e){console['warn']('⚠️\x20Tidak\x20bisa\x20hapus\x20pesan\x20command\x20user\x20'+_0x5e1af1+':',_0x2b510e[_0x5fa076(0x4d3)]);}db['get'](_0x5fa076(0x481),[_0x5e1af1],(_0x130fa9,_0x124e99)=>{const _0x453d14=_0x5fa076;if(_0x130fa9){logger['error'](_0x453d14(0xd8),_0x130fa9['message']);return;}!_0x124e99?db[_0x453d14(0x39d)](_0x453d14(0x4b9),[_0x5e1af1,'member'],_0x5bffbd=>{const _0x409a6e=_0x453d14;_0x5bffbd?logger[_0x409a6e(0x11a)](_0x409a6e(0x470),_0x5bffbd[_0x409a6e(0x4d3)]):logger['info'](_0x409a6e(0x49f)+_0x5e1af1+_0x409a6e(0x1e3));}):logger[_0x453d14(0x235)]('ℹ️\x20User\x20ID\x20'+_0x5e1af1+_0x453d14(0x509));}),await sendMainMenu(_0x3d90af);}),bot['command'](_0x4e46c9(0x27d),async _0x22513e=>{const _0x2a332b=_0x4e46c9;logger['info'](_0x2a332b(0x4b8));if(!adminIds[_0x2a332b(0x1c4)](_0x22513e[_0x2a332b(0x112)]['id'])){try{await _0x22513e['telegram'][_0x2a332b(0x29c)](_0x22513e[_0x2a332b(0x1b9)]['id'],_0x22513e[_0x2a332b(0x4d3)][_0x2a332b(0x361)]);}catch(_0x12b3ec){}return _0x22513e[_0x2a332b(0x1f1)](_0x2a332b(0x21e));}try{await _0x22513e[_0x2a332b(0x364)][_0x2a332b(0x29c)](_0x22513e[_0x2a332b(0x1b9)]['id'],_0x22513e[_0x2a332b(0x4d3)][_0x2a332b(0x361)]);}catch(_0x3a1ac3){}if(lastMenus[_0x22513e[_0x2a332b(0x112)]['id']]){try{await _0x22513e[_0x2a332b(0x364)][_0x2a332b(0x29c)](_0x22513e[_0x2a332b(0x1b9)]['id'],lastMenus[_0x22513e[_0x2a332b(0x112)]['id']]);}catch(_0x2d02ae){}delete lastMenus[_0x22513e[_0x2a332b(0x112)]['id']];}const _0x161e9f=await sendAdminMenu(_0x22513e);_0x161e9f?.[_0x2a332b(0x361)]&&(lastMenus[_0x22513e[_0x2a332b(0x112)]['id']]=_0x161e9f[_0x2a332b(0x361)]);});async function sendMainMenu(_0xb98886){const _0x51c8d4=_0x4e46c9,_0x333df3=_0xb98886[_0x51c8d4(0x112)]['id'],_0x2e369f=_0xb98886['chat']['id'],_0x2d6ada=await new Promise(_0x3f23d5=>{const _0x79ffa2=_0x51c8d4;db[_0x79ffa2(0x518)](_0x79ffa2(0x233),(_0x58ac27,_0x569820)=>{const _0x114fb7=_0x79ffa2;if(_0x58ac27)return _0x3f23d5(!![]);_0x3f23d5(_0x569820?.[_0x114fb7(0x30e)]===0x1);});});if(lastMenus[_0x333df3])try{await _0xb98886[_0x51c8d4(0x364)][_0x51c8d4(0x29c)](_0x2e369f,lastMenus[_0x333df3]),logger[_0x51c8d4(0x235)]('🧹\x20Menu\x20lama\x20milik\x20'+_0x333df3+_0x51c8d4(0x19c)),delete lastMenus[_0x333df3];}catch(_0x3e149b){console[_0x51c8d4(0x25c)](_0x51c8d4(0x310)+_0x333df3+_0x51c8d4(0x420),_0x3e149b[_0x51c8d4(0x4d3)]);}const _0xa39d16=_0xb98886['from'][_0x51c8d4(0x34e)]?'@'+_0xb98886[_0x51c8d4(0x112)][_0x51c8d4(0x34e)]:_0xb98886[_0x51c8d4(0x112)][_0x51c8d4(0x530)]||_0x51c8d4(0x356);let _0x1b9c1c=0x0,_0x5cb611=_0x51c8d4(0x371);try{const _0x18c83b=await new Promise((_0xe032c1,_0x2328e8)=>{const _0x19af15=_0x51c8d4;db[_0x19af15(0x518)](_0x19af15(0x4fd),[_0x333df3],(_0x29b0d5,_0x3ccc6d)=>{if(_0x29b0d5)_0x2328e8(_0x29b0d5);else _0xe032c1(_0x3ccc6d);});});_0x1b9c1c=_0x18c83b?_0x18c83b[_0x51c8d4(0x531)]:0x0,_0x5cb611=_0x18c83b?_0x18c83b['role']:_0x51c8d4(0x371);}catch(_0x5c9c47){_0x1b9c1c=0x0,_0x5cb611=_0x51c8d4(0x371);}const _0x44d9b4=new Date(),_0x140718=new Date(_0x44d9b4[_0x51c8d4(0x2a7)](),_0x44d9b4['getMonth'](),_0x44d9b4[_0x51c8d4(0x3f9)]())[_0x51c8d4(0x428)](),_0x17cbcf=new Date(_0x44d9b4[_0x51c8d4(0x2a7)](),_0x44d9b4[_0x51c8d4(0x2bd)](),_0x44d9b4['getDate']()-_0x44d9b4[_0x51c8d4(0x1af)]())[_0x51c8d4(0x428)](),_0x33f9eb=new Date(_0x44d9b4['getFullYear'](),_0x44d9b4[_0x51c8d4(0x2bd)](),0x1)['toISOString']();let _0x43737a=0x0,_0x4ca52a=0x0,_0x2ccd1e=0x0,_0x248ea4=0x0,_0x5e2179=0x0,_0x2b113f=0x0;try{_0x43737a=await new Promise(_0x3d8a98=>{const _0x14255f=_0x51c8d4;db[_0x14255f(0x518)]('SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20log_penjualan\x20WHERE\x20user_id\x20=\x20?\x20AND\x20waktu_transaksi\x20>=\x20?\x20AND\x20action_type\x20IN\x20(\x22create\x22,\x22renew\x22)',[_0x333df3,_0x140718],(_0x39b0a4,_0x111263)=>_0x3d8a98(_0x111263?_0x111263[_0x14255f(0x44d)]:0x0));}),_0x4ca52a=await new Promise(_0x2f3a19=>{const _0x4ec798=_0x51c8d4;db[_0x4ec798(0x518)](_0x4ec798(0xf5),[_0x333df3,_0x17cbcf],(_0x4fc286,_0xa897c2)=>_0x2f3a19(_0xa897c2?_0xa897c2[_0x4ec798(0x44d)]:0x0));}),_0x2ccd1e=await new Promise(_0x57ecbd=>{const _0x229071=_0x51c8d4;db['get'](_0x229071(0xf5),[_0x333df3,_0x33f9eb],(_0xfd0bec,_0x125eaf)=>_0x57ecbd(_0x125eaf?_0x125eaf[_0x229071(0x44d)]:0x0));}),_0x248ea4=await new Promise(_0x51cba9=>{const _0x2f0f6c=_0x51c8d4;db[_0x2f0f6c(0x518)](_0x2f0f6c(0x397),[_0x140718],(_0x45f153,_0x2ae6b7)=>_0x51cba9(_0x2ae6b7?_0x2ae6b7[_0x2f0f6c(0x44d)]:0x0));}),_0x5e2179=await new Promise(_0x5dd916=>{const _0x3e60bb=_0x51c8d4;db['get']('SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20log_penjualan\x20WHERE\x20waktu_transaksi\x20>=\x20?\x20AND\x20action_type\x20IN\x20(\x22create\x22,\x22renew\x22)',[_0x17cbcf],(_0xa00fe1,_0x166273)=>_0x5dd916(_0x166273?_0x166273[_0x3e60bb(0x44d)]:0x0));}),_0x2b113f=await new Promise(_0x1db604=>{const _0x5a7287=_0x51c8d4;db[_0x5a7287(0x518)](_0x5a7287(0x397),[_0x33f9eb],(_0x402bb2,_0x204ae2)=>_0x1db604(_0x204ae2?_0x204ae2['count']:0x0));});}catch(_0x52247b){logger[_0x51c8d4(0x11a)](_0x51c8d4(0x259),_0x52247b['message']);}let _0x1b4f27=0x0;try{const _0x2a04eb=await new Promise((_0x1f4a15,_0x13a52a)=>{const _0x293dfb=_0x51c8d4;db[_0x293dfb(0x518)](_0x293dfb(0x3e3),(_0x42d4cd,_0x2097c6)=>{if(_0x42d4cd)_0x13a52a(_0x42d4cd);else _0x1f4a15(_0x2097c6);});});_0x1b4f27=_0x2a04eb[_0x51c8d4(0x44d)];}catch(_0x38db6c){_0x1b4f27=0x0;}const _0x20e1c0=(Math[_0x51c8d4(0x255)]()*0.1+0.01)[_0x51c8d4(0x2f6)](0x2),_0x367e45=await new Promise(_0xca6047=>{const _0x1481c6=_0x51c8d4;db[_0x1481c6(0x518)](_0x1481c6(0x3fe),(_0x1e33ce,_0x52b354)=>{const _0x2121e0=_0x1481c6;if(_0x1e33ce)return _0xca6047(![]);_0xca6047(_0x52b354?.[_0x2121e0(0x389)]===0x1);});}),_0x4158fb=await new Promise(_0x2cc0be=>{const _0x3d2d46=_0x51c8d4;db[_0x3d2d46(0x518)](_0x3d2d46(0x1c7),[_0x333df3],(_0x8f3234,_0x4f485c)=>{if(_0x8f3234)return _0x2cc0be(![]);_0x2cc0be(_0x4f485c!=null);});}),_0x410f14=adminIds['includes'](_0x333df3),_0xb6146=_0x367e45||_0x4158fb||_0x410f14,_0x741df4=os['uptime'](),_0x315a80=Math[_0x51c8d4(0x486)](_0x741df4/0x15180),_0x129b33=Math[_0x51c8d4(0x486)](_0x741df4%0x15180/0xe10),_0x47fa58=Math[_0x51c8d4(0x486)](_0x741df4%0xe10/0x3c),_0x37be7a=Math[_0x51c8d4(0x486)](_0x741df4%0x3c),_0x4436e2=_0x315a80+'d\x20'+_0x129b33+'h\x20'+_0x47fa58+'m\x20'+_0x37be7a+'s',_0x251914=[_0x51c8d4(0x33d),_0x51c8d4(0x2ff),_0x51c8d4(0xcc),_0x51c8d4(0x3df),_0x51c8d4(0x134),_0x51c8d4(0x197),_0x51c8d4(0x3f5)],_0x29b6f8=_0x251914[_0x44d9b4[_0x51c8d4(0x1af)]()],_0x26bb13=new Intl[(_0x51c8d4(0x158))](_0x51c8d4(0x35a),{'day':_0x51c8d4(0x22f),'month':_0x51c8d4(0x10a),'year':_0x51c8d4(0x22f)})[_0x51c8d4(0x50a)](_0x44d9b4),_0x1f8ee1=_0x44d9b4[_0x51c8d4(0x1ff)]()['split']('\x20')[0x0];let _0xfae867=0x0;try{_0xfae867=await new Promise((_0x3537e6,_0x3edd93)=>{const _0x2538dd=_0x51c8d4;db[_0x2538dd(0x518)](_0x2538dd(0x17e),(_0x208de3,_0x5ca8ed)=>{if(_0x208de3)_0x3edd93(_0x208de3);else _0x3537e6(_0x5ca8ed['count']);});});}catch(_0x4bf1bf){logger[_0x51c8d4(0x11a)]('Gagal\x20ambil\x20data\x20jumlah\x20server:',_0x4bf1bf[_0x51c8d4(0x4d3)]);}let _0x491c1e='';if(adminIds[_0x51c8d4(0x1c4)](_0x333df3))_0x491c1e=_0x51c8d4(0x24f);else _0x5cb611===_0x51c8d4(0xe8)?_0x491c1e=_0x51c8d4(0x1be):_0x491c1e=_0x51c8d4(0x212);const _0x57ee9f='\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a\x20Selamat\x20datang\x20di\x20<b>BOT\x20'+NAMA_STORE+_0x51c8d4(0x2fe)+_0x491c1e+_0x51c8d4(0x173)+_0xa39d16+'</code>\x0a<code>»\x20Your\x20ID\x20\x20\x20:\x20'+_0x333df3+_0x51c8d4(0x17f)+_0x1b9c1c['toLocaleString'](_0x51c8d4(0x35a))+'</code>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>STATISTIK\x20ANDA</b>\x0a<code>»\x20Hari\x20Ini\x20\x20:\x20'+_0x43737a+'\x20akun</code>\x0a<code>»\x20Minggu\x20Ini:\x20'+_0x4ca52a+_0x51c8d4(0x4eb)+_0x2ccd1e+_0x51c8d4(0x181)+_0x248ea4+_0x51c8d4(0x36f)+_0x5e2179+'\x20akun</code>\x0a<code>»\x20Bulan\x20Ini\x20:\x20'+_0x2b113f+_0x51c8d4(0x304)+_0xfae867+_0x51c8d4(0x102)+_0x1b4f27+_0x51c8d4(0xc3)+_0x4436e2+_0x51c8d4(0x220)+_0x1f8ee1+_0x51c8d4(0x3ec)+_0x29b6f8+',\x20'+_0x26bb13+'</code>\x0a<b>»\x20Admin:</b>\x20<a\x20href=\x22https://t.me/frel01\x22>@frel01</a>\x0a━━━━━━━━━━━━━━━━━━━━━━',_0x1a7ca5=[];_0xb6146&&_0x1a7ca5[_0x51c8d4(0x4e7)]([{'text':_0x51c8d4(0xf1),'callback_data':'service_trial'}]);_0x1a7ca5[_0x51c8d4(0x4e7)]([{'text':_0x51c8d4(0x3af),'callback_data':_0x51c8d4(0x35c)},{'text':_0x51c8d4(0x242),'callback_data':_0x51c8d4(0x2e5)}]),_0x1a7ca5[_0x51c8d4(0x4e7)]([{'text':_0x51c8d4(0xf8),'callback_data':_0x51c8d4(0x391)}]),_0x1a7ca5[_0x51c8d4(0x4e7)]([{'text':_0x51c8d4(0x2a5),'callback_data':_0x51c8d4(0x42a)}]);_0x5cb611!==_0x51c8d4(0xe8)&&_0x2d6ada&&_0x1a7ca5[_0x51c8d4(0x4e7)]([{'text':_0x51c8d4(0x1ab),'callback_data':_0x51c8d4(0x222)}]);try{const _0x3acb35=await _0xb98886[_0x51c8d4(0x1f1)](_0x57ee9f,{'parse_mode':_0x51c8d4(0x3e0),'disable_web_page_preview':!![],'reply_markup':{'inline_keyboard':_0x1a7ca5}});return _0x3acb35?.[_0x51c8d4(0x361)]&&(lastMenus[_0x333df3]=_0x3acb35[_0x51c8d4(0x361)],logger['info'](_0x51c8d4(0x168)+_0x333df3+_0x51c8d4(0x354)+_0x3acb35[_0x51c8d4(0x361)])),_0x3acb35;}catch(_0x2ee756){logger[_0x51c8d4(0x11a)]('Error\x20umum\x20saat\x20mengirim\x20menu\x20utama:',_0x2ee756),delete lastMenus[_0x333df3];}}bot[_0x4e46c9(0x263)](_0x4e46c9(0x512),async _0x269954=>{const _0x509c78=_0x4e46c9;if(!adminIds[_0x509c78(0x1c4)](_0x269954[_0x509c78(0x112)]['id']))return _0x269954[_0x509c78(0x1f1)]('Tidak\x20ada\x20izin!');try{if(fs['existsSync'](_0x509c78(0x12a)))fs[_0x509c78(0x1c3)](_0x509c78(0x12a));if(fs[_0x509c78(0x11c)]('bot-error.log'))fs[_0x509c78(0x1c3)](_0x509c78(0x18e));_0x269954['reply'](_0x509c78(0x52d)),logger['info'](_0x509c78(0x334));}catch(_0x134ec3){_0x269954['reply'](_0x509c78(0x194)+_0x134ec3['message']),logger[_0x509c78(0x11a)](_0x509c78(0x194)+_0x134ec3[_0x509c78(0x4d3)]);}}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x1ae),async _0x235a7d=>{const _0x2d9bf9=_0x4e46c9,_0x4bb0c4=_0x235a7d[_0x2d9bf9(0x112)]['id'];if(!adminIds[_0x2d9bf9(0x1c4)](_0x4bb0c4))return _0x235a7d[_0x2d9bf9(0x1f1)](_0x2d9bf9(0x19d),{'parse_mode':_0x2d9bf9(0x45c)});const _0xaa16d9=_0x2d9bf9(0x187);_0x235a7d[_0x2d9bf9(0x1f1)](_0xaa16d9,{'parse_mode':_0x2d9bf9(0x45c)});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x3ae),async _0x5f0948=>{const _0x3a8a60=_0x4e46c9,_0x3219e0=_0x5f0948[_0x3a8a60(0x4d3)][_0x3a8a60(0x112)]['id'];if(!adminIds[_0x3a8a60(0x1c4)](_0x3219e0))return _0x5f0948['reply']('⚠️\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.',{'parse_mode':_0x3a8a60(0x45c)});const _0x2f59ad=_0x5f0948['message']['reply_to_message'],_0x252b7d=_0x5f0948[_0x3a8a60(0x4d3)][_0x3a8a60(0x3b9)][_0x3a8a60(0x17c)]('\x20')[_0x3a8a60(0x16a)](0x1)[_0x3a8a60(0x41a)]('\x20');if(!_0x2f59ad&&!_0x252b7d)return _0x5f0948[_0x3a8a60(0x1f1)](_0x3a8a60(0x2d4)+_0x3a8a60(0xe1)+_0x3a8a60(0x34b)+_0x3a8a60(0x436),{'parse_mode':_0x3a8a60(0x45c)});db[_0x3a8a60(0x28e)](_0x3a8a60(0xf9),[],async(_0x1bca3e,_0x178bcb)=>{const _0x2f3e86=_0x3a8a60;if(_0x1bca3e)return logger['error']('❌\x20DB\x20Error\x20saat\x20ambil\x20user\x20untuk\x20broadcast:',_0x1bca3e),_0x5f0948[_0x2f3e86(0x1f1)](_0x2f3e86(0x40b));let _0x18a5dc=0x0,_0x2ab298=0x0;for(const _0x2f6bf4 of _0x178bcb){try{if(_0x2f59ad&&_0x2f59ad[_0x2f3e86(0x361)])await bot[_0x2f3e86(0x364)]['copyMessage'](_0x2f6bf4[_0x2f3e86(0x1a7)],_0x5f0948[_0x2f3e86(0x1b9)]['id'],_0x2f59ad['message_id']);else _0x252b7d&&await bot[_0x2f3e86(0x364)][_0x2f3e86(0x2ef)](_0x2f6bf4['user_id'],_0x252b7d);_0x18a5dc++,logger[_0x2f3e86(0x235)](_0x2f3e86(0x209)+_0x2f6bf4[_0x2f3e86(0x1a7)]);}catch(_0x1417ed){_0x2ab298++;if(_0x1417ed[_0x2f3e86(0x4e6)]&&_0x1417ed['response'][_0x2f3e86(0x13a)]===0x193)logger[_0x2f3e86(0x25c)](_0x2f3e86(0x14b)+_0x2f6bf4[_0x2f3e86(0x1a7)]+'\x20blokir\x20bot');else{if(_0x1417ed['response']&&_0x1417ed[_0x2f3e86(0x4e6)][_0x2f3e86(0x13a)]===0x1ad){const _0x542134=_0x1417ed['response'][_0x2f3e86(0x3b0)]?.[_0x2f3e86(0x3b6)]||0x5;logger['warn'](_0x2f3e86(0x1e1)+_0x542134+_0x2f3e86(0x355)),await new Promise(_0x3e38a1=>setTimeout(_0x3e38a1,_0x542134*0x3e8));}else logger[_0x2f3e86(0x25c)]('❌\x20Gagal\x20broadcast\x20ke\x20'+_0x2f6bf4['user_id']+':\x20'+_0x1417ed['message']);}}await new Promise(_0x241f83=>setTimeout(_0x241f83,0x1f4));}_0x5f0948['reply']('📣\x20Broadcast\x20selesai!\x0a✅\x20Berhasil:\x20'+_0x18a5dc+_0x2f3e86(0x107)+_0x2ab298);});});function formatRupiah(_0x16cf90){const _0x110e59=_0x4e46c9;return'Rp'+(_0x16cf90||0x0)[_0x110e59(0x1ee)](_0x110e59(0x35a));}bot['action'](/^listsaldo_(\d+)$/,async _0x58c9c8=>{const _0x322ff3=_0x4e46c9,_0x5a746a=parseInt(_0x58c9c8['match'][0x1]);try{await _0x58c9c8[_0x322ff3(0x294)](),await sendPaginatedUserSaldo(_0x58c9c8,_0x5a746a,!![]);}catch(_0x30fd86){console[_0x322ff3(0x11a)](_0x322ff3(0xa1),_0x30fd86);}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x222),async _0x2e79b1=>{const _0x497ee9=_0x4e46c9;await _0x2e79b1['answerCbQuery']();const _0x52e0da=_0x2e79b1[_0x497ee9(0x112)]['id'],_0x5c6826=_0x2e79b1['chat']['id'];if(adminIds[_0x497ee9(0x1c4)](_0x52e0da)){if(lastMenus[_0x52e0da])try{await _0x2e79b1[_0x497ee9(0x364)]['deleteMessage'](_0x5c6826,lastMenus[_0x52e0da]),delete lastMenus[_0x52e0da];}catch(_0x57458d){}const _0x169765=await _0x2e79b1['reply'](_0x497ee9(0x442)+'Semua\x20fitur\x20reseller\x20dan\x20admin\x20sudah\x20tersedia\x20untuk\x20Anda.',{'parse_mode':_0x497ee9(0x45c)});if(_0x169765?.['message_id'])lastMenus[_0x52e0da]=_0x169765['message_id'];return;}if(lastMenus[_0x52e0da])try{await _0x2e79b1[_0x497ee9(0x364)][_0x497ee9(0x29c)](_0x5c6826,lastMenus[_0x52e0da]),delete lastMenus[_0x52e0da];}catch(_0x14eb1b){}const _0x4fc942=await _0x2e79b1[_0x497ee9(0x1f1)](_0x497ee9(0x1e4)+(_0x497ee9(0x1cf)+UPGRADE_RESELLER_TOPUP_THRESHOLD[_0x497ee9(0x1ee)](_0x497ee9(0x35a))+'\x22\x0a')+'-\x20Bisa\x20buat\x20config\x20sendiri\x0a'+_0x497ee9(0x41f)+_0x497ee9(0x20a)+_0x497ee9(0x2a2)+_0x497ee9(0x448)+'-\x20Pelanggaran\x20=\x20banned\x20permanen\x0a\x0a'+'🔸\x20*Keuntungan\x20Reseller:*\x0a'+_0x497ee9(0x247)+_0x497ee9(0x211)+_0x497ee9(0x49e)+_0x497ee9(0x460),{'parse_mode':_0x497ee9(0x45c),'reply_markup':{'inline_keyboard':[[{'text':_0x497ee9(0x281)+UPGRADE_RESELLER_TOPUP_THRESHOLD[_0x497ee9(0x1ee)](_0x497ee9(0x35a))+_0x497ee9(0x4a8),'callback_data':_0x497ee9(0x4d8)}],[{'text':_0x497ee9(0x26b),'callback_data':_0x497ee9(0x116)}]]}});if(_0x4fc942?.[_0x497ee9(0x361)])lastMenus[_0x52e0da]=_0x4fc942[_0x497ee9(0x361)];}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x4d8),async _0x20e926=>{const _0x580bda=_0x4e46c9;await _0x20e926[_0x580bda(0x294)]();const _0x393de4=_0x20e926['from']['id'];if(lastMenus[_0x393de4])try{await _0x20e926[_0x580bda(0x364)][_0x580bda(0x29c)](_0x20e926[_0x580bda(0x1b9)]['id'],lastMenus[_0x393de4]),delete lastMenus[_0x393de4];}catch(_0x29e70d){}await _0x20e926['reply'](_0x580bda(0x299)),await processDeposit(_0x20e926,UPGRADE_RESELLER_TOPUP_THRESHOLD);}),bot['action'](/^batal_topup_(.+)$/,async _0x5416d0=>{const _0x5b98d4=_0x4e46c9,_0x53c6b6=_0x5416d0[_0x5b98d4(0x269)][0x1],_0x89438b=global[_0x5b98d4(0x4f0)][_0x53c6b6];if(!_0x89438b)return _0x5416d0[_0x5b98d4(0x294)](_0x5b98d4(0x36d),{'show_alert':!![]});try{if(_0x89438b[_0x5b98d4(0x506)])try{await bot[_0x5b98d4(0x364)][_0x5b98d4(0x29c)](_0x89438b[_0x5b98d4(0x33c)],_0x89438b[_0x5b98d4(0x506)]);}catch(_0x49e03b){}delete global[_0x5b98d4(0x4f0)][_0x53c6b6],await deletePendingDeposit(_0x53c6b6),await _0x5416d0[_0x5b98d4(0x294)](_0x5b98d4(0xd1)),await _0x5416d0['reply'](_0x5b98d4(0x439),{'parse_mode':_0x5b98d4(0x45c),'reply_markup':{'inline_keyboard':[[{'text':_0x5b98d4(0x14e),'callback_data':_0x5b98d4(0x42a)}]]}});try{const _0x456f1f=_0x5416d0[_0x5b98d4(0x1b9)]['id'],_0x169e50=_0x5416d0[_0x5b98d4(0x112)]['id'],_0x17438e=_0x5416d0[_0x5b98d4(0x12f)][_0x5b98d4(0x262)]['message']?.[_0x5b98d4(0x361)];_0x17438e&&(await _0x5416d0[_0x5b98d4(0x364)][_0x5b98d4(0x29c)](_0x456f1f,_0x17438e),logger[_0x5b98d4(0x235)](_0x5b98d4(0x258)+_0x169e50+_0x5b98d4(0x464)));}catch(_0x2d83fa){const _0x3ca447=_0x5416d0[_0x5b98d4(0x112)]['id'];console[_0x5b98d4(0x25c)](_0x5b98d4(0x480)+_0x3ca447+':',_0x2d83fa[_0x5b98d4(0x4d3)]);}}catch(_0x366251){logger[_0x5b98d4(0x11a)](_0x5b98d4(0xa8),_0x366251),await _0x5416d0[_0x5b98d4(0x294)](_0x5b98d4(0x3b8),{'show_alert':!![]});}}),bot['action'](_0x4e46c9(0xde),async _0x300155=>{const _0xcac4e8=_0x4e46c9;await _0x300155[_0xcac4e8(0x294)]();const _0x3eac7f=new Date(),_0x337566=new Date(_0x3eac7f['getFullYear'](),_0x3eac7f[_0xcac4e8(0x2bd)](),_0x3eac7f[_0xcac4e8(0x3f9)]())[_0xcac4e8(0x428)](),_0x194818=new Date(new Date()[_0xcac4e8(0x119)](_0x3eac7f['getDate']()-_0x3eac7f[_0xcac4e8(0x1af)]()))[_0xcac4e8(0x428)](),_0x29c57b=new Date(Date[_0xcac4e8(0x4a6)]()-0x7*0x18*0x3c*0x3c*0x3e8)[_0xcac4e8(0x428)](),_0x4f5078=new Date(_0x3eac7f[_0xcac4e8(0x2a7)](),_0x3eac7f[_0xcac4e8(0x2bd)](),0x1)[_0xcac4e8(0x428)]();db[_0xcac4e8(0x28e)]('\x0a\x20\x20\x20\x20SELECT\x20tipe_akun,\x20COUNT(*)\x20AS\x20jumlah,\x20SUM(harga)\x20AS\x20total_harga\x0a\x20\x20\x20\x20FROM\x20log_penjualan\x0a\x20\x20\x20\x20GROUP\x20BY\x20tipe_akun\x0a\x20\x20',[],(_0x4c6153,_0x4fd104)=>{const _0x4d39c2=_0xcac4e8;if(_0x4c6153||_0x4fd104['length']===0x0)return _0x300155[_0x4d39c2(0x1f1)](_0x4d39c2(0x1cc));let _0x4c2928=0x0,_0x150020=0x0;const _0x4aed5e=_0x4fd104[_0x4d39c2(0x307)](_0x1ccc88=>{const _0x304fef=_0x4d39c2;return _0x4c2928+=_0x1ccc88['jumlah'],_0x150020+=_0x1ccc88['total_harga'],'📦\x20*'+_0x1ccc88[_0x304fef(0x25e)]['toUpperCase']()+_0x304fef(0x130)+_0x1ccc88[_0x304fef(0x434)]+_0x304fef(0x2f8)+formatRupiah(_0x1ccc88['total_harga']);})[_0x4d39c2(0x41a)]('\x0a\x0a');db[_0x4d39c2(0x518)](_0x4d39c2(0x25a),[_0x337566],(_0x5a7c02,_0x4f4245)=>{const _0x38cfe0=_0x4d39c2;db[_0x38cfe0(0x518)](_0x38cfe0(0x25a),[_0x29c57b],(_0x2b9e5e,_0x16ff15)=>{const _0x3c5909=_0x38cfe0;db[_0x3c5909(0x518)](_0x3c5909(0x25a),[_0x194818],(_0x448587,_0x35659d)=>{const _0x4f72be=_0x3c5909;db[_0x4f72be(0x518)]('SELECT\x20SUM(harga)\x20AS\x20total\x20FROM\x20log_penjualan\x20WHERE\x20waktu_transaksi\x20>=\x20?',[_0x4f5078],(_0x258a0e,_0x16ab66)=>{const _0x4dedf0=_0x4f72be,_0x2fcb37=_0x4f4245?.[_0x4dedf0(0x274)]||0x0,_0x49b80a=_0x16ff15?.[_0x4dedf0(0x274)]||0x0,_0x12c260=_0x35659d?.[_0x4dedf0(0x274)]||0x0,_0x34fe01=_0x16ab66?.['total']||0x0,_0x75ae66=_0x4dedf0(0x1b1)+_0x4aed5e+'\x0a\x0a'+('🧾\x20*Total\x20Semua\x20Akun\x20Terjual:*\x20'+_0x4c2928+'\x0a')+(_0x4dedf0(0x3f2)+formatRupiah(_0x150020)+'\x0a\x0a')+(_0x4dedf0(0x40f)+formatRupiah(_0x2fcb37)+'\x0a')+('📈\x20*7\x20Hari\x20Terakhir:*\x20'+formatRupiah(_0x49b80a)+'\x0a')+(_0x4dedf0(0x2fc)+formatRupiah(_0x12c260)+'\x0a')+(_0x4dedf0(0x152)+formatRupiah(_0x34fe01));_0x300155[_0x4dedf0(0x1f1)](_0x75ae66,{'parse_mode':'Markdown'});});});});});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x457),async _0x50da1b=>{const _0x11e9ec=_0x4e46c9,_0x1878a6=_0x50da1b[_0x11e9ec(0x112)]['id'];if(!adminIds[_0x11e9ec(0x1c4)](_0x1878a6))return _0x50da1b['reply'](_0x11e9ec(0x19d),{'parse_mode':'Markdown'});const _0x40229b=_0x50da1b[_0x11e9ec(0x4d3)]['text'][_0x11e9ec(0x17c)]('\x20');if(_0x40229b[_0x11e9ec(0x27a)]!==0x3)return _0x50da1b[_0x11e9ec(0x1f1)]('⚠️\x20Format\x20salah.\x20Gunakan:\x20`/addsaldo\x20<user_id>\x20<jumlah>`',{'parse_mode':_0x11e9ec(0x45c)});const _0x5707d3=parseInt(_0x40229b[0x1]),_0xedef5c=parseInt(_0x40229b[0x2]);if(isNaN(_0x5707d3)||isNaN(_0xedef5c))return _0x50da1b['reply']('⚠️\x20`user_id`\x20dan\x20`jumlah`\x20harus\x20berupa\x20angka.',{'parse_mode':_0x11e9ec(0x45c)});if(/\s/[_0x11e9ec(0x272)](_0x40229b[0x1])||/\./['test'](_0x40229b[0x1])||/\s/[_0x11e9ec(0x272)](_0x40229b[0x2])||/\./[_0x11e9ec(0x272)](_0x40229b[0x2]))return _0x50da1b[_0x11e9ec(0x1f1)](_0x11e9ec(0xcf),{'parse_mode':'Markdown'});db[_0x11e9ec(0x518)](_0x11e9ec(0x481),[_0x5707d3],(_0x2080dd,_0x485384)=>{const _0x453011=_0x11e9ec;if(_0x2080dd)return logger[_0x453011(0x11a)]('⚠️\x20Kesalahan\x20saat\x20memeriksa\x20`user_id`:',_0x2080dd[_0x453011(0x4d3)]),_0x50da1b['reply'](_0x453011(0x215),{'parse_mode':_0x453011(0x45c)});if(!_0x485384)return _0x50da1b[_0x453011(0x1f1)]('⚠️\x20`user_id`\x20tidak\x20terdaftar.',{'parse_mode':_0x453011(0x45c)});db[_0x453011(0x39d)](_0x453011(0x151),[_0xedef5c,_0x5707d3],function(_0x18a424){const _0x3219c5=_0x453011;if(_0x18a424)return logger[_0x3219c5(0x11a)](_0x3219c5(0x529),_0x18a424['message']),_0x50da1b[_0x3219c5(0x1f1)](_0x3219c5(0x1f0),{'parse_mode':_0x3219c5(0x45c)});if(this[_0x3219c5(0x15d)]===0x0)return _0x50da1b[_0x3219c5(0x1f1)]('⚠️\x20Pengguna\x20tidak\x20ditemukan.',{'parse_mode':'Markdown'});_0x50da1b[_0x3219c5(0x1f1)](_0x3219c5(0x372)+_0xedef5c+_0x3219c5(0x51c)+_0x5707d3+'`.',{'parse_mode':_0x3219c5(0x45c)});});});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x42a),async _0x30b01c=>{const _0x6c1688=_0x4e46c9;await _0x30b01c[_0x6c1688(0x294)]();try{_0x30b01c[_0x6c1688(0x3cd)]?.[_0x6c1688(0x4d3)]?.['message_id']&&await _0x30b01c['deleteMessage'](_0x30b01c['callbackQuery']['message'][_0x6c1688(0x361)]);}catch(_0x242d58){}const _0x336f83=loadButtonConfig?loadButtonConfig():{'topup_saldo':!![],'topup_saweria':!![]},_0x4cb1f0=[];if(_0x336f83[_0x6c1688(0x50f)])_0x4cb1f0[_0x6c1688(0x4e7)]([{'text':_0x6c1688(0x270),'callback_data':_0x6c1688(0x50f)}]);if(_0x336f83[_0x6c1688(0x4d7)])_0x4cb1f0[_0x6c1688(0x4e7)]([{'text':_0x6c1688(0x433),'callback_data':_0x6c1688(0x4d7)}]);_0x4cb1f0[_0x6c1688(0x4e7)]([{'text':_0x6c1688(0x2fa),'callback_data':'send_main_menu'}]);const _0x228783=_0x6c1688(0x2e8),_0x15927d=await _0x30b01c[_0x6c1688(0x1f1)](_0x228783,{'parse_mode':_0x6c1688(0x45c),'reply_markup':{'inline_keyboard':_0x4cb1f0}});_0x15927d?.[_0x6c1688(0x361)]&&(lastMenus[_0x30b01c[_0x6c1688(0x112)]['id']]=_0x15927d[_0x6c1688(0x361)]);});async function processDepositSaweria(_0x39da9b,_0x318d8f){const _0x2b2aa8=_0x4e46c9;try{const _0x3fc151=process[_0x2b2aa8(0x3f7)]['SAWERIA_USERNAME']||vars[_0x2b2aa8(0x516)],_0x5758ca=process[_0x2b2aa8(0x3f7)][_0x2b2aa8(0x3ba)]||vars[_0x2b2aa8(0x3ba)];if(!_0x3fc151||!_0x5758ca)return _0x39da9b['reply'](_0x2b2aa8(0x42e),{'parse_mode':_0x2b2aa8(0x45c)});const _0x208d12=parseInt(_0x318d8f),_0x58922c=_0x2b2aa8(0x18f)+encodeURIComponent(_0x3fc151)+'&amount='+_0x208d12+'&email='+encodeURIComponent(_0x5758ca),_0x44dd44=await axios[_0x2b2aa8(0x518)](_0x58922c),_0xa68825=_0x44dd44[_0x2b2aa8(0x1bd)];if(!_0xa68825[_0x2b2aa8(0x261)]||!_0xa68825['data']?.[_0x2b2aa8(0x3ed)]||!_0xa68825[_0x2b2aa8(0x1bd)]?.[_0x2b2aa8(0x26c)])return _0x39da9b[_0x2b2aa8(0x1f1)](_0x2b2aa8(0x2e9),{'parse_mode':_0x2b2aa8(0x45c)});const {qrImageUrl:_0x510ea6,transactionId:_0x521a5f,checkPaymentUrl:_0x8ac9d1,timestamp:_0x49b822}=_0xa68825[_0x2b2aa8(0x1bd)];let _0x45a9ca=0x0,_0x4167b5=0x0;await new Promise(_0x213875=>{const _0x4c8ba3=_0x2b2aa8;db[_0x4c8ba3(0x518)](_0x4c8ba3(0x2d0),(_0x1bb303,_0x385c85)=>{const _0x2b0d4e=_0x4c8ba3;!_0x1bb303&&_0x385c85&&_0x385c85[_0x2b0d4e(0xa4)]&&_0x208d12>=_0x385c85[_0x2b0d4e(0x1c9)]&&(_0x4167b5=_0x385c85['bonus_percent'],_0x45a9ca=Math['floor'](_0x208d12*_0x4167b5/0x64)),_0x213875();});});if(!global[_0x2b2aa8(0x4a5)])global['pendingDepositsSaweria']={};global['pendingDepositsSaweria'][_0x521a5f]={'userId':_0x39da9b[_0x2b2aa8(0x112)]['id'],'username':_0x39da9b[_0x2b2aa8(0x112)][_0x2b2aa8(0x34e)]?'@'+_0x39da9b[_0x2b2aa8(0x112)][_0x2b2aa8(0x34e)]:'Tidak\x20tersedia','amount':_0x208d12,'bonus':_0x45a9ca,'bonus_percent':_0x4167b5,'created_at':Date[_0x2b2aa8(0x4a6)](),'checked':![]};const _0x1c2bd5=await _0x39da9b[_0x2b2aa8(0x4a4)](_0x510ea6,{'caption':'❇️\x20*Informasi\x20Deposit\x20Anda*\x20❇️\x0a\x0a🏷️\x20*»\x20Kode\x20Transaksi:*\x20`'+_0x521a5f+'`\x0a🏷️\x20*»\x20Jumlah:*\x20Rp'+_0x208d12[_0x2b2aa8(0x1ee)](_0x2b2aa8(0x35a))+'\x0a🏷️\x20*»\x20Waktu:*\x20'+_0x49b822+_0x2b2aa8(0x201),'parse_mode':_0x2b2aa8(0x45c)});global['pendingDepositsSaweria'][_0x521a5f][_0x2b2aa8(0x506)]=_0x1c2bd5[_0x2b2aa8(0x361)];}catch(_0x5bb13c){logger[_0x2b2aa8(0x11a)](_0x2b2aa8(0x114),_0x5bb13c[_0x2b2aa8(0x4d4)]||_0x5bb13c),await _0x39da9b[_0x2b2aa8(0x1f1)](_0x2b2aa8(0x1ce),{'parse_mode':'Markdown'});}}setInterval(async()=>{const _0x5af011=_0x4e46c9;try{const _0xafad69=global[_0x5af011(0x4a5)]||{},_0x5a01ca=Object['entries'](_0xafad69);if(_0x5a01ca[_0x5af011(0x27a)]===0x0)return;for(const [_0x4e2883,_0x5e8ce0]of _0x5a01ca){if(_0x5e8ce0['checked'])continue;const _0x4c9e56=Date[_0x5af011(0x4a6)]()-_0x5e8ce0[_0x5af011(0x336)];if(_0x4c9e56>0x5*0x3c*0x3e8){try{_0x5e8ce0[_0x5af011(0x506)]&&await bot['telegram'][_0x5af011(0x29c)](_0x5e8ce0[_0x5af011(0x33c)],_0x5e8ce0[_0x5af011(0x506)])[_0x5af011(0x468)](_0x2c4450=>logger[_0x5af011(0x25c)](_0x5af011(0xe5)+_0x5e8ce0['userId']+':\x20'+_0x2c4450[_0x5af011(0x4d3)])),await bot[_0x5af011(0x364)][_0x5af011(0x2ef)](_0x5e8ce0[_0x5af011(0x33c)],_0x5af011(0x440),{'parse_mode':_0x5af011(0x45c)}),logger[_0x5af011(0x235)]('Transaksi\x20Saweria\x20'+_0x4e2883+_0x5af011(0xd0)+_0x5e8ce0[_0x5af011(0x33c)]);}catch(_0x1a3715){logger[_0x5af011(0x11a)](_0x5af011(0x214)+_0x4e2883+':\x20'+_0x1a3715[_0x5af011(0x4d3)]);}finally{delete global[_0x5af011(0x4a5)][_0x4e2883];}continue;}try{const _0x12120f=await axios[_0x5af011(0x518)](_0x5af011(0x1aa)+_0x4e2883),_0x4417b4=_0x12120f[_0x5af011(0x1bd)];logger[_0x5af011(0x235)](_0x5af011(0x1d8)+_0x4e2883+':\x20'+JSON[_0x5af011(0x16c)](_0x4417b4));if(_0x4417b4?.[_0x5af011(0x261)]&&_0x4417b4[_0x5af011(0x1bd)]?.[_0x5af011(0x10e)]){_0x5e8ce0['checked']=!![],await updateUserBalance(_0x5e8ce0['userId'],_0x5e8ce0[_0x5af011(0xb3)]),logger[_0x5af011(0x235)]('SAWERIA\x20QRIS\x20SUKSES\x20user\x20'+_0x5e8ce0[_0x5af011(0x33c)]+'\x20nominal\x20Rp'+_0x5e8ce0[_0x5af011(0xb3)]+_0x5af011(0x30a)),await prosesBonusTopUp(_0x5e8ce0[_0x5af011(0x33c)],_0x5e8ce0['username'],_0x5e8ce0['amount']),logTopup(_0x5e8ce0[_0x5af011(0x33c)],_0x5e8ce0[_0x5af011(0x34e)],_0x5e8ce0[_0x5af011(0xb3)],_0x5af011(0x4d9));const _0x383bc4=await getUserSaldo(_0x5e8ce0['userId']),_0x19dde7={'amount':_0x5e8ce0[_0x5af011(0xb3)],'originalAmount':_0x5e8ce0[_0x5af011(0xb3)],'bonus':_0x5e8ce0[_0x5af011(0x3f0)]||0x0,'bonus_percent':_0x5e8ce0[_0x5af011(0x477)]||0x0,'qrMessageId':_0x5e8ce0[_0x5af011(0x506)]},_0x31c08d=await sendPaymentSuccessNotificationByUserId(_0x5e8ce0[_0x5af011(0x33c)],_0x19dde7,_0x383bc4,_0x5e8ce0['username']);_0x31c08d&&_0x5e8ce0[_0x5af011(0x506)]&&await bot[_0x5af011(0x364)]['deleteMessage'](_0x5e8ce0[_0x5af011(0x33c)],_0x5e8ce0[_0x5af011(0x506)])[_0x5af011(0x468)](_0x1d4271=>logger['warn'](_0x5af011(0x1f5)+_0x5e8ce0['userId']+':\x20'+_0x1d4271['message'])),delete global['pendingDepositsSaweria'][_0x4e2883];}}catch(_0x30d25d){logger[_0x5af011(0x11a)](_0x5af011(0x15c)+_0x4e2883+':\x20'+_0x30d25d[_0x5af011(0x4d3)]);}}}catch(_0x342147){logger[_0x5af011(0x11a)](_0x5af011(0x39a),_0x342147);}},0x2710),bot[_0x4e46c9(0x263)]('addserver',async _0xc7888e=>{const _0x239fde=_0x4e46c9,_0x5ce683=_0xc7888e[_0x239fde(0x4d3)][_0x239fde(0x112)]['id'];if(!adminIds['includes'](_0x5ce683))return _0xc7888e['reply']('⚠️\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.',{'parse_mode':'Markdown'});const _0x298499=_0xc7888e[_0x239fde(0x4d3)][_0x239fde(0x3b9)][_0x239fde(0x17c)]('\x20');if(_0x298499[_0x239fde(0x27a)]!==0x7)return _0xc7888e[_0x239fde(0x1f1)](_0x239fde(0x153),{'parse_mode':_0x239fde(0x45c)});const [_0x288015,_0x220f57,_0xf54799,_0x5ca67a,_0x1a30a2,_0x2e38c0,_0x18369f]=_0x298499[_0x239fde(0x16a)](0x1),_0x2519d4=/^\d+$/;if(!_0x2519d4[_0x239fde(0x272)](_0xf54799)||!_0x2519d4[_0x239fde(0x272)](_0x1a30a2)||!_0x2519d4[_0x239fde(0x272)](_0x2e38c0)||!_0x2519d4[_0x239fde(0x272)](_0x18369f))return _0xc7888e[_0x239fde(0x1f1)](_0x239fde(0xfc),{'parse_mode':_0x239fde(0x45c)});db['run']('INSERT\x20INTO\x20Server\x20(domain,\x20auth,\x20harga,\x20nama_server,\x20quota,\x20iplimit,\x20batas_create_akun)\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?)',[_0x288015,_0x220f57,parseInt(_0xf54799),_0x5ca67a,parseInt(_0x1a30a2),parseInt(_0x2e38c0),parseInt(_0x18369f)],function(_0x555504){const _0x23d79b=_0x239fde;if(_0x555504)return logger['error'](_0x23d79b(0x520),_0x555504[_0x23d79b(0x4d3)]),_0xc7888e[_0x23d79b(0x1f1)](_0x23d79b(0x40e),{'parse_mode':'Markdown'});_0xc7888e['reply']('✅\x20Server\x20`'+_0x5ca67a+_0x23d79b(0x141),{'parse_mode':_0x23d79b(0x45c)});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x143),async _0x564894=>{const _0x523f6c=_0x4e46c9,_0x3f0aef=_0x564894['message'][_0x523f6c(0x112)]['id'];if(!adminIds['includes'](_0x3f0aef))return _0x564894[_0x523f6c(0x1f1)](_0x523f6c(0x19d),{'parse_mode':_0x523f6c(0x45c)});const _0x5f064b=_0x564894[_0x523f6c(0x4d3)][_0x523f6c(0x3b9)][_0x523f6c(0x17c)]('\x20');if(_0x5f064b[_0x523f6c(0x27a)]!==0x3)return _0x564894[_0x523f6c(0x1f1)]('⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editharga\x20<domain>\x20<harga>`',{'parse_mode':_0x523f6c(0x45c)});const [_0x1a2337,_0x3f170a]=_0x5f064b[_0x523f6c(0x16a)](0x1);if(!/^\d+$/['test'](_0x3f170a))return _0x564894['reply'](_0x523f6c(0x232),{'parse_mode':_0x523f6c(0x45c)});db[_0x523f6c(0x39d)](_0x523f6c(0x35d),[parseInt(_0x3f170a),_0x1a2337],function(_0x5f2caf){const _0x228315=_0x523f6c;if(_0x5f2caf)return logger['error'](_0x228315(0x223),_0x5f2caf[_0x228315(0x4d3)]),_0x564894[_0x228315(0x1f1)](_0x228315(0x1dc),{'parse_mode':_0x228315(0x45c)});if(this[_0x228315(0x15d)]===0x0)return _0x564894[_0x228315(0x1f1)](_0x228315(0x50e),{'parse_mode':_0x228315(0x45c)});_0x564894[_0x228315(0x1f1)](_0x228315(0x2c7)+_0x1a2337+_0x228315(0x18c)+_0x3f170a+'`.',{'parse_mode':_0x228315(0x45c)});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x485),async _0x4e134a=>{const _0x1c5e6e=_0x4e46c9,_0x54331a=_0x4e134a[_0x1c5e6e(0x4d3)]['from']['id'];if(!adminIds[_0x1c5e6e(0x1c4)](_0x54331a))return _0x4e134a[_0x1c5e6e(0x1f1)](_0x1c5e6e(0x19d),{'parse_mode':_0x1c5e6e(0x45c)});const _0x21f485=_0x4e134a[_0x1c5e6e(0x4d3)]['text'][_0x1c5e6e(0x17c)]('\x20');if(_0x21f485['length']!==0x3)return _0x4e134a['reply'](_0x1c5e6e(0x169),{'parse_mode':_0x1c5e6e(0x45c)});const [_0xd4035b,_0x14cd10]=_0x21f485[_0x1c5e6e(0x16a)](0x1);db[_0x1c5e6e(0x39d)](_0x1c5e6e(0x24a),[_0x14cd10,_0xd4035b],function(_0x4e8a71){const _0x474b74=_0x1c5e6e;if(_0x4e8a71)return logger[_0x474b74(0x11a)]('⚠️\x20Kesalahan\x20saat\x20mengedit\x20nama\x20server:',_0x4e8a71['message']),_0x4e134a['reply']('⚠️\x20Kesalahan\x20saat\x20mengedit\x20nama\x20server.',{'parse_mode':_0x474b74(0x45c)});if(this[_0x474b74(0x15d)]===0x0)return _0x4e134a[_0x474b74(0x1f1)]('⚠️\x20Server\x20tidak\x20ditemukan.',{'parse_mode':_0x474b74(0x45c)});_0x4e134a[_0x474b74(0x1f1)](_0x474b74(0x252)+_0xd4035b+_0x474b74(0x18c)+_0x14cd10+'`.',{'parse_mode':_0x474b74(0x45c)});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x245),async _0x200684=>{const _0x15a45d=_0x4e46c9,_0x387a24=_0x200684['message'][_0x15a45d(0x112)]['id'];if(!adminIds[_0x15a45d(0x1c4)](_0x387a24))return _0x200684[_0x15a45d(0x1f1)](_0x15a45d(0x19d),{'parse_mode':_0x15a45d(0x45c)});const _0x142b05=_0x200684[_0x15a45d(0x4d3)][_0x15a45d(0x3b9)]['split']('\x20');if(_0x142b05[_0x15a45d(0x27a)]!==0x3)return _0x200684[_0x15a45d(0x1f1)](_0x15a45d(0x1ac),{'parse_mode':_0x15a45d(0x45c)});const [_0x23f909,_0x115f26]=_0x142b05[_0x15a45d(0x16a)](0x1);db[_0x15a45d(0x39d)]('UPDATE\x20Server\x20SET\x20domain\x20=\x20?\x20WHERE\x20domain\x20=\x20?',[_0x115f26,_0x23f909],function(_0x5953ee){const _0xc90b56=_0x15a45d;if(_0x5953ee)return logger[_0xc90b56(0x11a)](_0xc90b56(0x495),_0x5953ee[_0xc90b56(0x4d3)]),_0x200684[_0xc90b56(0x1f1)](_0xc90b56(0x1bf),{'parse_mode':_0xc90b56(0x45c)});if(this[_0xc90b56(0x15d)]===0x0)return _0x200684[_0xc90b56(0x1f1)](_0xc90b56(0x50e),{'parse_mode':'Markdown'});_0x200684[_0xc90b56(0x1f1)](_0xc90b56(0xec)+_0x23f909+_0xc90b56(0x18c)+_0x115f26+'`.',{'parse_mode':'Markdown'});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x3e9),async _0x569a8b=>{const _0x6a39ab=_0x4e46c9,_0x221a42=_0x569a8b[_0x6a39ab(0x4d3)]['from']['id'];if(!adminIds[_0x6a39ab(0x1c4)](_0x221a42))return _0x569a8b[_0x6a39ab(0x1f1)](_0x6a39ab(0x19d),{'parse_mode':_0x6a39ab(0x45c)});const _0x546bd4=_0x569a8b[_0x6a39ab(0x4d3)][_0x6a39ab(0x3b9)][_0x6a39ab(0x17c)]('\x20');if(_0x546bd4[_0x6a39ab(0x27a)]!==0x3)return _0x569a8b[_0x6a39ab(0x1f1)]('⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editauth\x20<domain>\x20<auth>`',{'parse_mode':_0x6a39ab(0x45c)});const [_0x4b98a4,_0x45be02]=_0x546bd4[_0x6a39ab(0x16a)](0x1);db['run'](_0x6a39ab(0x536),[_0x45be02,_0x4b98a4],function(_0x3ab7b7){const _0xd14816=_0x6a39ab;if(_0x3ab7b7)return logger[_0xd14816(0x11a)](_0xd14816(0x32c),_0x3ab7b7[_0xd14816(0x4d3)]),_0x569a8b[_0xd14816(0x1f1)](_0xd14816(0x20b),{'parse_mode':_0xd14816(0x45c)});if(this[_0xd14816(0x15d)]===0x0)return _0x569a8b[_0xd14816(0x1f1)]('⚠️\x20Server\x20tidak\x20ditemukan.',{'parse_mode':'Markdown'});_0x569a8b[_0xd14816(0x1f1)]('✅\x20Auth\x20server\x20`'+_0x4b98a4+'`\x20berhasil\x20diubah\x20menjadi\x20`'+_0x45be02+'`.',{'parse_mode':_0xd14816(0x45c)});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x451),async _0x220fd0=>{const _0x41fe8d=_0x4e46c9,_0x28354a=_0x220fd0[_0x41fe8d(0x4d3)][_0x41fe8d(0x112)]['id'];if(!adminIds[_0x41fe8d(0x1c4)](_0x28354a))return _0x220fd0[_0x41fe8d(0x1f1)](_0x41fe8d(0x19d),{'parse_mode':_0x41fe8d(0x45c)});const _0x2f5d7c=_0x220fd0[_0x41fe8d(0x4d3)]['text']['split']('\x20');if(_0x2f5d7c[_0x41fe8d(0x27a)]!==0x3)return _0x220fd0[_0x41fe8d(0x1f1)](_0x41fe8d(0x316),{'parse_mode':_0x41fe8d(0x45c)});const [_0x13e5f2,_0x4e245c]=_0x2f5d7c[_0x41fe8d(0x16a)](0x1);if(!/^\d+$/[_0x41fe8d(0x272)](_0x4e245c))return _0x220fd0[_0x41fe8d(0x1f1)](_0x41fe8d(0x360),{'parse_mode':_0x41fe8d(0x45c)});db['run'](_0x41fe8d(0x4f9),[parseInt(_0x4e245c),_0x13e5f2],function(_0x15cabe){const _0x444f41=_0x41fe8d;if(_0x15cabe)return logger[_0x444f41(0x11a)](_0x444f41(0x27f),_0x15cabe[_0x444f41(0x4d3)]),_0x220fd0[_0x444f41(0x1f1)](_0x444f41(0x504),{'parse_mode':'Markdown'});if(this[_0x444f41(0x15d)]===0x0)return _0x220fd0[_0x444f41(0x1f1)]('⚠️\x20Server\x20tidak\x20ditemukan.',{'parse_mode':'Markdown'});_0x220fd0[_0x444f41(0x1f1)](_0x444f41(0x256)+_0x13e5f2+_0x444f41(0x18c)+_0x4e245c+'`.',{'parse_mode':_0x444f41(0x45c)});});}),bot['command']('editlimitip',async _0x302006=>{const _0x31c336=_0x4e46c9,_0x875bc8=_0x302006[_0x31c336(0x4d3)][_0x31c336(0x112)]['id'];if(!adminIds[_0x31c336(0x1c4)](_0x875bc8))return _0x302006[_0x31c336(0x1f1)](_0x31c336(0x19d),{'parse_mode':_0x31c336(0x45c)});const _0xa47dd1=_0x302006[_0x31c336(0x4d3)][_0x31c336(0x3b9)][_0x31c336(0x17c)]('\x20');if(_0xa47dd1[_0x31c336(0x27a)]!==0x3)return _0x302006['reply'](_0x31c336(0x324),{'parse_mode':_0x31c336(0x45c)});const [_0x6a019f,_0x497b2a]=_0xa47dd1[_0x31c336(0x16a)](0x1);if(!/^\d+$/[_0x31c336(0x272)](_0x497b2a))return _0x302006[_0x31c336(0x1f1)](_0x31c336(0x44f),{'parse_mode':_0x31c336(0x45c)});db[_0x31c336(0x39d)](_0x31c336(0x2e6),[parseInt(_0x497b2a),_0x6a019f],function(_0x868767){const _0x19e14b=_0x31c336;if(_0x868767)return logger[_0x19e14b(0x11a)](_0x19e14b(0x4dd),_0x868767[_0x19e14b(0x4d3)]),_0x302006[_0x19e14b(0x1f1)](_0x19e14b(0x3c6),{'parse_mode':'Markdown'});if(this[_0x19e14b(0x15d)]===0x0)return _0x302006['reply'](_0x19e14b(0x50e),{'parse_mode':'Markdown'});_0x302006[_0x19e14b(0x1f1)]('✅\x20Iplimit\x20server\x20`'+_0x6a019f+_0x19e14b(0x18c)+_0x497b2a+'`.',{'parse_mode':_0x19e14b(0x45c)});});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x2ec),async _0x5cd244=>{const _0x41465f=_0x4e46c9,_0x9711aa=_0x5cd244['message'][_0x41465f(0x112)]['id'];if(!adminIds['includes'](_0x9711aa))return _0x5cd244['reply']('⚠️\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.',{'parse_mode':_0x41465f(0x45c)});const _0x5571d6=_0x5cd244[_0x41465f(0x4d3)][_0x41465f(0x3b9)][_0x41465f(0x17c)]('\x20');if(_0x5571d6[_0x41465f(0x27a)]!==0x3)return _0x5cd244['reply'](_0x41465f(0x3da),{'parse_mode':_0x41465f(0x45c)});const [_0xe742f4,_0x39879a]=_0x5571d6[_0x41465f(0x16a)](0x1);if(!/^\d+$/[_0x41465f(0x272)](_0x39879a))return _0x5cd244[_0x41465f(0x1f1)]('⚠️\x20`batas_create_akun`\x20harus\x20berupa\x20angka.',{'parse_mode':_0x41465f(0x45c)});db[_0x41465f(0x39d)](_0x41465f(0x46b),[parseInt(_0x39879a),_0xe742f4],function(_0x46276b){const _0x51d051=_0x41465f;if(_0x46276b)return logger[_0x51d051(0x11a)](_0x51d051(0x241),_0x46276b[_0x51d051(0x4d3)]),_0x5cd244[_0x51d051(0x1f1)]('⚠️\x20Kesalahan\x20saat\x20mengedit\x20batas_create_akun\x20server.',{'parse_mode':_0x51d051(0x45c)});if(this[_0x51d051(0x15d)]===0x0)return _0x5cd244[_0x51d051(0x1f1)]('⚠️\x20Server\x20tidak\x20ditemukan.',{'parse_mode':_0x51d051(0x45c)});_0x5cd244[_0x51d051(0x1f1)](_0x51d051(0x1e7)+_0xe742f4+_0x51d051(0x18c)+_0x39879a+'`.',{'parse_mode':_0x51d051(0x45c)});});}),bot[_0x4e46c9(0x263)]('edittotalcreate',async _0x8f8542=>{const _0x311c93=_0x4e46c9,_0xacfdb0=_0x8f8542[_0x311c93(0x4d3)][_0x311c93(0x112)]['id'];if(!adminIds['includes'](_0xacfdb0))return _0x8f8542['reply'](_0x311c93(0x19d),{'parse_mode':_0x311c93(0x45c)});const _0x486350=_0x8f8542[_0x311c93(0x4d3)][_0x311c93(0x3b9)]['split']('\x20');if(_0x486350[_0x311c93(0x27a)]!==0x3)return _0x8f8542[_0x311c93(0x1f1)](_0x311c93(0x225),{'parse_mode':_0x311c93(0x45c)});const [_0x4a08d3,_0x2a0dbb]=_0x486350[_0x311c93(0x16a)](0x1);if(!/^\d+$/[_0x311c93(0x272)](_0x2a0dbb))return _0x8f8542[_0x311c93(0x1f1)](_0x311c93(0x3c4),{'parse_mode':_0x311c93(0x45c)});db[_0x311c93(0x39d)](_0x311c93(0x394),[parseInt(_0x2a0dbb),_0x4a08d3],function(_0x3ed56e){const _0x54a28=_0x311c93;if(_0x3ed56e)return logger['error'](_0x54a28(0x39f),_0x3ed56e['message']),_0x8f8542[_0x54a28(0x1f1)]('⚠️\x20Kesalahan\x20saat\x20mengedit\x20total_create_akun\x20server.',{'parse_mode':_0x54a28(0x45c)});if(this['changes']===0x0)return _0x8f8542['reply'](_0x54a28(0x50e),{'parse_mode':'Markdown'});_0x8f8542[_0x54a28(0x1f1)](_0x54a28(0x15b)+_0x4a08d3+'`\x20berhasil\x20diubah\x20menjadi\x20`'+_0x2a0dbb+'`.',{'parse_mode':_0x54a28(0x45c)});});});async function handleServiceAction(_0x4d41a7,_0x60baf1){const _0x43d9df=_0x4e46c9;let _0x59e0c7;if(_0x60baf1===_0x43d9df(0x3a1))_0x59e0c7=[[{'text':_0x43d9df(0x385),'callback_data':_0x43d9df(0x48b)}],[{'text':_0x43d9df(0x447),'callback_data':'trial_vmess'},{'text':'VLESS','callback_data':'trial_vless'}],[{'text':_0x43d9df(0x4f4),'callback_data':_0x43d9df(0x11f)},{'text':_0x43d9df(0x246),'callback_data':_0x43d9df(0x49d)}],[{'text':_0x43d9df(0x26b),'callback_data':'send_main_menu'}]];else{if(_0x60baf1==='create')_0x59e0c7=[[{'text':_0x43d9df(0x385),'callback_data':_0x43d9df(0x2ce)}],[{'text':'VMESS','callback_data':'create_vmess'},{'text':_0x43d9df(0x424),'callback_data':_0x43d9df(0x3d9)}],[{'text':_0x43d9df(0x4f4),'callback_data':_0x43d9df(0x195)},{'text':'SHADDOWSOCK','callback_data':_0x43d9df(0x191)}],[{'text':_0x43d9df(0x26b),'callback_data':_0x43d9df(0x116)}]];else{if(_0x60baf1===_0x43d9df(0x3a7))_0x59e0c7=[[{'text':_0x43d9df(0x427),'callback_data':_0x43d9df(0x2c5)},{'text':_0x43d9df(0x35e),'callback_data':_0x43d9df(0x28d)}],[{'text':_0x43d9df(0x26b),'callback_data':_0x43d9df(0x116)}]];else _0x60baf1===_0x43d9df(0x3a9)&&(_0x59e0c7=[[{'text':_0x43d9df(0x385),'callback_data':'renew_ssh'}],[{'text':_0x43d9df(0x447),'callback_data':_0x43d9df(0x40c)},{'text':_0x43d9df(0x424),'callback_data':_0x43d9df(0x122)}],[{'text':'TROJAN','callback_data':_0x43d9df(0x19e)},{'text':_0x43d9df(0x246),'callback_data':_0x43d9df(0x52c)}],[{'text':'🔙\x20KEMBALI','callback_data':_0x43d9df(0x116)}]]);}}try{await _0x4d41a7[_0x43d9df(0x227)]({'inline_keyboard':_0x59e0c7}),logger[_0x43d9df(0x235)](_0x60baf1+'\x20service\x20menu\x20sent');}catch(_0x145ee2){_0x145ee2['response']&&_0x145ee2['response'][_0x43d9df(0x13a)]===0x190?(await _0x4d41a7[_0x43d9df(0x1f1)](_0x43d9df(0x3c1)+_0x60baf1+':',{'reply_markup':{'inline_keyboard':_0x59e0c7}}),logger[_0x43d9df(0x235)](_0x60baf1+_0x43d9df(0x170))):logger['error']('Error\x20saat\x20mengirim\x20menu\x20'+_0x60baf1+':',_0x145ee2);}}const BUTTON_CONFIG_FILE=_0x4e46c9(0x22b);function loadButtonConfig(){const _0x34fe88=_0x4e46c9;try{return JSON[_0x34fe88(0x320)](fs[_0x34fe88(0x162)](BUTTON_CONFIG_FILE,_0x34fe88(0x3c2)));}catch(_0x57ca1f){return{'topup_saldo':!![],'topup_saweria':!![]};}}function saveButtonConfig(_0x6cdacf){const _0x43050e=_0x4e46c9;fs[_0x43050e(0x515)](BUTTON_CONFIG_FILE,JSON[_0x43050e(0x16c)](_0x6cdacf,null,0x2));}bot[_0x4e46c9(0x266)]('toggle_topup_saldo',async _0x1c7ee0=>{const _0x322536=_0x4e46c9;await _0x1c7ee0['answerCbQuery']();const _0x12fe4b=loadButtonConfig();_0x12fe4b[_0x322536(0x50f)]=!_0x12fe4b[_0x322536(0x50f)],saveButtonConfig(_0x12fe4b),await sendAdminMenu(_0x1c7ee0);}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x34a),async _0xe4f2a3=>{const _0x3acf80=_0x4e46c9;await _0xe4f2a3['answerCbQuery']();const _0x3287cc=loadButtonConfig();_0x3287cc[_0x3acf80(0x4d7)]=!_0x3287cc['topup_saweria'],saveButtonConfig(_0x3287cc),await sendAdminMenu(_0xe4f2a3);}),bot['action'](/^toggle_trial_btn_(on|off)$/,async _0xb5a990=>{const _0x11992e=_0x4e46c9;try{const _0x3e2411=_0xb5a990[_0x11992e(0x269)]||[],_0x285b4b=_0x3e2411[0x1];console[_0x11992e(0x2bc)]('Toggle\x20tombol\x20trial:\x20'+_0xb5a990['from']['id']+_0x11992e(0x4e5)+_0x285b4b);if(!adminIds['includes'](_0xb5a990['from']['id']))return;const _0x283a85=_0x285b4b==='on'?0x1:0x0;db['run'](_0x11992e(0xce),[_0x283a85],async _0x5656c0=>{const _0x10ab1f=_0x11992e;if(_0x5656c0)return logger['error']('❌\x20Gagal\x20update\x20tombol\x20trial:',_0x5656c0[_0x10ab1f(0x4d3)]),await _0xb5a990[_0x10ab1f(0x294)]('❌\x20Gagal\x20mengubah\x20status.');await _0xb5a990[_0x10ab1f(0x294)](_0x10ab1f(0x419));try{await _0xb5a990[_0x10ab1f(0x364)][_0x10ab1f(0x29c)](_0xb5a990[_0x10ab1f(0x1b9)]['id'],_0xb5a990[_0x10ab1f(0x3cd)][_0x10ab1f(0x4d3)]['message_id']);}catch(_0x26a4e6){}await sendAdminMenu(_0xb5a990);});}catch(_0x464a92){logger[_0x11992e(0x11a)](_0x11992e(0x126),_0x464a92[_0x11992e(0x4d3)]),await _0xb5a990[_0x11992e(0x294)](_0x11992e(0x362));}}),bot[_0x4e46c9(0x266)](/toggle_sewascript_btn_(on|off)/,async _0x562649=>{const _0x4488f9=_0x4e46c9,_0x5aeacf=_0x562649[_0x4488f9(0x269)][0x1],_0x3e98dd=_0x5aeacf==='on'?0x1:0x0;db[_0x4488f9(0x39d)](_0x4488f9(0x3cc),[_0x3e98dd],function(_0x4e464e){const _0xfa911=_0x4488f9;if(_0x4e464e)return logger['error'](_0xfa911(0xd2),_0x4e464e[_0xfa911(0x4d3)]),_0x562649['answerCbQuery'](_0xfa911(0x4bb));return logger[_0xfa911(0x235)]('✅\x20Tombol\x20Sewa\x20Script\x20diubah\x20ke\x20'+(_0x3e98dd===0x1?'ON':_0xfa911(0x239))),_0x562649[_0xfa911(0x294)](_0xfa911(0x474)+(_0x3e98dd===0x1?_0xfa911(0x34d):_0xfa911(0x1b7))),sendAdminMenu(_0x562649);});}),bot[_0x4e46c9(0x266)](/^toggle_upgrade_reseller_btn_(on|off)$/,async _0x2ddcdf=>{const _0x4aec83=_0x4e46c9;try{const _0x165156=_0x2ddcdf['match'][0x1];if(!adminIds['includes'](_0x2ddcdf[_0x4aec83(0x112)]['id']))return;const _0x5aca96=_0x165156==='on'?0x1:0x0;db[_0x4aec83(0x39d)](_0x4aec83(0x317),[_0x5aca96],async _0x6e5b95=>{const _0x5eab73=_0x4aec83;if(_0x6e5b95)return _0x2ddcdf[_0x5eab73(0x294)](_0x5eab73(0x1b0));await _0x2ddcdf[_0x5eab73(0x294)](_0x5eab73(0x50d));try{await _0x2ddcdf[_0x5eab73(0x364)][_0x5eab73(0x29c)](_0x2ddcdf[_0x5eab73(0x1b9)]['id'],_0x2ddcdf['callbackQuery'][_0x5eab73(0x4d3)][_0x5eab73(0x361)]);}catch(_0x4966b1){}await sendAdminMenu(_0x2ddcdf);});}catch(_0xa4332a){logger[_0x4aec83(0x11a)](_0x4aec83(0x50c),_0xa4332a[_0x4aec83(0x4d3)]),await _0x2ddcdf[_0x4aec83(0x294)](_0x4aec83(0x362));}});async function sendAdminMenu(_0x54b3d6){const _0x312d5d=_0x4e46c9,_0x3eee28=loadButtonConfig(),_0x62cb73=_0x54b3d6[_0x312d5d(0x112)]['id'],_0x7d9547=_0x54b3d6['chat']['id'],_0x78b795=await new Promise(_0x213893=>{const _0x58b7e8=_0x312d5d;db[_0x58b7e8(0x518)](_0x58b7e8(0x3fe),(_0x5a813e,_0x389609)=>{const _0x5baf8e=_0x58b7e8;if(_0x5a813e)return logger[_0x5baf8e(0x11a)](_0x5baf8e(0x3a4),_0x5a813e[_0x5baf8e(0x4d3)]),_0x213893(0x1);if(!_0x389609)return logger['warn'](_0x5baf8e(0x146)),_0x213893(0x1);logger[_0x5baf8e(0x198)](_0x5baf8e(0x38a)+_0x389609[_0x5baf8e(0x389)]),_0x213893(_0x389609[_0x5baf8e(0x389)]===0x1?0x1:0x0);});}),_0x5ee0e0=await new Promise(_0x2bd827=>{const _0x41f0c0=_0x312d5d;db['get'](_0x41f0c0(0x3f4),(_0x295827,_0x96f5d)=>{const _0x11de82=_0x41f0c0;if(_0x295827)return logger[_0x11de82(0x11a)]('❌\x20Gagal\x20ambil\x20show_sewa_script_button:',_0x295827['message']),_0x2bd827(0x1);if(!_0x96f5d)return logger[_0x11de82(0x25c)](_0x11de82(0xf7)),_0x2bd827(0x1);logger[_0x11de82(0x198)]('✅\x20show_sewa_script_button:\x20'+_0x96f5d[_0x11de82(0x1b5)]),_0x2bd827(_0x96f5d[_0x11de82(0x1b5)]===0x1?0x1:0x0);});}),_0x169d27=await new Promise(_0x4ba7dc=>{db['get']('SELECT\x20show_upgrade_reseller_button\x20FROM\x20ui_config\x20WHERE\x20id\x20=\x201',(_0x54ca68,_0x392219)=>{const _0x1660a2=_0x5858;if(_0x54ca68)return _0x4ba7dc(!![]);_0x4ba7dc(_0x392219?.[_0x1660a2(0x30e)]===0x1);});}),_0x57e51b=[[{'text':_0x312d5d(0x28a),'callback_data':'addserver'},{'text':_0x312d5d(0xaa),'callback_data':_0x312d5d(0x3d1)}],[{'text':'💲\x20Edit\x20Harga','callback_data':_0x312d5d(0x47d)},{'text':_0x312d5d(0x3d8),'callback_data':_0x312d5d(0x3bd)}],[{'text':_0x312d5d(0x36e),'callback_data':_0x312d5d(0x45b)},{'text':_0x312d5d(0x110),'callback_data':'editserver_auth'}],[{'text':_0x312d5d(0x22a),'callback_data':_0x312d5d(0x172)},{'text':'📶\x20Edit\x20Limit\x20IP','callback_data':_0x312d5d(0x291)}],[{'text':_0x312d5d(0x238),'callback_data':_0x312d5d(0x237)},{'text':_0x312d5d(0xef),'callback_data':_0x312d5d(0x303)}],[{'text':_0x312d5d(0x18a),'callback_data':_0x312d5d(0x1cd)},{'text':'📋\x20List\x20Server','callback_data':_0x312d5d(0x14d)}],[{'text':_0x312d5d(0x45e),'callback_data':_0x312d5d(0x47a)},{'text':_0x312d5d(0x2f4),'callback_data':_0x312d5d(0x4a3)}],[{'text':_0x312d5d(0x445),'callback_data':_0x312d5d(0x105)},{'text':_0x312d5d(0x30d),'callback_data':_0x312d5d(0x3e4)}],[{'text':(_0x3eee28['topup_saldo']?'✅':'❌')+_0x312d5d(0xfb),'callback_data':_0x312d5d(0x406)},{'text':(_0x3eee28['topup_saweria']?'✅':'❌')+'\x20Topup\x20QRIS\x20Saweria','callback_data':_0x312d5d(0x34a)}],[{'text':(_0x78b795?'✅':'❌')+_0x312d5d(0x38f),'callback_data':'toggle_trial_btn_'+(_0x78b795?_0x312d5d(0x3c7):'on')},{'text':(_0x5ee0e0?'✅':'❌')+_0x312d5d(0x319),'callback_data':'toggle_sewascript_btn_'+(_0x5ee0e0?'off':'on')}],[{'text':_0x312d5d(0x369),'callback_data':_0x312d5d(0xde)},{'text':_0x312d5d(0x4b0),'callback_data':_0x312d5d(0x387)}],[{'text':'👥\x20List\x20Reseller','callback_data':'listreseller'},{'text':(_0x169d27?'✅':'❌')+'\x20Tombol\x20Upgrade\x20Reseller','callback_data':_0x312d5d(0x4c4)+(_0x169d27?_0x312d5d(0x3c7):'on')}],[{'text':_0x312d5d(0x26b),'callback_data':_0x312d5d(0x116)}]],_0x4553a5='\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a\x20\x20\x20\x20\x20\x20🏷️\x20*≡\x20MENU\x20ADMIN\x20VPN\x20≡*\x20🏷️\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a💸\x20*»\x20Pilih\x20Menu\x20Admin\x20Dibawah\x20Ini:*';if(typeof lastMenus!=='undefined'&&lastMenus[_0x62cb73]){try{await _0x54b3d6[_0x312d5d(0x364)]['deleteMessage'](_0x7d9547,lastMenus[_0x62cb73]);}catch(_0x569993){}delete lastMenus[_0x62cb73];}if(_0x54b3d6[_0x312d5d(0x1c1)]===_0x312d5d(0x262))try{const _0x47cae8=await _0x54b3d6['editMessageText'](_0x4553a5,{'parse_mode':_0x312d5d(0x45c),'reply_markup':{'inline_keyboard':_0x57e51b}});if(_0x47cae8?.['message_id']&&typeof lastMenus!==_0x312d5d(0x2f3))lastMenus[_0x62cb73]=_0x47cae8[_0x312d5d(0x361)];return _0x47cae8;}catch(_0x38c7a7){}const _0x71bbaf=await _0x54b3d6['reply'](_0x4553a5,{'parse_mode':_0x312d5d(0x45c),'reply_markup':{'inline_keyboard':_0x57e51b}});if(_0x71bbaf?.['message_id']&&typeof lastMenus!==_0x312d5d(0x2f3))lastMenus[_0x62cb73]=_0x71bbaf[_0x312d5d(0x361)];return _0x71bbaf;}bot[_0x4e46c9(0x266)]('sewascript_daftar',async _0x29ea6c=>{const _0x1355d2=_0x4e46c9;try{await _0x29ea6c['deleteMessage']();}catch(_0x3477f6){console[_0x1355d2(0x25c)](_0x1355d2(0x3eb),_0x3477f6[_0x1355d2(0x4d3)]);}userState[_0x29ea6c['from']['id']]={'step':_0x1355d2(0x388)},await _0x29ea6c[_0x1355d2(0x1f1)](_0x1355d2(0x4db),{'reply_markup':{'inline_keyboard':[[{'text':_0x1355d2(0x4ba),'callback_data':_0x1355d2(0x497)},{'text':_0x1355d2(0x2ba),'callback_data':_0x1355d2(0x4ce)},{'text':_0x1355d2(0x218),'callback_data':'daftar_3bln'}],[{'text':'🔙\x20KEMBALI','callback_data':_0x1355d2(0x391)}]]}});}),bot['action']('sewascript_perpanjang',async _0x4b36b0=>{const _0x1d180c=_0x4e46c9;try{await _0x4b36b0[_0x1d180c(0x29c)]();}catch(_0x563105){console[_0x1d180c(0x25c)](_0x1d180c(0x3eb),_0x563105['message']);}userState[_0x4b36b0[_0x1d180c(0x112)]['id']]={'step':_0x1d180c(0x174)},await _0x4b36b0[_0x1d180c(0x1f1)](_0x1d180c(0x22c),{'reply_markup':{'inline_keyboard':[[{'text':'1\x20Bulan\x2010K','callback_data':_0x1d180c(0x404)},{'text':_0x1d180c(0x2ba),'callback_data':'perpanjang_2bln'},{'text':_0x1d180c(0x218),'callback_data':_0x1d180c(0x2e7)}],[{'text':'🔙\x20KEMBALI','callback_data':'service_sewascript'}]]}});}),bot[_0x4e46c9(0x266)](/^daftar_(\d+)bln$/,async _0x6fd1e5=>{const _0x51e335=_0x4e46c9;try{await _0x6fd1e5['deleteMessage']();}catch(_0x21a8b5){console['warn'](_0x51e335(0x309),_0x21a8b5[_0x51e335(0x4d3)]);}const _0x18e9f1=parseInt(_0x6fd1e5[_0x51e335(0x269)][0x1]);userState[_0x6fd1e5['from']['id']]={'step':_0x51e335(0x1e8),'bulan':_0x18e9f1},await _0x6fd1e5['reply'](_0x51e335(0x1a4),{'parse_mode':_0x51e335(0x45c)});}),bot[_0x4e46c9(0x266)](/^perpanjang_(\d+)bln$/,async _0x369b89=>{const _0x3dd868=_0x4e46c9;try{await _0x369b89[_0x3dd868(0x29c)]();}catch(_0x2f8af1){console[_0x3dd868(0x25c)](_0x3dd868(0x309),_0x2f8af1[_0x3dd868(0x4d3)]);}const _0x1cb9c5=parseInt(_0x369b89[_0x3dd868(0x269)][0x1]);userState[_0x369b89['from']['id']]={'step':'sewascript_perpanjang_ip_manual','bulan':_0x1cb9c5},await _0x369b89[_0x3dd868(0x1f1)](_0x3dd868(0x435),{'parse_mode':_0x3dd868(0x45c)});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x391),async _0x37bbed=>{const _0x39f898=_0x4e46c9;try{await _0x37bbed[_0x39f898(0x294)]();}catch(_0xeb0e28){logger['warn'](_0x39f898(0x2c1),_0xeb0e28[_0x39f898(0x4d3)]);}if(!_0x37bbed)return _0x37bbed[_0x39f898(0x1f1)](_0x39f898(0x192),{'parse_mode':_0x39f898(0x45c)});await handleServiceAction(_0x37bbed,'sewascript');}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x52e),async _0x5b0413=>{const _0x2c132d=_0x4e46c9,_0x3f7672=_0x5b0413[_0x2c132d(0x112)]['id'];if(!adminIds[_0x2c132d(0x1c4)](_0x3f7672))return _0x5b0413['answerCbQuery']('❌\x20Tidak\x20diizinkan',{'show_alert':!![]});db[_0x2c132d(0x518)](_0x2c132d(0x3f4),(_0x3b1372,_0x2b6fbf)=>{const _0x605632=_0x2c132d;if(_0x3b1372)return logger[_0x605632(0x11a)](_0x605632(0x3ff),_0x3b1372[_0x605632(0x4d3)]),_0x5b0413[_0x605632(0x294)](_0x605632(0x322),{'show_alert':!![]});const _0xec994d=_0x2b6fbf?.['show_sewa_script_button']===0x1,_0x4457a5=_0xec994d?0x0:0x1;db[_0x605632(0x39d)](_0x605632(0x3cc),[_0x4457a5],_0x6f6b7b=>{const _0x2804a4=_0x605632;if(_0x6f6b7b)return logger[_0x2804a4(0x11a)](_0x2804a4(0x340),_0x6f6b7b['message']),_0x5b0413[_0x2804a4(0x294)](_0x2804a4(0x4bf),{'show_alert':!![]});const _0x424bbb=_0x4457a5===0x1?_0x2804a4(0xe9):_0x2804a4(0x443);_0x5b0413[_0x2804a4(0x294)]('📜\x20Tombol\x20Sewa\x20Script\x20'+_0x424bbb,{'show_alert':!![]});});});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x35c),async _0x5b7a42=>{const _0x338c62=_0x4e46c9;if(!_0x5b7a42||!_0x5b7a42['match'])return _0x5b7a42[_0x338c62(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':'Markdown'});await handleServiceAction(_0x5b7a42,_0x338c62(0x267));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x48b),async _0x2791d9=>{const _0x562f47=_0x4e46c9;if(!_0x2791d9||!_0x2791d9[_0x562f47(0x269)])return _0x2791d9[_0x562f47(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x562f47(0x45c)});await startSelectServer(_0x2791d9,_0x562f47(0x3a1),_0x562f47(0x533));}),bot['action'](_0x4e46c9(0x408),async _0x28f8fa=>{const _0x23ccab=_0x4e46c9;if(!_0x28f8fa||!_0x28f8fa[_0x23ccab(0x269)])return _0x28f8fa['reply']('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x23ccab(0x45c)});await startSelectServer(_0x28f8fa,'trial',_0x23ccab(0x1a2));}),bot['action'](_0x4e46c9(0x16b),async _0x220e25=>{const _0x1e2dad=_0x4e46c9;if(!_0x220e25||!_0x220e25[_0x1e2dad(0x269)])return _0x220e25[_0x1e2dad(0x1f1)](_0x1e2dad(0x192),{'parse_mode':_0x1e2dad(0x45c)});await startSelectServer(_0x220e25,'trial',_0x1e2dad(0x184));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x11f),async _0x51dd25=>{const _0xe3c36c=_0x4e46c9;if(!_0x51dd25||!_0x51dd25[_0xe3c36c(0x269)])return _0x51dd25[_0xe3c36c(0x1f1)](_0xe3c36c(0x192),{'parse_mode':_0xe3c36c(0x45c)});await startSelectServer(_0x51dd25,_0xe3c36c(0x3a1),'trojan');}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x49d),async _0x4d506c=>{const _0xc6fd5b=_0x4e46c9;if(!_0x4d506c||!_0x4d506c[_0xc6fd5b(0x269)])return _0x4d506c[_0xc6fd5b(0x1f1)](_0xc6fd5b(0x192),{'parse_mode':'Markdown'});await startSelectServer(_0x4d506c,'trial',_0xc6fd5b(0xc8));}),bot[_0x4e46c9(0x266)]('service_trial',async _0x59682d=>{const _0x1a1fe4=_0x4e46c9;if(!_0x59682d||!_0x59682d[_0x1a1fe4(0x269)])return _0x59682d['reply'](_0x1a1fe4(0x192),{'parse_mode':'Markdown'});await handleServiceAction(_0x59682d,_0x1a1fe4(0x3a1));}),bot['action']('service_renew',async _0x4afa6b=>{const _0xabd5ce=_0x4e46c9;if(!_0x4afa6b||!_0x4afa6b[_0xabd5ce(0x269)])return _0x4afa6b[_0xabd5ce(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':'Markdown'});await handleServiceAction(_0x4afa6b,'renew');}),bot[_0x4e46c9(0x266)]('send_main_menu',async _0x489879=>{const _0x5bceee=_0x4e46c9,_0x4bf743=_0x489879[_0x5bceee(0x112)]['id'],_0x589e93=_0x489879[_0x5bceee(0x1b9)]['id'];try{await _0x489879[_0x5bceee(0x294)]();if(lastMenus[_0x4bf743])try{await _0x489879[_0x5bceee(0x364)][_0x5bceee(0x29c)](_0x589e93,lastMenus[_0x4bf743]);}catch(_0x3901c4){console[_0x5bceee(0x25c)](_0x5bceee(0x298)+_0x4bf743+':',_0x3901c4['message']);}const _0x4d5718=await sendMainMenu(_0x489879);_0x4d5718?.[_0x5bceee(0x361)]&&(lastMenus[_0x4bf743]=_0x4d5718[_0x5bceee(0x361)]);}catch(_0x49c4ec){logger[_0x5bceee(0x11a)](_0x5bceee(0x282),_0x49c4ec['message']),await _0x489879['reply'](_0x5bceee(0x359),{'parse_mode':_0x5bceee(0x45c)});}}),bot['action'](_0x4e46c9(0x2ad),async _0x236e48=>{const _0x22ca37=_0x4e46c9;if(!_0x236e48||!_0x236e48[_0x22ca37(0x269)])return _0x236e48[_0x22ca37(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':'Markdown'});await startSelectServer(_0x236e48,_0x22ca37(0x267),_0x22ca37(0x1a2));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x3d9),async _0x1bf867=>{const _0x3b2367=_0x4e46c9;if(!_0x1bf867||!_0x1bf867['match'])return _0x1bf867[_0x3b2367(0x1f1)](_0x3b2367(0x192),{'parse_mode':_0x3b2367(0x45c)});await startSelectServer(_0x1bf867,'create',_0x3b2367(0x184));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x195),async _0x296b26=>{const _0x5c2d4c=_0x4e46c9;if(!_0x296b26||!_0x296b26[_0x5c2d4c(0x269)])return _0x296b26[_0x5c2d4c(0x1f1)](_0x5c2d4c(0x192),{'parse_mode':'Markdown'});await startSelectServer(_0x296b26,_0x5c2d4c(0x267),'trojan');}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x191),async _0x1d3083=>{const _0x45df23=_0x4e46c9;if(!_0x1d3083||!_0x1d3083['match'])return _0x1d3083[_0x45df23(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x45df23(0x45c)});await startSelectServer(_0x1d3083,'create','shadowsocks');}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x2ce),async _0x4cb91e=>{const _0x14902e=_0x4e46c9;if(!_0x4cb91e||!_0x4cb91e[_0x14902e(0x269)])return _0x4cb91e[_0x14902e(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x14902e(0x45c)});await startSelectServer(_0x4cb91e,_0x14902e(0x267),_0x14902e(0x533));}),bot[_0x4e46c9(0x266)]('renew_vmess',async _0x86b0fb=>{const _0x564313=_0x4e46c9;if(!_0x86b0fb||!_0x86b0fb[_0x564313(0x269)])return _0x86b0fb[_0x564313(0x1f1)](_0x564313(0x192),{'parse_mode':_0x564313(0x45c)});await startSelectServer(_0x86b0fb,'renew',_0x564313(0x1a2));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x122),async _0xd26534=>{const _0x1e759b=_0x4e46c9;if(!_0xd26534||!_0xd26534[_0x1e759b(0x269)])return _0xd26534['reply'](_0x1e759b(0x192),{'parse_mode':_0x1e759b(0x45c)});await startSelectServer(_0xd26534,_0x1e759b(0x3a9),_0x1e759b(0x184));}),bot['action'](_0x4e46c9(0x19e),async _0x5d7b4a=>{const _0x379cfe=_0x4e46c9;if(!_0x5d7b4a||!_0x5d7b4a[_0x379cfe(0x269)])return _0x5d7b4a[_0x379cfe(0x1f1)](_0x379cfe(0x192),{'parse_mode':_0x379cfe(0x45c)});await startSelectServer(_0x5d7b4a,_0x379cfe(0x3a9),_0x379cfe(0x234));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x52c),async _0x52a19f=>{const _0x35fa6f=_0x4e46c9;if(!_0x52a19f||!_0x52a19f[_0x35fa6f(0x269)])return _0x52a19f[_0x35fa6f(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x35fa6f(0x45c)});await startSelectServer(_0x52a19f,_0x35fa6f(0x3a9),_0x35fa6f(0xc8));}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x276),async _0x1ff65d=>{const _0x1c69ce=_0x4e46c9;if(!_0x1ff65d||!_0x1ff65d[_0x1c69ce(0x269)])return _0x1ff65d['reply']('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x1c69ce(0x45c)});await startSelectServer(_0x1ff65d,_0x1c69ce(0x3a9),_0x1c69ce(0x533));});async function startSelectServer(_0x3b2aff,_0xd9d60f,_0x20497b,_0xa891b8=0x0){const _0x3c4e7f=_0x4e46c9;try{logger[_0x3c4e7f(0x235)](_0x3c4e7f(0x35b)+_0xd9d60f+_0x3c4e7f(0x2d6)+_0x20497b+_0x3c4e7f(0x123)+(_0xa891b8+0x1));const _0x4fad13=_0x3b2aff[_0x3c4e7f(0x112)]['id'],_0x3894b1=await new Promise((_0x5ad19a,_0x4b268e)=>{const _0x33291c=_0x3c4e7f;db[_0x33291c(0x518)](_0x33291c(0x358),[_0x4fad13],(_0x3d0676,_0x569822)=>{const _0x483e00=_0x33291c;if(_0x3d0676)_0x4b268e(_0x3d0676);else _0x5ad19a(_0x569822?_0x569822[_0x483e00(0x413)]:_0x483e00(0x371));});});let _0x5a4b0e=0x0;_0x3894b1===_0x3c4e7f(0xe8)&&(_0x5a4b0e=await new Promise((_0x46cade,_0x61753f)=>{const _0x124963=_0x3c4e7f;db['get'](_0x124963(0x155),(_0x674b52,_0x40359c)=>{const _0x240591=_0x124963;if(_0x674b52)_0x61753f(_0x674b52);else _0x46cade(_0x40359c?_0x40359c[_0x240591(0x1b4)]:0x0);});})),db['all'](_0x3c4e7f(0x3ee),[],(_0x7aa20,_0x3a758d)=>{const _0x559745=_0x3c4e7f;if(_0x7aa20)return logger[_0x559745(0x11a)]('⚠️\x20Error\x20fetching\x20servers:',_0x7aa20[_0x559745(0x4d3)]),_0x3b2aff[_0x559745(0x1f1)](_0x559745(0x17a),{'parse_mode':_0x559745(0x45c)});if(_0x3a758d[_0x559745(0x27a)]===0x0)return logger['info']('Tidak\x20ada\x20server\x20yang\x20tersedia'),_0x3b2aff['reply'](_0x559745(0x17a),{'parse_mode':_0x559745(0x45c)});const _0x31bb26=0x6,_0x59fec2=Math[_0x559745(0x23a)](_0x3a758d[_0x559745(0x27a)]/_0x31bb26),_0x49a6ee=Math[_0x559745(0x2c9)](Math[_0x559745(0x2be)](_0xa891b8,0x0),_0x59fec2-0x1),_0x3ac01b=_0x49a6ee*_0x31bb26,_0x3d7bde=_0x3ac01b+_0x31bb26,_0x2192c9=_0x3a758d[_0x559745(0x16a)](_0x3ac01b,_0x3d7bde),_0x38d28e=[];for(let _0x4708ac=0x0;_0x4708ac<_0x2192c9[_0x559745(0x27a)];_0x4708ac+=0x2){const _0x3bef9d=[],_0x3aabe9=_0x2192c9[_0x4708ac],_0x46bb32=_0x2192c9[_0x4708ac+0x1],_0xc38a54=''+_0x3aabe9[_0x559745(0xdd)];_0x3bef9d[_0x559745(0x4e7)]({'text':_0xc38a54,'callback_data':_0xd9d60f+'_username_'+_0x20497b+'_'+_0x3aabe9['id']});if(_0x46bb32){const _0x24066d=''+_0x46bb32[_0x559745(0xdd)];_0x3bef9d[_0x559745(0x4e7)]({'text':_0x24066d,'callback_data':_0xd9d60f+_0x559745(0x1d2)+_0x20497b+'_'+_0x46bb32['id']});}_0x38d28e[_0x559745(0x4e7)](_0x3bef9d);}_0xd9d60f==='trial'?userState[_0x3b2aff[_0x559745(0x1b9)]['id']]={'step':_0x559745(0x23c)+_0x20497b,'page':_0x49a6ee,'serverId':null}:userState[_0x3b2aff[_0x559745(0x1b9)]['id']]={'step':_0xd9d60f+_0x559745(0x1d2)+_0x20497b,'page':_0x49a6ee};const _0x4add26=[];_0x59fec2>0x1&&(_0x49a6ee>0x0&&_0x4add26[_0x559745(0x4e7)]({'text':_0x559745(0x48c),'callback_data':_0x559745(0x2e3)+_0xd9d60f+'_'+_0x20497b+'_'+(_0x49a6ee-0x1)}),_0x49a6ee<_0x59fec2-0x1&&_0x4add26['push']({'text':'➡️\x20Next','callback_data':'navigate_'+_0xd9d60f+'_'+_0x20497b+'_'+(_0x49a6ee+0x1)}));_0x4add26[_0x559745(0x27a)]>0x0&&_0x38d28e[_0x559745(0x4e7)](_0x4add26);_0x38d28e[_0x559745(0x4e7)]([{'text':'🔙\x20KEMBALI\x20ke\x20Menu\x20Utama','callback_data':'send_main_menu'}]);const _0x518ec8=_0x2192c9['map'](_0x18c69d=>{const _0x292809=_0x559745;let _0x583a3a=_0x18c69d[_0x292809(0xac)];_0x3894b1===_0x292809(0xe8)&&_0x5a4b0e>0x0&&(_0x583a3a=Math[_0x292809(0x486)](_0x18c69d[_0x292809(0xac)]*(0x64-_0x5a4b0e)/0x64));const _0x5d709e=_0x583a3a*0x1e,_0x5bee93=_0x18c69d[_0x292809(0x2fb)]>=_0x18c69d[_0x292809(0x4d1)];return _0x292809(0x475)+_0x18c69d[_0x292809(0xdd)]+'*\x0a'+(_0x292809(0x2cc)+_0x583a3a+'\x0a')+('📅\x20Harga\x20per\x2030\x20hari:\x20Rp'+_0x5d709e+'\x0a')+('📊\x20Quota:\x20'+_0x18c69d[_0x292809(0xdf)]+'GB\x0a')+(_0x292809(0x3be)+_0x18c69d[_0x292809(0x4e0)]+_0x292809(0x2e0))+(_0x5bee93?_0x292809(0xee):_0x292809(0x3ac)+_0x18c69d[_0x292809(0x2fb)]+'/'+_0x18c69d[_0x292809(0x4d1)]);})[_0x559745(0x41a)]('\x0a\x0a');_0x3b2aff[_0x559745(0x1c1)]===_0x559745(0x262)?_0x3b2aff[_0x559745(0x3ce)]('📋\x20*Halaman\x20'+(_0x49a6ee+0x1)+_0x559745(0x4f6)+_0x59fec2+_0x559745(0x51a)+_0x518ec8,{'reply_markup':{'inline_keyboard':_0x38d28e},'parse_mode':'Markdown'}):_0x3b2aff[_0x559745(0x1f1)](_0x559745(0x32a)+(_0x49a6ee+0x1)+_0x559745(0x4f6)+_0x59fec2+_0x559745(0x51a)+_0x518ec8,{'reply_markup':{'inline_keyboard':_0x38d28e},'parse_mode':_0x559745(0x45c)}),userState[_0x3b2aff[_0x559745(0x1b9)]['id']]={'step':_0xd9d60f+'_username_'+_0x20497b,'page':_0x49a6ee};});}catch(_0x22906e){logger[_0x3c4e7f(0x11a)](_0x3c4e7f(0x44e)+_0xd9d60f+'\x20untuk\x20'+_0x20497b+':',_0x22906e),await _0x3b2aff[_0x3c4e7f(0x1f1)]('❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.',{'parse_mode':_0x3c4e7f(0x45c)});}}bot['command'](_0x4e46c9(0x511),async _0x573cd9=>{const _0x121fd3=_0x4e46c9,_0x1eba5a=_0x573cd9['from']['id'];if(!adminIds[_0x121fd3(0x1c4)](_0x1eba5a))return _0x573cd9[_0x121fd3(0x1f1)](_0x121fd3(0x337));const _0x4f73f8=_0x573cd9[_0x121fd3(0x4d3)]['text']['split']('\x20');if(_0x4f73f8[_0x121fd3(0x27a)]!==0x2||isNaN(_0x4f73f8[0x1]))return _0x573cd9[_0x121fd3(0x1f1)](_0x121fd3(0x2de));const _0x439af1=parseInt(_0x4f73f8[0x1]);if(adminIds[_0x121fd3(0x1c4)](_0x439af1))return;db[_0x121fd3(0x39d)](_0x121fd3(0x125),[_0x439af1],function(_0x35e2ee){const _0x4b4f67=_0x121fd3;if(_0x35e2ee)return logger['error']('Gagal\x20menambahkan\x20user\x20unlimited\x20trial:',_0x35e2ee[_0x4b4f67(0x4d3)]),_0x573cd9[_0x4b4f67(0x1f1)]('❌\x20Gagal\x20menambahkan\x20user\x20unlimited\x20trial.');_0x573cd9[_0x4b4f67(0x1f1)]('✅\x20User\x20`'+_0x439af1+_0x4b4f67(0x47e),{'parse_mode':_0x4b4f67(0x45c)});});}),bot[_0x4e46c9(0x263)]('listunlimitedtrial',async _0x12b18d=>{const _0x51d0dc=_0x4e46c9,_0x25d808=_0x12b18d['from']['id'];if(!adminIds[_0x51d0dc(0x1c4)](_0x25d808))return;const _0x4545e1=0x1;showUnlimitedTrialPage(_0x12b18d,_0x4545e1);}),bot[_0x4e46c9(0x266)](/^unlimitedtrial_(next|prev)_(\d+)$/,async _0x17f8c3=>{const _0x218eed=_0x4e46c9,_0x2e0c7f=_0x17f8c3[_0x218eed(0x269)][0x1];let _0x28119a=parseInt(_0x17f8c3['match'][0x2]);_0x28119a=_0x2e0c7f===_0x218eed(0x22e)?_0x28119a+0x1:_0x28119a-0x1;if(_0x28119a<0x1)_0x28119a=0x1;await _0x17f8c3[_0x218eed(0x294)](),showUnlimitedTrialPage(_0x17f8c3,_0x28119a,_0x17f8c3['callbackQuery'][_0x218eed(0x4d3)][_0x218eed(0x361)]);});function showUnlimitedTrialPage(_0x26bec4,_0x9f98f2=0x1,_0x956d72=null){const _0x52c61d=_0x4e46c9,_0x38ab41=0xa,_0x1718ef=(_0x9f98f2-0x1)*_0x38ab41;db[_0x52c61d(0x28e)](_0x52c61d(0x2a4),[_0x38ab41,_0x1718ef],(_0x57d388,_0x333221)=>{const _0x3c7ab9=_0x52c61d;if(_0x57d388)return logger['error']('❌\x20Gagal\x20mengambil\x20daftar\x20unlimited\x20trial:',_0x57d388[_0x3c7ab9(0x4d3)]),_0x26bec4['reply'](_0x3c7ab9(0x362));if(_0x333221['length']===0x0)return _0x26bec4[_0x3c7ab9(0x1f1)](_0x3c7ab9(0x31f));const _0x41f78c=_0x3c7ab9(0x513)+_0x9f98f2+_0x3c7ab9(0x51a)+_0x333221[_0x3c7ab9(0x307)]((_0xb00520,_0x438aa0)=>_0x1718ef+_0x438aa0+0x1+_0x3c7ab9(0x2c2)+_0xb00520[_0x3c7ab9(0x1a7)]+'`')[_0x3c7ab9(0x41a)]('\x0a');db[_0x3c7ab9(0x518)](_0x3c7ab9(0x1cb),(_0x2cf21c,_0x8b3458)=>{const _0x4e6057=_0x3c7ab9,_0x9551fd=_0x8b3458?.[_0x4e6057(0x274)]||0x0,_0x967cee=Math[_0x4e6057(0x23a)](_0x9551fd/_0x38ab41),_0x259894=[];if(_0x9f98f2>0x1)_0x259894[_0x4e6057(0x4e7)]({'text':_0x4e6057(0x179),'callback_data':_0x4e6057(0x1ea)+_0x9f98f2});if(_0x9f98f2<_0x967cee)_0x259894[_0x4e6057(0x4e7)]({'text':_0x4e6057(0x373),'callback_data':_0x4e6057(0x1a3)+_0x9f98f2});const _0x3e6438={'parse_mode':_0x4e6057(0x45c),'reply_markup':{'inline_keyboard':_0x259894[_0x4e6057(0x27a)]?[_0x259894]:[]}};_0x956d72?_0x26bec4[_0x4e6057(0x364)]['editMessageText'](_0x26bec4[_0x4e6057(0x1b9)]['id'],_0x956d72,null,_0x41f78c,_0x3e6438)[_0x4e6057(0x468)](()=>{}):_0x26bec4['reply'](_0x41f78c,_0x3e6438);});});}bot[_0x4e46c9(0x263)](_0x4e46c9(0x22d),_0x18fb59=>{const _0x1c8a27=_0x4e46c9,_0x12b21b=_0x18fb59[_0x1c8a27(0x112)]['id'];if(!adminIds[_0x1c8a27(0x1c4)](_0x12b21b))return;const _0x3fc8d6=_0x18fb59['message'][_0x1c8a27(0x3b9)][_0x1c8a27(0x17c)]('\x20');if(_0x3fc8d6[_0x1c8a27(0x27a)]!==0x2||isNaN(_0x3fc8d6[0x1]))return _0x18fb59[_0x1c8a27(0x1f1)](_0x1c8a27(0x395));const _0x2b10dc=parseInt(_0x3fc8d6[0x1]);db['run'](_0x1c8a27(0x4b3),[_0x2b10dc],function(_0x15e857){const _0x5bf0b7=_0x1c8a27;if(_0x15e857)return logger[_0x5bf0b7(0x11a)](_0x5bf0b7(0xa3),_0x15e857[_0x5bf0b7(0x4d3)]),_0x18fb59[_0x5bf0b7(0x1f1)](_0x5bf0b7(0x426));if(this['changes']===0x0)return _0x18fb59['reply'](_0x5bf0b7(0x137)+_0x2b10dc+_0x5bf0b7(0x449),{'parse_mode':_0x5bf0b7(0x45c)});_0x18fb59[_0x5bf0b7(0x1f1)](_0x5bf0b7(0x2ee)+_0x2b10dc+_0x5bf0b7(0x27c),{'parse_mode':_0x5bf0b7(0x45c)});});}),bot['command'](_0x4e46c9(0x11b),async _0x49468b=>{const _0x21f626=_0x4e46c9,_0x3e5819=_0x49468b[_0x21f626(0x112)]['id'];if(!adminIds[_0x21f626(0x1c4)](_0x3e5819))return _0x49468b[_0x21f626(0x1f1)](_0x21f626(0x19d),{'parse_mode':_0x21f626(0x45c)});const _0x5684e5=_0x49468b[_0x21f626(0x4d3)]['text'][_0x21f626(0x17c)]('\x20');if(_0x5684e5['length']!==0x2)return _0x49468b[_0x21f626(0x1f1)](_0x21f626(0x3c8),{'parse_mode':_0x21f626(0x45c)});const _0xdd48d1=parseInt(_0x5684e5[0x1]);if(isNaN(_0xdd48d1))return _0x49468b[_0x21f626(0x1f1)](_0x21f626(0x236),{'parse_mode':'Markdown'});if(adminIds[_0x21f626(0x1c4)](_0xdd48d1))return _0x49468b[_0x21f626(0x1f1)](_0x21f626(0x254),{'parse_mode':'Markdown'});db[_0x21f626(0x39d)]('UPDATE\x20users\x20SET\x20role\x20=\x20\x27reseller\x27\x20WHERE\x20user_id\x20=\x20?',[_0xdd48d1],function(_0x5d9363){const _0xbc3d1e=_0x21f626;if(_0x5d9363)return logger[_0xbc3d1e(0x11a)](_0xbc3d1e(0xff),_0x5d9363['message']),_0x49468b[_0xbc3d1e(0x1f1)](_0xbc3d1e(0x26e),{'parse_mode':'Markdown'});if(this[_0xbc3d1e(0x15d)]===0x0)return _0x49468b[_0xbc3d1e(0x1f1)](_0xbc3d1e(0x20e),{'parse_mode':_0xbc3d1e(0x45c)});_0x49468b[_0xbc3d1e(0x1f1)](_0xbc3d1e(0x180)+_0xdd48d1+_0xbc3d1e(0x27b),{'parse_mode':'Markdown'}),bot[_0xbc3d1e(0x364)][_0xbc3d1e(0x2ef)](_0xdd48d1,_0xbc3d1e(0xd3),{'parse_mode':_0xbc3d1e(0x45c)})['catch'](_0x19ecaf=>logger[_0xbc3d1e(0x25c)](_0xbc3d1e(0x15e)+_0xdd48d1+':\x20'+_0x19ecaf[_0xbc3d1e(0x4d3)]));});}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x2ab),async _0x363991=>{const _0x12ef7d=_0x4e46c9,_0x48a996=_0x363991[_0x12ef7d(0x112)]['id'];if(!adminIds[_0x12ef7d(0x1c4)](_0x48a996))return _0x363991[_0x12ef7d(0x1f1)](_0x12ef7d(0x19d),{'parse_mode':_0x12ef7d(0x45c)});const _0x292aea=_0x363991['message'][_0x12ef7d(0x3b9)]['split']('\x20');if(_0x292aea[_0x12ef7d(0x27a)]!==0x2)return _0x363991[_0x12ef7d(0x1f1)]('⚠️\x20Format\x20salah.\x20Gunakan:\x20`/unsetreseller\x20<user_id>`',{'parse_mode':'Markdown'});const _0x27b11b=parseInt(_0x292aea[0x1]);if(isNaN(_0x27b11b))return _0x363991['reply'](_0x12ef7d(0x236),{'parse_mode':_0x12ef7d(0x45c)});if(adminIds[_0x12ef7d(0x1c4)](_0x27b11b))return _0x363991[_0x12ef7d(0x1f1)](_0x12ef7d(0x254),{'parse_mode':_0x12ef7d(0x45c)});db['run'](_0x12ef7d(0x1c0),[_0x27b11b],function(_0x2b2774){const _0x3d8536=_0x12ef7d;if(_0x2b2774)return logger['error'](_0x3d8536(0x108),_0x2b2774[_0x3d8536(0x4d3)]),_0x363991[_0x3d8536(0x1f1)](_0x3d8536(0x2a0),{'parse_mode':'Markdown'});if(this[_0x3d8536(0x15d)]===0x0)return _0x363991[_0x3d8536(0x1f1)](_0x3d8536(0x492),{'parse_mode':_0x3d8536(0x45c)});_0x363991[_0x3d8536(0x1f1)]('✅\x20Pengguna\x20`'+_0x27b11b+_0x3d8536(0x289),{'parse_mode':_0x3d8536(0x45c)}),bot[_0x3d8536(0x364)]['sendMessage'](_0x27b11b,_0x3d8536(0x1f8),{'parse_mode':'Markdown'})[_0x3d8536(0x468)](_0x25c9f5=>logger[_0x3d8536(0x25c)](_0x3d8536(0x44a)+_0x27b11b+':\x20'+_0x25c9f5[_0x3d8536(0x4d3)]));});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x4e1),async _0x4143e1=>{const _0x2806a6=_0x4e46c9,_0x4a9ce7=_0x4143e1[_0x2806a6(0x112)]['id'];if(!adminIds['includes'](_0x4a9ce7)){await _0x4143e1[_0x2806a6(0x294)]('❌\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20melihat\x20daftar\x20reseller.',{'show_alert':!![]});return;}await _0x4143e1['answerCbQuery'](),await sendPaginatedResellerList(_0x4143e1,0x1);}),bot[_0x4e46c9(0x266)](/^listreseller_(next|prev)_(\d+)$/,async _0x1fafc6=>{const _0x1fe410=_0x4e46c9,_0xf07f9=_0x1fafc6['match'][0x1];let _0x2574d7=parseInt(_0x1fafc6[_0x1fe410(0x269)][0x2]);_0x2574d7=_0xf07f9===_0x1fe410(0x22e)?_0x2574d7+0x1:_0x2574d7-0x1;if(_0x2574d7<0x1)_0x2574d7=0x1;await _0x1fafc6[_0x1fe410(0x294)](),await sendPaginatedResellerList(_0x1fafc6,_0x2574d7,_0x1fafc6[_0x1fe410(0x3cd)][_0x1fe410(0x4d3)][_0x1fe410(0x361)]);}),bot[_0x4e46c9(0x263)]('listreseller',async _0x5d91de=>{const _0x14d65a=_0x4e46c9,_0x2cb29b=_0x5d91de[_0x14d65a(0x112)]['id'];if(!adminIds[_0x14d65a(0x1c4)](_0x2cb29b))return _0x5d91de['reply'](_0x14d65a(0x1d1),{'parse_mode':'Markdown'});logger[_0x14d65a(0x235)](_0x14d65a(0x3a6)+_0x2cb29b+_0x14d65a(0x21d)),await sendPaginatedResellerList(_0x5d91de,0x1);}),bot[_0x4e46c9(0x266)](/^listreseller_(next|prev)_(\d+)$/,async _0x5789b6=>{const _0x52b515=_0x4e46c9,_0x9ad7d=_0x5789b6[_0x52b515(0x269)][0x1];let _0x56078c=parseInt(_0x5789b6['match'][0x2]);_0x56078c=_0x9ad7d==='next'?_0x56078c+0x1:_0x56078c-0x1;if(_0x56078c<0x1)_0x56078c=0x1;await _0x5789b6[_0x52b515(0x294)](),logger[_0x52b515(0x235)]('[LISTRESELLER]\x20Navigasi\x20ke\x20halaman\x20'+_0x56078c),await sendPaginatedResellerList(_0x5789b6,_0x56078c,_0x5789b6[_0x52b515(0x3cd)]['message'][_0x52b515(0x361)]);});async function sendPaginatedResellerList(_0x34bb3c,_0x2afd53=0x1,_0x3885a8=null){const _0x1ba91b=_0x4e46c9,_0x2f3f6b=0xa,_0x28637c=(_0x2afd53-0x1)*_0x2f3f6b;try{logger['info'](_0x1ba91b(0x1a9)+_0x2afd53+_0x1ba91b(0x16d)+_0x28637c+')');const _0x5d6ea6=await new Promise((_0x5e8bfc,_0x22e757)=>{const _0x4bfb5d=_0x1ba91b;db[_0x4bfb5d(0x28e)]('SELECT\x20user_id,\x20saldo\x20FROM\x20users\x20WHERE\x20role\x20=\x20\x27reseller\x27\x20ORDER\x20BY\x20user_id\x20LIMIT\x20?\x20OFFSET\x20?',[_0x2f3f6b,_0x28637c],(_0x1ec0ba,_0x306ca5)=>_0x1ec0ba?_0x22e757(_0x1ec0ba):_0x5e8bfc(_0x306ca5));}),_0x10c7b4=await new Promise((_0x589a33,_0x654be)=>{const _0x14e864=_0x1ba91b;db[_0x14e864(0x518)](_0x14e864(0x517),(_0x41ed34,_0x4dfcb7)=>_0x41ed34?_0x654be(_0x41ed34):_0x589a33(_0x4dfcb7['count']));});if(_0x5d6ea6[_0x1ba91b(0x27a)]===0x0){const _0x5a6a2a=_0x1ba91b(0x523);return _0x3885a8?_0x34bb3c[_0x1ba91b(0x364)]['editMessageText'](_0x34bb3c[_0x1ba91b(0x1b9)]['id'],_0x3885a8,null,_0x5a6a2a):_0x34bb3c['reply'](_0x5a6a2a);}let _0x450adf='👥\x20*Daftar\x20Reseller\x20(Halaman\x20'+_0x2afd53+_0x1ba91b(0x51a);for(const _0x21191b of _0x5d6ea6){_0x450adf+=_0x1ba91b(0x4de)+_0x21191b['user_id']+'`\x0a💰\x20Saldo:\x20Rp'+(_0x21191b[_0x1ba91b(0x531)]||0x0)[_0x1ba91b(0x1ee)](_0x1ba91b(0x35a))+'\x0a\x0a';}const _0x1f26c7=Math[_0x1ba91b(0x23a)](_0x10c7b4/_0x2f3f6b),_0x21d32f=[];_0x2afd53>0x1&&_0x21d32f[_0x1ba91b(0x4e7)]({'text':_0x1ba91b(0x473),'callback_data':_0x1ba91b(0x1fe)+_0x2afd53});_0x2afd53<_0x1f26c7&&_0x21d32f[_0x1ba91b(0x4e7)]({'text':'Next\x20➡️','callback_data':_0x1ba91b(0x3a0)+_0x2afd53});const _0x23361a={'parse_mode':'Markdown','reply_markup':{'inline_keyboard':_0x21d32f[_0x1ba91b(0x27a)]>0x0?[_0x21d32f]:[]}};if(_0x3885a8)try{await _0x34bb3c[_0x1ba91b(0x364)][_0x1ba91b(0x3ce)](_0x34bb3c[_0x1ba91b(0x1b9)]['id'],_0x3885a8,null,_0x450adf,_0x23361a);}catch(_0x3a6357){logger[_0x1ba91b(0x11a)](_0x1ba91b(0x432),_0x3a6357[_0x1ba91b(0x4d4)]||_0x3a6357[_0x1ba91b(0x4d3)]||_0x3a6357),await _0x34bb3c[_0x1ba91b(0x1f1)](_0x450adf,_0x23361a);}else await _0x34bb3c[_0x1ba91b(0x1f1)](_0x450adf,_0x23361a);}catch(_0x1e4e59){logger[_0x1ba91b(0x11a)](_0x1ba91b(0x422),_0x1e4e59[_0x1ba91b(0x4d4)]||_0x1e4e59[_0x1ba91b(0x4d3)]||_0x1e4e59),await _0x34bb3c[_0x1ba91b(0x1f1)](_0x1ba91b(0x437));}}bot[_0x4e46c9(0x263)](_0x4e46c9(0x3d5),async _0x24fcd8=>{const _0x280ed3=_0x4e46c9,_0x125c25=_0x24fcd8[_0x280ed3(0x112)]['id'];if(!adminIds[_0x280ed3(0x1c4)](_0x125c25))return _0x24fcd8[_0x280ed3(0x1f1)](_0x280ed3(0x19d),{'parse_mode':_0x280ed3(0x45c)});const _0x10a0a9=_0x24fcd8['message'][_0x280ed3(0x3b9)][_0x280ed3(0x17c)]('\x20');if(_0x10a0a9[_0x280ed3(0x27a)]!==0x2||isNaN(_0x10a0a9[0x1])||parseInt(_0x10a0a9[0x1])<0x0||parseInt(_0x10a0a9[0x1])>0x64)return _0x24fcd8['reply'](_0x280ed3(0x1d9),{'parse_mode':'Markdown'});const _0x360c88=parseInt(_0x10a0a9[0x1]);db[_0x280ed3(0x39d)](_0x280ed3(0x230),[_0x360c88],function(_0xeff70e){const _0x21c868=_0x280ed3;if(_0xeff70e)return logger[_0x21c868(0x11a)](_0x21c868(0xb6),_0xeff70e['message']),_0x24fcd8[_0x21c868(0x1f1)]('❌\x20Kesalahan\x20saat\x20mengatur\x20diskon\x20reseller.',{'parse_mode':_0x21c868(0x45c)});_0x24fcd8[_0x21c868(0x1f1)](_0x21c868(0xf0)+_0x360c88+_0x21c868(0x341),{'parse_mode':'Markdown'});});}),bot['command'](_0x4e46c9(0x135),async _0x3a4fa3=>{const _0x362f4e=_0x4e46c9,_0x42bb65=_0x3a4fa3[_0x362f4e(0x112)]['id'];if(!adminIds['includes'](_0x42bb65))return _0x3a4fa3[_0x362f4e(0x1f1)]('⚠️\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.',{'parse_mode':'Markdown'});db[_0x362f4e(0x39d)]('UPDATE\x20reseller_config\x20SET\x20discount_percent\x20=\x200\x20WHERE\x20id\x20=\x201',function(_0x259119){const _0x5af16e=_0x362f4e;if(_0x259119)return logger[_0x5af16e(0x11a)]('❌\x20Kesalahan\x20saat\x20mereset\x20diskon\x20reseller:',_0x259119[_0x5af16e(0x4d3)]),_0x3a4fa3['reply'](_0x5af16e(0x48a),{'parse_mode':_0x5af16e(0x45c)});_0x3a4fa3['reply'](_0x5af16e(0x4c8),{'parse_mode':_0x5af16e(0x45c)});});}),bot[_0x4e46c9(0x266)](/navigate_(\w+)_(\w+)_(\d+)/,async _0x5c9133=>{const [,_0x500862,_0x1a3d02,_0x18e01c]=_0x5c9133['match'];await startSelectServer(_0x5c9133,_0x500862,_0x1a3d02,parseInt(_0x18e01c,0xa));}),bot[_0x4e46c9(0x266)](/^(create|renew|trial)_username_(vmess|vless|trojan|shadowsocks|ssh)_(.+)$/,async _0x146d48=>{const _0x1116b1=_0x4e46c9;await _0x146d48[_0x1116b1(0x364)][_0x1116b1(0x294)](_0x146d48[_0x1116b1(0x3cd)]['id']);const _0x476dfb=_0x146d48[_0x1116b1(0x269)]||[],_0x4bf761=_0x476dfb[0x1],_0x380efb=_0x476dfb[0x2],_0x578ded=_0x476dfb[0x3];if(!_0x4bf761||!_0x380efb||!_0x578ded)return _0x146d48['reply'](_0x1116b1(0x15f),{'parse_mode':_0x1116b1(0x45c)});if(_0x4bf761===_0x1116b1(0x3a1)){const _0x2b009d=_0x146d48['from']['id'],_0x434fbd=new Date()[_0x1116b1(0x428)]()['split']('T')[0x0];if(_0x2b009d==ADMIN)return await handleTrial(_0x146d48,_0x380efb,_0x578ded);db[_0x1116b1(0x518)](_0x1116b1(0x39e),[_0x578ded],(_0x510f03,_0x56b346)=>{const _0x3a8b12=_0x1116b1;if(_0x510f03)return logger[_0x3a8b12(0x11a)]('❌\x20Error\x20fetching\x20server\x20details:',_0x510f03[_0x3a8b12(0x4d3)]),_0x146d48[_0x3a8b12(0x1f1)](_0x3a8b12(0x3a8),{'parse_mode':'Markdown'});if(!_0x56b346)return _0x146d48[_0x3a8b12(0x1f1)](_0x3a8b12(0x29a),{'parse_mode':_0x3a8b12(0x45c)});const {batas_create_akun:_0x1ef7de,total_create_akun:_0x5e844b}=_0x56b346;if(_0x5e844b>=_0x1ef7de)return _0x146d48[_0x3a8b12(0x1f1)]('❌\x20*Server\x20penuh.\x20Trial\x20tidak\x20dapat\x20dibuat\x20di\x20server\x20ini.*',{'parse_mode':_0x3a8b12(0x45c)});db[_0x3a8b12(0x518)](_0x3a8b12(0x2c3),[_0x2b009d,_0x434fbd],async(_0x424d0e,_0x29cbb5)=>{const _0x272f35=_0x3a8b12;if(_0x424d0e)return logger['error'](_0x272f35(0x1b8),_0x424d0e),_0x146d48[_0x272f35(0x1f1)](_0x272f35(0x21b),{'parse_mode':_0x272f35(0x45c)});const _0x597b5b=_0x29cbb5?.[_0x272f35(0x44d)]||0x0;db['get'](_0x272f35(0x1c7),[_0x2b009d],async(_0x58c314,_0x551786)=>{const _0x1e6942=_0x272f35;if(_0x58c314)return logger[_0x1e6942(0x11a)](_0x1e6942(0x34f),_0x58c314['message']),_0x146d48[_0x1e6942(0x1f1)](_0x1e6942(0x199),{'parse_mode':_0x1e6942(0x45c)});const _0x2c9d96=_0x551786!=null;if(!_0x2c9d96&&_0x597b5b>=0x2)return _0x146d48['reply'](_0x1e6942(0x4c2),{'parse_mode':_0x1e6942(0x45c)});await handleTrial(_0x146d48,_0x380efb,_0x578ded);if(!_0x2c9d96){const _0x1cb801=_0x597b5b+0x1;db[_0x1e6942(0x39d)](_0x1e6942(0x328),[_0x2b009d,_0x434fbd,_0x1cb801,_0x1cb801]);}});});});}else userState[_0x146d48['chat']['id']]={'step':_0x1116b1(0x49b)+_0x4bf761+'_'+_0x380efb,'serverId':_0x578ded,'type':_0x380efb,'action':_0x4bf761},db[_0x1116b1(0x518)](_0x1116b1(0x39e),[_0x578ded],async(_0x5031ec,_0x4a7128)=>{const _0x1b793a=_0x1116b1;if(_0x5031ec)return logger['error'](_0x1b793a(0x24b),_0x5031ec['message']),_0x146d48[_0x1b793a(0x1f1)]('❌\x20*Terjadi\x20kesalahan\x20saat\x20mengambil\x20detail\x20server.*',{'parse_mode':_0x1b793a(0x45c)});if(!_0x4a7128)return _0x146d48[_0x1b793a(0x1f1)](_0x1b793a(0x29a),{'parse_mode':_0x1b793a(0x45c)});const {batas_create_akun:_0x3b5f6e,total_create_akun:_0x246556}=_0x4a7128;if(_0x246556>=_0x3b5f6e)return _0x146d48[_0x1b793a(0x1f1)]('❌\x20*Server\x20penuh.\x20Tidak\x20dapat\x20membuat\x20akun\x20baru\x20di\x20server\x20ini.*',{'parse_mode':_0x1b793a(0x45c)});await _0x146d48[_0x1b793a(0x1f1)]('👤\x20*Masukkan\x20username:*',{'parse_mode':_0x1b793a(0x45c)});});});async function handleTrial(_0xf38a9f,_0x51ba94,_0x53c246){const _0x2385ef=_0x4e46c9;try{const _0x1a2181=_0x2385ef(0x3a1)+Math[_0x2385ef(0x486)](Math['random']()*0x2710),_0x3867fe=Math['random']()[_0x2385ef(0x51e)](0x24)[_0x2385ef(0x16a)](-0x6),_0x519a2b=0x1,_0x519ace=0x1,_0x3bf88f=0x1;let _0x312ccd;switch(_0x51ba94){case _0x2385ef(0x1a2):_0x312ccd=await trialvmess(_0x1a2181,_0x519a2b,_0x519ace,_0x3bf88f,_0x53c246);break;case _0x2385ef(0x184):_0x312ccd=await trialvless(_0x1a2181,_0x519a2b,_0x519ace,_0x3bf88f,_0x53c246);break;case _0x2385ef(0x234):_0x312ccd=await trialtrojan(_0x1a2181,_0x519a2b,_0x519ace,_0x3bf88f,_0x53c246);break;case _0x2385ef(0xc8):_0x312ccd=await trialshadowsocks(_0x1a2181,_0x519a2b,_0x519ace,_0x3bf88f,_0x53c246);break;case _0x2385ef(0x533):_0x312ccd=await trialssh(_0x1a2181,_0x3867fe,_0x519a2b,_0x3bf88f,_0x53c246);break;default:_0x312ccd=_0x2385ef(0x429);}_0x312ccd&&await _0xf38a9f[_0x2385ef(0x1f1)](_0x312ccd,{'parse_mode':_0x2385ef(0x45c)});}catch(_0x18255a){logger[_0x2385ef(0x11a)](_0x2385ef(0x188)+_0x51ba94+':',_0x18255a),await _0xf38a9f[_0x2385ef(0x1f1)](_0x2385ef(0x29b),{'parse_mode':_0x2385ef(0x45c)});}finally{delete userState[_0xf38a9f[_0x2385ef(0x1b9)]['id']];}}function kaburMark(_0x125400){const _0xb21b7=_0x4e46c9;return _0x125400[_0xb21b7(0x28c)](/[_*[\]()~`>#+\-=|{}.!\\]/g,_0xb21b7(0x26f));}async function showLoading(_0x5ae422){const _0x10e487=_0x4e46c9,_0x54c8c4=await _0x5ae422['reply'](_0x10e487(0x297)),_0x5ac725=['.','..','...','\x20'];let _0x37e50d=0x0;const _0x34fc1e=setInterval(async()=>{const _0x3c71bf=_0x10e487;_0x37e50d=(_0x37e50d+0x1)%_0x5ac725[_0x3c71bf(0x27a)];try{await _0x5ae422[_0x3c71bf(0x364)][_0x3c71bf(0x3ce)](_0x5ae422[_0x3c71bf(0x1b9)]['id'],_0x54c8c4[_0x3c71bf(0x361)],null,_0x3c71bf(0x115)+_0x5ac725[_0x37e50d]);}catch(_0x35ad61){clearInterval(_0x34fc1e);}},0x3e8);return{'messageId':_0x54c8c4[_0x10e487(0x361)],'intervalId':_0x34fc1e};}bot['on'](_0x4e46c9(0x3b9),async(_0x314a44,_0x49bf70)=>{const _0x18b63b=_0x4e46c9,_0x4fd726=_0x314a44[_0x18b63b(0x112)]['id'],_0x2735de=_0x314a44[_0x18b63b(0x4d3)]?.[_0x18b63b(0x3b9)]?.[_0x18b63b(0x200)](),_0x35e782=userState[_0x4fd726];if(typeof _0x2735de!==_0x18b63b(0x24e)||_0x2735de['length']===0x0)return;if(_0x2735de['startsWith']('/'))return _0x49bf70();console[_0x18b63b(0x2bc)]('📩\x20Input\x20dari\x20'+_0x4fd726+':\x20'+_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)]),logger[_0x18b63b(0x235)](_0x18b63b(0x2b0)+_0x4fd726+':\x20'+_0x314a44['message'][_0x18b63b(0x3b9)]);if(global['depositState']&&global[_0x18b63b(0x132)][_0x4fd726]?.[_0x18b63b(0x266)]==='request_amount_saweria'){const _0x3f3c24=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)]['trim'](),_0x5a3a82=parseInt(_0x3f3c24[_0x18b63b(0x28c)](/[^\d]/g,''),0xa);if(isNaN(_0x5a3a82)||_0x5a3a82<0x1388)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0xc7),{'parse_mode':_0x18b63b(0x45c)});delete global[_0x18b63b(0x132)][_0x4fd726],await _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x393)+_0x5a3a82+_0x18b63b(0x4f2)),await processDepositSaweria(_0x314a44,_0x5a3a82);return;}if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x1e8)){const _0x506489=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)]();if(!/^[a-zA-Z0-9]{3,20}$/[_0x18b63b(0x272)](_0x506489))return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x48d),{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726]={'step':_0x18b63b(0xaf),'username':_0x506489,'bulan':_0x35e782[_0x18b63b(0x249)]},await _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x33e),{'parse_mode':_0x18b63b(0x45c)});return;}if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0xaf)){const _0x3af15f=_0x314a44[_0x18b63b(0x4d3)]['text'][_0x18b63b(0x200)](),{username:_0x2a23f4,bulan:_0x47d09a}=_0x35e782;if(!/^\d{1,3}(\.\d{1,3}){3}$/[_0x18b63b(0x272)](_0x3af15f))return _0x314a44[_0x18b63b(0x1f1)]('❌\x20*Format\x20IP\x20tidak\x20valid.*\x20Masukkan\x20IP\x20seperti\x20123.45.67.89',{'parse_mode':_0x18b63b(0x45c)});const _0x4dfb61=0x2710*_0x47d09a;db['get'](_0x18b63b(0x4bc),[_0x4fd726],async(_0x702c48,_0x227b0c)=>{const _0x8e341b=_0x18b63b;if(_0x702c48||!_0x227b0c)return logger['error'](_0x8e341b(0x3bc)+_0x4fd726+_0x8e341b(0x292),_0x702c48?.[_0x8e341b(0x4d3)]),_0x314a44[_0x8e341b(0x1f1)](_0x8e341b(0x479),{'parse_mode':_0x8e341b(0x45c)});if(_0x227b0c['saldo']<_0x4dfb61)return logger[_0x8e341b(0x25c)](_0x8e341b(0x4cc)+_0x4fd726+_0x8e341b(0xea)+_0x227b0c[_0x8e341b(0x531)]+_0x8e341b(0x52f)+_0x4dfb61),_0x314a44[_0x8e341b(0x1f1)](_0x8e341b(0x19f),{'parse_mode':_0x8e341b(0x45c)});const {exec:_0x5209c3}=require(_0x8e341b(0x46a)),_0xe05f5='/usr/local/sbin/xwanregis\x20'+_0x2a23f4+'\x20'+_0x47d09a+'\x20'+_0x3af15f;logger[_0x8e341b(0x235)](_0x8e341b(0x1ba)+_0x4fd726+':\x20'+_0xe05f5);const _0x35a99f=await showLoading(_0x314a44),_0x557dc9=_0x35a99f[_0x8e341b(0x398)],_0x16e56a=_0x35a99f[_0x8e341b(0x21f)];let _0x1c940d,_0x8e3cc0=![];try{const {error:_0x10d0cb,stdout:_0xa9e589,stderr:_0x30d026}=await new Promise(_0x17c373=>{_0x5209c3(_0xe05f5,(_0x1f3fa9,_0x35500a,_0x5521ca)=>{_0x17c373({'error':_0x1f3fa9,'stdout':_0x35500a,'stderr':_0x5521ca});});});if(_0x10d0cb)logger[_0x8e341b(0x11a)]('Error\x20saat\x20eksekusi\x20literegis\x20untuk\x20user\x20'+_0x4fd726+':',_0x10d0cb[_0x8e341b(0x4d3)]),_0x1c940d='❌\x20Gagal\x20daftar\x20script:\x0a\x0a'+(_0x30d026||_0x10d0cb[_0x8e341b(0x4d3)]);else/gagal|error/i[_0x8e341b(0x272)](_0xa9e589)?(logger[_0x8e341b(0x25c)](_0x8e341b(0x28b)+_0x4fd726+':\x0a'+_0xa9e589),_0x1c940d=_0x8e341b(0x138)+_0xa9e589):(_0x8e3cc0=!![],_0x1c940d=_0x8e341b(0x1a0)+_0xa9e589,logger[_0x8e341b(0x235)](_0x8e341b(0x2a9)+_0x4fd726));}catch(_0x129496){logger[_0x8e341b(0x11a)](_0x8e341b(0x4d2)+_0x4fd726+':',_0x129496['message']),_0x1c940d=_0x8e341b(0x106);}finally{clearInterval(_0x16e56a);try{await _0x314a44[_0x8e341b(0x364)][_0x8e341b(0x29c)](_0x314a44[_0x8e341b(0x1b9)]['id'],_0x557dc9);}catch(_0x3782b1){logger['warn'](_0x8e341b(0x160)+_0x4fd726+':\x20'+_0x3782b1['message']);}}try{await _0x314a44['reply'](_0x1c940d,{'parse_mode':_0x8e341b(0x3e0)});}catch(_0x2cc31f){logger[_0x8e341b(0x11a)](_0x8e341b(0x1ef)+_0x4fd726+':',_0x2cc31f[_0x8e341b(0x4d3)]);}_0x8e3cc0?db[_0x8e341b(0x39d)](_0x8e341b(0x101),[_0x4dfb61,_0x4fd726],_0x49738e=>{const _0x82598d=_0x8e341b;_0x49738e?(logger[_0x82598d(0x11a)](_0x82598d(0x3ab),_0x49738e[_0x82598d(0x4d3)]),bot['telegram'][_0x82598d(0x2ef)](ADMIN,_0x82598d(0x251)+_0x4fd726+_0x82598d(0x3f8)+(_0x314a44[_0x82598d(0x112)][_0x82598d(0x34e)]||'N/A')+_0x82598d(0xd5)+_0x4dfb61[_0x82598d(0x1ee)](_0x82598d(0x35a))+_0x82598d(0x42c)+_0x49738e[_0x82598d(0x4d3)]+_0x82598d(0x31e),{'parse_mode':_0x82598d(0x45c)})[_0x82598d(0x468)](_0x357d31=>logger[_0x82598d(0x11a)]('Gagal\x20kirim\x20notif\x20darurat:',_0x357d31[_0x82598d(0x4d3)]))):logger[_0x82598d(0x235)](_0x82598d(0x3de)+_0x4dfb61+_0x82598d(0xc1)+_0x4fd726+'\x20(Sewa\x20Script\x20berhasil)');}):logger[_0x8e341b(0x235)](_0x8e341b(0x3ca)+_0x4fd726+'\x20TIDAK\x20dikurangi\x20karena\x20sewa\x20script\x20gagal.');}),delete userState[_0x4fd726];return;}if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0xa7)){const _0x2013ee=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)]['trim'](),_0x43141d=_0x35e782[_0x18b63b(0x249)];if(!/^\d{1,3}(\.\d{1,3}){3}$/['test'](_0x2013ee))return _0x314a44['reply'](_0x18b63b(0x3fa),{'parse_mode':_0x18b63b(0x45c)});const _0x422344=0x2710*_0x43141d;db[_0x18b63b(0x518)](_0x18b63b(0x4bc),[_0x4fd726],async(_0x313331,_0x52c16b)=>{const _0x492e88=_0x18b63b;if(_0x313331||!_0x52c16b)return logger[_0x492e88(0x11a)]('Error\x20mengambil\x20saldo\x20user\x20'+_0x4fd726+_0x492e88(0x2b3),_0x313331?.[_0x492e88(0x4d3)]),_0x314a44[_0x492e88(0x1f1)](_0x492e88(0x479),{'parse_mode':'Markdown'});if(_0x52c16b[_0x492e88(0x531)]<_0x422344)return logger[_0x492e88(0x25c)]('Saldo\x20user\x20'+_0x4fd726+_0x492e88(0xea)+_0x52c16b[_0x492e88(0x531)]+_0x492e88(0x37a)+_0x422344),_0x314a44[_0x492e88(0x1f1)]('❌\x20*Saldo\x20Anda\x20tidak\x20cukup\x20untuk\x20memperpanjang.*',{'parse_mode':_0x492e88(0x45c)});const {exec:_0x2445a1}=require(_0x492e88(0x46a)),_0x8567c6=_0x43141d*0x1e,_0x5561a2=_0x492e88(0x117)+_0x2013ee+'\x20'+_0x8567c6;logger['info']('Menjalankan\x20perintah\x20perpanjang\x20script\x20untuk\x20user\x20'+_0x4fd726+':\x20'+_0x5561a2);const _0x3bf558=await showLoading(_0x314a44),_0x411622=_0x3bf558[_0x492e88(0x398)],_0x401fd4=_0x3bf558[_0x492e88(0x21f)];let _0x76291a,_0xe240da=![];try{const {error:_0x260e5f,stdout:_0x1fedf5,stderr:_0x7b5efc}=await new Promise(_0x223086=>{_0x2445a1(_0x5561a2,(_0x56be28,_0x2053d8,_0x5efc94)=>{_0x223086({'error':_0x56be28,'stdout':_0x2053d8,'stderr':_0x5efc94});});});if(_0x260e5f)logger['error'](_0x492e88(0x3e1)+_0x4fd726+':',_0x260e5f[_0x492e88(0x4d3)]),_0x76291a=_0x492e88(0x43d)+(_0x7b5efc||_0x260e5f['message']);else/gagal|error/i[_0x492e88(0x272)](_0x1fedf5)?(logger[_0x492e88(0x25c)](_0x492e88(0x1bc)+_0x4fd726+':\x0a'+_0x1fedf5),_0x76291a=_0x492e88(0x43d)+_0x1fedf5):(_0xe240da=!![],_0x76291a=_0x492e88(0x4bd)+_0x1fedf5,logger[_0x492e88(0x235)](_0x492e88(0x2cf)+_0x4fd726));}catch(_0x4f7c15){logger[_0x492e88(0x11a)](_0x492e88(0x193)+_0x4fd726+':',_0x4f7c15[_0x492e88(0x4d3)]),_0x76291a=_0x492e88(0x29d);}finally{clearInterval(_0x401fd4);try{await _0x314a44[_0x492e88(0x364)][_0x492e88(0x29c)](_0x314a44[_0x492e88(0x1b9)]['id'],_0x411622);}catch(_0x5a9dd6){logger[_0x492e88(0x25c)]('Gagal\x20menghapus\x20pesan\x20loading\x20untuk\x20user\x20'+_0x4fd726+':\x20'+_0x5a9dd6[_0x492e88(0x4d3)]);}}try{await _0x314a44['reply'](_0x76291a,{'parse_mode':_0x492e88(0x3e0)});}catch(_0x439502){logger[_0x492e88(0x11a)]('Gagal\x20mengirim\x20pesan\x20hasil\x20perpanjang\x20script\x20untuk\x20user\x20'+_0x4fd726+':',_0x439502[_0x492e88(0x4d3)]);}_0xe240da?db[_0x492e88(0x39d)]('UPDATE\x20users\x20SET\x20saldo\x20=\x20saldo\x20-\x20?\x20WHERE\x20user_id\x20=\x20?',[_0x422344,_0x4fd726],_0x2e327d=>{const _0x1a7012=_0x492e88;_0x2e327d?(logger['error'](_0x1a7012(0x463),_0x2e327d[_0x1a7012(0x4d3)]),bot[_0x1a7012(0x364)][_0x1a7012(0x2ef)](ADMIN,_0x1a7012(0x1fd)+_0x4fd726+_0x1a7012(0x3f8)+(_0x314a44[_0x1a7012(0x112)][_0x1a7012(0x34e)]||_0x1a7012(0xe0))+_0x1a7012(0xa9)+_0x422344[_0x1a7012(0x1ee)](_0x1a7012(0x35a))+_0x1a7012(0x42c)+_0x2e327d[_0x1a7012(0x4d3)]+_0x1a7012(0xad),{'parse_mode':_0x1a7012(0x45c)})[_0x1a7012(0x468)](_0x9bdfcb=>logger[_0x1a7012(0x11a)](_0x1a7012(0x306),_0x9bdfcb[_0x1a7012(0x4d3)]))):logger['info'](_0x1a7012(0x3de)+_0x422344+_0x1a7012(0xc1)+_0x4fd726+_0x1a7012(0xa0));}):logger[_0x492e88(0x235)](_0x492e88(0x3ca)+_0x4fd726+_0x492e88(0x462));}),delete userState[_0x4fd726];return;}if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x278)){const [_0x3e85dc,_0x4a0e04,_0x3b2e2e]=_0x314a44['message'][_0x18b63b(0x3b9)][_0x18b63b(0x200)]()[_0x18b63b(0x17c)](/\s+/),_0x1225f8=parseInt(_0x4a0e04,0xa),_0x52c1df=parseInt(_0x3b2e2e,0xa);if(!_0x3e85dc||isNaN(_0x1225f8)||isNaN(_0x52c1df))return _0x314a44[_0x18b63b(0x1f1)]('⚠️\x20Format\x20salah.\x20Gunakan:\x20`on|off\x20<minimal_topup>\x20<persen_bonus>`\x0aContoh:\x20`on\x2010000\x2025`',{'parse_mode':_0x18b63b(0x45c)});const _0x19576a=_0x3e85dc[_0x18b63b(0x51d)]()==='on'?0x1:0x0;db['run'](_0x18b63b(0x295),[_0x19576a,_0x1225f8,_0x52c1df],_0x160448=>{const _0x5aac02=_0x18b63b;if(_0x160448)return logger['error'](_0x5aac02(0x489),_0x160448[_0x5aac02(0x4d3)]),_0x314a44['reply'](_0x5aac02(0x2f7));_0x314a44[_0x5aac02(0x1f1)](_0x5aac02(0x32e)+(_0x19576a?_0x5aac02(0x4ec):'Nonaktif')+_0x5aac02(0x425)+_0x1225f8+_0x5aac02(0x183)+_0x52c1df+'%',{'parse_mode':_0x5aac02(0x45c)}),delete userState[_0x4fd726];});return;}if(_0x35e782&&_0x35e782['step']['startsWith']('username_')){_0x35e782[_0x18b63b(0x34e)]=_0x314a44['message'][_0x18b63b(0x3b9)][_0x18b63b(0x200)]();if(!_0x35e782[_0x18b63b(0x34e)])return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x1ad),{'parse_mode':_0x18b63b(0x45c)});if(_0x35e782['username'][_0x18b63b(0x27a)]<0x3||_0x35e782[_0x18b63b(0x34e)][_0x18b63b(0x27a)]>0x14)return _0x314a44['reply']('❌\x20*Username\x20harus\x20terdiri\x20dari\x203\x20hingga\x2020\x20karakter.*',{'parse_mode':_0x18b63b(0x45c)});if(/[^a-zA-Z0-9]/['test'](_0x35e782[_0x18b63b(0x34e)]))return _0x314a44['reply'](_0x18b63b(0x4a9),{'parse_mode':_0x18b63b(0x45c)});const {username:_0x137f50,serverId:_0x59677a,type:_0x3e8af8,action:_0x4f3bfd}=_0x35e782;if(_0x4f3bfd===_0x18b63b(0x267))_0x3e8af8==='ssh'?(userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0x1b6)+_0x35e782[_0x18b63b(0x266)]+'_'+_0x35e782['type'],await _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x3b5),{'parse_mode':_0x18b63b(0x45c)})):(userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0x15a)+_0x35e782[_0x18b63b(0x266)]+'_'+_0x35e782[_0x18b63b(0x450)],await _0x314a44['reply'](_0x18b63b(0x48e),{'parse_mode':_0x18b63b(0x45c)}));else _0x4f3bfd==='renew'&&(userState[_0x4fd726]['step']=_0x18b63b(0x15a)+_0x35e782['action']+'_'+_0x35e782['type'],await _0x314a44[_0x18b63b(0x1f1)]('⏳\x20*Masukkan\x20masa\x20aktif\x20(hari):*',{'parse_mode':'Markdown'}));return;}if(_0x35e782&&_0x35e782['step'][_0x18b63b(0x418)](_0x18b63b(0x1b6))){_0x35e782[_0x18b63b(0xf2)]=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)]();if(!_0x35e782[_0x18b63b(0xf2)])return _0x314a44['reply'](_0x18b63b(0x1db),{'parse_mode':_0x18b63b(0x45c)});if(_0x35e782['password'][_0x18b63b(0x27a)]<0x1)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x36a),{'parse_mode':_0x18b63b(0x45c)});if(/[^a-zA-Z0-9]/['test'](_0x35e782['password']))return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x20c),{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0x15a)+_0x35e782['action']+'_'+_0x35e782[_0x18b63b(0x450)],await _0x314a44[_0x18b63b(0x1f1)]('⏳\x20*Masukkan\x20masa\x20aktif\x20(hari):*',{'parse_mode':_0x18b63b(0x45c)});return;}if(_0x35e782&&_0x35e782['step'][_0x18b63b(0x418)](_0x18b63b(0x15a))){const _0x47da25=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)]();if(!/^\d+$/['test'](_0x47da25))return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x2d2),{'parse_mode':_0x18b63b(0x45c)});const _0xb1c673=parseInt(_0x47da25,0xa);if(isNaN(_0xb1c673)||_0xb1c673<=0x0)return _0x314a44['reply'](_0x18b63b(0x2d2),{'parse_mode':_0x18b63b(0x45c)});if(_0xb1c673>0x16d)return _0x314a44[_0x18b63b(0x1f1)]('❌\x20*Masa\x20aktif\x20tidak\x20boleh\x20lebih\x20dari\x20365\x20hari.*',{'parse_mode':_0x18b63b(0x45c)});_0x35e782[_0x18b63b(0x49c)]=_0xb1c673,db[_0x18b63b(0x518)](_0x18b63b(0x416),[_0x35e782[_0x18b63b(0x32f)]],async(_0x273c37,_0x47f409)=>{const _0x210da=_0x18b63b;if(_0x273c37)return logger[_0x210da(0x11a)](_0x210da(0x24b),_0x273c37['message']),_0x314a44[_0x210da(0x1f1)](_0x210da(0x3a8),{'parse_mode':_0x210da(0x45c)});if(!_0x47f409)return _0x314a44[_0x210da(0x1f1)](_0x210da(0x29a),{'parse_mode':'Markdown'});const _0x302471=_0x47f409[_0x210da(0xac)];let _0x5c1e71=_0x302471*_0x35e782['exp'];const _0x3c2508=await new Promise(_0x27126b=>{const _0x15a47a=_0x210da;db['get'](_0x15a47a(0x358),[_0x4fd726],(_0x5b38f9,_0x5cb9b6)=>{const _0x270025=_0x15a47a;_0x27126b(_0x5cb9b6?_0x5cb9b6[_0x270025(0x413)]:_0x270025(0x371));});});let _0x4c8675=0x0;_0x3c2508===_0x210da(0xe8)&&(_0x4c8675=await new Promise(_0x453765=>{const _0x46f2b6=_0x210da;db['get'](_0x46f2b6(0x155),(_0x1d01af,_0x24792e)=>{const _0x35364e=_0x46f2b6;if(_0x1d01af)reject(_0x1d01af);else _0x453765(_0x24792e?_0x24792e[_0x35364e(0x1b4)]:0x0);});}),_0x5c1e71=Math['floor'](_0x5c1e71*(0x64-_0x4c8675)/0x64)),db[_0x210da(0x518)](_0x210da(0x4bc),[_0x4fd726],async(_0x2ad033,_0x3abe9b)=>{const _0x2e2b5a=_0x210da;if(_0x2ad033)return logger[_0x2e2b5a(0x11a)](_0x2e2b5a(0x2d1),_0x2ad033[_0x2e2b5a(0x4d3)]),_0x314a44[_0x2e2b5a(0x1f1)](_0x2e2b5a(0x1d4),{'parse_mode':_0x2e2b5a(0x45c)});if(!_0x3abe9b)return _0x314a44['reply'](_0x2e2b5a(0x423),{'parse_mode':'Markdown'});const _0x21184a=_0x3abe9b[_0x2e2b5a(0x531)];if(_0x21184a<_0x5c1e71)return delete userState[_0x4fd726],_0x314a44[_0x2e2b5a(0x1f1)](_0x2e2b5a(0x40a)+_0x21184a[_0x2e2b5a(0x1ee)](_0x2e2b5a(0x35a))+_0x2e2b5a(0x301)+_0x5c1e71['toLocaleString'](_0x2e2b5a(0x35a))+'*',{'parse_mode':'Markdown'});let _0x40d4de,_0x44978f=![],_0x471ca5='';const _0x4e82c4=await showLoading(_0x314a44),_0x122b89=_0x4e82c4[_0x2e2b5a(0x398)],_0x42bb8b=_0x4e82c4['intervalId'];try{logger[_0x2e2b5a(0x235)](_0x2e2b5a(0x30f)+_0x35e782[_0x2e2b5a(0x266)]+'\x20'+_0x35e782['type']+'\x20untuk\x20user\x20'+_0x4fd726+'\x20di\x20server\x20'+_0x47f409['nama_server']);if(_0x35e782[_0x2e2b5a(0x266)]===_0x2e2b5a(0x267)){_0x471ca5='Buat\x20Akun';switch(_0x35e782[_0x2e2b5a(0x450)]){case _0x2e2b5a(0x1a2):_0x40d4de=await createvmess(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409['quota'],_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782[_0x2e2b5a(0x32f)]);break;case'vless':_0x40d4de=await createvless(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409[_0x2e2b5a(0xdf)],_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782['serverId']);break;case _0x2e2b5a(0x234):_0x40d4de=await createtrojan(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409[_0x2e2b5a(0xdf)],_0x47f409['iplimit'],_0x35e782[_0x2e2b5a(0x32f)]);break;case _0x2e2b5a(0xc8):_0x40d4de=await createshadowsocks(_0x35e782['username'],_0xb1c673,_0x47f409[_0x2e2b5a(0xdf)],_0x47f409['iplimit'],_0x35e782['serverId']);break;case _0x2e2b5a(0x533):_0x40d4de=await createssh(_0x35e782['username'],_0x35e782[_0x2e2b5a(0xf2)],_0xb1c673,_0x47f409['iplimit'],_0x35e782[_0x2e2b5a(0x32f)]);break;default:_0x40d4de=_0x2e2b5a(0x429);break;}}else{if(_0x35e782[_0x2e2b5a(0x266)]===_0x2e2b5a(0x3a9)){_0x471ca5=_0x2e2b5a(0x38c);switch(_0x35e782[_0x2e2b5a(0x450)]){case _0x2e2b5a(0x1a2):_0x40d4de=await renewvmess(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409['quota'],_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782['serverId']);break;case _0x2e2b5a(0x184):_0x40d4de=await renewvless(_0x35e782['username'],_0xb1c673,_0x47f409['quota'],_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782[_0x2e2b5a(0x32f)]);break;case _0x2e2b5a(0x234):_0x40d4de=await renewtrojan(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409[_0x2e2b5a(0xdf)],_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782[_0x2e2b5a(0x32f)]);break;case _0x2e2b5a(0xc8):_0x40d4de=await renewshadowsocks(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409[_0x2e2b5a(0xdf)],_0x47f409['iplimit'],_0x35e782['serverId']);break;case _0x2e2b5a(0x533):_0x40d4de=await renewssh(_0x35e782[_0x2e2b5a(0x34e)],_0xb1c673,_0x47f409[_0x2e2b5a(0x4e0)],_0x35e782[_0x2e2b5a(0x32f)]);break;default:_0x40d4de='❌\x20*Tipe\x20layanan\x20tidak\x20dikenali.*';break;}}}_0x40d4de&&typeof _0x40d4de===_0x2e2b5a(0x24e)&&!_0x40d4de[_0x2e2b5a(0x51d)]()[_0x2e2b5a(0x1c4)](_0x2e2b5a(0x377))&&!_0x40d4de['toLowerCase']()['includes']('error')?(_0x44978f=!![],logger[_0x2e2b5a(0x235)](_0x2e2b5a(0x414)+_0x471ca5+'\x20'+_0x35e782['type']+_0x2e2b5a(0xbe)+_0x4fd726+'.')):(logger[_0x2e2b5a(0x25c)]('Aksi\x20'+_0x471ca5+'\x20'+_0x35e782[_0x2e2b5a(0x450)]+_0x2e2b5a(0x127)+_0x4fd726+':\x20'+_0x40d4de),_0x40d4de=_0x40d4de||'❌\x20Gagal\x20'+_0x471ca5+_0x2e2b5a(0x31b));}catch(_0x33439c){logger[_0x2e2b5a(0x11a)](_0x2e2b5a(0xc9)+_0x471ca5+_0x2e2b5a(0xb7)+_0x35e782[_0x2e2b5a(0x450)]+'\x20untuk\x20user\x20'+_0x4fd726+':',_0x33439c['message']),_0x40d4de=_0x2e2b5a(0x458),_0x44978f=![];}finally{clearInterval(_0x42bb8b);try{await _0x314a44['telegram']['deleteMessage'](_0x314a44[_0x2e2b5a(0x1b9)]['id'],_0x122b89);}catch(_0x194ac9){logger[_0x2e2b5a(0x25c)](_0x2e2b5a(0x160)+_0x4fd726+':\x20'+_0x194ac9['message']);}}if(!_0x44978f)return delete userState[_0x4fd726],_0x314a44[_0x2e2b5a(0x1f1)](_0x40d4de,{'parse_mode':'Markdown'});db[_0x2e2b5a(0x39d)](_0x2e2b5a(0x101),[_0x5c1e71,_0x4fd726],_0x249180=>{const _0x2ec5fc=_0x2e2b5a;_0x249180?(logger[_0x2ec5fc(0x11a)](_0x2ec5fc(0x503),_0x249180[_0x2ec5fc(0x4d3)]),bot[_0x2ec5fc(0x364)][_0x2ec5fc(0x2ef)](ADMIN,'🚨\x20*PERHATIAN:\x20SALDO\x20GAGAL\x20DIKURANGI!*\x0aUser\x20ID:\x20`'+_0x4fd726+'`\x0aUsername\x20TG:\x20`@'+(_0x314a44['from'][_0x2ec5fc(0x34e)]||_0x2ec5fc(0xe0))+'`\x0aProduk:\x20'+_0x35e782[_0x2ec5fc(0x450)][_0x2ec5fc(0x39b)]()+'\x0aJenis:\x20'+_0x471ca5+_0x2ec5fc(0xae)+_0x5c1e71[_0x2ec5fc(0x1ee)](_0x2ec5fc(0x35a))+_0x2ec5fc(0x42c)+_0x249180[_0x2ec5fc(0x4d3)]+_0x2ec5fc(0x268),{'parse_mode':_0x2ec5fc(0x45c)})[_0x2ec5fc(0x468)](_0xf58385=>logger[_0x2ec5fc(0x11a)](_0x2ec5fc(0x306),_0xf58385['message']))):logger[_0x2ec5fc(0x235)](_0x2ec5fc(0x3de)+_0x5c1e71+_0x2ec5fc(0xc1)+_0x4fd726+'\x20('+_0x471ca5+'\x20'+_0x35e782[_0x2ec5fc(0x450)]+')');}),db[_0x2e2b5a(0x39d)](_0x2e2b5a(0x12e),[_0x35e782[_0x2e2b5a(0x32f)]],_0x29ffb8=>{const _0x4a5e66=_0x2e2b5a;_0x29ffb8&&logger[_0x4a5e66(0x11a)](_0x4a5e66(0x190),_0x29ffb8['message']);});const _0x396fa9=await new Promise(_0x568d5b=>{const _0x4642d5=_0x2e2b5a;db['get'](_0x4642d5(0x358),[_0x4fd726],(_0x4d7c56,_0x181178)=>{const _0x3dd8c9=_0x4642d5;_0x568d5b(_0x181178?_0x181178['role']:_0x3dd8c9(0x371));});});db[_0x2e2b5a(0x39d)]('INSERT\x20INTO\x20log_penjualan\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20username,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20nama_server,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20tipe_akun,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20harga,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20masa_aktif_hari,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20waktu_transaksi,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20action_type,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_role\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?)',[_0x314a44[_0x2e2b5a(0x112)]['id'],_0x314a44['from']['username']||'',_0x47f409[_0x2e2b5a(0xdd)]||'Unknown',_0x35e782[_0x2e2b5a(0x450)],_0x5c1e71,_0x35e782[_0x2e2b5a(0x49c)],new Date()[_0x2e2b5a(0x428)](),_0x35e782[_0x2e2b5a(0x266)],_0x396fa9],_0x3c03aa=>{const _0x1d1b05=_0x2e2b5a;_0x3c03aa?logger[_0x1d1b05(0x25c)](_0x1d1b05(0x11e),_0x3c03aa['message']):logger[_0x1d1b05(0x235)](_0x1d1b05(0x34c)+_0x314a44[_0x1d1b05(0x112)]['id']+_0x1d1b05(0x4a2)+_0x35e782['type']+'\x20-\x20'+_0x35e782['action']+_0x1d1b05(0x118)+_0x5c1e71+'\x20-\x20Role:\x20'+_0x396fa9);}),await afterAccountTransaction({'userId':_0x4fd726,'username':_0x314a44['from'][_0x2e2b5a(0x34e)],'produk':_0x35e782[_0x2e2b5a(0x450)][_0x2e2b5a(0x39b)](),'serverId':_0x35e782[_0x2e2b5a(0x32f)],'jenis':_0x471ca5,'durasi':_0x35e782[_0x2e2b5a(0x49c)],'accountUsername':_0x35e782[_0x2e2b5a(0x34e)]}),await _0x314a44[_0x2e2b5a(0x1f1)](_0x40d4de,{'parse_mode':_0x2e2b5a(0x45c)}),delete userState[_0x4fd726];});});return;}if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x1df)){const _0x329fe4=_0x314a44[_0x18b63b(0x4d3)]['text'][_0x18b63b(0x200)]();if(!_0x329fe4)return _0x314a44['reply'](_0x18b63b(0x29e),{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726]['step']=_0x18b63b(0x327),userState[_0x4fd726][_0x18b63b(0x3bb)]=_0x329fe4,await _0x314a44[_0x18b63b(0x1f1)]('🔑\x20*Silahkan\x20masukkan\x20auth\x20server:*',{'parse_mode':'Markdown'});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x327)){const _0x2e28dd=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)]();if(!_0x2e28dd)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x375),{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0x4c0),userState[_0x4fd726][_0x18b63b(0x380)]=_0x2e28dd,await _0x314a44[_0x18b63b(0x1f1)]('🏷️\x20*Silahkan\x20masukkan\x20nama\x20server:*',{'parse_mode':_0x18b63b(0x45c)});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x4c0)){const _0x33fe2a=_0x314a44[_0x18b63b(0x4d3)]['text'][_0x18b63b(0x200)]();if(!_0x33fe2a)return _0x314a44[_0x18b63b(0x1f1)]('⚠️\x20*Nama\x20server\x20tidak\x20boleh\x20kosong.*\x20Silahkan\x20masukkan\x20nama\x20server\x20yang\x20valid.',{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726]['step']='addserver_quota',userState[_0x4fd726]['nama_server']=_0x33fe2a,await _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x2ca),{'parse_mode':_0x18b63b(0x45c)});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]==='addserver_quota'){const _0x198e46=parseInt(_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)](),0xa);if(isNaN(_0x198e46))return _0x314a44['reply'](_0x18b63b(0x3f6),{'parse_mode':'Markdown'});userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0xa2),userState[_0x4fd726]['quota']=_0x198e46,await _0x314a44['reply'](_0x18b63b(0x16f),{'parse_mode':_0x18b63b(0x45c)});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]==='addserver_iplimit'){const _0x10071c=parseInt(_0x314a44[_0x18b63b(0x4d3)]['text'][_0x18b63b(0x200)](),0xa);if(isNaN(_0x10071c))return _0x314a44[_0x18b63b(0x1f1)]('⚠️\x20*Limit\x20IP\x20tidak\x20valid.*\x20Silahkan\x20masukkan\x20limit\x20IP\x20server\x20yang\x20valid.',{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726][_0x18b63b(0x3b3)]=_0x18b63b(0x39c),userState[_0x4fd726][_0x18b63b(0x4e0)]=_0x10071c,await _0x314a44['reply'](_0x18b63b(0x43c),{'parse_mode':_0x18b63b(0x45c)});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x39c)){const _0x42b777=parseInt(_0x314a44['message'][_0x18b63b(0x3b9)][_0x18b63b(0x200)](),0xa);if(isNaN(_0x42b777))return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x14a),{'parse_mode':_0x18b63b(0x45c)});userState[_0x4fd726]['step']=_0x18b63b(0x3e7),userState[_0x4fd726][_0x18b63b(0x4d1)]=_0x42b777,await _0x314a44[_0x18b63b(0x1f1)]('💰\x20*Silahkan\x20masukkan\x20harga\x20server:*',{'parse_mode':_0x18b63b(0x45c)});return;}else{if(_0x35e782&&_0x35e782[_0x18b63b(0x3b3)]===_0x18b63b(0x3e7)){const _0x55612c=parseFloat(_0x314a44[_0x18b63b(0x4d3)]['text'][_0x18b63b(0x200)]());if(isNaN(_0x55612c)||_0x55612c<=0x0)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x1c5),{'parse_mode':_0x18b63b(0x45c)});const {domain:_0x139f20,auth:_0x548196,nama_server:_0x2d9240,quota:_0x32de95,iplimit:_0x430ee8,batas_create_akun:_0x3d6a07}=_0x35e782;try{db['run'](_0x18b63b(0x315),[_0x139f20,_0x548196,_0x2d9240,_0x32de95,_0x430ee8,_0x3d6a07,_0x55612c,0x0],function(_0x866f65){const _0x1b0259=_0x18b63b;_0x866f65?(logger[_0x1b0259(0x11a)](_0x1b0259(0x244),_0x866f65[_0x1b0259(0x4d3)]),_0x314a44['reply'](_0x1b0259(0xb0),{'parse_mode':_0x1b0259(0x45c)})):_0x314a44[_0x1b0259(0x1f1)](_0x1b0259(0xe4)+_0x139f20+'\x20telah\x20berhasil\x20ditambahkan.*\x0a\x0a📄\x20*Detail\x20Server:*\x0a-\x20Domain:\x20'+_0x139f20+_0x1b0259(0xd6)+_0x548196+_0x1b0259(0x4cf)+_0x2d9240+_0x1b0259(0x3e8)+_0x32de95+'\x0a-\x20Limit\x20IP:\x20'+_0x430ee8+_0x1b0259(0x33a)+_0x3d6a07+_0x1b0259(0x277)+_0x55612c,{'parse_mode':_0x1b0259(0x45c)});});}catch(_0x4c5bee){logger['error'](_0x18b63b(0x244),_0x4c5bee),await _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0xb0),{'parse_mode':_0x18b63b(0x45c)});}delete userState[_0x4fd726];return;}}}}}}}if(_0x35e782&&_0x35e782['step']===_0x18b63b(0x346)){const _0x541cf2=_0x314a44['message'][_0x18b63b(0x3b9)][_0x18b63b(0x200)](),_0x4c02fe=parseInt(_0x541cf2,0xa);if(isNaN(_0x4c02fe)||_0x4c02fe<=0x0)return _0x314a44['reply'](_0x18b63b(0x177),{'parse_mode':'Markdown'});try{const _0x3238a5=_0x35e782[_0x18b63b(0x33c)],_0x22b165=await new Promise((_0x29310d,_0x47f7df)=>{const _0x1a6889=_0x18b63b;db[_0x1a6889(0x39d)](_0x1a6889(0x151),[_0x4c02fe,_0x3238a5],function(_0x2865c5){const _0x7dfa2d=_0x1a6889;_0x2865c5?(logger[_0x7dfa2d(0x11a)]('⚠️\x20Kesalahan\x20saat\x20menambahkan\x20saldo\x20user:',_0x2865c5[_0x7dfa2d(0x4d3)]),_0x47f7df(_0x2865c5)):_0x29310d(this[_0x7dfa2d(0x15d)]);});});_0x22b165>0x0?_0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x3b4)+_0x4c02fe+_0x18b63b(0xa6)+_0x3238a5+_0x18b63b(0x18b),{'parse_mode':_0x18b63b(0x45c)}):_0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x505),{'parse_mode':_0x18b63b(0x45c)});}catch(_0x4227e5){logger['error'](_0x18b63b(0x502),_0x4227e5[_0x18b63b(0x4d3)]),_0x314a44['reply'](_0x18b63b(0x37b),{'parse_mode':_0x18b63b(0x45c)});}delete userState[_0x4fd726];return;}const _0x57db34=[_0x18b63b(0x3e2),_0x18b63b(0x4c9),_0x18b63b(0x3a3),_0x18b63b(0x347),_0x18b63b(0x23e),_0x18b63b(0x17b),_0x18b63b(0x1f3)];if(_0x35e782&&_0x57db34['includes'](_0x35e782[_0x18b63b(0x3b3)])){const _0x252f4b=_0x314a44['message'][_0x18b63b(0x3b9)]['trim']();let _0xd810fc,_0x510d10,_0x3dfd50=![];switch(_0x35e782['step']){case'edit_batas_create_akun':_0xd810fc=_0x18b63b(0x3fb),_0x510d10='batas\x20create\x20akun',_0x3dfd50=!![];break;case _0x18b63b(0x4c9):_0xd810fc=_0x18b63b(0x41d),_0x510d10='limit\x20IP',_0x3dfd50=!![];break;case _0x18b63b(0x3a3):_0xd810fc=_0x18b63b(0x136),_0x510d10=_0x18b63b(0xdf),_0x3dfd50=!![];break;case'edit_auth':_0xd810fc=_0x18b63b(0x4d6),_0x510d10=_0x18b63b(0x380);break;case _0x18b63b(0x23e):_0xd810fc=_0x18b63b(0x4ff),_0x510d10=_0x18b63b(0x3bb);break;case'edit_nama':_0xd810fc=_0x18b63b(0x525),_0x510d10=_0x18b63b(0x30b);break;case _0x18b63b(0x1f3):_0xd810fc=_0x18b63b(0x224),_0x510d10='total\x20create\x20akun',_0x3dfd50=!![];break;}if(_0x3dfd50&&(isNaN(parseInt(_0x252f4b,0xa))||parseInt(_0x252f4b,0xa)<0x0))return _0x314a44[_0x18b63b(0x1f1)]('⚠️\x20*'+_0x510d10+_0x18b63b(0x453),{'parse_mode':_0x18b63b(0x45c)});if(!_0x252f4b)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x49a)+_0x510d10+_0x18b63b(0xd7),{'parse_mode':_0x18b63b(0x45c)});try{const _0x4be514=_0x3dfd50?parseInt(_0x252f4b,0xa):_0x252f4b,_0x41b3f0=await new Promise((_0x3949f8,_0x1e3041)=>{const _0x44a54d=_0x18b63b;db[_0x44a54d(0x39d)](_0xd810fc,[_0x4be514,_0x35e782['serverId']],function(_0x4bd1e6){const _0x461adc=_0x44a54d;_0x4bd1e6?(logger[_0x461adc(0x11a)](_0x461adc(0x113)+_0x510d10+_0x461adc(0x412),_0x4bd1e6[_0x461adc(0x4d3)]),_0x1e3041(_0x4bd1e6)):_0x3949f8(this[_0x461adc(0x15d)]);});});_0x41b3f0>0x0?_0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x501)+_0x510d10+_0x18b63b(0xc6)+_0x252f4b+_0x18b63b(0x18b),{'parse_mode':_0x18b63b(0x45c)}):_0x314a44[_0x18b63b(0x1f1)]('⚠️\x20*Server\x20tidak\x20ditemukan\x20atau\x20'+_0x510d10+_0x18b63b(0x472),{'parse_mode':_0x18b63b(0x45c)});}catch(_0xa4962c){logger['error'](_0x18b63b(0x2bf)+_0x510d10+_0x18b63b(0x412),_0xa4962c['message']),_0x314a44['reply'](_0x18b63b(0x1d5)+_0x510d10+_0x18b63b(0x44c),{'parse_mode':_0x18b63b(0x45c)});}delete userState[_0x4fd726];return;}if(_0x35e782&&_0x35e782['step']===_0x18b63b(0x2e1)){const _0x499126=_0x314a44[_0x18b63b(0x4d3)][_0x18b63b(0x3b9)][_0x18b63b(0x200)](),_0x32e6a7=parseFloat(_0x499126);if(isNaN(_0x32e6a7)||_0x32e6a7<=0x0)return _0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x2e2),{'parse_mode':_0x18b63b(0x45c)});try{const _0x2a2bcb=await new Promise((_0x479212,_0x4d1cbe)=>{const _0x39762c=_0x18b63b;db['run'](_0x39762c(0x287),[_0x32e6a7,_0x35e782[_0x39762c(0x32f)]],function(_0x346435){const _0x78c8f8=_0x39762c;_0x346435?(logger[_0x78c8f8(0x11a)](_0x78c8f8(0x223),_0x346435['message']),_0x4d1cbe(_0x346435)):_0x479212(this[_0x78c8f8(0x15d)]);});});_0x2a2bcb>0x0?_0x314a44[_0x18b63b(0x1f1)]('✅\x20*Harga\x20server\x20berhasil\x20diubah\x20menjadi\x20`Rp'+_0x32e6a7+'`.*',{'parse_mode':'Markdown'}):_0x314a44[_0x18b63b(0x1f1)](_0x18b63b(0x352),{'parse_mode':_0x18b63b(0x45c)});}catch(_0x414eba){logger[_0x18b63b(0x11a)](_0x18b63b(0x329),_0x414eba[_0x18b63b(0x4d3)]),_0x314a44['reply'](_0x18b63b(0x3fd),{'parse_mode':_0x18b63b(0x45c)});}delete userState[_0x4fd726];return;}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x1df),async _0x75feb=>{const _0x3a1c82=_0x4e46c9;try{logger[_0x3a1c82(0x235)](_0x3a1c82(0x131)),await _0x75feb[_0x3a1c82(0x294)](),await _0x75feb[_0x3a1c82(0x1f1)](_0x3a1c82(0x4b2),{'parse_mode':_0x3a1c82(0x45c)}),userState[_0x75feb[_0x3a1c82(0x1b9)]['id']]={'step':_0x3a1c82(0x1df)};}catch(_0x27be75){logger['error']('❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20tambah\x20server:',_0x27be75),await _0x75feb['reply']('❌\x20*GAGAL!\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.*',{'parse_mode':_0x3a1c82(0x45c)});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x4a3),async _0x4f3cad=>{const _0x153147=_0x4e46c9;try{logger[_0x153147(0x235)](_0x153147(0x27e)),await _0x4f3cad['answerCbQuery']();const _0x59b04b=await new Promise((_0x16a187,_0x4c76dd)=>{const _0x3e7491=_0x153147;db[_0x3e7491(0x28e)](_0x3e7491(0x3ee),[],(_0x5411c6,_0x17aa5d)=>{const _0x1bfd89=_0x3e7491;if(_0x5411c6)return logger[_0x1bfd89(0x11a)](_0x1bfd89(0x1eb),_0x5411c6[_0x1bfd89(0x4d3)]),_0x4c76dd('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20detail\x20server.*');_0x16a187(_0x17aa5d);});});if(_0x59b04b[_0x153147(0x27a)]===0x0)return logger['info'](_0x153147(0x111)),_0x4f3cad[_0x153147(0x1f1)]('⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20saat\x20ini.*',{'parse_mode':_0x153147(0x45c)});const _0x2cd7da=[];for(let _0x1be10e=0x0;_0x1be10e<_0x59b04b[_0x153147(0x27a)];_0x1be10e+=0x2){const _0x1893a0=[];_0x1893a0['push']({'text':''+_0x59b04b[_0x1be10e]['nama_server'],'callback_data':_0x153147(0x4e3)+_0x59b04b[_0x1be10e]['id']}),_0x1be10e+0x1<_0x59b04b[_0x153147(0x27a)]&&_0x1893a0[_0x153147(0x4e7)]({'text':''+_0x59b04b[_0x1be10e+0x1][_0x153147(0xdd)],'callback_data':_0x153147(0x4e3)+_0x59b04b[_0x1be10e+0x1]['id']}),_0x2cd7da[_0x153147(0x4e7)](_0x1893a0);}await _0x4f3cad['reply'](_0x153147(0x156),{'reply_markup':{'inline_keyboard':_0x2cd7da},'parse_mode':_0x153147(0x45c)});}catch(_0x38177c){logger['error'](_0x153147(0x1eb),_0x38177c),await _0x4f3cad[_0x153147(0x1f1)](_0x153147(0x4f1),{'parse_mode':_0x153147(0x45c)});}}),bot[_0x4e46c9(0x266)]('listserver',async _0x2926d3=>{const _0x438a37=_0x4e46c9;try{logger[_0x438a37(0x235)]('📜\x20Proses\x20daftar\x20server\x20dimulai'),await _0x2926d3[_0x438a37(0x294)]();const _0x3a3c7d=_0x2926d3[_0x438a37(0x112)]['id'],_0x4967cd=await new Promise((_0x10292c,_0x443daa)=>{const _0x546a9f=_0x438a37;db['get'](_0x546a9f(0x358),[_0x3a3c7d],(_0x3b2d07,_0xc8912f)=>{const _0x5bdddd=_0x546a9f;if(_0x3b2d07)_0x443daa(_0x3b2d07);else _0x10292c(_0xc8912f?_0xc8912f[_0x5bdddd(0x413)]:_0x5bdddd(0x371));});});let _0x4212e4=0x0;_0x4967cd===_0x438a37(0xe8)&&(_0x4212e4=await new Promise((_0x2efe7b,_0x34c80e)=>{const _0x546882=_0x438a37;db['get'](_0x546882(0x155),(_0x207fbf,_0x376f4a)=>{const _0xab16b1=_0x546882;if(_0x207fbf)_0x34c80e(_0x207fbf);else _0x2efe7b(_0x376f4a?_0x376f4a[_0xab16b1(0x1b4)]:0x0);});}));const _0x1294c3=await new Promise((_0x5dad10,_0x3e7c1c)=>{const _0x2471c4=_0x438a37;db[_0x2471c4(0x28e)](_0x2471c4(0x3ee),[],(_0x5d0a62,_0x42b85f)=>{const _0x570496=_0x2471c4;if(_0x5d0a62)return logger[_0x570496(0x11a)](_0x570496(0x1e0),_0x5d0a62[_0x570496(0x4d3)]),_0x3e7c1c(_0x570496(0x1d3));_0x5dad10(_0x42b85f);});});if(_0x1294c3[_0x438a37(0x27a)]===0x0)return logger[_0x438a37(0x235)](_0x438a37(0x111)),_0x2926d3[_0x438a37(0x1f1)]('⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20saat\x20ini.*',{'parse_mode':_0x438a37(0x45c)});let _0x51f572='📜\x20*Daftar\x20Server*\x20📜\x0a\x0a';_0x1294c3[_0x438a37(0x330)]((_0x3ffb19,_0x5700cb)=>{const _0x1d2ce9=_0x438a37;let _0x2b99be=_0x3ffb19['harga'];_0x4967cd===_0x1d2ce9(0xe8)&&_0x4212e4>0x0&&(_0x2b99be=Math[_0x1d2ce9(0x486)](_0x3ffb19['harga']*(0x64-_0x4212e4)/0x64));const _0xce5dbb=_0x2b99be*0x1e;_0x51f572+='🌐\x20*'+_0x3ffb19[_0x1d2ce9(0xdd)]+'*\x0a'+('💰\x20Harga\x20per\x20hari:\x20Rp'+_0x2b99be+'\x0a')+(_0x1d2ce9(0x335)+_0xce5dbb+'\x0a')+('📊\x20Quota:\x20'+_0x3ffb19[_0x1d2ce9(0xdf)]+_0x1d2ce9(0x1f9))+(_0x1d2ce9(0x3be)+_0x3ffb19[_0x1d2ce9(0x4e0)]+_0x1d2ce9(0x2e0))+(_0x1d2ce9(0x3ac)+_0x3ffb19[_0x1d2ce9(0x2fb)]+'/'+_0x3ffb19[_0x1d2ce9(0x4d1)]+'\x0a\x0a');}),_0x51f572+='\x0aTotal\x20Jumlah\x20Server:\x20'+_0x1294c3[_0x438a37(0x27a)],await _0x2926d3[_0x438a37(0x1f1)](_0x51f572,{'parse_mode':_0x438a37(0x45c)});}catch(_0x8bce5){logger[_0x438a37(0x11a)](_0x438a37(0x1e0),_0x8bce5),await _0x2926d3[_0x438a37(0x1f1)](_0x438a37(0x1f6),{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)]('resetdb',async _0x6477eb=>{const _0x5b3c38=_0x4e46c9;try{await _0x6477eb[_0x5b3c38(0x294)](),await _0x6477eb[_0x5b3c38(0x1f1)](_0x5b3c38(0x280),{'reply_markup':{'inline_keyboard':[[{'text':_0x5b3c38(0xf4),'callback_data':_0x5b3c38(0x23d)}],[{'text':_0x5b3c38(0x41e),'callback_data':_0x5b3c38(0xf3)}]]},'parse_mode':_0x5b3c38(0x45c)});}catch(_0x1b75c0){logger[_0x5b3c38(0x11a)]('❌\x20Error\x20saat\x20memulai\x20proses\x20reset\x20database:',_0x1b75c0),await _0x6477eb[_0x5b3c38(0x1f1)](_0x5b3c38(0x51f)+_0x1b75c0+'*',{'parse_mode':_0x5b3c38(0x45c)});}}),bot['action'](_0x4e46c9(0x23d),async _0xdcc394=>{const _0x5edc4a=_0x4e46c9;try{await _0xdcc394['answerCbQuery'](),await new Promise((_0x14d6a3,_0x2ac289)=>{const _0x2ef12d=_0x5858;db['run'](_0x2ef12d(0x226),_0x1a6c96=>{const _0x2eff6c=_0x2ef12d;if(_0x1a6c96)return logger[_0x2eff6c(0x11a)](_0x2eff6c(0x150),_0x1a6c96['message']),_0x2ac289(_0x2eff6c(0x2d9));_0x14d6a3();});}),await _0xdcc394[_0x5edc4a(0x1f1)]('🚨\x20*PERHATIAN!\x20Database\x20telah\x20DIRESET\x20SEPENUHNYA.\x20Semua\x20server\x20telah\x20DIHAPUS\x20TOTAL.*',{'parse_mode':_0x5edc4a(0x45c)});}catch(_0x3623dd){logger[_0x5edc4a(0x11a)](_0x5edc4a(0x2c0),_0x3623dd),await _0xdcc394[_0x5edc4a(0x1f1)]('❌\x20*'+_0x3623dd+'*',{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)]('cancel_resetdb',async _0x4bdebc=>{const _0x340063=_0x4e46c9;try{await _0x4bdebc['answerCbQuery'](),await _0x4bdebc[_0x340063(0x1f1)](_0x340063(0xc5),{'parse_mode':_0x340063(0x45c)});}catch(_0x1b40bd){logger[_0x340063(0x11a)](_0x340063(0x421),_0x1b40bd),await _0x4bdebc[_0x340063(0x1f1)]('❌\x20*'+_0x1b40bd+'*',{'parse_mode':_0x340063(0x45c)});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x3d1),async _0x4bcd93=>{const _0x59a065=_0x4e46c9;try{logger[_0x59a065(0x235)](_0x59a065(0x3f1)),await _0x4bcd93[_0x59a065(0x294)](),db[_0x59a065(0x28e)](_0x59a065(0x3ee),[],(_0x3c18ee,_0x969ed5)=>{const _0x1a950a=_0x59a065;if(_0x3c18ee)return logger['error'](_0x1a950a(0x1e0),_0x3c18ee['message']),_0x4bcd93[_0x1a950a(0x1f1)](_0x1a950a(0x1d3),{'parse_mode':'Markdown'});if(_0x969ed5[_0x1a950a(0x27a)]===0x0)return logger[_0x1a950a(0x235)](_0x1a950a(0x111)),_0x4bcd93[_0x1a950a(0x1f1)](_0x1a950a(0xfe),{'parse_mode':_0x1a950a(0x45c)});const _0x4a6674=_0x969ed5[_0x1a950a(0x307)](_0x16160a=>{const _0x2cf761=_0x1a950a;return[{'text':_0x16160a['nama_server'],'callback_data':_0x2cf761(0x3d6)+_0x16160a['id']}];});_0x4a6674[_0x1a950a(0x4e7)]([{'text':_0x1a950a(0x21c),'callback_data':_0x1a950a(0x47b)}]),_0x4bcd93[_0x1a950a(0x1f1)](_0x1a950a(0x148),{'reply_markup':{'inline_keyboard':_0x4a6674},'parse_mode':_0x1a950a(0x45c)});});}catch(_0x131987){logger[_0x59a065(0x11a)](_0x59a065(0x4b6),_0x131987),await _0x4bcd93[_0x59a065(0x1f1)](_0x59a065(0x4d5),{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0xbc),async _0xfd7442=>{const _0x1fbdd5=_0x4e46c9;try{const _0x2bdc3f=_0xfd7442[_0x1fbdd5(0x112)]['id'],_0x3b1f48=await new Promise((_0x331f01,_0x42ca53)=>{const _0x5c1f15=_0x1fbdd5;db['get'](_0x5c1f15(0x4bc),[_0x2bdc3f],(_0x5b9772,_0x33751b)=>{const _0xd2ae16=_0x5c1f15;if(_0x5b9772)return logger[_0xd2ae16(0x11a)](_0xd2ae16(0x3ad),_0x5b9772['message']),_0x42ca53(_0xd2ae16(0x1da));_0x331f01(_0x33751b);});});_0x3b1f48?await _0xfd7442[_0x1fbdd5(0x1f1)](_0x1fbdd5(0x471)+_0x2bdc3f+_0x1fbdd5(0x402)+_0x3b1f48[_0x1fbdd5(0x531)],{'parse_mode':_0x1fbdd5(0x45c),'reply_markup':{'inline_keyboard':[[{'text':_0x1fbdd5(0x2df),'callback_data':_0x1fbdd5(0x42a)},{'text':_0x1fbdd5(0x2a8),'callback_data':'send_main_menu'}]]}}):await _0xfd7442['reply'](_0x1fbdd5(0x26a),{'parse_mode':'Markdown'});}catch(_0x3837d1){logger[_0x1fbdd5(0x11a)](_0x1fbdd5(0x3ad),_0x3837d1),await _0xfd7442[_0x1fbdd5(0x1f1)](_0x1fbdd5(0x51f)+_0x3837d1['message']+'*',{'parse_mode':_0x1fbdd5(0x45c)});}});const getUsernameById=async _0x45019d=>{const _0x3e4c2f=_0x4e46c9;try{const _0x29dc00=await bot['telegram']['getChat'](_0x45019d);return _0x29dc00['username']||_0x29dc00[_0x3e4c2f(0x530)];}catch(_0x5d383d){logger[_0x3e4c2f(0x11a)](_0x3e4c2f(0x260),_0x5d383d['message']);throw new Error(_0x3e4c2f(0x167));}};bot[_0x4e46c9(0x266)](_0x4e46c9(0x1cd),async _0x25c77d=>{const _0x1a659d=_0x4e46c9;try{logger[_0x1a659d(0x235)](_0x1a659d(0x405)),await _0x25c77d[_0x1a659d(0x294)]();const _0x1ed3c2=await new Promise((_0x56cbe9,_0x2f6c51)=>{db['all']('SELECT\x20id,\x20user_id\x20FROM\x20Users\x20LIMIT\x2020',[],(_0x4de288,_0x142d4b)=>{const _0x24d97f=_0x5858;if(_0x4de288)return logger[_0x24d97f(0x11a)]('❌\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20user:',_0x4de288['message']),_0x2f6c51('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20user.*');_0x56cbe9(_0x142d4b);});}),_0x54855f=await new Promise((_0x4d453d,_0x3d526)=>{const _0x1eae50=_0x1a659d;db[_0x1eae50(0x518)]('SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20Users',[],(_0x57e4ed,_0x5643d2)=>{const _0x433437=_0x1eae50;if(_0x57e4ed)return logger[_0x433437(0x11a)]('❌\x20Kesalahan\x20saat\x20menghitung\x20total\x20user:',_0x57e4ed[_0x433437(0x4d3)]),_0x3d526(_0x433437(0x182));_0x4d453d(_0x5643d2[_0x433437(0x44d)]);});}),_0x25aa51=[];for(let _0x3a7714=0x0;_0x3a7714<_0x1ed3c2[_0x1a659d(0x27a)];_0x3a7714+=0x2){const _0x3d8454=[],_0x376e6c=await getUsernameById(_0x1ed3c2[_0x3a7714][_0x1a659d(0x1a7)]);_0x3d8454[_0x1a659d(0x4e7)]({'text':_0x376e6c||_0x1ed3c2[_0x3a7714][_0x1a659d(0x1a7)],'callback_data':'add_saldo_'+_0x1ed3c2[_0x3a7714]['id']});if(_0x3a7714+0x1<_0x1ed3c2['length']){const _0x301a36=await getUsernameById(_0x1ed3c2[_0x3a7714+0x1][_0x1a659d(0x1a7)]);_0x3d8454[_0x1a659d(0x4e7)]({'text':_0x301a36||_0x1ed3c2[_0x3a7714+0x1][_0x1a659d(0x1a7)],'callback_data':'add_saldo_'+_0x1ed3c2[_0x3a7714+0x1]['id']});}_0x25aa51[_0x1a659d(0x4e7)](_0x3d8454);}const _0xcc320e=0x0,_0x422ead={'inline_keyboard':[..._0x25aa51]};_0x54855f>0x14&&_0x422ead[_0x1a659d(0x2d5)]['push']([{'text':_0x1a659d(0x124),'callback_data':_0x1a659d(0x38b)+(_0xcc320e+0x1)}]),await _0x25c77d['reply'](_0x1a659d(0x41b),{'reply_markup':_0x422ead,'parse_mode':_0x1a659d(0x45c)});}catch(_0xc5de7b){logger[_0x1a659d(0x11a)](_0x1a659d(0x13c),_0xc5de7b),await _0x25c77d[_0x1a659d(0x1f1)](_0x1a659d(0x51f)+_0xc5de7b+'*',{'parse_mode':_0x1a659d(0x45c)});}}),bot[_0x4e46c9(0x266)](/next_users_(\d+)/,async _0x2841b6=>{const _0x13f882=_0x4e46c9,_0x54c3be=parseInt(_0x2841b6[_0x13f882(0x269)][0x1]),_0x54b3ca=_0x54c3be*0x14;try{logger[_0x13f882(0x235)](_0x13f882(0x2b2)+(_0x54c3be+0x1)),await _0x2841b6['answerCbQuery']();const _0x3f532c=await new Promise((_0x28e7a3,_0x48ae84)=>{const _0x4ce40f=_0x13f882;db[_0x4ce40f(0x28e)](_0x4ce40f(0x4ed)+_0x54b3ca,[],(_0x1ca57b,_0xc28f08)=>{const _0x342ab4=_0x4ce40f;if(_0x1ca57b)return logger[_0x342ab4(0x11a)]('❌\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20user:',_0x1ca57b['message']),_0x48ae84(_0x342ab4(0x344));_0x28e7a3(_0xc28f08);});}),_0x3106d1=await new Promise((_0x5066f1,_0x3d5813)=>{const _0xf6203e=_0x13f882;db[_0xf6203e(0x518)](_0xf6203e(0x175),[],(_0x57c3b4,_0x12e4d2)=>{const _0x7483f5=_0xf6203e;if(_0x57c3b4)return logger[_0x7483f5(0x11a)](_0x7483f5(0x296),_0x57c3b4[_0x7483f5(0x4d3)]),_0x3d5813(_0x7483f5(0x182));_0x5066f1(_0x12e4d2[_0x7483f5(0x44d)]);});}),_0x3f27da=[];for(let _0x1d2fa4=0x0;_0x1d2fa4<_0x3f532c[_0x13f882(0x27a)];_0x1d2fa4+=0x2){const _0x52821e=[],_0x3b9685=await getUsernameById(_0x3f532c[_0x1d2fa4]['user_id']);_0x52821e[_0x13f882(0x4e7)]({'text':_0x3b9685||_0x3f532c[_0x1d2fa4][_0x13f882(0x1a7)],'callback_data':'add_saldo_'+_0x3f532c[_0x1d2fa4]['id']});if(_0x1d2fa4+0x1<_0x3f532c[_0x13f882(0x27a)]){const _0x2dcd7f=await getUsernameById(_0x3f532c[_0x1d2fa4+0x1][_0x13f882(0x1a7)]);_0x52821e[_0x13f882(0x4e7)]({'text':_0x2dcd7f||_0x3f532c[_0x1d2fa4+0x1][_0x13f882(0x1a7)],'callback_data':'add_saldo_'+_0x3f532c[_0x1d2fa4+0x1]['id']});}_0x3f27da['push'](_0x52821e);}const _0x100915={'inline_keyboard':[..._0x3f27da]},_0x4adf97=[];_0x54c3be>0x0&&_0x4adf97[_0x13f882(0x4e7)]([{'text':_0x13f882(0x48c),'callback_data':'prev_users_'+(_0x54c3be-0x1)}]),_0x54b3ca+0x14<_0x3106d1&&_0x4adf97[_0x13f882(0x4e7)]([{'text':_0x13f882(0x124),'callback_data':_0x13f882(0x38b)+(_0x54c3be+0x1)}]),_0x100915[_0x13f882(0x2d5)][_0x13f882(0x4e7)](..._0x4adf97),await _0x2841b6[_0x13f882(0x227)](_0x100915);}catch(_0x98803a){logger['error']('❌\x20Kesalahan\x20saat\x20memproses\x20next\x20users:',_0x98803a),await _0x2841b6[_0x13f882(0x1f1)]('❌\x20*'+_0x98803a+'*',{'parse_mode':_0x13f882(0x45c)});}}),bot[_0x4e46c9(0x266)](/prev_users_(\d+)/,async _0x12128b=>{const _0x5c82ad=_0x4e46c9,_0x436b96=parseInt(_0x12128b['match'][0x1]),_0x1c7a5a=(_0x436b96-0x1)*0x14;try{logger[_0x5c82ad(0x235)]('Previous\x20users\x20process\x20started\x20for\x20page\x20'+_0x436b96),await _0x12128b['answerCbQuery']();const _0x22e5cd=await new Promise((_0x397bda,_0x4c47f2)=>{const _0x417d2f=_0x5c82ad;db[_0x417d2f(0x28e)](_0x417d2f(0x4ed)+_0x1c7a5a,[],(_0xabffc0,_0x13b601)=>{const _0x173450=_0x417d2f;if(_0xabffc0)return logger['error'](_0x173450(0x2f9),_0xabffc0[_0x173450(0x4d3)]),_0x4c47f2(_0x173450(0x344));_0x397bda(_0x13b601);});}),_0x139b2a=await new Promise((_0x3bbd3c,_0x5a3e71)=>{const _0x43e1f3=_0x5c82ad;db[_0x43e1f3(0x518)](_0x43e1f3(0x175),[],(_0x46cca5,_0x1f0cc8)=>{const _0x3a6c91=_0x43e1f3;if(_0x46cca5)return logger[_0x3a6c91(0x11a)](_0x3a6c91(0x296),_0x46cca5[_0x3a6c91(0x4d3)]),_0x5a3e71(_0x3a6c91(0x182));_0x3bbd3c(_0x1f0cc8['count']);});}),_0x35c6fa=[];for(let _0x1aad72=0x0;_0x1aad72<_0x22e5cd[_0x5c82ad(0x27a)];_0x1aad72+=0x2){const _0x42f9f0=[],_0x13c15a=await getUsernameById(_0x22e5cd[_0x1aad72][_0x5c82ad(0x1a7)]);_0x42f9f0[_0x5c82ad(0x4e7)]({'text':_0x13c15a||_0x22e5cd[_0x1aad72]['user_id'],'callback_data':_0x5c82ad(0x43f)+_0x22e5cd[_0x1aad72]['id']});if(_0x1aad72+0x1<_0x22e5cd[_0x5c82ad(0x27a)]){const _0x22ea7e=await getUsernameById(_0x22e5cd[_0x1aad72+0x1][_0x5c82ad(0x1a7)]);_0x42f9f0[_0x5c82ad(0x4e7)]({'text':_0x22ea7e||_0x22e5cd[_0x1aad72+0x1][_0x5c82ad(0x1a7)],'callback_data':_0x5c82ad(0x43f)+_0x22e5cd[_0x1aad72+0x1]['id']});}_0x35c6fa[_0x5c82ad(0x4e7)](_0x42f9f0);}const _0x250b94={'inline_keyboard':[..._0x35c6fa]},_0x3ba742=[];_0x436b96>0x0&&_0x3ba742[_0x5c82ad(0x4e7)]([{'text':_0x5c82ad(0x48c),'callback_data':_0x5c82ad(0x339)+(_0x436b96-0x1)}]),_0x1c7a5a+0x14<_0x139b2a&&_0x3ba742[_0x5c82ad(0x4e7)]([{'text':'➡️\x20Next','callback_data':'next_users_'+_0x436b96}]),_0x250b94['inline_keyboard'][_0x5c82ad(0x4e7)](..._0x3ba742),await _0x12128b['editMessageReplyMarkup'](_0x250b94);}catch(_0x5cca4c){logger[_0x5c82ad(0x11a)](_0x5c82ad(0x3bf),_0x5cca4c),await _0x12128b[_0x5c82ad(0x1f1)](_0x5c82ad(0x51f)+_0x5cca4c+'*',{'parse_mode':_0x5c82ad(0x45c)});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x291),async _0x3bc029=>{const _0x2db2a6=_0x4e46c9;try{logger[_0x2db2a6(0x235)](_0x2db2a6(0x147)),await _0x3bc029[_0x2db2a6(0x294)]();const _0x2977c7=await new Promise((_0x13382a,_0x34ef4c)=>{const _0x332ee4=_0x2db2a6;db['all'](_0x332ee4(0x104),[],(_0x192c63,_0x505091)=>{const _0x1d421f=_0x332ee4;if(_0x192c63)return logger[_0x1d421f(0x11a)](_0x1d421f(0x332),_0x192c63['message']),_0x34ef4c('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20server.*');_0x13382a(_0x505091);});});if(_0x2977c7[_0x2db2a6(0x27a)]===0x0)return _0x3bc029[_0x2db2a6(0x1f1)](_0x2db2a6(0x526),{'parse_mode':_0x2db2a6(0x45c)});const _0x49f945=_0x2977c7[_0x2db2a6(0x307)](_0xd42b0a=>({'text':_0xd42b0a[_0x2db2a6(0xdd)],'callback_data':'edit_limit_ip_'+_0xd42b0a['id']})),_0x5351f8=[];for(let _0x271f10=0x0;_0x271f10<_0x49f945[_0x2db2a6(0x27a)];_0x271f10+=0x2){_0x5351f8['push'](_0x49f945[_0x2db2a6(0x16a)](_0x271f10,_0x271f10+0x2));}await _0x3bc029[_0x2db2a6(0x1f1)]('📊\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20limit\x20IP:*',{'reply_markup':{'inline_keyboard':_0x5351f8},'parse_mode':'Markdown'});}catch(_0x4cb061){logger['error']('❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20limit\x20IP\x20server:',_0x4cb061),await _0x3bc029[_0x2db2a6(0x1f1)](_0x2db2a6(0x51f)+_0x4cb061+'*',{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)]('editserver_batas_create_akun',async _0x5c5fa0=>{const _0x2eb3c2=_0x4e46c9;try{logger[_0x2eb3c2(0x235)]('Edit\x20server\x20batas\x20create\x20akun\x20process\x20started'),await _0x5c5fa0[_0x2eb3c2(0x294)]();const _0x323106=await new Promise((_0x3bf954,_0x5986b0)=>{const _0x37acbe=_0x2eb3c2;db['all'](_0x37acbe(0x104),[],(_0x3faebc,_0x1c79d2)=>{const _0x5bf22b=_0x37acbe;if(_0x3faebc)return logger[_0x5bf22b(0x11a)](_0x5bf22b(0x332),_0x3faebc[_0x5bf22b(0x4d3)]),_0x5986b0(_0x5bf22b(0x1d3));_0x3bf954(_0x1c79d2);});});if(_0x323106[_0x2eb3c2(0x27a)]===0x0)return _0x5c5fa0['reply'](_0x2eb3c2(0x526),{'parse_mode':_0x2eb3c2(0x45c)});const _0x1a916c=_0x323106[_0x2eb3c2(0x307)](_0x2641b8=>({'text':_0x2641b8[_0x2eb3c2(0xdd)],'callback_data':_0x2eb3c2(0x2d7)+_0x2641b8['id']})),_0x1bb1b5=[];for(let _0x3a17b0=0x0;_0x3a17b0<_0x1a916c[_0x2eb3c2(0x27a)];_0x3a17b0+=0x2){_0x1bb1b5[_0x2eb3c2(0x4e7)](_0x1a916c[_0x2eb3c2(0x16a)](_0x3a17b0,_0x3a17b0+0x2));}await _0x5c5fa0[_0x2eb3c2(0x1f1)](_0x2eb3c2(0x250),{'reply_markup':{'inline_keyboard':_0x1bb1b5},'parse_mode':_0x2eb3c2(0x45c)});}catch(_0x21ea07){logger['error']('❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20batas\x20create\x20akun\x20server:',_0x21ea07),await _0x5c5fa0[_0x2eb3c2(0x1f1)](_0x2eb3c2(0x51f)+_0x21ea07+'*',{'parse_mode':_0x2eb3c2(0x45c)});}}),bot['action'](_0x4e46c9(0x303),async _0x57379b=>{const _0x508dcf=_0x4e46c9;try{logger[_0x508dcf(0x235)](_0x508dcf(0x45d)),await _0x57379b[_0x508dcf(0x294)]();const _0x414a33=await new Promise((_0x27aebd,_0x320bdb)=>{const _0x9d64bc=_0x508dcf;db[_0x9d64bc(0x28e)](_0x9d64bc(0x104),[],(_0x523bd2,_0x2f1257)=>{const _0xa71fa7=_0x9d64bc;if(_0x523bd2)return logger[_0xa71fa7(0x11a)](_0xa71fa7(0x332),_0x523bd2[_0xa71fa7(0x4d3)]),_0x320bdb(_0xa71fa7(0x1d3));_0x27aebd(_0x2f1257);});});if(_0x414a33[_0x508dcf(0x27a)]===0x0)return _0x57379b[_0x508dcf(0x1f1)]('⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20untuk\x20diedit.*',{'parse_mode':'Markdown'});const _0x3fc5f2=_0x414a33[_0x508dcf(0x307)](_0x5d36c8=>({'text':_0x5d36c8['nama_server'],'callback_data':'edit_total_create_akun_'+_0x5d36c8['id']})),_0x3a1766=[];for(let _0x488931=0x0;_0x488931<_0x3fc5f2[_0x508dcf(0x27a)];_0x488931+=0x2){_0x3a1766[_0x508dcf(0x4e7)](_0x3fc5f2[_0x508dcf(0x16a)](_0x488931,_0x488931+0x2));}await _0x57379b[_0x508dcf(0x1f1)]('📊\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20total\x20create\x20akun:*',{'reply_markup':{'inline_keyboard':_0x3a1766},'parse_mode':_0x508dcf(0x45c)});}catch(_0x3fa49e){logger['error'](_0x508dcf(0x2a6),_0x3fa49e),await _0x57379b['reply'](_0x508dcf(0x51f)+_0x3fa49e+'*',{'parse_mode':'Markdown'});}}),bot['action'](_0x4e46c9(0x172),async _0x3ac794=>{const _0x52f1c7=_0x4e46c9;try{logger[_0x52f1c7(0x235)](_0x52f1c7(0x265)),await _0x3ac794[_0x52f1c7(0x294)]();const _0x3d05fa=await new Promise((_0x4ad000,_0xd4158d)=>{const _0x3ca21e=_0x52f1c7;db[_0x3ca21e(0x28e)](_0x3ca21e(0x104),[],(_0x1d37c9,_0x159e09)=>{const _0x551fb4=_0x3ca21e;if(_0x1d37c9)return logger[_0x551fb4(0x11a)](_0x551fb4(0x332),_0x1d37c9[_0x551fb4(0x4d3)]),_0xd4158d(_0x551fb4(0x1d3));_0x4ad000(_0x159e09);});});if(_0x3d05fa[_0x52f1c7(0x27a)]===0x0)return _0x3ac794[_0x52f1c7(0x1f1)](_0x52f1c7(0x526),{'parse_mode':_0x52f1c7(0x45c)});const _0x97233a=_0x3d05fa['map'](_0x2dd689=>({'text':_0x2dd689['nama_server'],'callback_data':_0x52f1c7(0x208)+_0x2dd689['id']})),_0x2d8630=[];for(let _0x3e5267=0x0;_0x3e5267<_0x97233a[_0x52f1c7(0x27a)];_0x3e5267+=0x2){_0x2d8630[_0x52f1c7(0x4e7)](_0x97233a[_0x52f1c7(0x16a)](_0x3e5267,_0x3e5267+0x2));}await _0x3ac794['reply'](_0x52f1c7(0x178),{'reply_markup':{'inline_keyboard':_0x2d8630},'parse_mode':_0x52f1c7(0x45c)});}catch(_0x1f02a4){logger[_0x52f1c7(0x11a)](_0x52f1c7(0x493),_0x1f02a4),await _0x3ac794['reply'](_0x52f1c7(0x51f)+_0x1f02a4+'*',{'parse_mode':_0x52f1c7(0x45c)});}}),bot[_0x4e46c9(0x266)]('editserver_auth',async _0x134624=>{const _0x475c3e=_0x4e46c9;try{logger[_0x475c3e(0x235)]('Edit\x20server\x20auth\x20process\x20started'),await _0x134624['answerCbQuery']();const _0x2221d3=await new Promise((_0x2e4076,_0x2018c7)=>{const _0xd7eca7=_0x475c3e;db[_0xd7eca7(0x28e)](_0xd7eca7(0x104),[],(_0x17ec4b,_0x4bfddb)=>{const _0x5b459d=_0xd7eca7;if(_0x17ec4b)return logger[_0x5b459d(0x11a)](_0x5b459d(0x332),_0x17ec4b[_0x5b459d(0x4d3)]),_0x2018c7('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20server.*');_0x2e4076(_0x4bfddb);});});if(_0x2221d3[_0x475c3e(0x27a)]===0x0)return _0x134624['reply'](_0x475c3e(0x526),{'parse_mode':_0x475c3e(0x45c)});const _0x83f562=_0x2221d3[_0x475c3e(0x307)](_0x5ebfe4=>({'text':_0x5ebfe4['nama_server'],'callback_data':_0x475c3e(0x10f)+_0x5ebfe4['id']})),_0x1657e7=[];for(let _0x4952bd=0x0;_0x4952bd<_0x83f562['length'];_0x4952bd+=0x2){_0x1657e7['push'](_0x83f562[_0x475c3e(0x16a)](_0x4952bd,_0x4952bd+0x2));}await _0x134624[_0x475c3e(0x1f1)](_0x475c3e(0x1e9),{'reply_markup':{'inline_keyboard':_0x1657e7},'parse_mode':'Markdown'});}catch(_0x2beb34){logger[_0x475c3e(0x11a)](_0x475c3e(0x488),_0x2beb34),await _0x134624[_0x475c3e(0x1f1)](_0x475c3e(0x51f)+_0x2beb34+'*',{'parse_mode':_0x475c3e(0x45c)});}}),bot['action']('editserver_harga',async _0x7a4e82=>{const _0x212dd9=_0x4e46c9;try{logger[_0x212dd9(0x235)](_0x212dd9(0x456)),await _0x7a4e82['answerCbQuery']();const _0x167507=await new Promise((_0x1649bc,_0x1c9a28)=>{const _0x280757=_0x212dd9;db[_0x280757(0x28e)](_0x280757(0x104),[],(_0x1c67c1,_0x194b1d)=>{const _0x38dcca=_0x280757;if(_0x1c67c1)return logger[_0x38dcca(0x11a)]('❌\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20server:',_0x1c67c1['message']),_0x1c9a28(_0x38dcca(0x1d3));_0x1649bc(_0x194b1d);});});if(_0x167507[_0x212dd9(0x27a)]===0x0)return _0x7a4e82[_0x212dd9(0x1f1)](_0x212dd9(0x526),{'parse_mode':_0x212dd9(0x45c)});const _0x1657fe=_0x167507[_0x212dd9(0x307)](_0x19c818=>({'text':_0x19c818[_0x212dd9(0xdd)],'callback_data':_0x212dd9(0xbd)+_0x19c818['id']})),_0x488f8f=[];for(let _0x4c5a58=0x0;_0x4c5a58<_0x1657fe[_0x212dd9(0x27a)];_0x4c5a58+=0x2){_0x488f8f[_0x212dd9(0x4e7)](_0x1657fe[_0x212dd9(0x16a)](_0x4c5a58,_0x4c5a58+0x2));}await _0x7a4e82[_0x212dd9(0x1f1)](_0x212dd9(0x3f3),{'reply_markup':{'inline_keyboard':_0x488f8f},'parse_mode':_0x212dd9(0x45c)});}catch(_0x8ef17c){logger['error']('❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20harga\x20server:',_0x8ef17c),await _0x7a4e82['reply'](_0x212dd9(0x51f)+_0x8ef17c+'*',{'parse_mode':'Markdown'});}}),bot['action'](_0x4e46c9(0x45b),async _0x24d206=>{const _0x52d687=_0x4e46c9;try{logger[_0x52d687(0x235)](_0x52d687(0x411)),await _0x24d206['answerCbQuery']();const _0x4ee483=await new Promise((_0x10c78a,_0x2ed95e)=>{const _0x3dd1f5=_0x52d687;db[_0x3dd1f5(0x28e)](_0x3dd1f5(0x104),[],(_0x5a0e4a,_0x43f0d6)=>{const _0x288220=_0x3dd1f5;if(_0x5a0e4a)return logger['error'](_0x288220(0x332),_0x5a0e4a['message']),_0x2ed95e(_0x288220(0x1d3));_0x10c78a(_0x43f0d6);});});if(_0x4ee483[_0x52d687(0x27a)]===0x0)return _0x24d206[_0x52d687(0x1f1)]('⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20untuk\x20diedit.*',{'parse_mode':'Markdown'});const _0x3dc45a=_0x4ee483[_0x52d687(0x307)](_0x67ce2d=>({'text':_0x67ce2d[_0x52d687(0xdd)],'callback_data':_0x52d687(0x3cf)+_0x67ce2d['id']})),_0x2dfa7a=[];for(let _0x470cd6=0x0;_0x470cd6<_0x3dc45a[_0x52d687(0x27a)];_0x470cd6+=0x2){_0x2dfa7a[_0x52d687(0x4e7)](_0x3dc45a[_0x52d687(0x16a)](_0x470cd6,_0x470cd6+0x2));}await _0x24d206[_0x52d687(0x1f1)]('🌐\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20domain:*',{'reply_markup':{'inline_keyboard':_0x2dfa7a},'parse_mode':'Markdown'});}catch(_0x339e4b){logger[_0x52d687(0x11a)](_0x52d687(0x1a6),_0x339e4b),await _0x24d206[_0x52d687(0x1f1)]('❌\x20*'+_0x339e4b+'*',{'parse_mode':_0x52d687(0x45c)});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x3bd),async _0x4faab6=>{const _0x4fc2cf=_0x4e46c9;try{logger[_0x4fc2cf(0x235)]('Edit\x20server\x20nama\x20process\x20started'),await _0x4faab6[_0x4fc2cf(0x294)]();const _0x469dd1=await new Promise((_0x5ba790,_0x39d4c6)=>{const _0x3eb55f=_0x4fc2cf;db[_0x3eb55f(0x28e)](_0x3eb55f(0x104),[],(_0x2a5fbc,_0x5d9e51)=>{const _0x566faf=_0x3eb55f;if(_0x2a5fbc)return logger[_0x566faf(0x11a)](_0x566faf(0x332),_0x2a5fbc[_0x566faf(0x4d3)]),_0x39d4c6('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20server.*');_0x5ba790(_0x5d9e51);});});if(_0x469dd1[_0x4fc2cf(0x27a)]===0x0)return _0x4faab6[_0x4fc2cf(0x1f1)]('⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20untuk\x20diedit.*',{'parse_mode':_0x4fc2cf(0x45c)});const _0x299e34=_0x469dd1[_0x4fc2cf(0x307)](_0xb4b73e=>({'text':_0xb4b73e[_0x4fc2cf(0xdd)],'callback_data':_0x4fc2cf(0x4be)+_0xb4b73e['id']})),_0x565928=[];for(let _0x1ca9cf=0x0;_0x1ca9cf<_0x299e34['length'];_0x1ca9cf+=0x2){_0x565928[_0x4fc2cf(0x4e7)](_0x299e34[_0x4fc2cf(0x16a)](_0x1ca9cf,_0x1ca9cf+0x2));}await _0x4faab6[_0x4fc2cf(0x1f1)]('🏷️\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20nama:*',{'reply_markup':{'inline_keyboard':_0x565928},'parse_mode':'Markdown'});}catch(_0x1dab45){logger[_0x4fc2cf(0x11a)](_0x4fc2cf(0x403),_0x1dab45),await _0x4faab6[_0x4fc2cf(0x1f1)](_0x4fc2cf(0x51f)+_0x1dab45+'*',{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x50f),async _0x1b52ac=>{const _0x333e65=_0x4e46c9,_0x5dd3e2=_0x1b52ac['from']['id'],_0x4abe35=_0x1b52ac[_0x333e65(0x1b9)]['id'];try{await _0x1b52ac[_0x333e65(0x294)](),logger[_0x333e65(0x235)](_0x333e65(0x121)+_0x5dd3e2+_0x333e65(0x4fa));if(lastMenus[_0x5dd3e2])try{await bot[_0x333e65(0x364)][_0x333e65(0x29c)](_0x4abe35,lastMenus[_0x5dd3e2]),logger[_0x333e65(0x235)](_0x333e65(0x47c)+_0x5dd3e2+'\x20berhasil\x20dihapus'),delete lastMenus[_0x5dd3e2];}catch(_0x16e24c){console[_0x333e65(0x25c)](_0x333e65(0x32d)+_0x5dd3e2+':',_0x16e24c[_0x333e65(0x4d3)]);}if(!global[_0x333e65(0x132)])global['depositState']={};global[_0x333e65(0x132)][_0x5dd3e2]={'action':_0x333e65(0x46e),'amount':''};const _0x1f0b49=keyboard_nomor(),_0x279f68=await _0x1b52ac['reply'](_0x333e65(0x461),{'reply_markup':{'inline_keyboard':_0x1f0b49},'parse_mode':'Markdown'});_0x279f68&&_0x279f68[_0x333e65(0x361)]&&(lastMenus[_0x5dd3e2]=_0x279f68[_0x333e65(0x361)]);}catch(_0x46d42a){logger[_0x333e65(0x11a)](_0x333e65(0x20d),_0x46d42a);try{await _0x1b52ac[_0x333e65(0x1f1)](_0x333e65(0x4d5),{'parse_mode':_0x333e65(0x45c)});}catch(_0x338c3a){logger['error'](_0x333e65(0x4a7),_0x338c3a[_0x333e65(0x4d3)]);}}}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x4d7),async _0x15d2b6=>{const _0x2f8b07=_0x4e46c9,_0x515b66=_0x15d2b6[_0x2f8b07(0x112)]['id'],_0x4477cd=_0x15d2b6[_0x2f8b07(0x1b9)]['id'];try{await _0x15d2b6['answerCbQuery'](),logger[_0x2f8b07(0x235)](_0x2f8b07(0x121)+_0x515b66+'\x20memulai\x20proses\x20top-up\x20saldo.');if(lastMenus[_0x515b66])try{await bot[_0x2f8b07(0x364)][_0x2f8b07(0x29c)](_0x4477cd,lastMenus[_0x515b66]),logger[_0x2f8b07(0x235)](_0x2f8b07(0x47c)+_0x515b66+_0x2f8b07(0x464)),delete lastMenus[_0x515b66];}catch(_0x2a218d){console[_0x2f8b07(0x25c)]('⚠️\x20Gagal\x20menghapus\x20menu\x20sebelumnya\x20untuk\x20'+_0x515b66+':',_0x2a218d[_0x2f8b07(0x4d3)]);}if(!global[_0x2f8b07(0x132)])global['depositState']={};global[_0x2f8b07(0x132)][_0x515b66]={'action':'request_amount_saweria','amount':''},logger['info'](_0x2f8b07(0x103)+_0x515b66);const _0x38d533=await _0x15d2b6[_0x2f8b07(0x1f1)]('💰\x20*Silahkan\x20ketik\x20nominal\x20top-up\x20yang\x20ingin\x20Anda\x20bayarkan\x20melalui\x20QRIS\x20Saweria.*\x0a\x0aContoh:\x20`1000`',{'parse_mode':_0x2f8b07(0x45c)});_0x38d533&&_0x38d533['message_id']&&(lastMenus[_0x515b66]=_0x38d533[_0x2f8b07(0x361)]);}catch(_0x5b2c60){logger[_0x2f8b07(0x11a)]('❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20top-up\x20Saweria:',_0x5b2c60);try{await _0x15d2b6['reply'](_0x2f8b07(0x133),{'parse_mode':_0x2f8b07(0x45c)});}catch(_0x215b4c){logger[_0x2f8b07(0x11a)](_0x2f8b07(0x4a7),_0x215b4c['message']);}}}),bot[_0x4e46c9(0x266)](/^saweria_nominal_(\d+)$/,async _0x31637e=>{const _0x24d256=_0x4e46c9,_0x40a65b=_0x31637e['from']['id'],_0x411e84=parseInt(_0x31637e[_0x24d256(0x269)][0x1]);delete global[_0x24d256(0x132)][_0x40a65b],await _0x31637e[_0x24d256(0x294)](),await _0x31637e['reply'](_0x24d256(0x2bb)+_0x411e84+'...'),await processDepositSaweria(_0x31637e,_0x411e84);}),bot[_0x4e46c9(0x266)]('bonus_topup_setting',async _0x8971f=>{const _0xf8c95f=_0x4e46c9;await _0x8971f[_0xf8c95f(0x294)](),db[_0xf8c95f(0x518)](_0xf8c95f(0x2d0),(_0x12851b,_0x494ce9)=>{const _0x3ab84f=_0xf8c95f;if(_0x12851b||!_0x494ce9)return _0x8971f[_0x3ab84f(0x1f1)](_0x3ab84f(0x3db));_0x8971f[_0x3ab84f(0x1f1)](_0x3ab84f(0x363)+(_0x3ab84f(0x283)+(_0x494ce9[_0x3ab84f(0xa4)]?_0x3ab84f(0x257):_0x3ab84f(0x491))+'*\x0a')+(_0x3ab84f(0x3e6)+_0x494ce9[_0x3ab84f(0x1c9)]+'*\x0a')+(_0x3ab84f(0x37c)+_0x494ce9[_0x3ab84f(0x477)]+'%*\x0a\x0a')+_0x3ab84f(0x271),{'parse_mode':_0x3ab84f(0x45c),'reply_markup':{'inline_keyboard':[[{'text':_0x3ab84f(0x33f),'callback_data':'atur_bonus_topup'}]]}});});}),bot['action'](_0x4e46c9(0x4aa),async _0x1874cf=>{const _0x1d943e=_0x4e46c9;await _0x1874cf[_0x1d943e(0x294)](),userState[_0x1874cf[_0x1d943e(0x1b9)]['id']]={'step':_0x1d943e(0x278)},await _0x1874cf[_0x1d943e(0x1f1)](_0x1d943e(0x1ed),{'parse_mode':'Markdown'});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x3e4),async _0x324684=>{const _0x3f7418=_0x4e46c9;await _0x324684[_0x3f7418(0x294)]();const _0x2325d3=_0x324684[_0x3f7418(0x112)]['id'];db[_0x3f7418(0x28e)](_0x3f7418(0x2b8),[],(_0x371b27,_0x44b985)=>{const _0x191393=_0x3f7418;if(_0x371b27||_0x44b985['length']===0x0)return _0x324684['reply'](_0x191393(0x25f));const _0x48ac10=_0x44b985[_0x191393(0x307)]((_0xdedc04,_0x2b8430)=>{const _0xdab7e2=_0x191393,_0x573e04=_0xdedc04[_0xdab7e2(0x34e)]?'`'+_0xdedc04[_0xdab7e2(0x34e)]+'`':'`'+_0xdedc04[_0xdab7e2(0x1a7)]+'`',_0x40ad9b=new Date(_0xdedc04[_0xdab7e2(0x400)])['toLocaleString'](_0xdab7e2(0x35a),{'year':'numeric','month':'2-digit','day':_0xdab7e2(0x407),'hour':_0xdab7e2(0x407),'minute':_0xdab7e2(0x407),'second':_0xdab7e2(0x407),'hour12':![]});return'*'+(_0x2b8430+0x1)+'.*\x20'+_0x573e04+_0xdab7e2(0x3b7)+_0xdedc04['user_id']+_0xdab7e2(0x452)+_0xdedc04[_0xdab7e2(0xb3)]+_0xdab7e2(0x52a)+_0xdedc04[_0xdab7e2(0x3f0)]+_0xdab7e2(0x1d6)+_0x40ad9b;})['join']('\x0a\x0a');_0x324684['reply']('📋\x20*Riwayat\x20Bonus\x20Top\x20Up\x20(10\x20Terbaru)*\x0a\x0a'+_0x48ac10,{'parse_mode':_0x191393(0x45c)});});}),bot[_0x4e46c9(0x266)](_0x4e46c9(0x387),async _0x58e836=>{const _0x324047=_0x4e46c9;await _0x58e836[_0x324047(0x294)](),db['all'](_0x324047(0x165),[],(_0xde5594,_0x2a58d9)=>{const _0x410610=_0x324047;if(_0xde5594||_0x2a58d9['length']===0x0)return _0x58e836[_0x410610(0x1f1)](_0x410610(0x20f));const _0x4a31b0=_0x2a58d9[_0x410610(0x307)]((_0x440b36,_0x2f506b)=>{const _0xf9acee=_0x410610,_0x1656cf=_0x440b36[_0xf9acee(0x34e)]?'`'+_0x440b36['username']+'`':'`'+_0x440b36[_0xf9acee(0x1a7)]+'`',_0x2700a9=new Date(_0x440b36[_0xf9acee(0x229)])[_0xf9acee(0x1ee)](_0xf9acee(0x35a),{'year':_0xf9acee(0x22f),'month':_0xf9acee(0x407),'day':_0xf9acee(0x407),'hour':_0xf9acee(0x407),'minute':_0xf9acee(0x407),'second':_0xf9acee(0x407),'hour12':![]});return'*'+(_0x2f506b+0x1)+_0xf9acee(0x1c2)+_0x1656cf+_0xf9acee(0x3b7)+_0x440b36[_0xf9acee(0x1a7)]+'`\x0a💸\x20TopUp:\x20Rp'+_0x440b36['amount']+_0xf9acee(0x1d6)+_0x2700a9;})['join']('\x0a\x0a');_0x58e836[_0x410610(0x1f1)]('📋\x20*Riwayat\x20Top\x20Up\x20(10\x20Terbaru)*\x0a\x0a'+_0x4a31b0,{'parse_mode':_0x410610(0x45c)});});});function prosesBonusTopUp(_0x3bb8a0,_0x528297,_0x3a9365){return new Promise((_0xe3cde2,_0x39d38d)=>{const _0x5694a2=_0x5858;db['get'](_0x5694a2(0x2d0),(_0x1de224,_0x2e434e)=>{const _0x1b9011=_0x5694a2;if(_0x1de224||!_0x2e434e)return _0xe3cde2();if(_0x2e434e[_0x1b9011(0xa4)]&&_0x3a9365>=_0x2e434e[_0x1b9011(0x1c9)]){const _0x5ee9ad=Math[_0x1b9011(0x486)](_0x3a9365*_0x2e434e['bonus_percent']/0x64);db[_0x1b9011(0x39d)]('UPDATE\x20users\x20SET\x20saldo\x20=\x20saldo\x20+\x20?\x20WHERE\x20user_id\x20=\x20?',[_0x5ee9ad,_0x3bb8a0],_0x4bab9e=>{const _0x359f90=_0x1b9011;if(_0x4bab9e)return _0xe3cde2();db[_0x359f90(0x39d)](_0x359f90(0x333),[_0x3bb8a0,_0x528297||'',_0x3a9365,_0x5ee9ad,new Date()[_0x359f90(0x428)]()],()=>{const _0x53499f=_0x359f90;bot[_0x53499f(0x364)][_0x53499f(0x2ef)](_0x3bb8a0,_0x53499f(0x4c7)+_0x5ee9ad+_0x53499f(0x31d)+_0x2e434e[_0x53499f(0x477)]+'%)',{'parse_mode':_0x53499f(0x45c)}),_0xe3cde2();});});}else _0xe3cde2();});});}function logTopup(_0x151705,_0x246471,_0x10d85d,_0x391ef3){const _0x3eea60=_0x4e46c9;db[_0x3eea60(0x39d)](_0x3eea60(0x438),[_0x151705,_0x246471||'',_0x10d85d,_0x391ef3,new Date()['toISOString']()],_0x123dae=>{const _0x11eb79=_0x3eea60;_0x123dae?logger['error'](_0x11eb79(0x4b1),_0x123dae['message']):logger[_0x11eb79(0x235)](_0x11eb79(0x196)+_0x151705+_0x11eb79(0x4a2)+_0x246471+_0x11eb79(0x118)+_0x10d85d+'\x20-\x20'+_0x391ef3);});}bot['action'](/edit_harga_(\d+)/,async _0x19cfc7=>{const _0x4c7f8=_0x4e46c9,_0xf79f7f=_0x19cfc7['match'][0x1];logger[_0x4c7f8(0x235)](_0x4c7f8(0x38e)+_0x19cfc7[_0x4c7f8(0x112)]['id']+'\x20memilih\x20untuk\x20mengedit\x20harga\x20server\x20dengan\x20ID:\x20'+_0xf79f7f),userState[_0x19cfc7[_0x4c7f8(0x1b9)]['id']]={'step':_0x4c7f8(0x2e1),'serverId':_0xf79f7f},await _0x19cfc7[_0x4c7f8(0x1f1)](_0x4c7f8(0x4b5),{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':'Markdown'});}),bot[_0x4e46c9(0x266)](/add_saldo_(\d+)/,async _0x589dd9=>{const _0x322358=_0x4e46c9,_0x88bb15=_0x589dd9[_0x322358(0x269)][0x1];logger[_0x322358(0x235)](_0x322358(0x38e)+_0x589dd9['from']['id']+'\x20memilih\x20untuk\x20menambahkan\x20saldo\x20user\x20dengan\x20ID:\x20'+_0x88bb15),userState[_0x589dd9[_0x322358(0x1b9)]['id']]={'step':'add_saldo','userId':_0x88bb15},await _0x589dd9['reply'](_0x322358(0x243),{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x322358(0x45c)});}),bot[_0x4e46c9(0x266)](/edit_batas_create_akun_(\d+)/,async _0x3af34a=>{const _0x3dda85=_0x4e46c9,_0x4c5d8a=_0x3af34a[_0x3dda85(0x269)][0x1];logger[_0x3dda85(0x235)]('User\x20'+_0x3af34a[_0x3dda85(0x112)]['id']+_0x3dda85(0x221)+_0x4c5d8a),userState[_0x3af34a[_0x3dda85(0x1b9)]['id']]={'step':_0x3dda85(0x3e2),'serverId':_0x4c5d8a},await _0x3af34a[_0x3dda85(0x1f1)]('📊\x20*Silahkan\x20masukkan\x20batas\x20create\x20akun\x20server\x20baru:*',{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x3dda85(0x45c)});}),bot[_0x4e46c9(0x266)](/edit_total_create_akun_(\d+)/,async _0x3b9ed6=>{const _0x3094b3=_0x4e46c9,_0x3a5f11=_0x3b9ed6[_0x3094b3(0x269)][0x1];logger['info'](_0x3094b3(0x38e)+_0x3b9ed6[_0x3094b3(0x112)]['id']+'\x20memilih\x20untuk\x20mengedit\x20total\x20create\x20akun\x20server\x20dengan\x20ID:\x20'+_0x3a5f11),userState[_0x3b9ed6[_0x3094b3(0x1b9)]['id']]={'step':_0x3094b3(0x1f3),'serverId':_0x3a5f11},await _0x3b9ed6[_0x3094b3(0x1f1)](_0x3094b3(0x519),{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x3094b3(0x45c)});}),bot[_0x4e46c9(0x266)](/edit_limit_ip_(\d+)/,async _0x5d7660=>{const _0x588ca5=_0x4e46c9,_0x15e997=_0x5d7660[_0x588ca5(0x269)][0x1];logger[_0x588ca5(0x235)](_0x588ca5(0x38e)+_0x5d7660[_0x588ca5(0x112)]['id']+_0x588ca5(0x11d)+_0x15e997),userState[_0x5d7660[_0x588ca5(0x1b9)]['id']]={'step':_0x588ca5(0x4c9),'serverId':_0x15e997},await _0x5d7660[_0x588ca5(0x1f1)]('📊\x20*Silahkan\x20masukkan\x20limit\x20IP\x20server\x20baru:*',{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x588ca5(0x45c)});}),bot['action'](/edit_quota_(\d+)/,async _0x5edede=>{const _0x393fcc=_0x4e46c9,_0x15e237=_0x5edede[_0x393fcc(0x269)][0x1];logger['info'](_0x393fcc(0x38e)+_0x5edede['from']['id']+_0x393fcc(0x13d)+_0x15e237),userState[_0x5edede[_0x393fcc(0x1b9)]['id']]={'step':_0x393fcc(0x3a3),'serverId':_0x15e237},await _0x5edede['reply'](_0x393fcc(0x4dc),{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':'Markdown'});}),bot[_0x4e46c9(0x266)](/edit_auth_(\d+)/,async _0x21f8de=>{const _0x179738=_0x4e46c9,_0x1eabcb=_0x21f8de[_0x179738(0x269)][0x1];logger[_0x179738(0x235)](_0x179738(0x38e)+_0x21f8de[_0x179738(0x112)]['id']+_0x179738(0x176)+_0x1eabcb),userState[_0x21f8de[_0x179738(0x1b9)]['id']]={'step':_0x179738(0x347),'serverId':_0x1eabcb},await _0x21f8de[_0x179738(0x1f1)](_0x179738(0x1dd),{'parse_mode':'Markdown'});}),bot[_0x4e46c9(0x266)](/edit_domain_(\d+)/,async _0x121626=>{const _0x3ff2f0=_0x4e46c9,_0x578428=_0x121626[_0x3ff2f0(0x269)][0x1];logger[_0x3ff2f0(0x235)](_0x3ff2f0(0x38e)+_0x121626[_0x3ff2f0(0x112)]['id']+_0x3ff2f0(0x45a)+_0x578428),userState[_0x121626[_0x3ff2f0(0x1b9)]['id']]={'step':_0x3ff2f0(0x23e),'serverId':_0x578428},await _0x121626[_0x3ff2f0(0x1f1)]('🌐\x20*Silahkan\x20kirim\x20domain\x20server\x20baru\x20sekarang:*',{'parse_mode':_0x3ff2f0(0x45c)});}),bot[_0x4e46c9(0x266)](/edit_nama_(\d+)/,async _0x52dc16=>{const _0x516b0b=_0x4e46c9,_0xa96a64=_0x52dc16[_0x516b0b(0x269)][0x1];logger[_0x516b0b(0x235)](_0x516b0b(0x38e)+_0x52dc16['from']['id']+_0x516b0b(0xca)+_0xa96a64),userState[_0x52dc16[_0x516b0b(0x1b9)]['id']]={'step':_0x516b0b(0x17b),'serverId':_0xa96a64},await _0x52dc16[_0x516b0b(0x1f1)](_0x516b0b(0x399),{'parse_mode':_0x516b0b(0x45c)});}),bot[_0x4e46c9(0x266)](/confirm_delete_server_(\d+)/,async _0xb99dd5=>{const _0x49f81c=_0x4e46c9;try{db['run'](_0x49f81c(0x161),[_0xb99dd5['match'][0x1]],function(_0x389649){const _0x5565fc=_0x49f81c;if(_0x389649)return logger[_0x5565fc(0x11a)](_0x5565fc(0xb9),_0x389649[_0x5565fc(0x4d3)]),_0xb99dd5[_0x5565fc(0x1f1)]('⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20menghapus\x20server.*',{'parse_mode':_0x5565fc(0x45c)});if(this[_0x5565fc(0x15d)]===0x0)return logger[_0x5565fc(0x235)](_0x5565fc(0x2c8)),_0xb99dd5[_0x5565fc(0x1f1)](_0x5565fc(0x382),{'parse_mode':'Markdown'});logger[_0x5565fc(0x235)](_0x5565fc(0x2f2)+_0xb99dd5[_0x5565fc(0x269)][0x1]+_0x5565fc(0x464)),_0xb99dd5[_0x5565fc(0x1f1)](_0x5565fc(0x2c4),{'parse_mode':_0x5565fc(0x45c)});});}catch(_0x1f0364){logger[_0x49f81c(0x11a)](_0x49f81c(0xe3),_0x1f0364),await _0xb99dd5['reply'](_0x49f81c(0x4d5),{'parse_mode':'Markdown'});}}),bot[_0x4e46c9(0x266)](/server_detail_(\d+)/,async _0x53c186=>{const _0x387146=_0x4e46c9,_0x50dd18=_0x53c186[_0x387146(0x269)][0x1];try{const _0xdea79f=await new Promise((_0x250098,_0x2c355b)=>{const _0x262e24=_0x387146;db[_0x262e24(0x518)](_0x262e24(0x2ae),[_0x50dd18],(_0x4207c0,_0x23af19)=>{const _0x43c1c1=_0x262e24;if(_0x4207c0)return logger[_0x43c1c1(0x11a)]('⚠️\x20Kesalahan\x20saat\x20mengambil\x20detail\x20server:',_0x4207c0[_0x43c1c1(0x4d3)]),_0x2c355b(_0x43c1c1(0x4e9));_0x250098(_0x23af19);});});if(!_0xdea79f)return logger[_0x387146(0x235)]('⚠️\x20Server\x20tidak\x20ditemukan'),_0x53c186[_0x387146(0x1f1)]('⚠️\x20*PERHATIAN!\x20Server\x20tidak\x20ditemukan.*',{'parse_mode':_0x387146(0x45c)});const _0x3203ea='📋\x20*Detail\x20Server*\x20📋\x0a\x0a'+(_0x387146(0x1e6)+_0xdea79f[_0x387146(0x3bb)]+'`\x0a')+(_0x387146(0x459)+_0xdea79f[_0x387146(0x380)]+'`\x0a')+(_0x387146(0x145)+_0xdea79f[_0x387146(0xdd)]+'`\x0a')+(_0x387146(0x3b2)+_0xdea79f[_0x387146(0xdf)]+'`\x0a')+(_0x387146(0x248)+_0xdea79f[_0x387146(0x4e0)]+'`\x0a')+(_0x387146(0x2dd)+_0xdea79f[_0x387146(0x4d1)]+'`\x0a')+('📋\x20*Total\x20Create\x20Akun:*\x20`'+_0xdea79f[_0x387146(0x2fb)]+'`\x0a')+('💵\x20*Harga:*\x20`Rp\x20'+_0xdea79f[_0x387146(0xac)]+_0x387146(0x302));await _0x53c186[_0x387146(0x1f1)](_0x3203ea,{'parse_mode':_0x387146(0x45c)});}catch(_0x2146e4){logger[_0x387146(0x11a)](_0x387146(0x1eb),_0x2146e4),await _0x53c186[_0x387146(0x1f1)](_0x387146(0x4f1),{'parse_mode':_0x387146(0x45c)});}}),bot['on'](_0x4e46c9(0x262),async _0x287e34=>{const _0x5690d4=_0x4e46c9,_0x5e4203=_0x287e34[_0x5690d4(0x112)]['id'],_0x9ebafa=_0x287e34['callbackQuery'][_0x5690d4(0x1bd)],_0x3fe09b=userState[_0x287e34[_0x5690d4(0x1b9)]['id']];await _0x287e34[_0x5690d4(0x294)]();if(global[_0x5690d4(0x132)]&&global[_0x5690d4(0x132)][_0x5e4203]&&global['depositState'][_0x5e4203][_0x5690d4(0x266)]===_0x5690d4(0x46e))await handleDepositState(_0x287e34,_0x5e4203,_0x9ebafa);else{if(_0x3fe09b)switch(_0x3fe09b['step']){case _0x5690d4(0x346):await handleAddSaldo(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x3e2):await handleEditBatasCreateAkun(_0x287e34,_0x3fe09b,_0x9ebafa);break;case'edit_limit_ip':await handleEditiplimit(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x3a3):await handleEditQuota(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x347):await handleEditAuth(_0x287e34,_0x3fe09b,_0x9ebafa);break;case'edit_domain':await handleEditDomain(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x2e1):await handleEditHarga(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x17b):await handleEditNama(_0x287e34,_0x3fe09b,_0x9ebafa);break;case'edit_total_create_akun':await handleEditTotalCreateAkun(_0x287e34,_0x3fe09b,_0x9ebafa);break;case _0x5690d4(0x368):const _0x1bb152=_0x9ebafa[_0x5690d4(0x17c)]('_'),_0x2bd8b0=_0x1bb152[0x1];let _0x5b4859=parseInt(_0x1bb152[0x2]);_0x5b4859=_0x2bd8b0===_0x5690d4(0x22e)?_0x5b4859+0x1:_0x5b4859-0x1;if(_0x5b4859<0x1)_0x5b4859=0x1;await sendPaginatedResellerList(_0x287e34,_0x5b4859,_0x287e34[_0x5690d4(0x3cd)][_0x5690d4(0x4d3)]['message_id']);break;}}});async function handleDepositState(_0x3cb0af,_0x333f05,_0x210495){const _0x456b86=_0x4e46c9;let _0x7dd30b=global[_0x456b86(0x132)][_0x333f05];if(!_0x7dd30b)return;let _0x5c6735=_0x7dd30b[_0x456b86(0xb3)]||'';const _0x2ece89=_0x7dd30b[_0x456b86(0x266)];if(_0x210495===_0x456b86(0x2b7))_0x5c6735=_0x5c6735[_0x456b86(0x16a)](0x0,-0x1);else{if(_0x210495==='confirm'){if(!_0x5c6735||_0x5c6735[_0x456b86(0x27a)]===0x0)return await _0x3cb0af['answerCbQuery'](_0x456b86(0x384),{'show_alert':!![]});if(parseInt(_0x5c6735)<0x64)return await _0x3cb0af[_0x456b86(0x294)](_0x456b86(0x240),{'show_alert':!![]});try{await _0x3cb0af[_0x456b86(0x29c)]();}catch(_0x55c35f){logger['warn']('⚠️\x20Gagal\x20menghapus\x20pesan\x20top-up\x20konfirmasi:\x20'+_0x55c35f[_0x456b86(0x4d3)]);}_0x2ece89===_0x456b86(0x483)?await processDepositSaweria(_0x3cb0af,_0x5c6735):(global[_0x456b86(0x132)][_0x333f05][_0x456b86(0x266)]=_0x456b86(0x4a0),await processDeposit(_0x3cb0af,_0x5c6735));delete global[_0x456b86(0x132)][_0x333f05];return;}else{const _0x76d388=_0x2ece89===_0x456b86(0x483)?0x8:0xc;if(_0x5c6735[_0x456b86(0x27a)]<_0x76d388)_0x5c6735+=_0x210495;else return await _0x3cb0af[_0x456b86(0x294)](_0x456b86(0x1fa)+_0x76d388+_0x456b86(0x3e5),{'show_alert':!![]});}}global[_0x456b86(0x132)][_0x333f05][_0x456b86(0xb3)]=_0x5c6735;const _0x304519=_0x2ece89===_0x456b86(0x483)?'💰\x20Masukkan\x20nominal\x20topup\x20Saweria\x20QRIS:\x0a\x0aNominal\x20saat\x20ini:\x20*Rp'+_0x5c6735+'*':_0x456b86(0x2ea)+_0x5c6735+_0x456b86(0x446);try{await _0x3cb0af[_0x456b86(0x3ce)](_0x304519,{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':'Markdown'});}catch(_0x356faf){if(_0x356faf[_0x456b86(0x159)]&&_0x356faf[_0x456b86(0x159)]['includes'](_0x456b86(0xc4)))return;logger[_0x456b86(0x11a)](_0x456b86(0x4c3),_0x356faf);}}async function handleAddSaldo(_0x5072e0,_0xea31cc,_0x21078c){const _0x181a54=_0x4e46c9;let _0x2ae668=_0xea31cc[_0x181a54(0x531)]||'';if(_0x21078c==='delete')_0x2ae668=_0x2ae668['slice'](0x0,-0x1);else{if(_0x21078c===_0x181a54(0x1a8)){if(_0x2ae668[_0x181a54(0x27a)]===0x0)return await _0x5072e0[_0x181a54(0x294)]('⚠️\x20*Jumlah\x20saldo\x20tidak\x20boleh\x20kosong!*',{'show_alert':!![]});try{await updateUserSaldo(_0xea31cc[_0x181a54(0x33c)],_0x2ae668),_0x5072e0[_0x181a54(0x1f1)](_0x181a54(0xb4)+_0x2ae668+'*',{'parse_mode':_0x181a54(0x45c)});}catch(_0x29a0fc){_0x5072e0[_0x181a54(0x1f1)]('❌\x20*Terjadi\x20kesalahan\x20saat\x20menambahkan\x20saldo\x20user.*',{'parse_mode':_0x181a54(0x45c)});}delete userState[_0x5072e0[_0x181a54(0x1b9)]['id']];return;}else{if(!/^[0-9]+$/[_0x181a54(0x272)](_0x21078c))return await _0x5072e0['answerCbQuery']('⚠️\x20*Jumlah\x20saldo\x20tidak\x20valid!*',{'show_alert':!![]});if(_0x2ae668[_0x181a54(0x27a)]<0xa)_0x2ae668+=_0x21078c;else return await _0x5072e0[_0x181a54(0x294)](_0x181a54(0x507),{'show_alert':!![]});}}_0xea31cc['saldo']=_0x2ae668;const _0x3740ef=_0x181a54(0x3a5)+_0x2ae668+'*';_0x3740ef!==_0x5072e0[_0x181a54(0x3cd)][_0x181a54(0x4d3)][_0x181a54(0x3b9)]&&await _0x5072e0[_0x181a54(0x3ce)](_0x3740ef,{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x181a54(0x45c)});}async function handleEditBatasCreateAkun(_0x205fbb,_0x5ea6ab,_0x22814a){const _0x4c3ddf=_0x4e46c9;await handleEditField(_0x205fbb,_0x5ea6ab,_0x22814a,_0x4c3ddf(0x3c0),_0x4c3ddf(0x2cb),_0x4c3ddf(0x3fb));}async function handleEditTotalCreateAkun(_0x4ac539,_0x591633,_0x4d9f27){const _0x5075b7=_0x4e46c9;await handleEditField(_0x4ac539,_0x591633,_0x4d9f27,_0x5075b7(0x2fd),'total\x20create\x20akun',_0x5075b7(0x224));}async function handleEditiplimit(_0x110029,_0x2afc8d,_0x9a517e){const _0x3d6a46=_0x4e46c9;await handleEditField(_0x110029,_0x2afc8d,_0x9a517e,_0x3d6a46(0x4e0),'limit\x20IP',_0x3d6a46(0x41d));}async function handleEditQuota(_0x2dddff,_0x2b4dc6,_0xc6c4ab){const _0x206385=_0x4e46c9;await handleEditField(_0x2dddff,_0x2b4dc6,_0xc6c4ab,_0x206385(0xdf),_0x206385(0xdf),'UPDATE\x20Server\x20SET\x20quota\x20=\x20?\x20WHERE\x20id\x20=\x20?');}async function handleEditAuth(_0x1af69d,_0x58dc0c,_0x31c8d3){const _0x47a177=_0x4e46c9;await handleEditField(_0x1af69d,_0x58dc0c,_0x31c8d3,_0x47a177(0x380),_0x47a177(0x380),'UPDATE\x20Server\x20SET\x20auth\x20=\x20?\x20WHERE\x20id\x20=\x20?');}async function handleEditDomain(_0x3aa4c,_0x1552d2,_0x317277){await handleEditField(_0x3aa4c,_0x1552d2,_0x317277,'domain','domain','UPDATE\x20Server\x20SET\x20domain\x20=\x20?\x20WHERE\x20id\x20=\x20?');}async function handleEditHarga(_0xd0b10,_0x2d6fe8,_0x20bf43){const _0x57151d=_0x4e46c9;let _0xd85777=_0x2d6fe8[_0x57151d(0xb3)]||'';if(_0x20bf43==='delete')_0xd85777=_0xd85777['slice'](0x0,-0x1);else{if(_0x20bf43===_0x57151d(0x1a8)){if(_0xd85777[_0x57151d(0x27a)]===0x0)return await _0xd0b10[_0x57151d(0x294)]('⚠️\x20*Jumlah\x20tidak\x20boleh\x20kosong!*',{'show_alert':!![]});const _0x5af4eb=parseFloat(_0xd85777);if(isNaN(_0x5af4eb)||_0x5af4eb<=0x0)return _0xd0b10[_0x57151d(0x1f1)](_0x57151d(0x476),{'parse_mode':_0x57151d(0x45c)});try{await updateServerField(_0x2d6fe8[_0x57151d(0x32f)],_0x5af4eb,_0x57151d(0x287)),_0xd0b10['reply'](_0x57151d(0x4ee)+_0x5af4eb+'*',{'parse_mode':_0x57151d(0x45c)});}catch(_0x134b33){_0xd0b10[_0x57151d(0x1f1)](_0x57151d(0x36c),{'parse_mode':_0x57151d(0x45c)});}delete userState[_0xd0b10['chat']['id']];return;}else{if(!/^\d+$/[_0x57151d(0x272)](_0x20bf43))return await _0xd0b10['answerCbQuery'](_0x57151d(0x3c3),{'show_alert':!![]});if(_0xd85777[_0x57151d(0x27a)]<0xc)_0xd85777+=_0x20bf43;else return await _0xd0b10['answerCbQuery'](_0x57151d(0x163),{'show_alert':!![]});}}_0x2d6fe8[_0x57151d(0xb3)]=_0xd85777;const _0x204d1f='💰\x20*Silahkan\x20masukkan\x20harga\x20server\x20baru:*\x0a\x0aJumlah\x20saat\x20ini:\x20*Rp\x20'+_0xd85777+'*';_0x204d1f!==_0xd0b10['callbackQuery'][_0x57151d(0x4d3)][_0x57151d(0x3b9)]&&await _0xd0b10[_0x57151d(0x3ce)](_0x204d1f,{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x57151d(0x45c)});}function _0x5858(_0x3d97c4,_0x96fea0){const _0x19e250=_0x19e2();return _0x5858=function(_0x5858e6,_0xa3ce59){_0x5858e6=_0x5858e6-0xa0;let _0x26d3b9=_0x19e250[_0x5858e6];return _0x26d3b9;},_0x5858(_0x3d97c4,_0x96fea0);}async function handleEditNama(_0x30053b,_0x26aa94,_0x3f8252){const _0xe7d05b=_0x4e46c9;await handleEditField(_0x30053b,_0x26aa94,_0x3f8252,_0xe7d05b(0x508),_0xe7d05b(0x30b),_0xe7d05b(0x525));}async function handleEditField(_0x3562eb,_0x47ccc8,_0x58abc9,_0x3107a9,_0x1ad8e1,_0x28d997){const _0x190529=_0x4e46c9;let _0x275baa=_0x47ccc8[_0x3107a9]||'';if(_0x58abc9===_0x190529(0x2b7))_0x275baa=_0x275baa[_0x190529(0x16a)](0x0,-0x1);else{if(_0x58abc9==='confirm'){if(_0x275baa[_0x190529(0x27a)]===0x0)return await _0x3562eb[_0x190529(0x294)]('⚠️\x20*'+_0x1ad8e1+_0x190529(0x2d8),{'show_alert':!![]});try{await updateServerField(_0x47ccc8[_0x190529(0x32f)],_0x275baa,_0x28d997),_0x3562eb[_0x190529(0x1f1)](_0x190529(0x501)+_0x1ad8e1+_0x190529(0x52b)+(_0x1ad8e1[_0x190529(0x43a)](0x0)['toUpperCase']()+_0x1ad8e1[_0x190529(0x16a)](0x1))+_0x190529(0x109)+_0x275baa+'*',{'parse_mode':_0x190529(0x45c)});}catch(_0x366474){_0x3562eb[_0x190529(0x1f1)](_0x190529(0x23b)+_0x1ad8e1+'\x20server.*',{'parse_mode':_0x190529(0x45c)});}delete userState[_0x3562eb['chat']['id']];return;}else{if(!/^[a-zA-Z0-9.-]+$/[_0x190529(0x272)](_0x58abc9))return await _0x3562eb[_0x190529(0x294)](_0x190529(0x49a)+_0x1ad8e1+_0x190529(0x12b),{'show_alert':!![]});if(_0x275baa['length']<0xfd)_0x275baa+=_0x58abc9;else return await _0x3562eb[_0x190529(0x294)]('⚠️\x20*'+_0x1ad8e1+_0x190529(0x367),{'show_alert':!![]});}}_0x47ccc8[_0x3107a9]=_0x275baa;const _0x756303=_0x190529(0x4e8)+_0x1ad8e1+'\x20server\x20baru:*\x0a\x0a'+(_0x1ad8e1[_0x190529(0x43a)](0x0)[_0x190529(0x39b)]()+_0x1ad8e1['slice'](0x1))+'\x20saat\x20ini:\x20*'+_0x275baa+'*';_0x756303!==_0x3562eb[_0x190529(0x3cd)][_0x190529(0x4d3)][_0x190529(0x3b9)]&&await _0x3562eb[_0x190529(0x3ce)](_0x756303,{'reply_markup':{'inline_keyboard':keyboard_nomor()},'parse_mode':_0x190529(0x45c)});}async function updateUserSaldo(_0x2a51d8,_0x92168c){return new Promise((_0xf7b1a0,_0x1bd03c)=>{db['run']('UPDATE\x20Users\x20SET\x20saldo\x20=\x20saldo\x20+\x20?\x20WHERE\x20id\x20=\x20?',[_0x92168c,_0x2a51d8],function(_0x4fce5c){const _0x1d19bf=_0x5858;_0x4fce5c?(logger['error'](_0x1d19bf(0x376),_0x4fce5c[_0x1d19bf(0x4d3)]),_0x1bd03c(_0x4fce5c)):_0xf7b1a0();});});}async function updateServerField(_0x44a4a6,_0xb419f3,_0x594cb6){return new Promise((_0x13517a,_0x3726dc)=>{const _0x5e1b69=_0x5858;db[_0x5e1b69(0x39d)](_0x594cb6,[_0xb419f3,_0x44a4a6],function(_0x577082){const _0x34322b=_0x5e1b69;_0x577082?(logger[_0x34322b(0x11a)](_0x34322b(0x1d0),_0x577082[_0x34322b(0x4d3)]),_0x3726dc(_0x577082)):_0x13517a();});});}function generateRandomAmount(_0x5f2ece){const _0x35dffb=_0x4e46c9,_0x5f3f9b=Math[_0x35dffb(0x486)](Math[_0x35dffb(0x255)]()*0x63)+0x1;return _0x5f2ece+_0x5f3f9b;}global[_0x4e46c9(0x132)]={},global['pendingDeposits']={};let lastRequestTime=0x0;const requestInterval=0x3e8;db[_0x4e46c9(0x28e)](_0x4e46c9(0x4ae),[],(_0x1e916a,_0x4024c9)=>{const _0x353bf5=_0x4e46c9;if(_0x1e916a){logger[_0x353bf5(0x11a)](_0x353bf5(0x532),_0x1e916a[_0x353bf5(0x4d3)]);return;}_0x4024c9['forEach'](_0x9b88ca=>{const _0x15fa3d=_0x353bf5;global[_0x15fa3d(0x4f0)][_0x9b88ca[_0x15fa3d(0x2db)]]={'amount':_0x9b88ca[_0x15fa3d(0xb3)],'originalAmount':_0x9b88ca['original_amount'],'userId':_0x9b88ca[_0x15fa3d(0x1a7)],'username':_0x9b88ca[_0x15fa3d(0x34e)],'timestamp':_0x9b88ca['timestamp'],'status':_0x9b88ca[_0x15fa3d(0x3c9)],'qrMessageId':_0x9b88ca[_0x15fa3d(0x1bb)]};}),logger[_0x353bf5(0x235)](_0x353bf5(0x510),Object['keys'](global[_0x353bf5(0x4f0)])[_0x353bf5(0x27a)]);});const config={'storeName':NAMA_STORE,'auth_username':MERCHANT_ID,'auth_token':API_KEY,'baseQrString':DATA_QRIS,'logoPath':'logo.png'},qris=new QRISPayment(config);async function processDeposit(_0x2b0408,_0x27790e){const _0x184966=_0x4e46c9,_0x1219b8=Date[_0x184966(0x4a6)]();if(_0x1219b8-lastRequestTime<requestInterval){await _0x2b0408[_0x184966(0x1f1)]('⚠️\x20*Terlalu\x20banyak\x20permintaan.\x20Silahkan\x20tunggu\x20sebentar\x20sebelum\x20mencoba\x20lagi.*',{'parse_mode':'Markdown'});return;}lastRequestTime=_0x1219b8;const _0x3d0973=_0x2b0408[_0x184966(0x112)]['id'],_0x21a2dd=_0x184966(0x4cb)+_0x3d0973+'-'+_0x1219b8,_0x451063=generateRandomAmount(parseInt(_0x27790e));!global['pendingDeposits']&&(global['pendingDeposits']={});try{let _0x48a80e=await _0x2b0408[_0x184966(0x1f1)]('⏳\x20Mohon\x20menunggu.');const _0x3c1422=['.','..',_0x184966(0x4f2),'\x20'];let _0x5eaa41=0x0;const _0x345f53=setInterval(async()=>{const _0x3817e1=_0x184966;_0x5eaa41=(_0x5eaa41+0x1)%_0x3c1422[_0x3817e1(0x27a)];try{await _0x2b0408[_0x3817e1(0x364)][_0x3817e1(0x3ce)](_0x2b0408[_0x3817e1(0x1b9)]['id'],_0x48a80e['message_id'],null,_0x3817e1(0x115)+_0x3c1422[_0x5eaa41]);}catch(_0x216bdb){clearInterval(_0x345f53);}},0x3e8);await new Promise(_0x3667e5=>setTimeout(_0x3667e5,0x1388)),clearInterval(_0x345f53);const {qrBuffer:_0x5a9f72}=await qris['generateQR'](_0x451063),_0x179459='🧾\x20*Pembayaran:*\x0a\x0a'+(_0x184966(0x203)+_0x451063+'\x0a')+_0x184966(0x216)+_0x184966(0x38d)+'✅\x20Otomatis\x20terverifikasi\x0a'+_0x184966(0x478),_0x1b195d=[[{'text':_0x184966(0x3a2),'url':'https://t.me/pxstoree'}],[{'text':'❌\x20Batal\x20Topup','callback_data':_0x184966(0x4ac)+_0x21a2dd}]],_0x428ebd=await _0x2b0408[_0x184966(0x4a4)]({'source':_0x5a9f72},{'caption':_0x179459,'parse_mode':'Markdown','reply_markup':{'inline_keyboard':_0x1b195d}});await _0x2b0408[_0x184966(0x29c)](_0x48a80e[_0x184966(0x361)]),global[_0x184966(0x4f0)][_0x21a2dd]={'amount':_0x451063,'originalAmount':_0x27790e,'userId':_0x3d0973,'username':_0x2b0408[_0x184966(0x112)]['username']||_0x184966(0x1ca)+_0x2b0408[_0x184966(0x112)]['id'],'timestamp':Date['now'](),'status':'pending','qrMessageId':_0x428ebd[_0x184966(0x361)]},await insertPendingDeposit(_0x21a2dd,_0x3d0973,_0x2b0408[_0x184966(0x112)][_0x184966(0x34e)]||_0x184966(0x1ca)+_0x2b0408[_0x184966(0x112)]['id'],_0x451063,_0x27790e,_0x428ebd[_0x184966(0x361)]),delete global['depositState'][_0x3d0973];}catch(_0x1f3081){logger[_0x184966(0x11a)](_0x184966(0x28f),_0x1f3081),global[_0x184966(0x132)]&&global[_0x184966(0x132)][_0x3d0973]&&delete global[_0x184966(0x132)][_0x3d0973],global[_0x184966(0x4f0)]&&global['pendingDeposits'][_0x21a2dd]&&delete global[_0x184966(0x4f0)][_0x21a2dd],await deletePendingDeposit(_0x21a2dd),await _0x2b0408['reply']('❌\x20*GAGAL!\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20pembayaran.\x20Silahkan\x20coba\x20lagi\x20nanti.*',{'parse_mode':'Markdown'});}}function insertPendingDeposit(_0xebe826,_0x4bcd67,_0x4bf78e,_0x2cdff7,_0x1a986e,_0x3f050d){return new Promise((_0x4064b9,_0x302d85)=>{const _0x3c1c75=_0x5858;db['run'](_0x3c1c75(0x1b2),[_0xebe826,_0x4bcd67,_0x4bf78e,_0x2cdff7,_0x1a986e,Date[_0x3c1c75(0x4a6)](),'pending',_0x3f050d],_0x3c5937=>{const _0x1d0290=_0x3c1c75;_0x3c5937?(logger[_0x1d0290(0x11a)](_0x1d0290(0x25b),_0x3c5937[_0x1d0290(0x4d3)]),_0x302d85(_0x3c5937)):_0x4064b9();});});}function deletePendingDeposit(_0x52cb2b){return new Promise((_0xbc87b8,_0x503e82)=>{const _0x2bec6f=_0x5858;db['run'](_0x2bec6f(0x17d),[_0x52cb2b],_0x573c96=>{const _0x3d4b3b=_0x2bec6f;_0x573c96?(logger[_0x3d4b3b(0x11a)](_0x3d4b3b(0x12d),_0x573c96[_0x3d4b3b(0x4d3)]),_0x503e82(_0x573c96)):_0xbc87b8();});});}async function checkQRISStatus(){const _0x4ff2cc=_0x4e46c9;try{const _0x2ee134=Object[_0x4ff2cc(0x535)](global[_0x4ff2cc(0x4f0)]);for(const [_0x49bb5a,_0x4d5923]of _0x2ee134){if(_0x4d5923[_0x4ff2cc(0x3c9)]!=='pending')continue;const _0xe433db=Date['now']()-_0x4d5923[_0x4ff2cc(0x400)];if(_0xe433db>0x5*0x3c*0x3e8){try{_0x4d5923[_0x4ff2cc(0x506)]&&await bot[_0x4ff2cc(0x364)]['deleteMessage'](_0x4d5923[_0x4ff2cc(0x33c)],_0x4d5923[_0x4ff2cc(0x506)]),await bot['telegram'][_0x4ff2cc(0x2ef)](_0x4d5923['userId'],_0x4ff2cc(0x2f1)+_0x4ff2cc(0x2f5),{'parse_mode':_0x4ff2cc(0x45c)});}catch(_0x5ba32b){logger[_0x4ff2cc(0x11a)](_0x4ff2cc(0x4ef),_0x5ba32b);}delete global[_0x4ff2cc(0x4f0)][_0x49bb5a],db[_0x4ff2cc(0x39d)]('DELETE\x20FROM\x20pending_deposits\x20WHERE\x20unique_code\x20=\x20?',[_0x49bb5a],_0x879ca2=>{const _0xfb0cb2=_0x4ff2cc;if(_0x879ca2)logger['error']('Gagal\x20hapus\x20pending_deposits\x20(expired):',_0x879ca2[_0xfb0cb2(0x4d3)]);});continue;}try{const _0xbbe247=await qris[_0x4ff2cc(0x2eb)](_0x49bb5a,_0x4d5923['amount']);if(_0xbbe247['success']&&_0xbbe247['data'][_0x4ff2cc(0x3c9)]===_0x4ff2cc(0x4ad)){const _0xf686d4=_0xbbe247[_0x4ff2cc(0x1bd)][_0x4ff2cc(0x499)]+'_'+_0xbbe247[_0x4ff2cc(0x1bd)][_0x4ff2cc(0xb3)];if(global[_0x4ff2cc(0xbf)][_0x4ff2cc(0x231)](_0xf686d4)){logger[_0x4ff2cc(0x235)](_0x4ff2cc(0x273)+_0xf686d4+_0x4ff2cc(0x16e));continue;}if(parseInt(_0xbbe247[_0x4ff2cc(0x1bd)][_0x4ff2cc(0xb3)])!==_0x4d5923[_0x4ff2cc(0xb3)]){logger[_0x4ff2cc(0x235)](_0x4ff2cc(0x43e)+_0x49bb5a+_0x4ff2cc(0x522)+_0x4d5923[_0x4ff2cc(0xb3)]+_0x4ff2cc(0x4e2)+_0xbbe247[_0x4ff2cc(0x1bd)][_0x4ff2cc(0xb3)]);continue;}const _0x46cb12=await processMatchingPayment(_0x4d5923,_0xbbe247[_0x4ff2cc(0x1bd)],_0x49bb5a);_0x46cb12&&(logger['info'](_0x4ff2cc(0x2c6)+_0x49bb5a),delete global[_0x4ff2cc(0x4f0)][_0x49bb5a],db[_0x4ff2cc(0x39d)](_0x4ff2cc(0x17d),[_0x49bb5a],_0x1c35b0=>{const _0x546bd3=_0x4ff2cc;if(_0x1c35b0)logger[_0x546bd3(0x11a)]('Gagal\x20hapus\x20pending_deposits\x20(success):',_0x1c35b0['message']);}));}}catch(_0x4c55fd){logger['error'](_0x4ff2cc(0x36b)+_0x49bb5a+':',_0x4c55fd[_0x4ff2cc(0x4d3)]);}}}catch(_0x2b7672){logger[_0x4ff2cc(0x11a)]('Error\x20in\x20checkQRISStatus:',_0x2b7672);}}function keyboard_abc(){const _0x2021b5=_0x4e46c9,_0x1451b3=_0x2021b5(0x345),_0x327417=[];for(let _0x5d5bdf=0x0;_0x5d5bdf<_0x1451b3[_0x2021b5(0x27a)];_0x5d5bdf+=0x3){const _0x3289c5=_0x1451b3[_0x2021b5(0x16a)](_0x5d5bdf,_0x5d5bdf+0x3)[_0x2021b5(0x17c)]('')['map'](_0x13df04=>({'text':_0x13df04,'callback_data':_0x13df04}));_0x327417[_0x2021b5(0x4e7)](_0x3289c5);}return _0x327417[_0x2021b5(0x4e7)]([{'text':_0x2021b5(0x4f7),'callback_data':'delete'},{'text':'✅\x20Konfirmasi','callback_data':_0x2021b5(0x1a8)}]),_0x327417[_0x2021b5(0x4e7)]([{'text':'🔙\x20KEMBALI\x20ke\x20Menu\x20Utama','callback_data':_0x2021b5(0x116)}]),_0x327417;}function keyboard_nomor(){const _0x48af0f=_0x4e46c9,_0x6c32b6=_0x48af0f(0x33b),_0x47b0c0=[];for(let _0x4aa0cc=0x0;_0x4aa0cc<_0x6c32b6[_0x48af0f(0x27a)];_0x4aa0cc+=0x3){const _0x15c773=_0x6c32b6[_0x48af0f(0x16a)](_0x4aa0cc,_0x4aa0cc+0x3)[_0x48af0f(0x17c)]('')[_0x48af0f(0x307)](_0x4e6ea4=>({'text':_0x4e6ea4,'callback_data':_0x4e6ea4}));_0x47b0c0[_0x48af0f(0x4e7)](_0x15c773);}return _0x47b0c0[_0x48af0f(0x4e7)]([{'text':_0x48af0f(0x4f7),'callback_data':_0x48af0f(0x2b7)},{'text':_0x48af0f(0x348),'callback_data':_0x48af0f(0x1a8)}]),_0x47b0c0[_0x48af0f(0x4e7)]([{'text':_0x48af0f(0x21c),'callback_data':'send_main_menu'}]),_0x47b0c0;}function keyboard_full(){const _0x37800f=_0x4e46c9,_0xb3def9='abcdefghijklmnopqrstuvwxyz0123456789',_0x3fda29=[];for(let _0x5bc04a=0x0;_0x5bc04a<_0xb3def9[_0x37800f(0x27a)];_0x5bc04a+=0x3){const _0x48906f=_0xb3def9['slice'](_0x5bc04a,_0x5bc04a+0x3)[_0x37800f(0x17c)]('')[_0x37800f(0x307)](_0x8e5269=>({'text':_0x8e5269,'callback_data':_0x8e5269}));_0x3fda29['push'](_0x48906f);}return _0x3fda29[_0x37800f(0x4e7)]([{'text':_0x37800f(0x4f7),'callback_data':_0x37800f(0x2b7)},{'text':_0x37800f(0x348),'callback_data':'confirm'}]),_0x3fda29[_0x37800f(0x4e7)]([{'text':_0x37800f(0x21c),'callback_data':_0x37800f(0x116)}]),_0x3fda29;}global['processedTransactions']=new Set();async function updateUserBalance(_0x27f25b,_0x4a973d){return new Promise((_0x18ec80,_0x1d0f40)=>{const _0x529249=_0x5858;db['run'](_0x529249(0x151),[_0x4a973d,_0x27f25b],function(_0x12a202){const _0x1dd494=_0x529249;if(_0x12a202){logger[_0x1dd494(0x11a)]('Kesalahan\x20saat\x20mengupdate\x20saldo\x20pengguna:',_0x12a202[_0x1dd494(0x4d3)]),_0x1d0f40(_0x12a202);return;}_0x18ec80(this[_0x1dd494(0x15d)]);});});}async function getUserBalance(_0xed6875){return new Promise((_0x4691f4,_0x338974)=>{const _0x37e0b1=_0x5858;db[_0x37e0b1(0x518)]('SELECT\x20saldo\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?',[_0xed6875],(_0x3b9bfe,_0x1056f3)=>{if(_0x3b9bfe){_0x338974(_0x3b9bfe);return;}_0x4691f4(_0x1056f3);});});}function getBotGroupData(){const _0x8a5f55=_0x4e46c9;try{if(!groupId||!BOT_TOKEN)return logger[_0x8a5f55(0x25c)](_0x8a5f55(0x4fe)),null;return{'keyGroup':BOT_TOKEN,'chatId':groupId};}catch(_0x1dc3dc){return logger[_0x8a5f55(0x11a)](_0x8a5f55(0x469),_0x1dc3dc[_0x8a5f55(0x4d3)]),null;}}async function getIspNameFromExternalSource(_0x149a94){const _0x28ecfb=_0x4e46c9;if(!_0x149a94||_0x149a94==='-')return _0x28ecfb(0xe0);try{const _0xc6c03a=await axios[_0x28ecfb(0x518)](_0x28ecfb(0x41c)+_0x149a94+_0x28ecfb(0x10b));if(_0xc6c03a[_0x28ecfb(0x1bd)]&&_0xc6c03a[_0x28ecfb(0x1bd)][_0x28ecfb(0x2e4)])return _0xc6c03a['data']['isp'];return'Unknown\x20ISP';}catch(_0x9a6bbd){return logger[_0x28ecfb(0x11a)](_0x28ecfb(0x487)+_0x149a94+':',_0x9a6bbd[_0x28ecfb(0x4d3)]),_0x28ecfb(0x396);}}function censorAccountUsername(_0x4e2453){const _0x2fd5ea=_0x4e46c9;if(!_0x4e2453||typeof _0x4e2453!=='string')return _0x2fd5ea(0xe0);if(_0x4e2453[_0x2fd5ea(0x27a)]<=0x3)return _0x4e2453+_0x2fd5ea(0x379);return _0x4e2453['substring'](0x0,0x3)+_0x2fd5ea(0x379);}async function sendTransactionLogToGroup({trxNumber:_0x3e5d19,userRole:_0x38a149,tgUsername:_0x4bbaaf,tgUserId:_0x5d3442,serverName:_0x2f79a2,ispName:_0x307a49,domainName:_0x179167,accountUsername:_0xb79a44,serviceName:_0x42d38b,limitQuota:_0x2cc903,limitLogin:_0x3951b9,trxType:_0x53a482,activeDays:_0x1355e3,costValue:_0x6b79d8,hargaNormalPerHari:_0x263509,saldoDikurangi:_0x30c2f0,userSaldoNow:_0x327aca,dateLabel:_0x4dadda,timeLabel:_0x478ef1}){const _0xf2246e=_0x4e46c9,_0x4e0833=getBotGroupData();if(!_0x4e0833||!_0x4e0833[_0xf2246e(0x31c)]||!_0x4e0833[_0xf2246e(0x45f)]){logger[_0xf2246e(0x25c)]('❌\x20Data\x20grup\x20tidak\x20lengkap\x20(chatId\x20atau\x20keyGroup),\x20notifikasi\x20tidak\x20dikirim.');return;}let _0x3f6c0a='',_0x461264='';if(_0x38a149===_0xf2246e(0x27d))_0x3f6c0a='👑',_0x461264=_0xf2246e(0x312);else _0x38a149===_0xf2246e(0xe8)?(_0x3f6c0a='🏆',_0x461264=_0xf2246e(0x537)):(_0x3f6c0a='👤',_0x461264='Member');const _0xad8f83=censorAccountUsername(_0xb79a44),_0x456757=_0xf2246e(0x37e)+_0x3e5d19+'\x0a🌀\x20<b>»\x20Status:</b>\x20'+_0x461264+'\x20'+_0x3f6c0a+_0xf2246e(0x46f)+_0x4bbaaf+'\x0a📋\x20<b>»\x20ID:</b>\x20<code>'+_0x5d3442+_0xf2246e(0x128)+_0x2f79a2+_0xf2246e(0x204)+_0x307a49+'\x0a🏷️\x20<b>»\x20Domain\x20/\x20IP\x20:</b>\x20<code>'+_0x179167+_0xf2246e(0x381)+_0xad8f83+_0xf2246e(0xcb)+_0x42d38b+_0xf2246e(0x350)+_0x2cc903+'\x20GB\x0a🏷️\x20<b>»\x20Limit\x20Login\x20:</b>\x20'+_0x3951b9+_0xf2246e(0x313)+_0x53a482+'\x0a🏷️\x20<b>»\x20Durasi\x20akun:</b>\x20'+_0x1355e3+_0xf2246e(0xdc)+_0x6b79d8[_0xf2246e(0x1ee)](_0xf2246e(0x35a))+_0xf2246e(0x390)+_0x263509[_0xf2246e(0x1ee)](_0xf2246e(0x35a))+_0xf2246e(0x370)+_0x30c2f0[_0xf2246e(0x1ee)](_0xf2246e(0x35a))+'\x0a🏷️\x20<b>»\x20Saldo\x20saat\x20ini:</b>\x20Rp.'+_0x327aca[_0xf2246e(0x1ee)](_0xf2246e(0x35a))+_0xf2246e(0x23f)+_0x4dadda+_0xf2246e(0x494)+_0x478ef1+'\x0a<b>━━━━━━━━━━━━━━━━━━</b>\x0a';try{await axios[_0xf2246e(0x415)]('https://api.telegram.org/bot'+_0x4e0833[_0xf2246e(0x45f)]+_0xf2246e(0xb1),{'chat_id':_0x4e0833[_0xf2246e(0x31c)],'text':_0x456757,'parse_mode':_0xf2246e(0x3e0)}),logger[_0xf2246e(0x235)](_0xf2246e(0x40d)+_0x3e5d19+_0xf2246e(0xd9)+_0x4e0833[_0xf2246e(0x31c)]);}catch(_0x678cb8){logger[_0xf2246e(0x11a)]('❌\x20Gagal\x20kirim\x20log\x20transaksi\x20ke\x20grup:\x20'+(_0x678cb8['response']?.[_0xf2246e(0x1bd)]?.[_0xf2246e(0x159)]||_0x678cb8['message']));}}async function afterAccountTransaction({userId:_0x19a0ac,username:_0x486cae,produk:_0x250fa2,serverId:_0x490025,jenis:_0x36be76,durasi:_0x11673,accountUsername:_0x42a706}){const _0x52f16c=_0x4e46c9;try{const _0x3fc8ad=new Date(),_0x46c38a=await new Promise((_0x1897cb,_0x5211f8)=>{const _0x4f8df7=_0x5858;db[_0x4f8df7(0x518)]('SELECT\x20nama_server,\x20harga,\x20domain,\x20quota,\x20iplimit\x20FROM\x20Server\x20WHERE\x20id\x20=\x20?',[_0x490025],(_0x2cbbfb,_0x557891)=>{const _0x52636a=_0x4f8df7;if(_0x2cbbfb)return logger[_0x52636a(0x11a)](_0x52636a(0x129),_0x2cbbfb[_0x52636a(0x4d3)]),_0x5211f8(_0x2cbbfb);_0x1897cb(_0x557891||{});});}),_0x3ba97d=_0x46c38a['nama_server']||'-',_0x5417fa=_0x46c38a[_0x52f16c(0xac)]||0x0,_0x21e765=_0x46c38a[_0x52f16c(0x3bb)]||'-',_0x466930=_0x46c38a['quota']||0x0,_0x1432c1=_0x46c38a[_0x52f16c(0x4e0)]||0x0,_0x181115=await getIspNameFromExternalSource(_0x21e765);let _0x58ae9c=_0x5417fa*_0x11673;const _0x4fa765=await new Promise(_0x4d442c=>{const _0x2f5d69=_0x52f16c;db[_0x2f5d69(0x518)](_0x2f5d69(0x358),[_0x19a0ac],(_0x4dbb53,_0xba800d)=>{const _0xfef972=_0x2f5d69;_0x4d442c(_0xba800d?_0xba800d[_0xfef972(0x413)]:_0xfef972(0x371));});});if(_0x4fa765==='reseller'){const _0x3c5b97=await new Promise(_0x4e0062=>{const _0x16381a=_0x52f16c;db[_0x16381a(0x518)](_0x16381a(0x155),(_0x376781,_0x206cb0)=>{const _0x202b4d=_0x16381a;if(_0x376781)reject(_0x376781);else _0x4e0062(_0x206cb0?_0x206cb0[_0x202b4d(0x1b4)]:0x0);});});_0x58ae9c=Math[_0x52f16c(0x486)](_0x58ae9c*(0x64-_0x3c5b97)/0x64);}const _0x5aee0e=await getLastTransactionNumber(),_0x19c5a7=await getUserSaldo(_0x19a0ac),_0x4d9968=_0x3fc8ad[_0x52f16c(0x100)](_0x52f16c(0x35a),{'day':'2-digit','month':_0x52f16c(0x407),'year':'numeric'})['replace'](/\//g,'.'),_0x2cafa5=_0x3fc8ad[_0x52f16c(0x285)](_0x52f16c(0x35a),{'hour':_0x52f16c(0x407),'minute':_0x52f16c(0x407)})['replace'](/\./g,':')+_0x52f16c(0x2cd);await sendTransactionLogToGroup({'trxNumber':_0x5aee0e,'userRole':adminIds[_0x52f16c(0x1c4)](_0x19a0ac)?'admin':_0x4fa765,'tgUsername':_0x486cae?_0x486cae[_0x52f16c(0x418)]('@')?_0x486cae:'@'+_0x486cae:'Tidak\x20tersedia','tgUserId':_0x19a0ac,'serverName':_0x3ba97d,'ispName':_0x181115,'domainName':_0x21e765,'accountUsername':_0x42a706,'serviceName':_0x250fa2||_0x52f16c(0x26d),'limitQuota':_0x466930,'limitLogin':_0x1432c1,'trxType':_0x36be76||_0x52f16c(0x444),'activeDays':_0x11673||0x0,'costValue':_0x58ae9c||0x0,'hargaNormalPerHari':_0x5417fa||0x0,'saldoDikurangi':_0x58ae9c||0x0,'userSaldoNow':_0x19c5a7||0x0,'dateLabel':_0x4d9968,'timeLabel':_0x2cafa5}),logger['info'](_0x52f16c(0x305)+_0x19a0ac+_0x52f16c(0x264)+_0x5aee0e);}catch(_0x5b2fa7){logger[_0x52f16c(0x11a)](_0x52f16c(0xab)+_0x19a0ac+':',_0x5b2fa7?.['stack']||_0x5b2fa7?.[_0x52f16c(0x4d3)]||_0x5b2fa7);}}function _0x19e2(){const _0x5425b4=['Minimal\x20TopUp:\x20*Rp','addserver_harga','\x0a-\x20Quota:\x20','editauth','Bot\x20launched','Gagal\x20menghapus\x20pesan\x20sebelumnya:','\x20WIB</code>\x0a<b>»\x20Tanggal:</b>\x20<code>','qrImageUrl','SELECT\x20*\x20FROM\x20Server','🏷️\x20*»\x20Username:*\x20`','bonus','🗑️\x20Proses\x20hapus\x20server\x20dimulai','💰\x20*Total\x20Uang\x20Masuk:*\x20','💰\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20harga:*','SELECT\x20show_sewa_script_button\x20FROM\x20ui_config\x20WHERE\x20id\x20=\x201','Sabtu','⚠️\x20*Quota\x20tidak\x20valid.*\x20Silahkan\x20masukkan\x20quota\x20server\x20yang\x20valid.','env','`\x0aUsername\x20TG:\x20`@','getDate','❌\x20*Format\x20IP\x20tidak\x20valid.*\x20Masukkan\x20IP\x20seperti\x20123.45.67.89','UPDATE\x20Server\x20SET\x20batas_create_akun\x20=\x20?\x20WHERE\x20id\x20=\x20?','SELECT\x20user_id,\x20saldo\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengedit\x20harga\x20server.*','SELECT\x20show_trial_button\x20FROM\x20ui_config\x20WHERE\x20id\x20=\x201','❌\x20Gagal\x20baca\x20tombol\x20sewa\x20script:','timestamp','UPDATE\x20users\x20SET\x20saldo\x20=\x200\x20WHERE\x20user_id\x20=\x20?\x20AND\x20saldo\x20>\x200','\x0a💰\x20Sisa\x20Saldo:\x20Rp','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20nama\x20server:','perpanjang_1bln','Add\x20saldo\x20user\x20process\x20started','toggle_topup_saldo','2-digit','trial_vmess','telegraf','❌\x20*Saldo\x20Anda\x20tidak\x20mencukupi\x20untuk\x20melakukan\x20transaksi\x20ini.\x20Saldo\x20Anda:\x20Rp','⚠️\x20Gagal\x20mengambil\x20daftar\x20pengguna.','renew_vmess','✅\x20Log\x20transaksi\x20#','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20server.','📅\x20*Hari\x20Ini:*\x20','✅\x20Default\x20bonus_config\x20dijamin\x20ada','Edit\x20server\x20domain\x20process\x20started','\x20server:','role','✅\x20Aksi\x20','post','SELECT\x20quota,\x20iplimit,\x20harga,\x20nama_server,\x20domain\x20FROM\x20Server\x20WHERE\x20id\x20=\x20?','QRIS\x20Orkut','startsWith','✅\x20Status\x20tombol\x20trial\x20diperbarui.','join','📊\x20*Silahkan\x20pilih\x20user\x20untuk\x20menambahkan\x20saldo:*','http://ip-api.com/json/','UPDATE\x20Server\x20SET\x20iplimit\x20=\x20?\x20WHERE\x20id\x20=\x20?','❌\x20Tidak','-\x20Minimal\x203x\x20transaksi/bulan\x0a','\x20di\x20sendMainMenu:','❌\x20Error\x20saat\x20membatalkan\x20reset\x20database:','❌\x20Gagal\x20menampilkan\x20daftar\x20reseller:','❌\x20*Pengguna\x20tidak\x20ditemukan.*','VLESS','*\x0a📌\x20Minimal\x20Top\x20Up:\x20Rp','❌\x20Gagal\x20menghapus\x20user.','REGIST\x20IP','toISOString','❌\x20*Tipe\x20layanan\x20tidak\x20dikenali.*','menu_topup','🎉\x20Selamat!\x20Karena\x20topup\x20kamu\x20≥\x20Rp30.000,\x20akunmu\x20otomatis\x20di-upgrade\x20menjadi\x20*Reseller*!\x20Nikmati\x20harga\x20khusus\x20&\x20fitur\x20reseller.','\x0aPesan\x20Error:\x20',']\x20✅\x20File\x20terkirim\x20ke\x20Telegram.','❌\x20*Konfigurasi\x20Saweria\x20belum\x20lengkap.*','Kesalahan\x20membuat\x20tabel\x20Server:','✅\x20Saldo\x20berhasil\x20dikurangi.\x0a\x0a🆔\x20`','Gagal\x20kirim\x20notif\x20downgrade\x20ke\x20','❌\x20Gagal\x20editMessageText:','💸\x20Topup\x20QRIS\x20Saweria','jumlah','🌀\x20*Masukkan\x20IP\x20yang\x20ingin\x20diperpanjang:*','Contoh:\x0a`/broadcast\x20Hallo\x20semua!`','❌\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20reseller.','INSERT\x20INTO\x20topup_log\x20(user_id,\x20username,\x20amount,\x20method,\x20waktu)\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?)','❌\x20Topup\x20QRIS\x20Orkut\x20telah\x20dibatalkan.\x20Silahkan\x20topup\x20ulang\x20jika\x20ingin\x20mencoba\x20lagi.','charAt','❌\x20Gagal\x20cek\x20status\x20QRIS:','🔢\x20*Silahkan\x20masukkan\x20batas\x20create\x20akun\x20server:*','❌\x20Gagal\x20memperpanjang\x20script:\x0a\x0a','Amount\x20mismatch\x20for\x20','add_saldo_','❌\x20*Pembayaran\x20Saweria\x20Expired*\x0a\x0aWaktu\x20pembayaran\x20telah\x20habis.\x20Silahkan\x20klik\x20Top\x20Up\x20lagi\x20untuk\x20mendapatkan\x20QR\x20baru.','\x20for\x20userState.step:\x20','👑\x20Anda\x20adalah\x20*Admin*,\x20tidak\x20perlu\x20melakukan\x20upgrade\x20reseller!\x0a\x0a','🚫\x20Dinonaktifkan','Create','🎁\x20Set\x20Bonus\x20TopUp','\x0a\x0aMinimal\x20topup\x20Rp\x20100\x0a━━━━━━━━━━━━━━━━━━━━━━\x0aGunakan\x20tombol\x20di\x20bawah\x20untuk\x20input\x20nominal.','VMESS','-\x20Kurang\x20dari\x203\x20trx/bulan\x20=\x20auto-downgrade\x0a','`\x20tidak\x20ditemukan\x20di\x20daftar\x20unlimited.','Gagal\x20kirim\x20notif\x20member\x20ke\x20','urlencoded','\x20server.*','count','❌\x20Error\x20saat\x20memulai\x20proses\x20','⚠️\x20`iplimit`\x20harus\x20berupa\x20angka.','type','editlimitquota','`\x0a💸\x20TopUp:\x20Rp','\x20tidak\x20valid.*\x20Masukkan\x20angka\x20positif\x20yang\x20valid.','⚠️\x20*Gagal\x20kirim\x20notifikasi\x20ke\x20grup.*\x0a\x0a','uncaughtException','Edit\x20server\x20harga\x20process\x20started','addsaldo','❌\x20Terjadi\x20kesalahan\x20internal\x20saat\x20memproses\x20akun\x20Anda.\x20Mohon\x20coba\x20lagi\x20nanti.','🔑\x20*Auth:*\x20`','\x20memilih\x20untuk\x20mengedit\x20domain\x20server\x20dengan\x20ID:\x20','editserver_domain','Markdown','Edit\x20server\x20total\x20create\x20akun\x20process\x20started','♻️\x20Reset\x20Server','keyGroup','Tertarik\x20jadi\x20reseller?\x20Klik\x20tombol\x20di\x20bawah\x20untuk\x20melanjutkan.','💳\x20Topup\x20Saldo\x20Otomatis\x20QRIS\x0a━━━━━━━━━━━━━━━━━━━━━━\x0aMasukkan\x20nominal\x20topup:\x0a\x0aRp\x200,00\x0a\x0aMinimal\x20topup\x20Rp\x20100\x0a━━━━━━━━━━━━━━━━━━━━━━\x0aGunakan\x20tombol\x20di\x20bawah\x20untuk\x20input\x20nominal.','\x20TIDAK\x20dikurangi\x20karena\x20perpanjang\x20script\x20gagal.','⚠️\x20Kesalahan\x20saat\x20mengurangi\x20saldo\x20pengguna\x20untuk\x20perpanjang\x20script\x20(setelah\x20sukses):','\x20berhasil\x20dihapus','📋\x20*Saldo\x20User:*\x0a🆔\x20`','❌\x20Gagal\x20insert\x20default\x20reseller_config:','PRAGMA\x20table_info(ui_config)','catch','❌\x20Terjadi\x20kesalahan\x20saat\x20mendapatkan\x20data\x20grup:','child_process','UPDATE\x20Server\x20SET\x20batas_create_akun\x20=\x20?\x20WHERE\x20domain\x20=\x20?','total_transactions','Bot\x20initialized','request_amount','\x0a♂️\x20<b>»\x20Username:</b>\x20','❌\x20Gagal\x20menyimpan\x20user_id:','📊\x20*Cek\x20Saldo*\x0a\x0a🆔\x20ID\x20Telegram:\x20','\x20tidak\x20berubah.*','⬅️\x20Prev','Tombol\x20Sewa\x20Script\x20','🌐\x20*','❌\x20*Harga\x20tidak\x20valid.\x20Masukkan\x20angka\x20yang\x20valid.*','bonus_percent','📌\x20Jangan\x20tutup\x20halaman\x20ini','❌\x20Terjadi\x20kesalahan\x20mengambil\x20saldo\x20pengguna.','resetdb','kembali_ke_menu','🧹\x20Menu\x20lama\x20milik\x20','editserver_harga','`\x20sekarang\x20bisa\x20trial\x20tanpa\x20batas.','✅\x20Terhubung\x20ke\x20SQLite3','⚠️\x20Tidak\x20bisa\x20hapus\x20pesan\x20command\x20user\x20','SELECT\x20*\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?','createLogger','request_amount_saweria','express','editnama','floor','❌\x20Gagal\x20mengambil\x20ISP\x20untuk\x20','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20auth\x20server:','❌\x20Gagal\x20update\x20bonus\x20config:','❌\x20Kesalahan\x20saat\x20mereset\x20diskon\x20reseller.','trial_ssh','⬅️\x20Back','❌\x20*Username\x20tidak\x20valid.\x20Harus\x203-20\x20karakter\x20alfanumerik.*','⏳\x20*Masukkan\x20masa\x20aktif\x20(hari):*','%)\x0a','77sSyPYX','Nonaktif\x20❌','⚠️\x20Pengguna\x20tidak\x20ditemukan\x20atau\x20sudah\x20menjadi\x20member.','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20quota\x20server:','\x0a🏷️\x20<b>»\x20Waktu:</b>\x20','⚠️\x20Kesalahan\x20saat\x20mengedit\x20domain\x20server:',',\x20amount:\x20','daftar_1bln','simple','reference','⚠️\x20*','username_','exp','trial_shadowsocks','-\x20Dapat\x20bonus\x20dari\x20topup\x20member\x0a\x0a','✅\x20User\x20ID\x20','confirm_amount','20owcqgg','\x20-\x20','detailserver','replyWithPhoto','pendingDepositsSaweria','now','Gagal\x20kirim\x20pesan\x20error:','\x22\x20(Upgrade\x20Reseller)','❌\x20*Username\x20tidak\x20boleh\x20mengandung\x20karakter\x20khusus\x20atau\x20spasi.*','atur_bonus_topup','Error\x20adding\x20user_role\x20column\x20to\x20log_penjualan\x20table:','batal_topup_','PAID','SELECT\x20*\x20FROM\x20pending_deposits\x20WHERE\x20status\x20=\x20\x22pending\x22',',\x20tidak\x20cukup.','📑\x20Log\x20Topup','❌\x20Gagal\x20insert\x20ke\x20topup_log:','🌐\x20*Silahkan\x20masukkan\x20domain/ip\x20server:*','DELETE\x20FROM\x20unlimited_trial_users\x20WHERE\x20user_id\x20=\x20?','combine','💰\x20*Silahkan\x20masukkan\x20harga\x20server\x20baru:*','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20hapus\x20server:','❌\x20Error\x20cek\x20transaksi\x20reseller\x20','Admin\x20menu\x20requested','INSERT\x20INTO\x20users\x20(user_id,\x20role)\x20VALUES\x20(?,\x20?)','1\x20Bulan\x2010K','Gagal\x20mengubah\x20status\x20tombol.','SELECT\x20saldo\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?','✅\x20Perpanjangan\x20IP\x20Berhasil:\x0a','edit_nama_','⚠️\x20Gagal\x20mengubah\x20status','addserver_nama_server','❌\x20Gagal\x20ambil\x20info\x20kolom\x20ui_config:','⚠️\x20*Kamu\x20sudah\x20trial\x20hari\x20ini,\x20Gass\x20Order*\x20😖','❌\x20Gagal\x20update\x20pesan\x20nominal\x20top-up:','toggle_upgrade_reseller_btn_','UPDATE\x20users\x20SET\x20saldo\x20=\x20saldo\x20-\x20?\x20WHERE\x20user_id\x20=\x20?\x20AND\x20saldo\x20>=\x20?','</code>\x0a','🎁\x20*Bonus\x20Top\x20Up!*\x20Kamu\x20dapat\x20saldo\x20tambahan\x20*Rp','✅\x20Diskon\x20reseller\x20berhasil\x20direset\x20menjadi\x20*0%*.','edit_limit_ip','./.vars.json','user-','Saldo\x20user\x20','USER_ID','daftar_2bln','\x0a-\x20Nama\x20Server:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20unlimited_trial_users\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER\x20PRIMARY\x20KEY\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','batas_create_akun','Exception\x20saat\x20menjalankan\x20literegis\x20untuk\x20user\x20','message','stack','❌\x20*GAGAL!\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.*','UPDATE\x20Server\x20SET\x20auth\x20=\x20?\x20WHERE\x20id\x20=\x20?','topup_saweria','upgrade_reseller_pay','Saweria','✅\x20Kolom\x20show_sewa_script_button\x20ditambahkan\x20ke\x20ui_config','📅\x20Pilih\x20Durasi\x20Sewa\x20Script:','📊\x20*Silahkan\x20masukkan\x20quota\x20server\x20baru:*','⚠️\x20Kesalahan\x20saat\x20mengedit\x20iplimit\x20server:','🆔\x20`','179892VObXng','iplimit','listreseller',',\x20got\x20','server_detail_','🏷️\x20*»\x20Nominal:*\x20Rp','\x20ingin\x20','response','push','📊\x20*Silahkan\x20masukkan\x20','⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20detail\x20server.*','production','\x20akun</code>\x0a<code>»\x20Bulan\x20Ini\x20:\x20','Aktif','SELECT\x20id,\x20user_id\x20FROM\x20Users\x20LIMIT\x2020\x20OFFSET\x20','✅\x20*Harga\x20server\x20berhasil\x20diupdate.*\x0a\x0a📄\x20*Detail\x20Server:*\x0a-\x20Harga\x20Baru:\x20*Rp\x20','Error\x20deleting\x20expired\x20payment\x20messages:','pendingDeposits','⚠️\x20*Terjadi\x20kesalahan\x20saat\x20mengambil\x20detail\x20server.*','...','ℹ️\x20Kolom\x20username\x20sudah\x20ada\x20di\x20pending_deposits','TROJAN','GROUP_CHAT_ID','\x20dari\x20','🔙\x20Hapus','Gagal\x20hapus\x20pesan\x20QRIS\x20user\x20','UPDATE\x20Server\x20SET\x20quota\x20=\x20?\x20WHERE\x20domain\x20=\x20?','\x20memulai\x20proses\x20top-up\x20saldo.','❌\x20User\x20tidak\x20ditemukan.','3231GATXGz','SELECT\x20saldo,\x20role\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?','❌\x20Konfigurasi\x20grup\x20tidak\x20lengkap\x20di\x20.vars.json\x20(GROUP_CHAT_ID\x20atau\x20BOT_TOKEN\x20kosong).\x20Notifikasi\x20grup\x20mungkin\x20tidak\x20berfungsi.','UPDATE\x20Server\x20SET\x20domain\x20=\x20?\x20WHERE\x20id\x20=\x20?','❌\x20Gagal\x20insert\x20default\x20bonus_config:','✅\x20*','❌\x20Terjadi\x20kesalahan\x20saat\x20menambahkan\x20saldo\x20user:','⚠️\x20Kesalahan\x20saat\x20mengurangi\x20saldo\x20pengguna\x20(setelah\x20sukses\x20API):','⚠️\x20Kesalahan\x20saat\x20mengedit\x20quota\x20server.','⚠️\x20*Pengguna\x20tidak\x20ditemukan\x20atau\x20saldo\x20tidak\x20berubah.*','qrMessageId','⚠️\x20*Jumlah\x20saldo\x20maksimal\x20adalah\x2010\x20karakter!*','name','\x20sudah\x20ada','format','sqlite3','❌\x20ERROR\x20toggle_upgrade_reseller_btn:','✅\x20Status\x20tombol\x20Upgrade\x20Reseller\x20diperbarui.','⚠️\x20Server\x20tidak\x20ditemukan.','topup_saldo','Pending\x20deposit\x20loaded:','unlimitedtrial','hapuslog','📋\x20*Daftar\x20User\x20Unlimited\x20Trial\x20(Halaman\x20','━━━━━━━━━━━━━━━━━━\x0a','writeFileSync','SAWERIA_USERNAME','SELECT\x20COUNT(*)\x20AS\x20count\x20FROM\x20users\x20WHERE\x20role\x20=\x20\x27reseller\x27','get','📊\x20*Silahkan\x20masukkan\x20total\x20create\x20akun\x20server\x20baru:*','):*\x0a\x0a','ceksaldo','`\x20berhasil\x20ditambahkan\x20untuk\x20`user_id`\x20`','toLowerCase','toString','❌\x20*','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20server:','listsaldo_',':\x20expected\x20','📭\x20Belum\x20ada\x20reseller\x20terdaftar.','XWANSTORE','UPDATE\x20Server\x20SET\x20nama_server\x20=\x20?\x20WHERE\x20id\x20=\x20?','⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20untuk\x20diedit.*','✅\x20Tabel\x20pending_deposits\x20siap','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20SELECT\x20COUNT(*)\x20AS\x20total_transactions\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20FROM\x20log_penjualan\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20WHERE\x20user_id\x20=\x20?\x20AND\x20waktu_transaksi\x20>=\x20?\x20AND\x20action_type\x20IN\x20(\x27create\x27,\x20\x27renew\x27)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20saldo:','\x0a🎁\x20Bonus:\x20Rp','\x20server\x20berhasil\x20diupdate.*\x0a\x0a📄\x20*Detail\x20Server:*\x0a-\x20','renew_shadowsocks','Log\x20berhasil\x20dihapus.','toggle_sewascript_button',')\x20untuk\x20sewa\x20script\x20Rp','first_name','saldo','Gagal\x20load\x20pending_deposits:','ssh','use','entries','UPDATE\x20Server\x20SET\x20auth\x20=\x20?\x20WHERE\x20domain\x20=\x20?','Reseller','\x20(Perpanjang\x20Script\x20berhasil)','Gagal\x20proses\x20pagination:','addserver_iplimit','❌\x20Gagal\x20menghapus\x20user\x20dari\x20unlimited\x20trial:','enabled','PRAGMA\x20table_info(log_penjualan)\x20did\x20not\x20return\x20an\x20array\x20for\x20columns.','`\x20berhasil\x20ditambahkan\x20ke\x20user\x20ID\x20`','sewascript_perpanjang_ip_manual','Gagal\x20batal\x20topup:','`\x0aJenis:\x20Perpanjang\x20Script\x0aJumlah:\x20Rp','❌\x20Hapus\x20Server','❌\x20Error\x20afterAccountTransaction\x20user\x20','harga','\x0a*SCRIPT\x20MUNGKIN\x20SUDAH\x20DIPERPANJANG\x20TAPI\x20SALDO\x20BELUM\x20TERPOTONG!*','\x0aJumlah:\x20Rp','sewascript_create_input_ip','❌\x20*Terjadi\x20kesalahan\x20saat\x20menambahkan\x20server\x20baru.*','/sendMessage','`\x0a💰\x20','amount','✅\x20*Saldo\x20user\x20berhasil\x20ditambahkan.*\x0a\x0a📄\x20*Detail\x20Saldo:*\x0a-\x20Jumlah\x20Saldo:\x20*Rp\x20','6912uTDaVC','❌\x20Kesalahan\x20saat\x20mengatur\x20diskon\x20reseller:','\x20akun\x20','Kesalahan\x20koneksi\x20SQLite3:','Error\x20deleting\x20server:','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20log_penjualan\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20AUTOINCREMENT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20username\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20nama_server\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20tipe_akun\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20harga\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20masa_aktif_hari\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20waktu_transaksi\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20action_type\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_role\x20TEXT\x20DEFAULT\x20\x27member\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','📥\x20Perintah\x20/start\x20atau\x20/menu\x20diterima','cek_saldo','edit_harga_','\x20berhasil\x20untuk\x20user\x20','processedTransactions','❌\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20saldo.','\x20berhasil\x20dikurangi\x20untuk\x20user\x20','Server\x20table\x20created\x20or\x20already\x20exists','</code>\x0a<code>»\x20Runtime\x20\x20\x20:\x20','message\x20is\x20not\x20modified','❌\x20*Proses\x20reset\x20database\x20dibatalkan.*','\x20server\x20berhasil\x20diubah\x20menjadi\x20`','❌\x20*Nominal\x20tidak\x20valid.\x20Minimal\x20Rp5000.*','shadowsocks','Error\x20saat\x20memanggil\x20fungsi\x20','\x20memilih\x20untuk\x20mengedit\x20nama\x20server\x20dengan\x20ID:\x20','\x0a🏷️\x20<b>»\x20Produk:</b>\x20','Selasa','💰\x20Rp.','UPDATE\x20ui_config\x20SET\x20show_trial_button\x20=\x20?\x20WHERE\x20id\x20=\x201','⚠️\x20`user_id`\x20dan\x20`jumlah`\x20tidak\x20boleh\x20mengandung\x20spasi\x20atau\x20titik.','\x20expired\x20untuk\x20user\x20','Topup\x20dibatalkan.','❌\x20Gagal\x20update\x20show_sewa_script_button:','🎉\x20Selamat!\x20Akun\x20Anda\x20telah\x20diupgrade\x20menjadi\x20*Reseller*!\x20Nikmati\x20harga\x20khusus\x20dan\x20fitur\x20reseller.','❇️\x20*Top\x20Up\x20Berhasil*\x20❇️\x0a','`\x0aJenis:\x20Sewa\x20Script\x0aJumlah:\x20Rp','\x0a-\x20Auth:\x20','\x20tidak\x20boleh\x20kosong.*','❌\x20Kesalahan\x20saat\x20memeriksa\x20user_id:','\x20dikirim\x20ke\x20grup\x20','reference_id','node-fetch','\x20Hari\x20Rp.','nama_server','statistik_penjualan','quota','N/A','1.\x20Balas\x20pesan\x20(teks/gambar/video/dokumen)\x20lalu\x20ketik\x20/broadcast\x20untuk\x20menyiarkan\x20media\x20tersebut\x0a','unhandledRejection','Kesalahan\x20saat\x20menghapus\x20server:','✅\x20*Server\x20baru\x20dengan\x20domain\x20','Gagal\x20hapus\x20pesan\x20QR\x20expired\x20untuk\x20user\x20','❌\x20Error\x20mengambil\x20daftar\x20reseller\x20untuk\x20downgrade:','ALTER\x20TABLE\x20users\x20ADD\x20COLUMN\x20role\x20TEXT\x20DEFAULT\x20\x27member\x27','reseller','✅\x20Diaktifkan','\x20tidak\x20cukup\x20(Rp','Express\x20failed\x20to\x20start:','✅\x20Domain\x20server\x20`','listening','⚠️\x20*Server\x20Penuh*','🔢\x20Edit\x20Total\x20Create','✅\x20Diskon\x20reseller\x20berhasil\x20diatur\x20menjadi\x20*','TRIAL\x20AKUN','password','cancel_resetdb','✅\x20Ya','SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20log_penjualan\x20WHERE\x20user_id\x20=\x20?\x20AND\x20waktu_transaksi\x20>=\x20?\x20AND\x20action_type\x20IN\x20(\x22create\x22,\x22renew\x22)','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20INSERT\x20OR\x20IGNORE\x20INTO\x20reseller_config\x20(id,\x20discount_percent)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20VALUES\x20(1,\x200)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','⚠️\x20Row\x20kosong\x20untuk\x20show_sewa_script_button!','SEWA\x20SCRIPT','SELECT\x20user_id\x20FROM\x20users','✅\x20Tabel\x20topup_log\x20siap','\x20Topup\x20QRIS\x20Orkut','⚠️\x20`harga`,\x20`quota`,\x20`iplimit`,\x20dan\x20`batas_create_akun`\x20harus\x20berupa\x20angka.','getChat','⚠️\x20*PERHATIAN!\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20saat\x20ini.*','❌\x20Kesalahan\x20saat\x20mengatur\x20role\x20reseller:','toLocaleDateString','UPDATE\x20users\x20SET\x20saldo\x20=\x20saldo\x20-\x20?\x20WHERE\x20user_id\x20=\x20?','</code>\x20|️\x20<b>Total\x20User:</b>\x20<code>','📝\x20Menunggu\x20input\x20nominal\x20dari\x20user\x20','SELECT\x20id,\x20nama_server\x20FROM\x20Server','bonus_topup_setting','❌\x20Terjadi\x20kesalahan\x20internal\x20saat\x20memproses\x20pendaftaran\x20script.\x20Silakan\x20coba\x20lagi\x20nanti.','\x0a❌\x20Gagal:\x20','❌\x20Kesalahan\x20saat\x20mengatur\x20role\x20member:',':\x20*','long','?fields=isp','UPDATE\x20users\x20SET\x20role\x20=\x20\x27reseller\x27\x20WHERE\x20user_id\x20=\x20?','✅\x20Default\x20reseller_config\x20dijamin\x20ada','isPaid','edit_auth_','🔑\x20Edit\x20Auth','⚠️\x20Tidak\x20ada\x20server\x20yang\x20tersedia','from','⚠️\x20Kesalahan\x20saat\x20mengedit\x20','❌\x20Gagal\x20proses\x20QRIS\x20Saweria:','⏳\x20Mohon\x20menunggu','send_main_menu','/usr/local/sbin/xwanextend\x20','\x20-\x20Rp','setDate','error','setreseller','existsSync','\x20memilih\x20untuk\x20mengedit\x20limit\x20IP\x20server\x20dengan\x20ID:\x20','⚠️\x20Gagal\x20mencatat\x20log\x20penjualan\x20(setelah\x20sukses\x20API):','trial_trojan','✅\x20Tabel\x20ui_config\x20siap','🔍\x20User\x20','renew_vless','\x20di\x20halaman\x20','➡️\x20Next','INSERT\x20OR\x20IGNORE\x20INTO\x20unlimited_trial_users\x20(user_id)\x20VALUES\x20(?)','❌\x20ERROR\x20toggle_trial_btn:','\x20mengembalikan\x20pesan\x20gagal/error\x20untuk\x20user\x20','</code>\x0a🏷️\x20<b>»\x20Server:</b>\x20','❌\x20Gagal\x20mengambil\x20data\x20server:','bot-combined.log','\x20tidak\x20valid!*','/sendDocument','Gagal\x20hapus\x20pending_deposits\x20(error):','UPDATE\x20Server\x20SET\x20total_create_akun\x20=\x20total_create_akun\x20+\x201\x20WHERE\x20id\x20=\x20?','update','*\x0aJumlah\x20Terjual:\x20','📥\x20Proses\x20tambah\x20server\x20dimulai','depositState','❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20top-up\x20Saweria\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.','Kamis','resetdiskonreseller','UPDATE\x20Server\x20SET\x20quota\x20=\x20?\x20WHERE\x20id\x20=\x20?','ℹ️\x20User\x20`','❌\x20Gagal\x20daftar\x20script:\x0a\x0a','⚠️\x20Contoh:\x20/ceksaldo\x20123456789','error_code','add','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20tambah\x20saldo\x20user:','\x20memilih\x20untuk\x20mengedit\x20quota\x20server\x20dengan\x20ID:\x20','🎁\x20Bonus\x20Top\x20Up:\x20*Rp','Error\x20getting\x20table\x20info:','🔁\x20Menjalankan\x20pengecekan\x20downgrade\x20reseller...','`\x20berhasil\x20ditambahkan.','Tidak\x20tersedia','editharga','Gagal\x20auto-upgrade\x20reseller\x20via\x20topup:','🏷️\x20*Nama\x20Server:*\x20`','⚠️\x20Row\x20kosong\x20untuk\x20show_trial_button!','Edit\x20server\x20limit\x20IP\x20process\x20started','🗑️\x20*Pilih\x20server\x20yang\x20ingin\x20dihapus:*','):\x20','⚠️\x20*Batas\x20create\x20akun\x20tidak\x20valid.*\x20Silahkan\x20masukkan\x20batas\x20create\x20akun\x20server\x20yang\x20valid.','🚫\x20User\x20','listsaldo','listserver','🔙\x20KEMBALI\x20ke\x20Menu\x20Top-up','466WoxiZJ','❌\x20Error\x20saat\x20mereset\x20tabel\x20Server:','UPDATE\x20users\x20SET\x20saldo\x20=\x20saldo\x20+\x20?\x20WHERE\x20user_id\x20=\x20?','📆\x20*Bulan\x20Ini:*\x20','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/addserver\x20<domain>\x20<auth>\x20<harga>\x20<nama_server>\x20<quota>\x20<iplimit>\x20<batas_create_account>`','PRAGMA\x20table_info(log_penjualan)','SELECT\x20discount_percent\x20FROM\x20reseller_config\x20WHERE\x20id\x20=\x201','📋\x20*Silahkan\x20pilih\x20server\x20untuk\x20melihat\x20detail:*','./sellvpn.db','DateTimeFormat','description','exp_','✅\x20Total\x20create\x20akun\x20server\x20`','Cek\x20pembayaran\x20Saweria\x20error\x20untuk\x20','changes','Gagal\x20kirim\x20notif\x20reseller\x20ke\x20','❌\x20*Perintah\x20tidak\x20dikenali.*','Gagal\x20menghapus\x20pesan\x20loading\x20untuk\x20user\x20','DELETE\x20FROM\x20Server\x20WHERE\x20id\x20=\x20?','readFileSync','⚠️\x20*Jumlah\x20maksimal\x20adalah\x2012\x20digit!*','Console','SELECT\x20*\x20FROM\x20topup_log\x20ORDER\x20BY\x20id\x20DESC\x20LIMIT\x2010','some','⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20username\x20dari\x20Telegram.*','✅\x20Menu\x20baru\x20dikirim\x20ke\x20','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editnama\x20<domain>\x20<nama_server>`','slice','trial_vless','stringify','\x20(offset\x20','\x20already\x20processed,\x20skipping...','🔢\x20*Silahkan\x20masukkan\x20limit\x20IP\x20server:*','\x20service\x20menu\x20sent\x20as\x20new\x20message','PRAGMA\x20table_info(pending_deposits)','editserver_quota','\x0a<code>»\x20Username\x20\x20:\x20','sewascript_perpanjang_pilih_bulan','SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20Users','\x20memilih\x20untuk\x20mengedit\x20auth\x20server\x20dengan\x20ID:\x20','⚠️\x20*Jumlah\x20saldo\x20tidak\x20valid.\x20Masukkan\x20angka\x20positif.*','📊\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20quota:*','⏮️\x20Prev','⚠️\x20*PERHATIAN!*\x20Tidak\x20ada\x20server\x20yang\x20tersedia\x20saat\x20ini.\x20Coba\x20lagi\x20nanti!','edit_nama','split','DELETE\x20FROM\x20pending_deposits\x20WHERE\x20unique_code\x20=\x20?','SELECT\x20COUNT(*)\x20AS\x20count\x20FROM\x20Server','</code>\x0a<code>»\x20Saldo\x20\x20\x20\x20\x20:\x20Rp.','✅\x20Pengguna\x20`','\x20akun</code>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>STATISTIK\x20GLOBAL</b>\x0a<code>»\x20Hari\x20Ini\x20\x20:\x20','⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20menghitung\x20total\x20user.*','\x0a🎁\x20Bonus:\x20','vless','1323ItdTyS','11008ZAmPer','\x0a*📋\x20Daftar\x20Perintah:*\x0a\x0a1.\x20/start\x20-\x20Mengaktifkan\x20bot.\x0a2.\x20/menu\x20-\x20Menampilkan\x20daftar\x20menu\x20bot.\x0a3.\x20/admin\x20-\x20Menampilkan\x20fitur-fitur\x20admin.\x0a4.\x20/broadcast\x20-\x20Kirim\x20pesan\x20siaran\x20ke\x20semua\x20pengguna.\x0a5.\x20/addserver\x20-\x20Menambahkan\x20server\x20baru.\x0a6.\x20/addsaldo\x20-\x20Menambahkan\x20saldo\x20ke\x20akun\x20pengguna.\x0a7.\x20/kurangisaldo\x20-\x20Mengurangi\x20saldo\x20user.\x0a8.\x20/resetsaldo\x20-\x20Mengatur\x20ulang\x20saldo\x20user.\x0a9.\x20/listsaldo\x20-\x20Menampilkan\x20daftar\x20saldo\x20user.\x0a10.\x20/ceksaldo\x20-\x20Melihat\x20saldo\x20user.\x0a11.\x20/editharga\x20-\x20Mengedit\x20harga\x20layanan.\x0a12.\x20/editnama\x20-\x20Mengedit\x20nama\x20server.\x0a13.\x20/editdomain\x20-\x20Mengedit\x20domain\x20server.\x0a14.\x20/editauth\x20-\x20Mengedit\x20auth\x20server.\x0a15.\x20/editlimitquota\x20-\x20Mengedit\x20batas\x20quota\x20server.\x0a16.\x20/editlimitip\x20-\x20Mengedit\x20batas\x20IP\x20server.\x0a17.\x20/editlimitcreate\x20-\x20Mengedit\x20batas\x20pembuatan\x20akun\x20server.\x0a18.\x20/edittotalcreate\x20-\x20Mengedit\x20total\x20pembuatan\x20akun\x20server.\x0a19.\x20/hapuslog\x20-\x20Menghapus\x20log\x20bot.\x0a20.\x20/unlimitedtrial\x20-\x20Memberikan\x20akses\x20trial\x20unlimited\x20ke\x20user.\x0a21.\x20/removeunlimitedtrial\x20-\x20Mencabut\x20akses\x20trial\x20unlimited\x20dari\x20user.\x0a22.\x20/listunlimitedtrial\x20-\x20Melihat\x20daftar\x20user\x20yang\x20memiliki\x20trial\x20unlimited.\x0a23.\x20/setreseller\x20-\x20Mengubah\x20role\x20user\x20menjadi\x20reseller.\x0a24.\x20/unsetreseller\x20-\x20Mengubah\x20role\x20reseller\x20menjadi\x20member\x20biasa.\x0a25.\x20/listreseller\x20-\x20Melihat\x20daftar\x20semua\x20reseller.\x0a26.\x20/setdiskonreseller\x20-\x20Mengatur\x20persentase\x20diskon\x20untuk\x20reseller.\x0a27.\x20/resetdiskonreseller\x20-\x20Mereset\x20persentase\x20diskon\x20reseller\x20ke\x200%.\x0a28.\x20/helpadmin\x20-\x20Menampilkan\x20daftar\x20perintah\x20admin.\x0a\x0a📝\x20*Catatan:*\x20Gunakan\x20perintah\x20ini\x20dengan\x20format\x20yang\x20benar\x20untuk\x20menghindari\x20kesalahan.\x0a','❌\x20Error\x20trial\x20','❗\x20Gagal\x20kirim\x20ke\x20grup:\x0a','💵\x20Tambah\x20Saldo','`.*','`\x20berhasil\x20diubah\x20menjadi\x20`','✅\x20Kolom\x20show_upgrade_reseller_button\x20berhasil\x20ditambahkan\x20ke\x20ui_config','bot-error.log','https://saweria.autsc.my.id/api/create?username=','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20total_create_akun\x20(setelah\x20sukses\x20API):','create_shadowsocks','❌\x20*GAGAL!*\x20Terjadi\x20kesalahan\x20saat\x20memproses\x20permintaan\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.','Exception\x20saat\x20menjalankan\x20liteextend\x20untuk\x20user\x20','Gagal\x20menghapus\x20log:\x20','create_trojan','✅\x20Log\x20Topup:\x20','Jumat','debug','❌\x20Terjadi\x20kesalahan\x20saat\x20memeriksa\x20hak\x20trial.','🔥\x20Unhandled\x20Rejection:','❌\x20Gagal\x20membuat\x20tabel\x20pending_deposits:','\x20dihapus\x20oleh\x20sendMainMenu','⚠️\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.','renew_trojan','❌\x20*Saldo\x20Anda\x20tidak\x20cukup.*','✅\x20Pendaftaran\x20IP\x20Berhasil:\x0a','❌\x20Gagal\x20mengurangi\x20saldo.\x20Mungkin\x20saldo\x20tidak\x20cukup.','vmess','unlimitedtrial_next_','♂️\x20*Masukkan\x20username:*','kurangisaldo','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20domain\x20server:','user_id','confirm','[LISTRESELLER]\x20Query\x20halaman\x20','https://saweria.autsc.my.id/check-payment?idtransaksi=','🚀\x20UPGRADE\x20RESELLER','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editdomain\x20<old_domain>\x20<new_domain>`','❌\x20*Username\x20tidak\x20valid.\x20Masukkan\x20username\x20yang\x20valid.*','helpadmin','getDay','❌\x20Gagal\x20mengubah\x20status.','📊\x20*Statistik\x20Penjualan\x20per\x20Tipe\x20Akun:*\x0a\x0a','INSERT\x20INTO\x20pending_deposits\x20(unique_code,\x20user_id,\x20username,\x20amount,\x20original_amount,\x20timestamp,\x20status,\x20qr_message_id)\x0a\x20\x20\x20\x20\x20\x20\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?)','[UPGRADE]\x20User\x20','discount_percent','show_sewa_script_button','password_','dinonaktifkan\x20❌','❌\x20Error\x20saat\x20cek\x20log\x20trial:','chat','Menjalankan\x20perintah\x20sewa\x20script\x20untuk\x20user\x20','qr_message_id','Liteextend\x20mengembalikan\x20pesan\x20gagal\x20untuk\x20user\x20','data','<b>»\x20Status:</b>\x20<code>Reseller</code>','⚠️\x20Kesalahan\x20saat\x20mengedit\x20domain\x20server.','UPDATE\x20users\x20SET\x20role\x20=\x20\x27member\x27\x20WHERE\x20user_id\x20=\x20?','updateType','.*\x20','unlinkSync','includes','⚠️\x20*Harga\x20tidak\x20valid.*\x20Silahkan\x20masukkan\x20harga\x20server\x20yang\x20valid.','winston','SELECT\x20*\x20FROM\x20unlimited_trial_users\x20WHERE\x20user_id\x20=\x20?','🆔\x20<code>','min_topup','user_','SELECT\x20COUNT(*)\x20AS\x20total\x20FROM\x20unlimited_trial_users','⚠️\x20Belum\x20ada\x20data\x20penjualan.','addsaldo_user','❌\x20*Gagal\x20membuat\x20QRIS\x20Saweria.*\x20Silahkan\x20coba\x20lagi\x20nanti.','-\x20Deposit\x20Awal:\x20\x22Rp','⚠️\x20Kesalahan\x20saat\x20mengupdate\x20server\x20field:','❌\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20menggunakan\x20perintah\x20ini.','_username_','⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20server.*','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengambil\x20saldo\x20pengguna.*','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengedit\x20','\x0a🕒\x20','✅\x20Tabel\x20bonus_config\x20siap','Respons\x20Saweria\x20check-payment\x20untuk\x20','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/setdiskonreseller\x20<persen>`\x20(angka\x20antara\x200-100)','❌\x20*Terjadi\x20kesalahan\x20saat\x20memeriksa\x20saldo\x20Anda.\x20Silahkan\x20coba\x20lagi\x20nanti.*','❌\x20*Password\x20tidak\x20valid.\x20Masukkan\x20password\x20yang\x20valid.*','⚠️\x20Kesalahan\x20saat\x20mengedit\x20harga\x20server.','✏️\x20*Silahkan\x20kirim\x20auth\x20server\x20baru\x20sekarang:*','SELECT\x20user_id,\x20saldo\x20FROM\x20users\x20WHERE\x20saldo\x20>\x200\x20ORDER\x20BY\x20saldo\x20DESC\x20LIMIT\x20?\x20OFFSET\x20?','addserver','⚠️\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20server:','⏳\x20Telegram\x20rate\x20limit:\x20tunggu\x20','transports','\x20berhasil\x20disimpan','🚀\x20*Upgrade\x20ke\x20Reseller*\x0a\x0a','❌\x20Terjadi\x20kesalahan\x20saat\x20memeriksa\x20saldo.','🌐\x20*Domain:*\x20`','✅\x20Batas\x20create\x20akun\x20server\x20`','sewascript_create_input','🌐\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20auth:*','unlimitedtrial_prev_','⚠️\x20Kesalahan\x20saat\x20mengambil\x20detail\x20server:','❌\x20Gagal\x20insert\x20default\x20ui_config:','✍️\x20Kirim\x20format:\x0a`on|off\x20<minimal_topup>\x20<persen_bonus>`\x0a\x0aContoh:\x0a`on\x2010000\x2025`','toLocaleString','Gagal\x20mengirim\x20pesan\x20hasil\x20sewa\x20script\x20untuk\x20user\x20','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20saldo.','reply','\x20aktif\x20(transaksi:\x20','edit_total_create_akun','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20bonus_config\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20CHECK\x20(id\x20=\x201),\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20enabled\x20INTEGER\x20DEFAULT\x200,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min_topup\x20INTEGER\x20DEFAULT\x200,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bonus_percent\x20INTEGER\x20DEFAULT\x200\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Gagal\x20hapus\x20pesan\x20QR\x20berhasil\x20untuk\x20user\x20','⚠️\x20*Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20server.*','printf','😔\x20Informasi:\x20Role\x20akun\x20Anda\x20telah\x20diubah\x20menjadi\x20*Member\x20Biasa*.\x20Jika\x20Anda\x20merasa\x20ini\x20adalah\x20kesalahan,\x20silakan\x20hubungi\x20admin.','GB\x0a','⚠️\x20Jumlah\x20maksimal\x20adalah\x20','form-data','Database','🚨\x20*PERHATIAN:\x20SALDO\x20GAGAL\x20DIKURANGI\x20SETELAH\x20PERPANJANG\x20SCRIPT\x20SUKSES!*\x0aUser\x20ID:\x20`','listreseller_prev_','toTimeString','trim','\x0a\x0a🏷️\x20*»\x20Silahkan\x20scan\x20QR\x20berikut\x20untuk\x20membayar\x20melalui\x20QRIS.*\x0a🏷️\x20*»\x20Expired:*\x205\x20menit\x20dari\x20sekarang','❌\x20Hanya\x20mendukung\x20ID,\x20bukan\x20username.\x20Contoh:\x20/ceksaldo\x20123456789','💵\x20Nominal:\x20Rp\x20','\x0a🏷️\x20<b>»\x20ISP\x20:</b>\x20','1250805aZlhBe','User\x20state\x20initialized','POST','edit_quota_','✅\x20Broadcast\x20sukses\x20ke\x20','-\x20Tidak\x20ada\x20refund\x0a\x0a','⚠️\x20Kesalahan\x20saat\x20mengedit\x20auth\x20server.','❌\x20*Password\x20tidak\x20boleh\x20mengandung\x20karakter\x20khusus\x20atau\x20spasi.*','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20top-up\x20saldo:','⚠️\x20Pengguna\x20tidak\x20ditemukan\x20atau\x20sudah\x20menjadi\x20reseller.','⚠️\x20Belum\x20ada\x20data\x20topup','Gagal\x20cek\x20info\x20pending_deposits:','-\x20Bisa\x20jualan\x20akun\x20VPN\x20dan\x20untung\x0a','👤\x20<b>»\x20Status:</b>\x20<code>Member</code>','Update\x20saldo\x20untuk\x20user\x20','Error\x20saat\x20menangani\x20expired\x20','⚠️\x20Kesalahan\x20saat\x20memeriksa\x20`user_id`.','⏳\x20Batas:\x205\x20menit\x0a','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20INSERT\x20OR\x20IGNORE\x20INTO\x20bonus_config\x20(id,\x20enabled,\x20min_topup,\x20bonus_percent)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20VALUES\x20(1,\x200,\x200,\x200)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','3\x20Bulan\x2030K','✅\x20Kolom\x20username\x20berhasil\x20ditambahkan\x20ke\x20pending_deposits','then','❌\x20*Terjadi\x20kesalahan\x20saat\x20memproses\x20trial.\x20Silahkan\x20coba\x20lagi\x20nanti.*','🔙\x20KEMBALI\x20ke\x20Menu\x20Utama','\x20meminta\x20daftar\x20reseller\x20halaman\x201','❌\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20mengakses\x20menu\x20admin.','intervalId','</code>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>BONUS\x20TOP\x20UP</b>\x0a<blockquote><b>»\x20Topup\x2010k-50k\x20bonus\x205%</b>\x0a<b>»\x20Topup\x20100k-150k\x20bonus\x207%</b>\x0a<b>»\x20Topup\x20200k-250k\x20bonus\x209%</b></blockquote>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>MENU\x20LAINNYA</b>\x0a<blockquote><b>»\x20Ready\x20juga\x20paket\x20resmi\x20&\x20paket\x20dor</b>\x0a<b>»\x20TopUp\x20Diamond\x20Hubungi\x20admin</b></blockquote>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>»\x20Waktu:</b>\x20<code>','\x20memilih\x20untuk\x20mengedit\x20batas\x20create\x20akun\x20server\x20dengan\x20ID:\x20','upgrade_reseller','⚠️\x20Kesalahan\x20saat\x20mengedit\x20harga\x20server:','UPDATE\x20Server\x20SET\x20total_create_akun\x20=\x20?\x20WHERE\x20id\x20=\x20?','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/edittotalcreate\x20<domain>\x20<total_create_akun>`','DELETE\x20FROM\x20Server','editMessageReplyMarkup','originalAmount','waktu','📊\x20Edit\x20Quota','./button_config.json','📅\x20Pilih\x20Durasi\x20Perpanjangan\x20Script:','removeunlimitedtrial','next','numeric','UPDATE\x20reseller_config\x20SET\x20discount_percent\x20=\x20?\x20WHERE\x20id\x20=\x201','has','⚠️\x20`harga`\x20harus\x20berupa\x20angka.','SELECT\x20show_upgrade_reseller_button\x20FROM\x20ui_config\x20WHERE\x20id\x20=\x201','trojan','info','⚠️\x20`user_id`\x20harus\x20berupa\x20angka.','editserver_batas_create_akun','🔢\x20Edit\x20Batas\x20Create','OFF','ceil','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengupdate\x20','execute_trial_','confirm_resetdb','edit_domain','\x0a🏷️\x20<b>»\x20Tanggal:</b>\x20','⚠️\x20Jumlah\x20minimal\x20top-up\x20adalah\x20100\x20Ya\x20Kak...!!!','⚠️\x20Kesalahan\x20saat\x20mengedit\x20batas_create_akun\x20server:','RENEW\x20AKUN','📊\x20*Silahkan\x20masukkan\x20jumlah\x20saldo\x20yang\x20ingin\x20ditambahkan:*','Error\x20saat\x20menambahkan\x20server:','editdomain','SHADOWSOCK','-\x20Harga\x20akun\x20lebih\x20murah\x0a','📶\x20*Limit\x20IP:*\x20`','bulan','UPDATE\x20Server\x20SET\x20nama_server\x20=\x20?\x20WHERE\x20domain\x20=\x20?','⚠️\x20Error\x20fetching\x20server\x20details:','❌\x20Error\x20processing\x20payment:','\x0a\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20ui_config\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20CHECK\x20(id\x20=\x201),\x0a\x20\x20\x20\x20\x20\x20\x20\x20show_trial_button\x20INTEGER\x20DEFAULT\x201,\x0a\x20\x20\x20\x20\x20\x20\x20\x20show_sewa_script_button\x20INTEGER\x20DEFAULT\x201,\x0a\x20\x20\x20\x20\x20\x20\x20\x20show_upgrade_reseller_button\x20INTEGER\x20DEFAULT\x201\x0a\x20\x20\x20\x20)\x0a','string','<b>»\x20Status:</b>\x20<code>Admin</code>','📊\x20*Silahkan\x20pilih\x20server\x20untuk\x20mengedit\x20batas\x20create\x20akun:*','🚨\x20*PERHATIAN:\x20SALDO\x20GAGAL\x20DIKURANGI\x20SETELAH\x20SEWA\x20SCRIPT\x20SUKSES!*\x0aUser\x20ID:\x20`','✅\x20Nama\x20server\x20`','❌\x20Gagal\x20cek\x20saldo:','⚠️\x20Tidak\x20dapat\x20mengubah\x20role\x20admin\x20lain.','random','✅\x20Quota\x20server\x20`','Aktif\x20✅','🧹\x20Pesan\x20command\x20user\x20','Error\x20fetching\x20statistics:','SELECT\x20SUM(harga)\x20AS\x20total\x20FROM\x20log_penjualan\x20WHERE\x20waktu_transaksi\x20>=\x20?','Gagal\x20insert\x20pending_deposits:','warn','🏷️\x20*»\x20Saldo\x20Ditambahkan:*\x20Rp\x20','tipe_akun','⚠️\x20Belum\x20ada\x20data\x20bonus','❌\x20Kesalahan\x20saat\x20mengambil\x20username\x20dari\x20Telegram:','success','callback_query','command',',\x20transaksi\x20#','Edit\x20server\x20quota\x20process\x20started','action','create','\x0a*AKUN\x20MUNGKIN\x20SUDAH\x20TERBUAT\x20TAPI\x20SALDO\x20BELUM\x20TERPOTONG!*','match','⚠️\x20*Anda\x20belum\x20memiliki\x20saldo.\x20Silahkan\x20tambahkan\x20saldo\x20terlebih\x20dahulu.*','🔙\x20KEMBALI','transactionId','Tidak\x20diketahui','❌\x20Kesalahan\x20saat\x20mengatur\x20role\x20reseller.','\x5c$&','💸\x20Topup\x20QRIS','Klik\x20tombol\x20di\x20bawah\x20ini\x20untuk\x20mengatur:','test','Transaction\x20','total','json','renew_ssh','\x0a-\x20Harga:\x20Rp\x20','atur_bonus_input','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20INSERT\x20OR\x20IGNORE\x20INTO\x20ui_config\x20(id,\x20show_trial_button,\x20show_sewa_script_button)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20VALUES\x20(1,\x201,\x201)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','length','`\x20berhasil\x20diatur\x20sebagai\x20*Reseller*.','`\x20telah\x20dicabut.','admin','📋\x20Proses\x20detail\x20server\x20dimulai','⚠️\x20Kesalahan\x20saat\x20mengedit\x20quota\x20server:','🚨\x20*PERHATIAN!\x20Anda\x20akan\x20menghapus\x20semua\x20server\x20yang\x20tersedia.\x20Apakah\x20Anda\x20yakin?*','💳\x20Topup\x20\x22Rp','❌\x20Gagal\x20handle\x20send_main_menu:','Status:\x20*','❌\x20Gagal\x20mengambil\x20daftar\x20saldo:','toLocaleTimeString','❌\x20Gagal\x20membuat\x20tabel\x20topup_log:','UPDATE\x20Server\x20SET\x20harga\x20=\x20?\x20WHERE\x20id\x20=\x20?','Jika\x20Anda\x20ingin\x20menjadi\x20Reseller\x20kembali,\x20silakan\x20hubungi\x20administrator.','`\x20berhasil\x20diubah\x20menjadi\x20*Member\x20Biasa*.','✏️\x20Tambah\x20Server','Literegis\x20mengembalikan\x20pesan\x20gagal\x20untuk\x20user\x20','replace','sewascript_perpanjang','all','❌\x20Kesalahan\x20saat\x20memproses\x20deposit:','MERCHANT_ID','editserver_limit_ip','\x20untuk\x20sewa\x20script:','User\x20balance\x20not\x20found\x20after\x20update','answerCbQuery','UPDATE\x20bonus_config\x20SET\x20enabled\x20=\x20?,\x20min_topup\x20=\x20?,\x20bonus_percent\x20=\x20?\x20WHERE\x20id\x20=\x201','❌\x20Kesalahan\x20saat\x20menghitung\x20total\x20user:','⏳\x20Mohon\x20menunggu.','⚠️\x20Gagal\x20hapus\x20menu\x20lama\x20dari\x20','⏳\x20Membuat\x20QRIS\x20pembayaran\x20upgrade\x20reseller...','❌\x20*Server\x20tidak\x20ditemukan.*','❌\x20*Gagal\x20membuat\x20akun\x20trial.\x20Silahkan\x20coba\x20lagi\x20nanti.*','deleteMessage','❌\x20Terjadi\x20kesalahan\x20internal\x20saat\x20memproses\x20perpanjangan\x20script.\x20Silakan\x20coba\x20lagi\x20nanti.','⚠️\x20*Domain\x20tidak\x20boleh\x20kosong.*\x20Silahkan\x20masukkan\x20domain\x20server\x20yang\x20valid.','menu','❌\x20Kesalahan\x20saat\x20mengatur\x20role\x20member.','🏷️\x20*»\x20Nominal:*\x20Rp\x20','⚠️\x20*Penting:*\x0a','❌\x20Gagal\x20downgrade\x20reseller\x20','SELECT\x20user_id\x20FROM\x20unlimited_trial_users\x20ORDER\x20BY\x20user_id\x20LIMIT\x20?\x20OFFSET\x20?','TOPUP\x20SALDO','❌\x20Kesalahan\x20saat\x20memulai\x20proses\x20edit\x20total\x20create\x20akun\x20server:','getFullYear','📝\x20Menu\x20Utama','✅\x20Literegis\x20berhasil\x20untuk\x20user\x20','PRAGMA\x20table_info(users)\x20did\x20not\x20return\x20an\x20array\x20for\x20columns.','unsetreseller','Users\x20table\x20created\x20or\x20already\x20exists','create_vmess','SELECT\x20*\x20FROM\x20Server\x20WHERE\x20id\x20=\x20?','*\x20telah\x20direset\x20ke\x200.','📩\x20Input\x20teks\x20dari\x20','⚠️\x20*Pemberitahuan\x20Penting:\x20Role\x20Reseller\x20Anda\x20telah\x20dinonaktifkan.*\x0a\x0a','Next\x20users\x20process\x20started\x20for\x20page\x20','\x20untuk\x20perpanjang\x20script:','\x20berhasil\x20upgrade\x20reseller\x20otomatis\x20via\x20topup.','append','ALTER\x20TABLE\x20ui_config\x20ADD\x20COLUMN\x20show_sewa_script_button\x20INTEGER\x20DEFAULT\x201','delete','SELECT\x20*\x20FROM\x20bonus_log\x20ORDER\x20BY\x20id\x20DESC\x20LIMIT\x2010','❌\x20Gagal\x20menambah\x20kolom\x20show_sewa_script_button:','2\x20Bulan\x2020K','🔄\x20Memproses\x20QRIS\x20Saweria\x20untuk\x20Rp','log','getMonth','max','❌\x20Error\x20saat\x20mengedit\x20','❌\x20Error\x20saat\x20mereset\x20database:','answerCbQuery\x20error:','.\x20`','SELECT\x20count\x20FROM\x20TrialLog\x20WHERE\x20user_id\x20=\x20?\x20AND\x20date\x20=\x20?','✅\x20*Server\x20berhasil\x20dihapus.*','sewascript_daftar','Payment\x20processed\x20successfully\x20for\x20','✅\x20Harga\x20server\x20`','Server\x20tidak\x20ditemukan','min','📊\x20*Silahkan\x20masukkan\x20quota\x20server:*','batas\x20create\x20akun','💰\x20Harga\x20per\x20hari:\x20Rp','\x20WIB','create_ssh','✅\x20Liteextend\x20berhasil\x20untuk\x20user\x20','SELECT\x20*\x20FROM\x20bonus_config\x20WHERE\x20id\x20=\x201','⚠️\x20Kesalahan\x20saat\x20mengambil\x20saldo\x20pengguna:','❌\x20*Masa\x20aktif\x20tidak\x20valid.\x20Masukkan\x20angka\x20yang\x20valid.*','✅\x20Saldo\x20untuk\x20user\x20*','📌\x20*Cara\x20menggunakan\x20perintah\x20broadcast:*\x0a\x0a','inline_keyboard','\x20untuk\x20','edit_batas_create_akun_','\x20tidak\x20boleh\x20kosong!*','❗️\x20*PERHATIAN!\x20Terjadi\x20KESALAHAN\x20SERIUS\x20saat\x20mereset\x20database.\x20Harap\x20segera\x20hubungi\x20administrator!*','Bot\x20failed\x20to\x20launch:','unique_code','Error\x20adding\x20role\x20column\x20to\x20users\x20table:','🔢\x20*Batas\x20Create\x20Akun:*\x20`','⚠️\x20Format\x20salah.\x20Gunakan:\x20/unlimitedtrial\x20<user_id>','💸\x20Top\x20Up','\x20IP\x0a','edit_harga','⚠️\x20*Harga\x20tidak\x20valid.\x20Masukkan\x20angka\x20positif\x20yang\x20valid.*','navigate_','isp','service_renew','UPDATE\x20Server\x20SET\x20iplimit\x20=\x20?\x20WHERE\x20domain\x20=\x20?','perpanjang_3bln','\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20*≡\x20TOP\x20UP\x20SALDO\x20BOT\x20≡*\x20\x0a\x20\x20\x20\x20\x20\x20*Hubungi\x20admin\x20jika\x20QRIS\x20eror*\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a💸\x20*»\x20Pilih\x20Menu\x20Topup\x20Dibawah\x20Ini:*','❌\x20*Gagal\x20membuat\x20QR\x20Saweria.*','💳\x20Topup\x20Saldo\x20Otomatis\x20QRIS\x0a━━━━━━━━━━━━━━━━━━━━━━\x0aMasukkan\x20nominal\x20topup:\x0a\x0aRp\x20','checkPayment','editlimitcreate','⚠️\x20Contoh:\x20/resetsaldo\x20123456789\x20atau\x20/resetsaldo\x20@user','✅\x20Izin\x20trial\x20unlimited\x20untuk\x20user\x20`','sendMessage','Gagal\x20menambahkan\x20kolom\x20username:','❌\x20*Pembayaran\x20Expired*\x0a\x0a','Server\x20dengan\x20ID\x20','undefined','ℹ️\x20Detail\x20Server','Waktu\x20pembayaran\x20telah\x20habis.\x20Silahkan\x20klik\x20Top\x20Up\x20lagi\x20untuk\x20mendapatkan\x20QR\x20baru.','toFixed','❌\x20Gagal\x20menyimpan\x20pengaturan\x20bonus.','\x0aTotal:\x20','❌\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20user:','🔙\x20Kembali','total_create_akun','🗓️\x20*Minggu\x20Ini:*\x20','totalCreateAkun','</b>\x0a━━━━━━━━━━━━━━━━━━━━━━\x0a<b>INFORMASI\x20USER</b>\x0a','Senin','❌\x20Anda\x20tidak\x20memiliki\x20izin\x20untuk\x20melihat\x20daftar\x20saldo.',',\x20Harga:\x20Rp','`\x0a\x0a','editserver_total_create_akun','\x20akun</code>\x0a<code>»\x20Server\x20\x20\x20\x20:\x20','✅\x20afterAccountTransaction\x20selesai\x20untuk\x20user\x20','Gagal\x20kirim\x20notif\x20darurat:','map','Express\x20server\x20listening\x20on\x20port\x20','Gagal\x20hapus\x20pesan\x20tombol:','.\x20Saldo\x20diupdate.','nama\x20server','✅\x20Tabel\x20bonus_log\x20siap','📜\x20Log\x20Bonus\x20TopUp','show_upgrade_reseller_button','Mencoba\x20','⚠️\x20Gagal\x20hapus\x20menu\x20lama\x20user\x20','❌\x20Gagal\x20mengurangi\x20saldo\x20user:','Admin','\x20Hp\x0a🏷️\x20<b>»\x20Type:</b>\x20','📭\x20Tidak\x20ada\x20data\x20saldo\x20untuk\x20ditampilkan.','INSERT\x20INTO\x20Server\x20(domain,\x20auth,\x20nama_server,\x20quota,\x20iplimit,\x20batas_create_akun,\x20harga,\x20total_create_akun)\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?,\x20?)','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editlimitquota\x20<domain>\x20<quota>`','UPDATE\x20ui_config\x20SET\x20show_upgrade_reseller_button\x20=\x20?\x20WHERE\x20id\x20=\x201','serialize','\x20Tombol\x20Sewa\x20Script','❌\x20Gagal\x20reset\x20saldo.\x20Mungkin\x20user\x20tidak\x20ditemukan\x20atau\x20saldonya\x20sudah\x200.','\x20akun.\x20Mohon\x20coba\x20lagi\x20atau\x20hubungi\x20admin.','chatId','*\x20(','\x0a*SCRIPT\x20MUNGKIN\x20SUDAH\x20TERDAFTAR\x20TAPI\x20SALDO\x20BELUM\x20TERPOTONG!*','📭\x20Tidak\x20ada\x20data\x20pengguna\x20unlimited\x20trial.','parse','❌\x20Gagal\x20membuat\x20tabel\x20unlimited_trial_users:','⚠️\x20Gagal\x20membaca\x20status','📉\x20Reseller\x20','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editlimitip\x20<domain>\x20<iplimit>`','PRAGMA\x20table_info(users)','❌\x20Gagal\x20reset\x20saldo:','addserver_auth','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20INSERT\x20INTO\x20TrialLog\x20(user_id,\x20date,\x20count)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20VALUES\x20(?,\x20?,\x20?)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ON\x20CONFLICT(user_id,\x20date)\x20DO\x20UPDATE\x20SET\x20count\x20=\x20?\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','❌\x20Error\x20saat\x20mengedit\x20harga\x20server:','📋\x20*Halaman\x20','796842eHYRwL','⚠️\x20Kesalahan\x20saat\x20mengedit\x20auth\x20server:','⚠️\x20Gagal\x20menghapus\x20menu\x20sebelumnya\x20untuk\x20','✅\x20Bonus\x20Top\x20Up\x20*','serverId','forEach','4NQHLZB','❌\x20Kesalahan\x20saat\x20mengambil\x20daftar\x20server:','INSERT\x20INTO\x20bonus_log\x20(user_id,\x20username,\x20amount,\x20bonus,\x20timestamp)\x20VALUES\x20(?,\x20?,\x20?,\x20?,\x20?)','Log\x20file\x20dihapus\x20oleh\x20admin.','📅\x20Harga\x20per\x2030\x20hari:\x20Rp','created_at','❌\x20Anda\x20tidak\x20memiliki\x20izin.','🏷️\x20*»\x20Bonus\x20Top\x20Up:*\x20Rp','prev_users_','\x0a-\x20Batas\x20Create\x20Akun:\x20','1234567890','userId','Minggu','🏷️\x20*Masukkan\x20IP\x20Address:*','🔧\x20Atur\x20Bonus\x20TopUp','❌\x20Gagal\x20update\x20tombol\x20sewa\x20script:','%*.',']:\x20','🏷️\x20*»\x20Username:*\x20`@','⚠️\x20*PERHATIAN!\x20Terjadi\x20kesalahan\x20saat\x20mengambil\x20daftar\x20user.*','abcdefghijklmnopqrstuvwxyz','add_saldo','edit_auth','✅\x20Konfirmasi','❌\x20Gagal\x20mengirim\x20file:','toggle_topup_saweria','2.\x20Atau\x20langsung\x20kirim\x20`/broadcast\x20Pesanmu`\x20untuk\x20broadcast\x20teks\x20biasa\x0a\x0a','✅\x20Log\x20penjualan\x20dicatat:\x20','diaktifkan\x20✅','username','❌\x20Error\x20cek\x20unlimited\x20trial:','\x0a🏷️\x20<b>»\x20Limit\x20Quota\x20:</b>\x20','❌\x20Saldo\x20user\x20hanya\x20Rp','⚠️\x20*Server\x20tidak\x20ditemukan\x20atau\x20harga\x20tidak\x20berubah.*','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CREATE\x20TABLE\x20IF\x20NOT\x20EXISTS\x20topup_log\x20(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x20INTEGER\x20PRIMARY\x20KEY\x20AUTOINCREMENT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20user_id\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20username\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20amount\x20INTEGER,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20method\x20TEXT,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20waktu\x20TEXT\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x20dengan\x20message_id\x20','\x20detik','Member','ALTER\x20TABLE\x20log_penjualan\x20ADD\x20COLUMN\x20user_role\x20TEXT\x20DEFAULT\x20\x27member\x27','SELECT\x20role\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?','❌\x20*Gagal\x20memproses\x20menu\x20utama.*','id-ID','Memulai\x20proses\x20','service_create','UPDATE\x20Server\x20SET\x20harga\x20=\x20?\x20WHERE\x20domain\x20=\x20?','RENEW\x20IP','SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20users\x20WHERE\x20saldo\x20>\x200','⚠️\x20`quota`\x20harus\x20berupa\x20angka.','message_id','❌\x20Terjadi\x20kesalahan.','⚙️\x20*Pengaturan\x20Bonus\x20Top\x20Up*\x0a\x0a','telegram','🏷️\x20*»\x20ID\x20Pengguna:*\x20`','✅\x20Added\x20role\x20column\x20to\x20users\x20table','\x20maksimal\x20adalah\x20253\x20karakter!*','listreseller_','📈\x20Hasil\x20Penjualan','❌\x20*Password\x20harus\x20terdiri\x20dari\x20minimal\x201\x20karakter.*','Error\x20checking\x20payment\x20status\x20for\x20','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengupdate\x20harga\x20server.*','Transaksi\x20sudah\x20tidak\x20aktif\x20atau\x20telah\x20dibatalkan.','🌐\x20Edit\x20Domain','\x20akun</code>\x0a<code>»\x20Minggu\x20Ini:\x20','\x0a🏷️\x20<b>»\x20Saldo\x20di\x20kurangi:</b>\x20Rp.','member','✅\x20Saldo\x20sebesar\x20`','Next\x20⏭️','File','⚠️\x20*Auth\x20tidak\x20boleh\x20kosong.*\x20Silahkan\x20masukkan\x20auth\x20server\x20yang\x20valid.','⚠️\x20Kesalahan\x20saat\x20menambahkan\x20saldo\x20user:','gagal','PORT','xxx',')\x20untuk\x20perpanjang\x20script\x20Rp','❌\x20*Terjadi\x20kesalahan\x20saat\x20menambahkan\x20saldo\x20user.*','Bonus:\x20*','document','\x0a<b>━━━━━━━━━━━━━━━━━━</b>\x0a<b>❇️\x20Transaksi\x20Berhasil\x20❇️</b>\x0a<b>━━━━━━━━━━━━━━━━━━</b>\x0a📒\x20<b>»\x20No\x20Trx:</b>\x20#','✅\x20Reseller\x20','auth','</code>\x0a🏷️\x20<b>»\x20Nama\x20:</b>\x20','⚠️\x20*PERHATIAN!\x20Server\x20tidak\x20ditemukan.*','./modules/create','⚠️\x20Jumlah\x20tidak\x20boleh\x20kosong!','SSH','resetsaldo','log_topup','sewascript_daftar_pilih_bulan','show_trial_button','✅\x20show_trial_button:\x20','next_users_','Perpanjang\x20Akun','⚠️\x20Transfer\x20*harus*\x20sesuai\x0a\x0a','User\x20','\x20Tombol\x20Trial','\x0a🏷️\x20<b>»\x20Harga\x20Normal\x20Perhari:</b>\x20Rp.','service_sewascript','SELECT\x20user_id,\x20username\x20FROM\x20users\x20WHERE\x20role\x20=\x20\x27reseller\x27','⏳\x20Memproses\x20QRIS\x20Saweria\x20untuk\x20Rp','UPDATE\x20Server\x20SET\x20total_create_akun\x20=\x20?\x20WHERE\x20domain\x20=\x20?','⚠️\x20Format\x20salah.\x20Gunakan:\x20/removeunlimitedtrial\x20<user_id>','Failed\x20to\x20get\x20ISP','SELECT\x20COUNT(*)\x20as\x20count\x20FROM\x20log_penjualan\x20WHERE\x20waktu_transaksi\x20>=\x20?\x20AND\x20action_type\x20IN\x20(\x22create\x22,\x22renew\x22)','messageId','🏷️\x20*Silahkan\x20kirim\x20nama\x20server\x20baru\x20sekarang:*','❌\x20ERROR\x20FATAL\x20di\x20polling\x20Saweria:','toUpperCase','addserver_batas_create_akun','run','SELECT\x20batas_create_akun,\x20total_create_akun\x20FROM\x20Server\x20WHERE\x20id\x20=\x20?','⚠️\x20Kesalahan\x20saat\x20mengedit\x20total_create_akun\x20server:','listreseller_next_','trial','📢\x20Join\x20Grup','edit_quota','❌\x20Gagal\x20ambil\x20show_trial_button:','📊\x20*Silahkan\x20masukkan\x20jumlah\x20saldo\x20yang\x20ingin\x20ditambahkan:*\x0a\x0aJumlah\x20saldo\x20saat\x20ini:\x20*','[LISTRESELLER]\x20Admin\x20','sewascript','❌\x20*Terjadi\x20kesalahan\x20saat\x20mengambil\x20detail\x20server.*','renew','\x20didowngrade\x20ke\x20member\x20(transaksi:\x20','⚠️\x20Kesalahan\x20saat\x20mengurangi\x20saldo\x20pengguna\x20untuk\x20sewa\x20script\x20(setelah\x20sukses):','👥\x20Total\x20Create\x20Akun:\x20','❌\x20Kesalahan\x20saat\x20memeriksa\x20saldo:','broadcast','BUAT\x20AKUN','parameters','Gagal\x20hapus\x20pending_deposits\x20(success):','📊\x20*Quota:*\x20`','step','✅\x20*Saldo\x20sebesar\x20`','🔑\x20*Masukkan\x20password:*','retry_after','\x0a🆔\x20ID:\x20`','Gagal\x20batal\x20topup.','text','SAWERIA_EMAIL','domain','Error\x20mengambil\x20saldo\x20user\x20','nama_server_edit','🔢\x20Limit\x20IP:\x20','❌\x20Kesalahan\x20saat\x20memproses\x20previous\x20users:','batasCreateAkun','Pilih\x20jenis\x20layanan\x20yang\x20ingin\x20Anda\x20','utf8','⚠️\x20*Hanya\x20angka\x20yang\x20diperbolehkan!*','⚠️\x20`total_create_akun`\x20harus\x20berupa\x20angka.','./modules/renew','⚠️\x20Kesalahan\x20saat\x20mengedit\x20iplimit\x20server.','off','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/setreseller\x20<user_id>`','status','⚠️\x20Saldo\x20user\x20','📢\x20User\x20@','UPDATE\x20ui_config\x20SET\x20show_sewa_script_button\x20=\x20?\x20WHERE\x20id\x20=\x201','callbackQuery','editMessageText','edit_domain_','❌\x20Terjadi\x20kesalahan\x20saat\x20mengurangi\x20saldo.','deleteserver','2286168TPVeVw','NAMA_STORE','isArray','setdiskonreseller','confirm_delete_server_','verbose','📝\x20Edit\x20Nama','create_vless','⚠️\x20Format\x20salah.\x20Gunakan:\x20`/editlimitcreate\x20<domain>\x20<batas_create_akun>`','❌\x20Gagal\x20mengambil\x20pengaturan\x20bonus.','❌\x20Gagal\x20membuat\x20tabel\x20bonus_log:','https://api.telegram.org/bot','✅\x20Saldo\x20Rp','Rabu','HTML','Error\x20saat\x20eksekusi\x20liteextend\x20untuk\x20user\x20','edit_batas_create_akun','SELECT\x20COUNT(*)\x20AS\x20count\x20FROM\x20users','log_bonus_topup','\x20digit!'];_0x19e2=function(){return _0x5425b4;};return _0x19e2();}function getLastTransactionNumber(){return new Promise((_0x1c3581,_0x430cc6)=>{const _0x36956f=_0x5858;db[_0x36956f(0x518)]('SELECT\x20id\x20FROM\x20log_penjualan\x20ORDER\x20BY\x20id\x20DESC\x20LIMIT\x201',(_0x88fc37,_0x113d48)=>{if(_0x88fc37)return _0x430cc6(_0x88fc37);_0x1c3581(_0x113d48?_0x113d48['id']+0x1:0x3e8);});});}function getUserSaldo(_0x241a9b){return new Promise((_0x129da4,_0x463d83)=>{const _0x366ca3=_0x5858;db[_0x366ca3(0x518)](_0x366ca3(0x4bc),[_0x241a9b],(_0xe24880,_0x45136d)=>{const _0x382664=_0x366ca3;if(_0xe24880)return _0x463d83(_0xe24880);_0x129da4(_0x45136d?_0x45136d[_0x382664(0x531)]:0x0);});});}async function sendPaymentSuccessNotificationByUserId(_0x17820e,_0x4c6025,_0x1ded94,_0x2fe3ee=_0x4e46c9(0x142)){const _0x479dc0=_0x4e46c9;try{const _0x2681fd=await new Promise((_0x26ebc5,_0x1fa458)=>{const _0x1f72c8=_0x5858;db[_0x1f72c8(0x518)](_0x1f72c8(0x4bc),[_0x17820e],(_0x23ee2a,_0x16a7c7)=>{const _0x205f98=_0x1f72c8;if(_0x23ee2a)_0x1fa458(_0x23ee2a);else _0x26ebc5(_0x16a7c7?_0x16a7c7[_0x205f98(0x531)]:0x0);});}),_0x134441=_0x4c6025[_0x479dc0(0x3f0)]&&_0x4c6025['bonus']>0x0&&_0x4c6025[_0x479dc0(0x477)],_0x4b65c9=_0x134441?_0x479dc0(0x13e)+_0x4c6025[_0x479dc0(0x3f0)]+_0x479dc0(0x31d)+_0x4c6025[_0x479dc0(0x477)]+_0x479dc0(0x48f):'',_0x199415=_0x479dc0(0x514)+'✅\x20*Pembayaran\x20Berhasil\x20✅*\x0a'+'━━━━━━━━━━━━━━━━━━\x0a'+(_0x479dc0(0x3ef)+_0x2fe3ee+'`\x0a')+(_0x479dc0(0x365)+_0x17820e+'`\x0a')+(_0x479dc0(0x2a1)+_0x4c6025[_0x479dc0(0xb3)]+'\x0a')+(_0x479dc0(0x25d)+_0x4c6025[_0x479dc0(0x228)]+'\x0a')+_0x4b65c9+('🏷️\x20*»\x20Saldo\x20Sekarang:*\x20Rp\x20'+_0x2681fd[_0x479dc0(0x1ee)]('id-ID'));await bot['telegram']['sendMessage'](_0x17820e,_0x199415,{'parse_mode':_0x479dc0(0x45c),'reply_markup':{'inline_keyboard':[[{'text':'💸\x20Top\x20Up','callback_data':'menu_topup'},{'text':_0x479dc0(0x2a8),'callback_data':_0x479dc0(0x116)}]]}});if(_0x4c6025['qrMessageId'])try{await bot['telegram'][_0x479dc0(0x29c)](_0x17820e,_0x4c6025[_0x479dc0(0x506)]);}catch(_0x3768c6){logger[_0x479dc0(0x25c)](_0x479dc0(0x4f8)+_0x17820e+'\x20(message_id\x20'+_0x4c6025['qrMessageId']+_0x479dc0(0x149)+_0x3768c6[_0x479dc0(0x4d3)]);}const _0x4bb584=getBotGroupData();if(_0x4bb584){const {keyGroup:_0x379e07,chatId:_0x1f4073}=_0x4bb584,_0x3c5782='━━━━━━━━━━━━━━━━━━\x0a'+_0x479dc0(0xd4)+'━━━━━━━━━━━━━━━━━━\x0a'+(_0x479dc0(0x343)+_0x2fe3ee+'`\x0a')+('🏷️\x20*»\x20ID:*\x20`'+_0x17820e+'`\x0a')+(_0x479dc0(0x4e4)+_0x4c6025['amount'][_0x479dc0(0x1ee)](_0x479dc0(0x35a))+'\x0a')+(_0x479dc0(0x338)+(_0x4c6025[_0x479dc0(0x3f0)]||0x0)[_0x479dc0(0x1ee)](_0x479dc0(0x35a))+'\x20('+(_0x4c6025['bonus_percent']||0x0)+_0x479dc0(0x48f))+('🏷️\x20*»\x20Saldo\x20Sekarang:*\x20Rp'+_0x1ded94['toLocaleString'](_0x479dc0(0x35a)));try{await axios[_0x479dc0(0x415)](_0x479dc0(0x3dd)+_0x379e07+'/sendMessage',{'chat_id':_0x1f4073,'text':_0x3c5782,'parse_mode':'Markdown'});}catch(_0x2c47a1){const _0x58ed59=_0x479dc0(0x189)+(_0x2c47a1[_0x479dc0(0x4e6)]?.[_0x479dc0(0x1bd)]?.['description']||_0x2c47a1[_0x479dc0(0x4d3)]);logger[_0x479dc0(0x25c)](_0x58ed59),await bot['telegram']['sendMessage'](_0x17820e,_0x479dc0(0x454)+_0x58ed59,{'parse_mode':_0x479dc0(0x45c)});}}try{const _0x8f22cd=await new Promise((_0xc7315d,_0x35b1ba)=>{const _0x168cb7=_0x479dc0;db[_0x168cb7(0x518)]('SELECT\x20role\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?',[_0x17820e],(_0x2b02d0,_0x2c5ef5)=>{if(_0x2b02d0)_0x35b1ba(_0x2b02d0);else _0xc7315d(_0x2c5ef5);});});_0x8f22cd&&_0x8f22cd[_0x479dc0(0x413)]!==_0x479dc0(0xe8)&&_0x4c6025[_0x479dc0(0x228)]>=UPGRADE_RESELLER_TOPUP_THRESHOLD&&db[_0x479dc0(0x39d)](_0x479dc0(0x10c),[_0x17820e],_0x1fa842=>{const _0x1d811f=_0x479dc0;!_0x1fa842&&(bot[_0x1d811f(0x364)]['sendMessage'](_0x17820e,_0x1d811f(0x42b),{'parse_mode':'Markdown'}),ADMIN&&bot[_0x1d811f(0x364)][_0x1d811f(0x2ef)](ADMIN,_0x1d811f(0x3cb)+(_0x2fe3ee||_0x17820e)+'\x20('+_0x17820e+')\x20otomatis\x20di-upgrade\x20Reseller\x20via\x20Topup.',{'parse_mode':_0x1d811f(0x45c)}),logger[_0x1d811f(0x235)](_0x1d811f(0x1b3)+_0x17820e+_0x1d811f(0x2b4)));});}catch(_0x150c31){logger['error'](_0x479dc0(0x144),_0x150c31[_0x479dc0(0x4d3)]);}return!![];}catch(_0x309e40){return logger[_0x479dc0(0x11a)]('❌\x20Error\x20sending\x20payment\x20notification\x20(by\x20userId):',_0x309e40),![];}}async function processMatchingPayment(_0x1effd1,_0x103c91,_0x21c155){const _0x599a49=_0x4e46c9;if(!_0x1effd1[_0x599a49(0x34e)])try{const _0x3122cd=await bot['telegram'][_0x599a49(0xfd)](_0x1effd1[_0x599a49(0x33c)]);_0x1effd1[_0x599a49(0x34e)]=_0x3122cd[_0x599a49(0x34e)]?'@'+_0x3122cd[_0x599a49(0x34e)]:'Tidak\x20tersedia';}catch(_0x2ad399){_0x1effd1[_0x599a49(0x34e)]=_0x599a49(0x142);}const _0x248ec9=_0x103c91[_0x599a49(0xda)]+'_'+_0x103c91[_0x599a49(0xb3)];if(global[_0x599a49(0xbf)][_0x599a49(0x231)](_0x248ec9))return logger[_0x599a49(0x235)]('Transaction\x20'+_0x248ec9+_0x599a49(0x16e)),![];try{logger['info'](_0x599a49(0x213)+_0x1effd1[_0x599a49(0x33c)]+_0x599a49(0x496)+_0x1effd1[_0x599a49(0x228)]),await updateUserBalance(_0x1effd1[_0x599a49(0x33c)],Number(_0x1effd1['originalAmount']));const _0x10b12b=await new Promise((_0x2e278b,_0x3e5541)=>{const _0x4de9b0=_0x599a49;db[_0x4de9b0(0x518)](_0x4de9b0(0x2d0),(_0x3622c1,_0x5c9db5)=>{if(_0x3622c1)_0x3e5541(_0x3622c1);else _0x2e278b(_0x5c9db5);});});let _0x493c2d=0x0,_0x217bc6=0x0;_0x10b12b?.[_0x599a49(0xa4)]&&_0x1effd1[_0x599a49(0x228)]>=_0x10b12b[_0x599a49(0x1c9)]?(_0x493c2d=Math[_0x599a49(0x486)](_0x1effd1[_0x599a49(0x228)]*_0x10b12b[_0x599a49(0x477)]/0x64),_0x217bc6=_0x10b12b[_0x599a49(0x477)],_0x1effd1[_0x599a49(0x3f0)]=_0x493c2d,_0x1effd1[_0x599a49(0x477)]=_0x217bc6,await prosesBonusTopUp(_0x1effd1['userId'],_0x1effd1['username'],_0x1effd1['originalAmount'])):(_0x1effd1[_0x599a49(0x3f0)]=0x0,_0x1effd1[_0x599a49(0x477)]=0x0);await logTopup(_0x1effd1[_0x599a49(0x33c)],_0x1effd1['username'],_0x1effd1[_0x599a49(0x228)],_0x599a49(0x417));const _0x2b6450=await new Promise((_0x75b25b,_0x2ea9d6)=>{const _0x4958b4=_0x599a49;db[_0x4958b4(0x518)]('SELECT\x20saldo\x20FROM\x20users\x20WHERE\x20user_id\x20=\x20?',[_0x1effd1[_0x4958b4(0x33c)]],(_0x525681,_0x3f71b7)=>{if(_0x525681)_0x2ea9d6(_0x525681);else _0x75b25b(_0x3f71b7);});});if(!_0x2b6450)throw new Error(_0x599a49(0x293));const _0x25ccfb=await sendPaymentSuccessNotificationByUserId(_0x1effd1[_0x599a49(0x33c)],{'amount':_0x1effd1[_0x599a49(0x228)],'originalAmount':_0x1effd1[_0x599a49(0x228)],'bonus':_0x1effd1[_0x599a49(0x3f0)],'bonus_percent':_0x1effd1[_0x599a49(0x477)],'qrMessageId':_0x1effd1['qrMessageId']},_0x2b6450['saldo'],_0x1effd1['username']);if(_0x25ccfb)return global['processedTransactions'][_0x599a49(0x13b)](_0x248ec9),delete global[_0x599a49(0x4f0)][_0x21c155],db[_0x599a49(0x39d)](_0x599a49(0x17d),[_0x21c155],_0x281ae7=>{const _0x2078a6=_0x599a49;if(_0x281ae7)logger[_0x2078a6(0x11a)](_0x2078a6(0x3b1),_0x281ae7[_0x2078a6(0x4d3)]);}),!![];return![];}catch(_0x57b54b){return logger['error'](_0x599a49(0x24c),_0x57b54b),![];}}setInterval(async()=>{const _0x2848ce=_0x4e46c9;try{await checkQRISStatus();}catch(_0x3cd3da){logger[_0x2848ce(0x11a)](_0x2848ce(0x43b),_0x3cd3da[_0x2848ce(0x4d3)]);}},0x2710);async function kirimFileKeTelegram(){const _0x43a12e=_0x4e46c9,_0x2311bf=new FormData();if(!fs[_0x43a12e(0x11c)](FOLDER_TEMPATDB)){console[_0x43a12e(0x2bc)]('❌\x20File\x20tidak\x20ditemukan:',FOLDER_TEMPATDB);return;}_0x2311bf['append']('chat_id',ADMIN),_0x2311bf[_0x43a12e(0x2b5)](_0x43a12e(0x37d),fs['createReadStream'](FOLDER_TEMPATDB));try{const _0x3e846a=await fetch(_0x43a12e(0x3dd)+BOT_TOKEN+_0x43a12e(0x12c),{'method':_0x43a12e(0x207),'body':_0x2311bf}),_0x2dcb29=await _0x3e846a['json']();_0x2dcb29['ok']?console['log']('['+new Date()[_0x43a12e(0x285)]()+_0x43a12e(0x42d)):console['error'](_0x43a12e(0x349),_0x2dcb29[_0x43a12e(0x159)]);}catch(_0x3af3dc){console[_0x43a12e(0x11a)]('❌\x20Error\x20saat\x20mengirim\x20file:',_0x3af3dc[_0x43a12e(0x4d3)]);}}setInterval(kirimFileKeTelegram,0x2*0x3c*0x3c*0x3e8);function resetUserSaldo(_0x52b5c5){return new Promise((_0x219191,_0x5c933a)=>{const _0x35ea2a=_0x5858;db[_0x35ea2a(0x39d)](_0x35ea2a(0x401),[_0x52b5c5],function(_0x5286d8){const _0x58ee4a=_0x35ea2a;if(_0x5286d8)return _0x5c933a(_0x5286d8);_0x219191(this[_0x58ee4a(0x15d)]>0x0);});});}function getUserSaldoById(_0x2897cd){return new Promise((_0x25e73e,_0x2e3bcc)=>{const _0xe0842=_0x5858;db[_0xe0842(0x518)](_0xe0842(0x3fc),[_0x2897cd],(_0x11c38f,_0x52f18b)=>{if(_0x11c38f)return _0x2e3bcc(_0x11c38f);_0x25e73e(_0x52f18b||null);});});}function getUsersWithSaldo(_0x14370d,_0x5034d9){return new Promise((_0x3c4355,_0x58bab3)=>{const _0x5af1e5=_0x5858;db[_0x5af1e5(0x28e)](_0x5af1e5(0x1de),[_0x14370d,_0x5034d9],(_0x21dd23,_0x1cd1d5)=>{if(_0x21dd23)return _0x58bab3(_0x21dd23);_0x3c4355(_0x1cd1d5||[]);});});}bot[_0x4e46c9(0x263)](_0x4e46c9(0x51b),async _0x3bf7e6=>{const _0x435dcc=_0x4e46c9,_0x1c7d7b=!![],_0x4b4815=_0x3bf7e6[_0x435dcc(0x112)]['id'];if(_0x1c7d7b&&!adminIds[_0x435dcc(0x1c4)](_0x4b4815))return _0x3bf7e6[_0x435dcc(0x1f1)](_0x435dcc(0x1d1));const _0x531480=_0x3bf7e6[_0x435dcc(0x4d3)]['text']['split']('\x20')[0x1];if(!_0x531480)return _0x3bf7e6[_0x435dcc(0x1f1)](_0x435dcc(0x139));const _0x44449f=parseInt(_0x531480);if(isNaN(_0x44449f))return _0x3bf7e6[_0x435dcc(0x1f1)](_0x435dcc(0x202));try{const _0x299a7c=await getUserSaldoById(_0x44449f);if(!_0x299a7c)return _0x3bf7e6['reply'](_0x435dcc(0x4fb));const _0x5c3193='Rp'+_0x299a7c[_0x435dcc(0x531)][_0x435dcc(0x1ee)](_0x435dcc(0x35a));_0x3bf7e6[_0x435dcc(0x1f1)](_0x435dcc(0x465)+_0x299a7c['user_id']+_0x435dcc(0xb2)+_0x5c3193,{'parse_mode':_0x435dcc(0x45c)});}catch(_0x1651ad){logger[_0x435dcc(0x11a)](_0x435dcc(0x253),_0x1651ad),_0x3bf7e6[_0x435dcc(0x1f1)](_0x435dcc(0x1e5));}});function reduceUserSaldoByInput(_0x3a1893,_0x256df7){return new Promise((_0x5328c2,_0x1de3b8)=>{const _0x5a5af6=_0x5858;db[_0x5a5af6(0x39d)](_0x5a5af6(0x4c5),[_0x256df7,_0x3a1893,_0x256df7],function(_0x4b33e1){const _0x5b0aa7=_0x5a5af6;if(_0x4b33e1)return _0x1de3b8(_0x4b33e1);_0x5328c2(this[_0x5b0aa7(0x15d)]>0x0);});});}bot[_0x4e46c9(0x263)](_0x4e46c9(0x1a5),async _0x408b0c=>{const _0x49db68=_0x4e46c9,_0x2cd102=_0x408b0c[_0x49db68(0x112)]['id'];if(!adminIds[_0x49db68(0x1c4)](_0x2cd102))return _0x408b0c[_0x49db68(0x1f1)](_0x49db68(0x1d1));const _0xcdfc9c=_0x408b0c[_0x49db68(0x4d3)][_0x49db68(0x3b9)][_0x49db68(0x200)]()[_0x49db68(0x17c)]('\x20');if(_0xcdfc9c['length']!==0x3)return _0x408b0c[_0x49db68(0x1f1)]('⚠️\x20Format\x20salah.\x20Contoh:\x20/kurangisaldo\x20123456789\x205000');const _0x334f21=parseInt(_0xcdfc9c[0x1]),_0x203566=parseInt(_0xcdfc9c[0x2]);if(isNaN(_0x334f21)||isNaN(_0x203566)||_0x203566<=0x0)return _0x408b0c['reply']('❌\x20Format\x20salah.\x20Gunakan\x20ID\x20dan\x20nominal\x20angka\x20yang\x20valid.');try{const _0x1387dd=await getUserSaldoById(_0x334f21);if(!_0x1387dd)return _0x408b0c[_0x49db68(0x1f1)](_0x49db68(0x4fb));if(_0x1387dd['saldo']<_0x203566)return _0x408b0c[_0x49db68(0x1f1)](_0x49db68(0x351)+_0x1387dd['saldo']['toLocaleString'](_0x49db68(0x35a))+_0x49db68(0x4af));const _0x2ac243=await reduceUserSaldoByInput(_0x334f21,_0x203566);if(!_0x2ac243)return _0x408b0c['reply'](_0x49db68(0x1a1));const _0x27ac30=await getUserSaldoById(_0x334f21),_0x5bd537='Rp'+_0x27ac30[_0x49db68(0x531)][_0x49db68(0x1ee)](_0x49db68(0x35a));return _0x408b0c[_0x49db68(0x1f1)](_0x49db68(0x430)+_0x27ac30[_0x49db68(0x1a7)]+'`\x0a💰\x20Saldo\x20Sekarang:\x20*'+_0x5bd537+'*',{'parse_mode':'Markdown'});}catch(_0x498f5b){return logger[_0x49db68(0x11a)](_0x49db68(0x311),_0x498f5b),_0x408b0c['reply'](_0x49db68(0x3d0));}}),bot[_0x4e46c9(0x263)](_0x4e46c9(0x386),async _0x110a37=>{const _0x5a043c=_0x4e46c9,_0x2d05c7=!![],_0x536eb7=_0x110a37[_0x5a043c(0x112)]['id'];if(_0x2d05c7&&!adminIds[_0x5a043c(0x1c4)](_0x536eb7))return _0x110a37['reply'](_0x5a043c(0x1d1));const _0x2c8bfc=_0x110a37[_0x5a043c(0x4d3)]['text'][_0x5a043c(0x17c)]('\x20')[0x1];if(!_0x2c8bfc)return _0x110a37['reply'](_0x5a043c(0x2ed));try{const _0x3f8723=await resetUserSaldo(_0x2c8bfc);_0x3f8723?_0x110a37[_0x5a043c(0x1f1)](_0x5a043c(0x2d3)+_0x2c8bfc+_0x5a043c(0x2af),{'parse_mode':_0x5a043c(0x45c)}):_0x110a37[_0x5a043c(0x1f1)](_0x5a043c(0x31a));}catch(_0x7823d9){logger[_0x5a043c(0x11a)](_0x5a043c(0x326),_0x7823d9),_0x110a37['reply']('❌\x20Terjadi\x20kesalahan\x20saat\x20mereset\x20saldo.');}});function getTotalUserWithSaldo(){return new Promise((_0x3dfaec,_0x51b5e8)=>{const _0x5e5d41=_0x5858;db[_0x5e5d41(0x518)](_0x5e5d41(0x35f),(_0x4030d3,_0x5941c3)=>{if(_0x4030d3)return _0x51b5e8(_0x4030d3);_0x3dfaec(_0x5941c3['count']);});});}async function sendPaginatedUserSaldo(_0x251d2a,_0x1b9631=0x1,_0x26489c=![]){const _0x5a1b00=_0x4e46c9,_0x5d7e8e=0xa,_0x55f300=(_0x1b9631-0x1)*_0x5d7e8e;try{const [_0x1dd9c4,_0xa0074f]=await Promise[_0x5a1b00(0x28e)]([getUsersWithSaldo(_0x5d7e8e,_0x55f300),getTotalUserWithSaldo()]);if(_0x1dd9c4[_0x5a1b00(0x27a)]===0x0)return _0x251d2a[_0x5a1b00(0x1f1)](_0x5a1b00(0x314));let _0x5f11c5='<b>📋\x20Daftar\x20Saldo\x20User\x20(Halaman\x20'+_0x1b9631+')</b>\x0a\x0a';for(const _0x30f06b of _0x1dd9c4){_0x5f11c5+=_0x5a1b00(0x1c8)+_0x30f06b[_0x5a1b00(0x1a7)]+_0x5a1b00(0x4c6)+(_0x5a1b00(0xcd)+_0x30f06b[_0x5a1b00(0x531)][_0x5a1b00(0x1ee)](_0x5a1b00(0x35a))+'\x0a\x0a');}const _0x2264bd=_0x55f300+_0x5d7e8e<_0xa0074f,_0x17b6fe={'inline_keyboard':[[..._0x1b9631>0x1?[{'text':_0x5a1b00(0x473),'callback_data':_0x5a1b00(0x521)+(_0x1b9631-0x1)}]:[],..._0x2264bd?[{'text':'➡️\x20Next','callback_data':_0x5a1b00(0x521)+(_0x1b9631+0x1)}]:[]]]};return _0x26489c&&_0x251d2a[_0x5a1b00(0x3cd)]?.[_0x5a1b00(0x4d3)]?_0x251d2a[_0x5a1b00(0x364)][_0x5a1b00(0x3ce)](_0x251d2a[_0x5a1b00(0x1b9)]['id'],_0x251d2a['callbackQuery']['message'][_0x5a1b00(0x361)],null,_0x5f11c5,{'parse_mode':_0x5a1b00(0x3e0),'reply_markup':_0x17b6fe}):_0x251d2a[_0x5a1b00(0x1f1)](_0x5f11c5,{'parse_mode':'HTML','reply_markup':_0x17b6fe});}catch(_0x544d1a){return logger[_0x5a1b00(0x11a)](_0x5a1b00(0x284),_0x544d1a),_0x251d2a[_0x5a1b00(0x1f1)](_0x5a1b00(0xc0));}}bot['on'](_0x4e46c9(0x262),async _0xc7ea89=>{const _0xecd33a=_0x4e46c9,_0x40cfe3=_0xc7ea89[_0xecd33a(0x112)]['id'],_0x5828b4=_0xc7ea89[_0xecd33a(0x3cd)][_0xecd33a(0x1bd)],_0x16a008=userState[_0xc7ea89['chat']['id']];await _0xc7ea89[_0xecd33a(0x294)]();if(_0x5828b4['startsWith'](_0xecd33a(0x521))){const _0x467a21=parseInt(_0x5828b4[_0xecd33a(0x17c)]('_')[0x1],0xa);await sendPaginatedUserSaldo(_0xc7ea89,_0x467a21,!![]);}else{if(_0x5828b4[_0xecd33a(0x418)](_0xecd33a(0x368))){const _0x2d5226=_0x5828b4[_0xecd33a(0x17c)]('_'),_0x5c870f=_0x2d5226[0x1];let _0x10286a=parseInt(_0x2d5226[0x2]);_0x10286a=_0x5c870f===_0xecd33a(0x22e)?_0x10286a+0x1:_0x10286a-0x1;if(_0x10286a<0x1)_0x10286a=0x1;await sendPaginatedResellerList(_0xc7ea89,_0x10286a,_0xc7ea89['callbackQuery'][_0xecd33a(0x4d3)][_0xecd33a(0x361)]);}else{if(_0x16a008){const _0x41da66=!isNaN(parseInt(_0x5828b4,0xa))||_0x5828b4===_0xecd33a(0x2b7)||_0x5828b4===_0xecd33a(0x1a8),_0x351245=/^[a-zA-Z0-9.-]+$/[_0xecd33a(0x272)](_0x5828b4)||_0x5828b4===_0xecd33a(0x2b7)||_0x5828b4===_0xecd33a(0x1a8);if(global[_0xecd33a(0x132)][_0xc7ea89['from']['id']]&&global[_0xecd33a(0x132)][_0xc7ea89['from']['id']][_0xecd33a(0x266)]===_0xecd33a(0x46e)&&_0x41da66)await handleDepositState(_0xc7ea89,_0xc7ea89[_0xecd33a(0x112)]['id'],_0x5828b4);else switch(_0x16a008['step']){case'add_saldo':if(_0x41da66)await handleAddSaldo(_0xc7ea89,_0x16a008,_0x5828b4);break;case _0xecd33a(0x3e2):if(_0x41da66)await handleEditBatasCreateAkun(_0xc7ea89,_0x16a008,_0x5828b4);break;case _0xecd33a(0x4c9):if(_0x41da66)await handleEditiplimit(_0xc7ea89,_0x16a008,_0x5828b4);break;case'edit_quota':if(_0x41da66)await handleEditQuota(_0xc7ea89,_0x16a008,_0x5828b4);break;case _0xecd33a(0x347):if(_0x351245)await handleEditAuth(_0xc7ea89,_0x16a008,_0x5828b4);break;case'edit_domain':if(_0x351245)await handleEditDomain(_0xc7ea89,_0x16a008,_0x5828b4);break;case _0xecd33a(0x2e1):if(_0x41da66)await handleEditHarga(_0xc7ea89,_0x16a008,_0x5828b4);break;case _0xecd33a(0x17b):if(_0x351245)await handleEditNama(_0xc7ea89,_0x16a008,_0x5828b4);break;case'edit_total_create_akun':if(_0x41da66)await handleEditTotalCreateAkun(_0xc7ea89,_0x16a008,_0x5828b4);break;default:logger['warn']('Unhandled\x20callback_query:\x20'+_0x5828b4+_0xecd33a(0x441)+_0x16a008['step']);break;}}}}}),bot['command'](_0x4e46c9(0x14c),async _0x5364ca=>{const _0x4e0035=_0x4e46c9;if(!adminIds['includes'](_0x5364ca[_0x4e0035(0x112)]['id']))return _0x5364ca[_0x4e0035(0x1f1)](_0x4e0035(0x300));await sendPaginatedUserSaldo(_0x5364ca,0x1);});async function downgradeInactiveResellers(){const _0x30d604=_0x4e46c9,_0x463919=new Date(Date['now']()-0x1e*0x18*0x3c*0x3c*0x3e8)[_0x30d604(0x428)]();db['all'](_0x30d604(0x392),[],async(_0x3a03b7,_0x420fb7)=>{const _0x196036=_0x30d604;if(_0x3a03b7){logger['error'](_0x196036(0xe6),_0x3a03b7[_0x196036(0x4d3)]);return;}for(const _0x14d51b of _0x420fb7){if(adminIds[_0x196036(0x1c4)](_0x14d51b[_0x196036(0x1a7)]))continue;db[_0x196036(0x518)](_0x196036(0x528),[_0x14d51b[_0x196036(0x1a7)],_0x463919],(_0x4b9534,_0x24d902)=>{const _0x5707b4=_0x196036;if(_0x4b9534){logger[_0x5707b4(0x11a)](_0x5707b4(0x4b7)+_0x14d51b[_0x5707b4(0x1a7)]+':',_0x4b9534[_0x5707b4(0x4d3)]);return;}const _0x25aaa2=_0x24d902?.[_0x5707b4(0x46c)]||0x0;_0x25aaa2<0x3?db[_0x5707b4(0x39d)]('UPDATE\x20users\x20SET\x20role\x20=\x20\x27member\x27\x20WHERE\x20user_id\x20=\x20?',[_0x14d51b[_0x5707b4(0x1a7)]],_0x370018=>{const _0x5d2af4=_0x5707b4;_0x370018?logger[_0x5d2af4(0x11a)](_0x5d2af4(0x2a3)+_0x14d51b[_0x5d2af4(0x1a7)]+':',_0x370018[_0x5d2af4(0x4d3)]):(logger[_0x5d2af4(0x235)](_0x5d2af4(0x323)+_0x14d51b[_0x5d2af4(0x1a7)]+_0x5d2af4(0x3aa)+_0x25aaa2+')'),bot[_0x5d2af4(0x364)][_0x5d2af4(0x2ef)](_0x14d51b[_0x5d2af4(0x1a7)],_0x5d2af4(0x2b1)+'Anda\x20telah\x20didowngrade\x20menjadi\x20*Member\x20Biasa*\x20karena\x20jumlah\x20transaksi\x20Anda\x20dalam\x2030\x20hari\x20terakhir\x20kurang\x20dari\x203\x20transaksi.\x20'+_0x5d2af4(0x288),{'parse_mode':'Markdown'})[_0x5d2af4(0x468)](_0x5b9bd1=>logger[_0x5d2af4(0x25c)](_0x5d2af4(0x431)+_0x14d51b[_0x5d2af4(0x1a7)]+':\x20'+_0x5b9bd1[_0x5d2af4(0x4d3)])));}):logger[_0x5707b4(0x235)](_0x5707b4(0x37f)+_0x14d51b[_0x5707b4(0x1a7)]+_0x5707b4(0x1f2)+_0x25aaa2+')');});}});}process['on'](_0x4e46c9(0x455),_0xa2259b=>{const _0x94b5c7=_0x4e46c9;console[_0x94b5c7(0x11a)]('🔥\x20Uncaught\x20Exception:',_0xa2259b);}),process['on'](_0x4e46c9(0xe2),(_0x1c88ce,_0x26f06c)=>{const _0x4e1a43=_0x4e46c9;console[_0x4e1a43(0x11a)](_0x4e1a43(0x19a),_0x1c88ce);}),app['listen'](port)['on'](_0x4e46c9(0xed),()=>{const _0x5584bf=_0x4e46c9;logger[_0x5584bf(0x235)](_0x5584bf(0x308)+port),bot['launch']()[_0x5584bf(0x21a)](()=>{const _0x732397=_0x5584bf;logger[_0x732397(0x235)](_0x732397(0x3ea)),setInterval(()=>{const _0x387fbb=_0x732397;logger['info'](_0x387fbb(0x140)),downgradeInactiveResellers();},0x6*0x3c*0x3c*0x3e8);})[_0x5584bf(0x468)](_0x361c31=>{const _0x37fae2=_0x5584bf;logger['error'](_0x37fae2(0x2da),_0x361c31);});})['on']('error',_0x582b56=>{const _0x434201=_0x4e46c9;logger[_0x434201(0x11a)](_0x434201(0xeb),_0x582b56[_0x434201(0x4d3)]),bot['launch']()[_0x434201(0x468)](_0x101ea5=>{const _0x25017e=_0x434201;logger[_0x25017e(0x11a)]('Bot\x20fallback\x20launch\x20error:',_0x101ea5['message']);});});
+const os = require('os');
+const sqlite3 = require('sqlite3').verbose();
+const express = require('express');
+const { Telegraf, session } = require('telegraf');
+const app = express();
+const axios = require('axios');
+const QRISPayment = require('autoft-qris');
+const winston = require('winston');
+const fetch = require("node-fetch");
+const FormData = require("form-data");
+const FOLDER_TEMPATDB = "/root/sellbot/sellvpn.db";
+const UPGRADE_RESELLER_TOPUP_THRESHOLD = 30000; // Minimal topup untuk upgrade reseller otomatis
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(({ timestamp, level, message }) => {
+      return `${timestamp} [${level.toUpperCase()}]: ${message}`;
+    })
+  ),
+  transports: [
+    new winston.transports.File({ filename: 'bot-error.log', level: 'error' }),
+    new winston.transports.File({ filename: 'bot-combined.log' }),
+  ],
+});
+if (process.env.NODE_ENV !== 'production') {
+  logger.add(new winston.transports.Console({
+    format: winston.format.simple(),
+  }));
+}
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const {
+  trialssh,
+  trialvmess,
+  trialvless,
+  trialtrojan,
+  trialshadowsocks
+} = require("./modules/create");
+
+const {
+  createssh,
+  createvmess,
+  createvless,
+  createtrojan,
+  createshadowsocks
+} = require('./modules/create');
+
+const {
+  renewssh,
+  renewvmess,
+  renewvless,
+  renewtrojan,
+  renewshadowsocks
+} = require('./modules/renew');
+
+const fs = require('fs');
+const vars = JSON.parse(fs.readFileSync('./.vars.json', 'utf8'));
+
+const SAWERIA_USERNAME = vars.SAWERIA_USERNAME;
+const SAWERIA_EMAIL = vars.SAWERIA_EMAIL;
+
+const BOT_TOKEN = vars.BOT_TOKEN;
+const port = vars.PORT || 50123;
+const ADMIN = vars.USER_ID;
+const NAMA_STORE = vars.NAMA_STORE || 'XWANSTORE';
+const DATA_QRIS = vars.DATA_QRIS;
+const MERCHANT_ID = vars.MERCHANT_ID;
+const API_KEY = vars.API_KEY;
+const groupId = vars.GROUP_CHAT_ID;
+
+const bot = new Telegraf(BOT_TOKEN);
+const adminIds = ADMIN;
+logger.info('Bot initialized');
+
+const db = new sqlite3.Database('./sellvpn.db', (err) => {
+    if (err) {
+        logger.error('Kesalahan koneksi SQLite3:', err.message);
+    } else {
+        logger.info('✅ Terhubung ke SQLite3');
+
+        db.serialize(() => {
+
+            // Inisialisasi tabel bonus_config
+            db.run(`
+                CREATE TABLE IF NOT EXISTS bonus_config (
+                    id INTEGER PRIMARY KEY CHECK (id = 1),
+                    enabled INTEGER DEFAULT 0,
+                    min_topup INTEGER DEFAULT 0,
+                    bonus_percent INTEGER DEFAULT 0
+                )
+            `, (err) => {
+                if (err) logger.error('❌ Gagal membuat tabel bonus_config:', err.message);
+                else logger.info('✅ Tabel bonus_config siap');
+            });
+
+            db.run(`
+                INSERT OR IGNORE INTO bonus_config (id, enabled, min_topup, bonus_percent)
+                VALUES (1, 0, 0, 0)
+            `, (err) => {
+                if (err) logger.error('❌ Gagal insert default bonus_config:', err.message);
+                else logger.info('✅ Default bonus_config dijamin ada');
+            });
+
+            // Inisialisasi tabel bonus_log
+            db.run(`
+                CREATE TABLE IF NOT EXISTS bonus_log (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER,
+                    username TEXT,
+                    amount INTEGER,
+                    bonus INTEGER,
+                    timestamp TEXT
+                )
+            `, (err) => {
+                if (err) logger.error('❌ Gagal membuat tabel bonus_log:', err.message);
+                else logger.info('✅ Tabel bonus_log siap');
+            });
+
+db.all("PRAGMA table_info(pending_deposits)", (err, columns) => {
+  if (err) return console.error("Gagal cek info pending_deposits:", err.message);
+  const hasUsername = columns.some(col => col.name === 'username');
+  if (!hasUsername) {
+    db.run("ALTER TABLE pending_deposits ADD COLUMN username TEXT", (err) => {
+      if (err) console.error("Gagal menambahkan kolom username:", err.message);
+      else console.log("✅ Kolom username berhasil ditambahkan ke pending_deposits");
+    });
+  } else {
+    console.log("ℹ️ Kolom username sudah ada di pending_deposits");
+  }
+});
+
+db.all("PRAGMA table_info(ui_config)", (err, columns) => {
+  if (err) return console.error(err);
+  const hasUpgrade = columns.some(col => col.name === 'show_upgrade_reseller_button');
+  if (!hasUpgrade) {
+    db.run("ALTER TABLE ui_config ADD COLUMN show_upgrade_reseller_button INTEGER DEFAULT 1", (err) => {
+      if (err) console.error("Gagal menambah kolom show_upgrade_reseller_button:", err.message);
+      else console.log("✅ Kolom show_upgrade_reseller_button berhasil ditambahkan ke ui_config");
+    });
+  }
+});
+
+            // Inisialisasi tabel pending_deposits
+            db.run(`
+                CREATE TABLE IF NOT EXISTS pending_deposits (
+                    unique_code TEXT PRIMARY KEY,
+                    user_id INTEGER,
+                    username TEXT,
+                    amount INTEGER,
+                    original_amount INTEGER,
+                    timestamp INTEGER,
+                    status TEXT,
+                    qr_message_id INTEGER
+                )
+            `, (err) => {
+                if (err) {
+                    logger.error('❌ Gagal membuat tabel pending_deposits:', err.message);
+                } else {
+                    logger.info('✅ Tabel pending_deposits siap');
+                }
+            });
+
+            // Inisialisasi tabel log_penjualan (dengan perbaikan)
+            db.run(`
+                CREATE TABLE IF NOT EXISTS log_penjualan (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER,
+                    username TEXT,
+                    nama_server TEXT,
+                    tipe_akun TEXT,
+                    harga INTEGER,
+                    masa_aktif_hari INTEGER,
+                    waktu_transaksi TEXT,
+                    action_type TEXT,
+                    user_role TEXT DEFAULT 'member'
+                )
+            `, (err) => {
+                if (err) {
+                    logger.error('❌ Gagal membuat tabel log_penjualan:', err.message);
+                } else {
+                    logger.info('✅ Tabel log_penjualan siap');
+                    db.all("PRAGMA table_info(log_penjualan)", (err, columns) => { // Menggunakan db.all
+                        if (err) {
+                            logger.error('Error getting table info for log_penjualan:', err.message);
+                            return;
+                        }
+                        if (columns && Array.isArray(columns)) {
+                            const hasUserRoleColumn = columns.some(col => col.name === 'user_role');
+                            if (!hasUserRoleColumn) {
+                                db.run("ALTER TABLE log_penjualan ADD COLUMN user_role TEXT DEFAULT 'member'", (err) => {
+                                    if (err) logger.error('Error adding user_role column to log_penjualan table:', err.message);
+                                    else logger.info('✅ Added user_role column to log_penjualan table');
+                                });
+                            }
+                        } else {
+                            logger.warn('PRAGMA table_info(log_penjualan) did not return an array for columns.');
+                        }
+                    });
+                }
+            });
+
+            // Inisialisasi tabel unlimited_trial_users
+            db.run(`
+                CREATE TABLE IF NOT EXISTS unlimited_trial_users (
+                    user_id INTEGER PRIMARY KEY
+                )
+            `, (err) => {
+                if (err) {
+                    logger.error('❌ Gagal membuat tabel unlimited_trial_users:', err.message);
+                } else {
+                    logger.info('✅ Tabel unlimited_trial_users siap');
+                }
+            });
+            
+            db.run(`
+    CREATE TABLE IF NOT EXISTS ui_config (
+        id INTEGER PRIMARY KEY CHECK (id = 1),
+        show_trial_button INTEGER DEFAULT 1,
+        show_sewa_script_button INTEGER DEFAULT 1,
+        show_upgrade_reseller_button INTEGER DEFAULT 1
+    )
+`, (err) => {
+    if (err) {
+        logger.error('❌ Gagal membuat tabel ui_config:', err.message);
+    } else {
+        logger.info('✅ Tabel ui_config siap');
+    }
+});
+
+            db.run(`
+                INSERT OR IGNORE INTO ui_config (id, show_trial_button, show_sewa_script_button)
+                VALUES (1, 1, 1)
+            `, (err) => {
+                if (err) {
+                    logger.error('❌ Gagal insert default ui_config:', err.message);
+                } else {
+                    logger.info('✅ Default ui_config dijamin ada');
+                }
+            });
+            
+            db.all(`PRAGMA table_info(ui_config)`, (err, columns) => {
+                if (err) {
+                    logger.error('❌ Gagal ambil info kolom ui_config:', err.message);
+                    return;
+                }
+
+                const hasSewaScriptColumn = columns.some(col => col.name === 'show_sewa_script_button');
+                if (!hasSewaScriptColumn) {
+                    db.run(`ALTER TABLE ui_config ADD COLUMN show_sewa_script_button INTEGER DEFAULT 1`, (err) => {
+                        if (err) {
+                            logger.error('❌ Gagal menambah kolom show_sewa_script_button:', err.message);
+                        } else {
+                            logger.info('✅ Kolom show_sewa_script_button ditambahkan ke ui_config');
+                        }
+                    });
+                } else {
+                    logger.info('ℹ️ Kolom show_sewa_script_button sudah tersedia di ui_config');
+                }
+            });
+             
+            // Inisialisasi tabel reseller_config
+            
+            db.run(`
+                CREATE TABLE IF NOT EXISTS reseller_config (
+                    id INTEGER PRIMARY KEY CHECK (id = 1),
+                    discount_percent INTEGER DEFAULT 0
+                )
+            `, (err) => {
+                if (err) logger.error('❌ Gagal membuat tabel reseller_config:', err.message);
+                else logger.info('✅ Tabel reseller_config siap');
+            });
+
+            db.run(`
+                INSERT OR IGNORE INTO reseller_config (id, discount_percent)
+                VALUES (1, 0)
+            `, (err) => {
+                if (err) logger.error('❌ Gagal insert default reseller_config:', err.message);
+                else logger.info('✅ Default reseller_config dijamin ada');
+            });
+
+            // Inisialisasi tabel topup_log
+            db.run(`
+              CREATE TABLE IF NOT EXISTS topup_log (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER,
+                username TEXT,
+                amount INTEGER,
+                method TEXT,
+                waktu TEXT
+              )
+            `, (err) => {
+              if (err) logger.error('❌ Gagal membuat tabel topup_log:', err.message);
+              else logger.info('✅ Tabel topup_log siap');
+            });
+
+            // Inisialisasi tabel Server
+            db.run(`CREATE TABLE IF NOT EXISTS Server (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              domain TEXT,
+              auth TEXT,
+              harga INTEGER,
+              nama_server TEXT,
+              quota INTEGER,
+              iplimit INTEGER,
+              batas_create_akun INTEGER,
+              total_create_akun INTEGER
+            )`, (err) => {
+              if (err) {
+                logger.error('Kesalahan membuat tabel Server:', err.message);
+              } else {
+                logger.info('Server table created or already exists');
+              }
+            });
+
+            // Inisialisasi tabel users (dengan perbaikan PRAGMA)
+            db.run(`CREATE TABLE IF NOT EXISTS users (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              user_id INTEGER UNIQUE,
+              saldo INTEGER DEFAULT 0,
+              role TEXT DEFAULT 'member',
+              CONSTRAINT unique_user_id UNIQUE (user_id)
+            )`, (err) => {
+              if (err) {
+                logger.error('Kesalahan membuat tabel users:', err.message);
+              } else {
+                logger.info('Users table created or already exists');
+                db.all("PRAGMA table_info(users)", (err, columns) => { // Menggunakan db.all
+                  if (err) {
+                    logger.error('Error getting table info:', err.message);
+                    return;
+                  }
+                  if (columns && Array.isArray(columns)) {
+                      const hasRoleColumn = columns.some(col => col.name === 'role');
+                      if (!hasRoleColumn) {
+                          db.run("ALTER TABLE users ADD COLUMN role TEXT DEFAULT 'member'", (err) => {
+                              if (err) logger.error('Error adding role column to users table:', err.message);
+                              else logger.info('✅ Added role column to users table');
+                          });
+                      }
+                  } else {
+                      logger.warn('PRAGMA table_info(users) did not return an array for columns.');
+                  }
+                });
+              }
+            });
+
+            // Inisialisasi tabel TrialLog
+            db.run(`
+              CREATE TABLE IF NOT EXISTS TrialLog (
+                user_id INTEGER,
+                date TEXT,
+                count INTEGER DEFAULT 0,
+                UNIQUE(user_id, date)
+            )
+            `);
+
+        }); // End of db.serialize
+    }
+});
+
+const lastMenus = {};
+const userState = {};
+logger.info('User state initialized');
+
+bot.command(['start', 'menu'], async (ctx) => {
+  logger.info('📥 Perintah /start atau /menu diterima');
+
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id;
+
+  // Hapus pesan command user yang baru saja diketik
+  try {
+    await ctx.telegram.deleteMessage(chatId, ctx.message.message_id);
+    logger.info(`🧹 Pesan command user ${userId} berhasil dihapus`);
+  } catch (e) {
+    console.warn(`⚠️ Tidak bisa hapus pesan command user ${userId}:`, e.message);
+  }
+
+  // Cek apakah user sudah ada di database, jika belum, tambahkan
+  db.get('SELECT * FROM users WHERE user_id = ?', [userId], (err, row) => {
+    if (err) {
+      logger.error('❌ Kesalahan saat memeriksa user_id:', err.message);
+      return;
+    }
+    if (!row) {
+      db.run('INSERT INTO users (user_id, role) VALUES (?, ?)', [userId, 'member'], (err) => {
+        if (err) {
+          logger.error('❌ Gagal menyimpan user_id:', err.message);
+        } else {
+          logger.info(`✅ User ID ${userId} berhasil disimpan`);
+        }
+      });
+    } else {
+      logger.info(`ℹ️ User ID ${userId} sudah ada`);
+    }
+  });
+
+  // Panggil sendMainMenu. Fungsi ini sekarang akan mengurus penghapusan menu lama
+  // dan pengiriman menu baru, serta menyimpan message_id-nya.
+  await sendMainMenu(ctx);
+});
+// --- AKHIR COMMAND /start atau /menu ---
+
+
+bot.command('admin', async (ctx) => {
+  logger.info('Admin menu requested');
+
+  if (!adminIds.includes(ctx.from.id)) {
+    // Menghapus pesan command /admin jika bukan admin
+    try { await ctx.telegram.deleteMessage(ctx.chat.id, ctx.message.message_id); } catch (e) {}
+    return ctx.reply('❌ Anda tidak memiliki izin untuk mengakses menu admin.');
+  }
+
+  try { await ctx.telegram.deleteMessage(ctx.chat.id, ctx.message.message_id); } catch (e) {}
+
+  if (lastMenus[ctx.from.id]) {
+    try { await ctx.telegram.deleteMessage(ctx.chat.id, lastMenus[ctx.from.id]); } catch (e) {}
+    delete lastMenus[ctx.from.id];
+  }
+
+  const sent = await sendAdminMenu(ctx);
+  if (sent?.message_id) {
+    lastMenus[ctx.from.id] = sent.message_id;
+  }
+});
+
+
+// --- BAGIAN FUNGSI sendMainMenu (GANTI SELURUHNYA) ---
+async function sendMainMenu(ctx) {
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id; // Dapatkan chatId di sini
+
+const showUpgradeReseller = await new Promise((resolve) => {
+  db.get('SELECT show_upgrade_reseller_button FROM ui_config WHERE id = 1', (err, row) => {
+    if (err) return resolve(true); // Default aktif kalau error
+    resolve(row?.show_upgrade_reseller_button === 1);
+  });
+});
+
+  // --- LOGIKA PENGHAPUSAN MENU SEBELUMNYA (DIPINDAHKAN KE SINI) ---
+  if (lastMenus[userId]) {
+    try {
+      await ctx.telegram.deleteMessage(chatId, lastMenus[userId]);
+      logger.info(`🧹 Menu lama milik ${userId} dihapus oleh sendMainMenu`);
+      delete lastMenus[userId]; // Hapus dari cache setelah dihapus
+    } catch (e) {
+      // Abaikan error jika pesan sudah tidak ada atau tidak bisa dihapus (misal: terlalu lama)
+      console.warn(`⚠️ Gagal hapus menu lama user ${userId} di sendMainMenu:`, e.message);
+    }
+  }
+  // --- AKHIR LOGIKA PENGHAPUSAN ---
+
+  // Ambil data user
+  const userName = ctx.from.username ? `@${ctx.from.username}` : (ctx.from.first_name || 'Member');
+  let saldo = 0;
+  let userRole = 'member'; // Default role
+  try {
+    const row = await new Promise((resolve, reject) => {
+      db.get('SELECT saldo, role FROM users WHERE user_id = ?', [userId], (err, row) => { // Mengambil saldo dan role
+        if (err) reject(err); else resolve(row);
+      });
+    });
+    saldo = row ? row.saldo : 0;
+    userRole = row ? row.role : 'member'; // Set role dari DB
+  } catch (e) {
+    saldo = 0;
+    userRole = 'member'; // Fallback jika ada error
+  }
+
+  // Statistik user dan global (menggunakan log_penjualan)
+  const now = new Date();
+  // Menggunakan ISOString untuk perbandingan tanggal di SQLite
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).toISOString();
+  const weekStart = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay()).toISOString();
+  const monthStart = new Date(now.getFullYear(), now.getMonth(), 1).toISOString();
+
+  let userToday = 0, userWeek = 0, userMonth = 0;
+  let globalToday = 0, globalWeek = 0, globalMonth = 0;
+
+  try {
+    // Statistik Anda
+    userToday = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE user_id = ? AND waktu_transaksi >= ? AND action_type IN ("create","renew")', [userId, todayStart], (err, row) => resolve(row ? row.count : 0));
+    });
+    userWeek = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE user_id = ? AND waktu_transaksi >= ? AND action_type IN ("create","renew")', [userId, weekStart], (err, row) => resolve(row ? row.count : 0));
+    });
+    userMonth = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE user_id = ? AND waktu_transaksi >= ? AND action_type IN ("create","renew")', [userId, monthStart], (err, row) => resolve(row ? row.count : 0));
+    });
+
+    // Statistik Global
+    globalToday = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE waktu_transaksi >= ? AND action_type IN ("create","renew")', [todayStart], (err, row) => resolve(row ? row.count : 0));
+    });
+    globalWeek = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE waktu_transaksi >= ? AND action_type IN ("create","renew")', [weekStart], (err, row) => resolve(row ? row.count : 0));
+    });
+    globalMonth = await new Promise((resolve) => {
+      db.get('SELECT COUNT(*) as count FROM log_penjualan WHERE waktu_transaksi >= ? AND action_type IN ("create","renew")', [monthStart], (err, row) => resolve(row ? row.count : 0));
+    });
+  } catch (e) {
+    logger.error('Error fetching statistics:', e.message);
+  }
+
+  // Jumlah pengguna bot
+  let jumlahPengguna = 0;
+  try {
+    const row = await new Promise((resolve, reject) => {
+      db.get('SELECT COUNT(*) AS count FROM users', (err, row) => { if (err) reject(err); else resolve(row); });
+    });
+    jumlahPengguna = row.count;
+  } catch (e) { jumlahPengguna = 0; }
+
+  // Latency (dummy, bisa diubah sesuai kebutuhan)
+  const latency = (Math.random() * 0.1 + 0.01).toFixed(2);
+
+  // Ambil status tombol trial dari database
+  const tombolTrialAktif = await new Promise((resolve) => {
+    db.get('SELECT show_trial_button FROM ui_config WHERE id = 1', (err, row) => {
+      if (err) return resolve(false);
+      resolve(row?.show_trial_button === 1);
+    });
+  });
+
+  const isUnlimited = await new Promise((resolve) => {
+    db.get('SELECT * FROM unlimited_trial_users WHERE user_id = ?', [userId], (err, row) => {
+      if (err) return resolve(false);
+      resolve(row != null);
+    });
+  });
+
+  const isAdmin = adminIds.includes(userId);
+  const bolehLihatTrial = tombolTrialAktif || isUnlimited || isAdmin;
+
+  // Uptime bot
+  const uptime = os.uptime();
+  const days = Math.floor(uptime / 86400);
+  const hours = Math.floor((uptime % 86400) / 3600);
+  const minutes = Math.floor((uptime % 3600) / 60);
+  const seconds = Math.floor(uptime % 60);
+  const uptimeFormatted = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  // Tanggal dan waktu saat ini
+  const dayNames = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+  const currentDay = dayNames[now.getDay()];
+  const currentDate = new Intl.DateTimeFormat('id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(now);
+  const timeNow = now.toTimeString().split(' ')[0];
+
+  let jumlahServer = 0;
+  try {
+    jumlahServer = await new Promise((resolve, reject) => {
+      db.get('SELECT COUNT(*) AS count FROM Server', (err, row) => {
+        if (err) reject(err); else resolve(row.count);
+      });
+    });
+  } catch (e) {
+    logger.error('Gagal ambil data jumlah server:', e.message);
+  }
+
+  // Menentukan teks status berdasarkan role
+  let statusText = '';
+  if (adminIds.includes(userId)) { // Cek jika user adalah admin
+    statusText = `<b>» Status:</b> <code>Admin</code>`;
+  } else if (userRole === 'reseller') {
+    statusText = `<b>» Status:</b> <code>Reseller</code>`;
+  } else {
+    statusText = `👤 <b>» Status:</b> <code>Member</code>`; // Mengubah emoji untuk Member
+  }
+
+  // Pesan utama dengan format yang sudah padat dan rapi
+  const messageText = `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Selamat datang di <b>BOT ${NAMA_STORE}</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>INFORMASI USER</b>
+${statusText}
+<code>» Username     : ${userName}</code>
+<code>» Your ID      : ${userId}</code>
+<code>» Saldo        : Rp.${saldo.toLocaleString('id-ID')}</code>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>STATISTIK ANDA</b>
+<code>» Hari Ini     : ${userToday} akun</code>
+<code>» Minggu Ini   : ${userWeek} akun</code>
+<code>» Bulan Ini    : ${userMonth} akun</code>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>STATISTIK GLOBAL</b>
+<code>» Hari Ini     : ${globalToday} akun</code>
+<code>» Minggu Ini   : ${globalWeek} akun</code>
+<code>» Bulan Ini    : ${globalMonth} akun</code>
+<code>» Total Server : ${jumlahServer}</code>
+<code>» Total User   : ${jumlahPengguna}</code>
+<code>» Runtime Bot  : ${uptimeFormatted}</code>
+━━━━━━━━━━━━━━━━━━━━━━━━
+<b>BONUS TOP UP</b>
+<blockquote><b>» Topup 10k-50k bonus 5%</b>
+<b>» Topup 100k-150k bonus 7%</b>
+<b>» Topup 200k-250k bonus 9%</b></blockquote>
+━━━━━━━━━━━━━━━━━━━━━━━━
+<b>MENU LAINNYA</b>
+<blockquote><b>» Ready juga paket resmi & paket dor</b>
+<b>» TopUp Diamond Hubungi admin</b></blockquote>
+━━━━━━━━━━━━━━━━━━━━━━━━
+<b>» Waktu:</b> <code>${timeNow} WIB</code>
+<b>» Tanggal:</b> <code>${currentDay}, ${currentDate}</code>
+<b>» Admin:</b> <a href="https://t.me/frel01">@frel01</a>
+━━━━━━━━━━━━━━━━━━━━━━━━`;
+
+
+  const keyboard = [];
+
+if (bolehLihatTrial) {
+  keyboard.push([{ text: 'TRIAL AKUN', callback_data: 'service_trial' }]);
+}
+keyboard.push([
+  { text: 'BUAT AKUN', callback_data: 'service_create' },
+  { text: 'RENEW AKUN', callback_data: 'service_renew' }
+]);
+keyboard.push([{ text: 'SEWA SCRIPT', callback_data: 'service_sewascript' }]);
+keyboard.push([{ text: 'TOPUP SALDO', callback_data: 'menu_topup' }]);
+
+// Tambahkan tombol upgrade reseller sesuai status DB & role user
+if (userRole !== 'reseller' && showUpgradeReseller) {
+  keyboard.push([{ text: '🚀 UPGRADE RESELLER', callback_data: 'upgrade_reseller' }]);
+}
+
+
+  try {
+    // Menggunakan ctx.reply untuk mengirim pesan baru, karena penghapusan menu lama sudah di handle di awal fungsi ini.
+    const sent = await ctx.reply(messageText, {
+      parse_mode: 'HTML', // Menggunakan HTML untuk formatting yang lebih baik
+      disable_web_page_preview: true, // Untuk menghindari preview link Telegram
+      reply_markup: { inline_keyboard: keyboard }
+    });
+    // Simpan message_id dari pesan yang baru dikirim
+    if (sent?.message_id) {
+      lastMenus[userId] = sent.message_id;
+      logger.info(`✅ Menu baru dikirim ke ${userId} dengan message_id ${sent.message_id}`);
+    }
+    return sent; // Mengembalikan objek pesan yang dikirim
+  } catch (error) {
+    logger.error('Error umum saat mengirim menu utama:', error);
+    // Jika terjadi error saat mengirim pesan baru, pastikan lastMenus dibersihkan
+    delete lastMenus[userId];
+  }
+}
+
+
+bot.command('hapuslog', async (ctx) => {
+  if (!adminIds.includes(ctx.from.id)) return ctx.reply('Tidak ada izin!');
+  try {
+    if (fs.existsSync('bot-combined.log')) fs.unlinkSync('bot-combined.log');
+    if (fs.existsSync('bot-error.log')) fs.unlinkSync('bot-error.log');
+    ctx.reply('Log berhasil dihapus.');
+    logger.info('Log file dihapus oleh admin.');
+  } catch (e) {
+    ctx.reply('Gagal menghapus log: ' + e.message);
+    logger.error('Gagal menghapus log: ' + e.message);
+  }
+});
+
+// [UPDATE: Perintah /helpadmin yang diperbarui]
+bot.command('helpadmin', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+  const helpMessage = `
+*📋 Daftar Perintah:*
+
+1. /start - Mengaktifkan bot.
+2. /menu - Menampilkan daftar menu bot.
+3. /admin - Menampilkan fitur-fitur admin.
+4. /broadcast - Kirim pesan siaran ke semua pengguna.
+5. /addserver - Menambahkan server baru.
+6. /addsaldo - Menambahkan saldo ke akun pengguna.
+7. /kurangisaldo - Mengurangi saldo user.
+8. /resetsaldo - Mengatur ulang saldo user.
+9. /listsaldo - Menampilkan daftar saldo user.
+10. /ceksaldo - Melihat saldo user.
+11. /editharga - Mengedit harga layanan.
+12. /editnama - Mengedit nama server.
+13. /editdomain - Mengedit domain server.
+14. /editauth - Mengedit auth server.
+15. /editlimitquota - Mengedit batas quota server.
+16. /editlimitip - Mengedit batas IP server.
+17. /editlimitcreate - Mengedit batas pembuatan akun server.
+18. /edittotalcreate - Mengedit total pembuatan akun server.
+19. /hapuslog - Menghapus log bot.
+20. /unlimitedtrial - Memberikan akses trial unlimited ke user.
+21. /removeunlimitedtrial - Mencabut akses trial unlimited dari user.
+22. /listunlimitedtrial - Melihat daftar user yang memiliki trial unlimited.
+23. /setreseller - Mengubah role user menjadi reseller.
+24. /unsetreseller - Mengubah role reseller menjadi member biasa.
+25. /listreseller - Melihat daftar semua reseller.
+26. /setdiskonreseller - Mengatur persentase diskon untuk reseller.
+27. /resetdiskonreseller - Mereset persentase diskon reseller ke 0%.
+28. /helpadmin - Menampilkan daftar perintah admin.
+
+📝 *Catatan:* Gunakan perintah ini dengan format yang benar untuk menghindari kesalahan.
+`;
+  ctx.reply(helpMessage, { parse_mode: 'Markdown' });
+});
+
+bot.command('broadcast', async (ctx) => {
+  const userId = ctx.message.from.id;
+
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const reply = ctx.message.reply_to_message;
+  const inputText = ctx.message.text.split(' ').slice(1).join(' ');
+
+  if (!reply && !inputText) {
+    return ctx.reply(
+      '📌 *Cara menggunakan perintah broadcast:*\n\n' +
+      '1. Balas pesan (teks/gambar/video/dokumen) lalu ketik /broadcast untuk menyiarkan media tersebut\n' +
+      '2. Atau langsung kirim `/broadcast Pesanmu` untuk broadcast teks biasa\n\n' +
+      'Contoh:\n`/broadcast Hallo semua!`',
+      { parse_mode: 'Markdown' }
+    );
+  }
+
+  db.all("SELECT user_id FROM users", [], async (err, rows) => {
+    if (err) {
+      logger.error('❌ DB Error saat ambil user untuk broadcast:', err);
+      return ctx.reply('⚠️ Gagal mengambil daftar pengguna.');
+    }
+
+    let success = 0;
+    let failed = 0;
+
+    for (const row of rows) {
+      try {
+        if (reply && reply.message_id) {
+          await bot.telegram.copyMessage(row.user_id, ctx.chat.id, reply.message_id);
+        } else if (inputText) {
+          await bot.telegram.sendMessage(row.user_id, inputText);
+        }
+
+        success++;
+        logger.info(`✅ Broadcast sukses ke ${row.user_id}`);
+      } catch (error) {
+        failed++;
+
+        if (error.response && error.response.error_code === 403) {
+          logger.warn(`🚫 User ${row.user_id} blokir bot`);
+        } else if (error.response && error.response.error_code === 429) {
+          const retryAfter = error.response.parameters?.retry_after || 5;
+          logger.warn(`⏳ Telegram rate limit: tunggu ${retryAfter} detik`);
+          await new Promise(resolve => setTimeout(resolve, retryAfter * 1000));
+        } else {
+          logger.warn(`❌ Gagal broadcast ke ${row.user_id}: ${error.message}`);
+        }
+      }
+
+      // Delay reguler antar user (aman & cepat)
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+
+    ctx.reply(`📣 Broadcast selesai!\n✅ Berhasil: ${success}\n❌ Gagal: ${failed}`);
+  });
+});
+function formatRupiah(angka) {
+  return `Rp${(angka || 0).toLocaleString('id-ID')}`;
+}
+
+bot.action(/^listsaldo_(\d+)$/, async (ctx) => {
+  const page = parseInt(ctx.match[1]);
+
+  // Hindari error jika message tidak bisa diedit
+  try {
+    await ctx.answerCbQuery();
+    await sendPaginatedUserSaldo(ctx, page, true); // isEdit = true
+  } catch (e) {
+    console.error('Gagal proses pagination:', e);
+  }
+});
+
+
+bot.action('upgrade_reseller', async (ctx) => {
+  await ctx.answerCbQuery();
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id;
+
+  // Cek jika user admin
+  if (adminIds.includes(userId)) {
+    // Hapus menu lama jika ada
+    if (lastMenus[userId]) {
+      try {
+        await ctx.telegram.deleteMessage(chatId, lastMenus[userId]);
+        delete lastMenus[userId];
+      } catch (e) {}
+    }
+    // Info khusus admin
+    const sent = await ctx.reply(
+      '👑 Anda adalah *Admin*, tidak perlu melakukan upgrade reseller!\n\n' +
+      'Semua fitur reseller dan admin sudah tersedia untuk Anda.',
+      { parse_mode: 'Markdown' }
+    );
+    if (sent?.message_id) lastMenus[userId] = sent.message_id;
+    return;
+  }
+
+  // ... kode lama untuk member/reseller tetap di bawah ...
+  if (lastMenus[userId]) {
+    try {
+      await ctx.telegram.deleteMessage(chatId, lastMenus[userId]);
+      delete lastMenus[userId];
+    } catch (e) {}
+  }
+  
+  const sent = await ctx.reply(
+    `🚀 *Upgrade ke Reseller*\n\n` +
+    `- Deposit Awal: "Rp${UPGRADE_RESELLER_TOPUP_THRESHOLD.toLocaleString('id-ID')}"\n` +
+    `- Bisa buat config sendiri\n` +
+    `- Minimal 3x transaksi/bulan\n` +
+    `- Tidak ada refund\n\n` +
+    `⚠️ *Penting:*\n` +
+    `- Kurang dari 3 trx/bulan = auto-downgrade\n` +
+    `- Pelanggaran = banned permanen\n\n` +
+    `🔸 *Keuntungan Reseller:*\n` +
+    `- Harga akun lebih murah\n` +
+    `- Bisa jualan akun VPN dan untung\n` +
+    `- Dapat bonus dari topup member\n\n` +
+    `Tertarik jadi reseller? Klik tombol di bawah untuk melanjutkan.`,
+    {
+      parse_mode: 'Markdown',
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: `💳 Topup "Rp${UPGRADE_RESELLER_TOPUP_THRESHOLD.toLocaleString('id-ID')}" (Upgrade Reseller)`, callback_data: 'upgrade_reseller_pay' }],
+          [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+        ]
+      }
+    }
+  );
+  if (sent?.message_id) lastMenus[userId] = sent.message_id;
+});
+
+bot.action('upgrade_reseller_pay', async (ctx) => {
+  await ctx.answerCbQuery();
+  const userId = ctx.from.id;
+  // Hapus menu sebelumnya jika ada
+  if (lastMenus[userId]) {
+    try { await ctx.telegram.deleteMessage(ctx.chat.id, lastMenus[userId]); delete lastMenus[userId]; } catch (e) {}
+  }
+  await ctx.reply('⏳ Membuat QRIS pembayaran upgrade reseller...');
+  await processDeposit(ctx, UPGRADE_RESELLER_TOPUP_THRESHOLD);  // Fungsi ini sudah ada di bot Anda untuk QRIS
+});
+
+bot.action(/^batal_topup_(.+)$/, async (ctx) => {
+  const uniqueCode = ctx.match[1];
+  const deposit = global.pendingDeposits[uniqueCode];
+
+  if (!deposit) {
+    return ctx.answerCbQuery('Transaksi sudah tidak aktif atau telah dibatalkan.', { show_alert: true });
+  }
+
+  try {
+    // Hapus pesan QR
+    if (deposit.qrMessageId) {
+      try {
+        await bot.telegram.deleteMessage(deposit.userId, deposit.qrMessageId);
+      } catch (e) {}
+    }
+
+    // Hapus dari pending
+    delete global.pendingDeposits[uniqueCode];
+    await deletePendingDeposit(uniqueCode);
+
+    await ctx.answerCbQuery('Topup dibatalkan.');
+
+    // ===== Kirim pesan dengan tombol kembali =====
+    await ctx.reply('❌ Topup QRIS Orkut telah dibatalkan. Silahkan topup ulang jika ingin mencoba lagi.', {
+      parse_mode: 'Markdown',
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: '🔙 KEMBALI ke Menu Top-up', callback_data: 'menu_topup' }]
+        ]
+      }
+    });
+    // =============================================
+
+    // Tambahan: hapus pesan command user (jika diperlukan)
+    try {
+      const chatId = ctx.chat.id;
+      const userId = ctx.from.id;
+      // Pastikan ctx.message ada (atau gunakan ctx.update.callback_query.message jika akses via callback)
+      const messageId = ctx.update.callback_query.message?.message_id;
+      if (messageId) {
+        await ctx.telegram.deleteMessage(chatId, messageId);
+        logger.info(`🧹 Pesan command user ${userId} berhasil dihapus`);
+      }
+    } catch (e) {
+      const userId = ctx.from.id;
+      console.warn(`⚠️ Tidak bisa hapus pesan command user ${userId}:`, e.message);
+    }
+
+  } catch (e) {
+    logger.error('Gagal batal topup:', e);
+    await ctx.answerCbQuery('Gagal batal topup.', { show_alert: true });
+  }
+});
+
+
+bot.action('statistik_penjualan', async (ctx) => {
+  await ctx.answerCbQuery();
+
+  const today = new Date();
+  const startOfToday = new Date(today.getFullYear(), today.getMonth(), today.getDate()).toISOString();
+  const startOfWeek = new Date(new Date().setDate(today.getDate() - today.getDay())).toISOString(); // Minggu
+  const startOf7Days = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
+  const startOfMonth = new Date(today.getFullYear(), today.getMonth(), 1).toISOString();
+
+  db.all(`
+    SELECT tipe_akun, COUNT(*) AS jumlah, SUM(harga) AS total_harga
+    FROM log_penjualan
+    GROUP BY tipe_akun
+  `, [], (err, rows) => {
+    if (err || rows.length === 0) {
+      return ctx.reply('⚠️ Belum ada data penjualan.');
+    }
+
+    let totalAkun = 0;
+    let totalUang = 0;
+    const hasil = rows.map(r => {
+      totalAkun += r.jumlah;
+      totalUang += r.total_harga;
+      return `📦 *${r.tipe_akun.toUpperCase()}*\nJumlah Terjual: ${r.jumlah}\nTotal: ${formatRupiah(r.total_harga)}`;
+    }).join('\n\n');
+
+    db.get(`SELECT SUM(harga) AS total FROM log_penjualan WHERE waktu_transaksi >= ?`, [startOfToday], (err1, todayRow) => {
+    db.get(`SELECT SUM(harga) AS total FROM log_penjualan WHERE waktu_transaksi >= ?`, [startOf7Days], (err2, week7Row) => {
+    db.get(`SELECT SUM(harga) AS total FROM log_penjualan WHERE waktu_transaksi >= ?`, [startOfWeek], (err3, weekRow) => {
+    db.get(`SELECT SUM(harga) AS total FROM log_penjualan WHERE waktu_transaksi >= ?`, [startOfMonth], (err4, monthRow) => {
+
+      const totalToday = todayRow?.total || 0;
+      const total7Days = week7Row?.total || 0;
+      const totalWeek = weekRow?.total || 0;
+      const totalMonth = monthRow?.total || 0;
+
+      const message =
+        `📊 *Statistik Penjualan per Tipe Akun:*\n\n${hasil}\n\n` +
+        `🧾 *Total Semua Akun Terjual:* ${totalAkun}\n` +
+        `💰 *Total Uang Masuk:* ${formatRupiah(totalUang)}\n\n` +
+        `📅 *Hari Ini:* ${formatRupiah(totalToday)}\n` +
+        `📈 *7 Hari Terakhir:* ${formatRupiah(total7Days)}\n` +
+        `🗓️ *Minggu Ini:* ${formatRupiah(totalWeek)}\n` +
+        `📆 *Bulan Ini:* ${formatRupiah(totalMonth)}`;
+
+      ctx.reply(message, { parse_mode: 'Markdown' });
+
+    }); }); }); });
+  });
+});
+bot.command('addsaldo', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/addsaldo <user_id> <jumlah>`', { parse_mode: 'Markdown' });
+  }
+
+  const targetUserId = parseInt(args[1]);
+  const amount = parseInt(args[2]);
+
+  if (isNaN(targetUserId) || isNaN(amount)) {
+      return ctx.reply('⚠️ `user_id` dan `jumlah` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  if (/\s/.test(args[1]) || /\./.test(args[1]) || /\s/.test(args[2]) || /\./.test(args[2])) {
+      return ctx.reply('⚠️ `user_id` dan `jumlah` tidak boleh mengandung spasi atau titik.', { parse_mode: 'Markdown' });
+  }
+
+  db.get("SELECT * FROM users WHERE user_id = ?", [targetUserId], (err, row) => {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat memeriksa `user_id`:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat memeriksa `user_id`.', { parse_mode: 'Markdown' });
+      }
+
+      if (!row) {
+          return ctx.reply('⚠️ `user_id` tidak terdaftar.', { parse_mode: 'Markdown' });
+      }
+
+      db.run("UPDATE users SET saldo = saldo + ? WHERE user_id = ?", [amount, targetUserId], function(err) {
+          if (err) {
+              logger.error('⚠️ Kesalahan saat menambahkan saldo:', err.message);
+              return ctx.reply('⚠️ Kesalahan saat menambahkan saldo.', { parse_mode: 'Markdown' });
+          }
+
+          if (this.changes === 0) {
+              return ctx.reply('⚠️ Pengguna tidak ditemukan.', { parse_mode: 'Markdown' });
+          }
+
+          ctx.reply(`✅ Saldo sebesar \`${amount}\` berhasil ditambahkan untuk \`user_id\` \`${targetUserId}\`.`, { parse_mode: 'Markdown' });
+      });
+  });
+});
+
+// ========================= MENU TOPUP PILIHAN ==========================
+bot.action('menu_topup', async (ctx) => {
+  await ctx.answerCbQuery();
+
+  // Hapus pesan menu topup sebelumnya jika ada
+  try {
+    if (ctx.callbackQuery?.message?.message_id) {
+      await ctx.deleteMessage(ctx.callbackQuery.message.message_id);
+    }
+  } catch (e) {
+    // ignore error
+  }
+
+  const config = loadButtonConfig ? loadButtonConfig() : { topup_saldo: true, topup_saweria: true };
+  const keyboard = [];
+  if (config.topup_saldo)
+    keyboard.push([{ text: "💸 Topup QRIS", callback_data: "topup_saldo" }]);
+  if (config.topup_saweria)
+    keyboard.push([{ text: "💸 Topup QRIS Saweria", callback_data: "topup_saweria" }]);
+  keyboard.push([{ text: "🔙 Kembali", callback_data: "send_main_menu" }]);
+
+  // ...generate messageText sesuai menu_topup lama...
+  const messageText = `
+━━━━━━━━━━━━━━━━━━━━━━
+         *≡ TOP UP SALDO BOT ≡* 
+      *Hubungi admin jika QRIS eror*
+━━━━━━━━━━━━━━━━━━━━━━
+💸 *» Pilih Menu Topup Dibawah Ini:*`;
+
+  const sent = await ctx.reply(messageText, {
+    parse_mode: 'Markdown',
+    reply_markup: { inline_keyboard: keyboard }
+  });
+
+  // Tracking pesan topup yang terakhir (opsional, jika ingin hapus lagi setelahnya)
+  if (sent?.message_id) {
+    lastMenus[ctx.from.id] = sent.message_id;
+  }
+});
+
+async function processDepositSaweria(ctx, amount) {
+  try {
+    const SAWERIA_USERNAME = process.env.SAWERIA_USERNAME || vars.SAWERIA_USERNAME;
+    const SAWERIA_EMAIL = process.env.SAWERIA_EMAIL || vars.SAWERIA_EMAIL;
+
+    if (!SAWERIA_USERNAME || !SAWERIA_EMAIL) {
+      return ctx.reply('❌ *Konfigurasi Saweria belum lengkap.*', { parse_mode: 'Markdown' });
+    }
+
+    const amountInt = parseInt(amount);
+    const apiUrl = `https://saweria.autsc.my.id/api/create?username=${encodeURIComponent(SAWERIA_USERNAME)}&amount=${amountInt}&email=${encodeURIComponent(SAWERIA_EMAIL)}`;
+
+    const res = await axios.get(apiUrl);
+    const result = res.data;
+
+    if (!result.success || !result.data?.qrImageUrl || !result.data?.transactionId) {
+      return ctx.reply('❌ *Gagal membuat QR Saweria.*', { parse_mode: 'Markdown' });
+    }
+
+    const { qrImageUrl, transactionId, checkPaymentUrl, timestamp } = result.data;
+
+    // Ambil bonus dari DB
+    let bonus = 0;
+    let bonus_percent = 0;
+
+    await new Promise((resolve) => {
+      db.get('SELECT * FROM bonus_config WHERE id = 1', (err, config) => {
+        if (!err && config && config.enabled && amountInt >= config.min_topup) {
+          bonus_percent = config.bonus_percent;
+          bonus = Math.floor(amountInt * bonus_percent / 100);
+        }
+        resolve(); // lanjut proses meskipun gagal ambil bonus
+      });
+    });
+
+    // Simpan ke global
+    if (!global.pendingDepositsSaweria) global.pendingDepositsSaweria = {};
+    global.pendingDepositsSaweria[transactionId] = {
+      userId: ctx.from.id,
+      username: ctx.from.username ? `@${ctx.from.username}` : 'Tidak tersedia',
+      amount: amountInt,
+      bonus,
+      bonus_percent,
+      created_at: Date.now(),
+      checked: false
+    };
+
+    const qrMessage = await ctx.replyWithPhoto(qrImageUrl, {
+      caption: `❇️ *Informasi Deposit Anda* ❇️
+
+🏷️ *» Kode Transaksi:* \`${transactionId}\`
+🏷️ *» Jumlah:* Rp${amountInt.toLocaleString('id-ID')}
+🏷️ *» Waktu:* ${timestamp}
+
+🏷️ *» Silahkan scan QR berikut untuk membayar melalui QRIS.*
+🏷️ *» Expired:* 5 menit dari sekarang`,
+      parse_mode: 'Markdown',
+    });
+
+    // Simpan ID pesan
+    global.pendingDepositsSaweria[transactionId].qrMessageId = qrMessage.message_id;
+
+  } catch (err) {
+    logger.error('❌ Gagal proses QRIS Saweria:', err.stack || err);
+    await ctx.reply('❌ *Gagal membuat QRIS Saweria.* Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+}
+
+setInterval(async () => {
+  try {
+    const pending = global.pendingDepositsSaweria || {};
+    const transactions = Object.entries(pending);
+
+    if (transactions.length === 0) return;
+
+    for (const [idtrx, dep] of transactions) {
+      if (dep.checked) continue;
+
+      const depositAge = Date.now() - dep.created_at;
+
+      // ⏳ Jika sudah lebih dari 5 menit = expired
+      if (depositAge > 5 * 60 * 1000) {
+        try {
+          if (dep.qrMessageId) {
+            await bot.telegram.deleteMessage(dep.userId, dep.qrMessageId).catch(e =>
+              logger.warn(`Gagal hapus pesan QR expired untuk user ${dep.userId}: ${e.message}`)
+            );
+          }
+
+          await bot.telegram.sendMessage(dep.userId,
+            '❌ *Pembayaran Saweria Expired*\n\nWaktu pembayaran telah habis. Silahkan klik Top Up lagi untuk mendapatkan QR baru.',
+            { parse_mode: 'Markdown' }
+          );
+
+          logger.info(`Transaksi Saweria ${idtrx} expired untuk user ${dep.userId}`);
+        } catch (error) {
+          logger.error(`Error saat menangani expired ${idtrx}: ${error.message}`);
+        } finally {
+          delete global.pendingDepositsSaweria[idtrx];
+        }
+        continue;
+      }
+
+      // ✅ Cek status pembayaran
+      try {
+        const res = await axios.get(`https://saweria.autsc.my.id/check-payment?idtransaksi=${idtrx}`);
+        const data = res.data;
+
+        logger.info(`Respons Saweria check-payment untuk ${idtrx}: ${JSON.stringify(data)}`);
+
+        if (data?.success && data.data?.isPaid) {
+          dep.checked = true;
+
+          await updateUserBalance(dep.userId, dep.amount);
+          logger.info(`SAWERIA QRIS SUKSES user ${dep.userId} nominal Rp${dep.amount}. Saldo diupdate.`);
+
+          await prosesBonusTopUp(dep.userId, dep.username, dep.amount); // ✅ tunggu bonus masuk
+          logTopup(dep.userId, dep.username, dep.amount, 'Saweria');
+
+          const saldoTerbaru = await getUserSaldo(dep.userId);
+
+          const depositData = {
+            amount: dep.amount,
+            originalAmount: dep.amount,
+            bonus: dep.bonus || 0,
+            bonus_percent: dep.bonus_percent || 0,
+            qrMessageId: dep.qrMessageId
+          };
+
+          const success = await sendPaymentSuccessNotificationByUserId(
+            dep.userId,
+            depositData,
+            saldoTerbaru,
+            dep.username
+          );
+
+          if (success && dep.qrMessageId) {
+            await bot.telegram.deleteMessage(dep.userId, dep.qrMessageId).catch(e =>
+              logger.warn(`Gagal hapus pesan QR berhasil untuk user ${dep.userId}: ${e.message}`)
+            );
+          }
+
+          delete global.pendingDepositsSaweria[idtrx];
+        }
+
+      } catch (e) {
+        logger.error(`Cek pembayaran Saweria error untuk ${idtrx}: ${e.message}`);
+      }
+    }
+  } catch (err) {
+    logger.error("❌ ERROR FATAL di polling Saweria:", err);
+  }
+}, 10000);
+
+bot.command('addserver', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 7) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/addserver <domain> <auth> <harga> <nama_server> <quota> <iplimit> <batas_create_account>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, auth, harga, nama_server, quota, iplimit, batas_create_akun] = args.slice(1);
+
+  const numberOnlyRegex = /^\d+$/;
+  if (!numberOnlyRegex.test(harga) || !numberOnlyRegex.test(quota) || !numberOnlyRegex.test(iplimit) || !numberOnlyRegex.test(batas_create_akun)) {
+      return ctx.reply('⚠️ `harga`, `quota`, `iplimit`, dan `batas_create_akun` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("INSERT INTO Server (domain, auth, harga, nama_server, quota, iplimit, batas_create_akun) VALUES (?, ?, ?, ?, ?, ?, ?)",
+      [domain, auth, parseInt(harga), nama_server, parseInt(quota), parseInt(iplimit), parseInt(batas_create_akun)], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat menambahkan server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat menambahkan server.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Server \`${nama_server}\` berhasil ditambahkan.`, { parse_mode: 'Markdown' });
+  });
+});
+bot.command('editharga', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editharga <domain> <harga>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, harga] = args.slice(1);
+
+  if (!/^\d+$/.test(harga)) {
+      return ctx.reply('⚠️ `harga` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE Server SET harga = ? WHERE domain = ?", [parseInt(harga), domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit harga server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit harga server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Harga server \`${domain}\` berhasil diubah menjadi \`${harga}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editnama', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editnama <domain> <nama_server>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, nama_server] = args.slice(1);
+
+  db.run("UPDATE Server SET nama_server = ? WHERE domain = ?", [nama_server, domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit nama server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit nama server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Nama server \`${domain}\` berhasil diubah menjadi \`${nama_server}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editdomain', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editdomain <old_domain> <new_domain>`', { parse_mode: 'Markdown' });
+  }
+
+  const [old_domain, new_domain] = args.slice(1);
+
+  db.run("UPDATE Server SET domain = ? WHERE domain = ?", [new_domain, old_domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit domain server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit domain server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Domain server \`${old_domain}\` berhasil diubah menjadi \`${new_domain}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editauth', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editauth <domain> <auth>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, auth] = args.slice(1);
+
+  db.run("UPDATE Server SET auth = ? WHERE domain = ?", [auth, domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit auth server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit auth server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Auth server \`${domain}\` berhasil diubah menjadi \`${auth}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editlimitquota', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editlimitquota <domain> <quota>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, quota] = args.slice(1);
+
+  if (!/^\d+$/.test(quota)) {
+      return ctx.reply('⚠️ `quota` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE Server SET quota = ? WHERE domain = ?", [parseInt(quota), domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit quota server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit quota server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Quota server \`${domain}\` berhasil diubah menjadi \`${quota}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editlimitip', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editlimitip <domain> <iplimit>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, iplimit] = args.slice(1);
+
+  if (!/^\d+$/.test(iplimit)) {
+      return ctx.reply('⚠️ `iplimit` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE Server SET iplimit = ? WHERE domain = ?", [parseInt(iplimit), domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit iplimit server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit iplimit server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Iplimit server \`${domain}\` berhasil diubah menjadi \`${iplimit}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('editlimitcreate', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/editlimitcreate <domain> <batas_create_akun>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, batas_create_akun] = args.slice(1);
+
+  if (!/^\d+$/.test(batas_create_akun)) {
+      return ctx.reply('⚠️ `batas_create_akun` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE Server SET batas_create_akun = ? WHERE domain = ?", [parseInt(batas_create_akun), domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit batas_create_akun server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit batas_create_akun server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Batas create akun server \`${domain}\` berhasil diubah menjadi \`${batas_create_akun}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+bot.command('edittotalcreate', async (ctx) => {
+  const userId = ctx.message.from.id;
+  if (!adminIds.includes(userId)) {
+      return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 3) {
+      return ctx.reply('⚠️ Format salah. Gunakan: `/edittotalcreate <domain> <total_create_akun>`', { parse_mode: 'Markdown' });
+  }
+
+  const [domain, total_create_akun] = args.slice(1);
+
+  if (!/^\d+$/.test(total_create_akun)) {
+      return ctx.reply('⚠️ `total_create_akun` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE Server SET total_create_akun = ? WHERE domain = ?", [parseInt(total_create_akun), domain], function(err) {
+      if (err) {
+          logger.error('⚠️ Kesalahan saat mengedit total_create_akun server:', err.message);
+          return ctx.reply('⚠️ Kesalahan saat mengedit total_create_akun server.', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+          return ctx.reply('⚠️ Server tidak ditemukan.', { parse_mode: 'Markdown' });
+      }
+
+      ctx.reply(`✅ Total create akun server \`${domain}\` berhasil diubah menjadi \`${total_create_akun}\`.`, { parse_mode: 'Markdown' });
+  });
+});
+async function handleServiceAction(ctx, action) {
+  let keyboard;
+  if (action === 'trial') {
+    keyboard = [
+      [{ text: 'SSH', callback_data: 'trial_ssh' }],
+      [{ text: 'VMESS', callback_data: 'trial_vmess' }, { text: 'VLESS', callback_data: 'trial_vless' }],
+      [{ text: 'TROJAN', callback_data: 'trial_trojan' }, { text: 'SHADOWSOCK', callback_data: 'trial_shadowsocks' }],
+      [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+    ];
+  } else if (action === 'create') {
+    keyboard = [
+      [{ text: 'SSH', callback_data: 'create_ssh' }],
+      [{ text: 'VMESS', callback_data: 'create_vmess' }, { text: 'VLESS', callback_data: 'create_vless' }],
+      [{ text: 'TROJAN', callback_data: 'create_trojan' }, { text: 'SHADDOWSOCK', callback_data: 'create_shadowsocks' }],
+      [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+    ];
+  } else if (action === 'sewascript') {
+    keyboard = [
+      [{ text: 'REGIST IP', callback_data: 'sewascript_daftar' }, { text: 'RENEW IP', callback_data: 'sewascript_perpanjang' }],
+      [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+    ];
+  } else if (action === 'renew') {
+    keyboard = [
+      [{ text: 'SSH', callback_data: 'renew_ssh' }],
+      [{ text: 'VMESS', callback_data: 'renew_vmess' }, { text: 'VLESS', callback_data: 'renew_vless' }],
+      [{ text: 'TROJAN', callback_data: 'renew_trojan' }, { text: 'SHADOWSOCK', callback_data: 'renew_shadowsocks' }],
+      [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+    ];
+  }
+  try {
+    await ctx.editMessageReplyMarkup({
+      inline_keyboard: keyboard
+    });
+    logger.info(`${action} service menu sent`);
+  } catch (error) {
+    if (error.response && error.response.error_code === 400) {
+      await ctx.reply(`Pilih jenis layanan yang ingin Anda ${action}:`, {
+        reply_markup: {
+          inline_keyboard: keyboard
+        }
+      });
+      logger.info(`${action} service menu sent as new message`);
+    } else {
+      logger.error(`Error saat mengirim menu ${action}:`, error);
+    }
+  }
+}
+
+const BUTTON_CONFIG_FILE = './button_config.json';
+
+function loadButtonConfig() {
+  try {
+    return JSON.parse(fs.readFileSync(BUTTON_CONFIG_FILE, 'utf8'));
+  } catch (e) {
+    return { topup_saldo: true, topup_saweria: true };
+  }
+}
+
+function saveButtonConfig(config) {
+  fs.writeFileSync(BUTTON_CONFIG_FILE, JSON.stringify(config, null, 2));
+}
+
+bot.action('toggle_topup_saldo', async (ctx) => {
+    await ctx.answerCbQuery();
+    const config = loadButtonConfig();
+    config.topup_saldo = !config.topup_saldo;
+    saveButtonConfig(config);
+    await sendAdminMenu(ctx);
+});
+
+bot.action('toggle_topup_saweria', async (ctx) => {
+    await ctx.answerCbQuery();
+    const config = loadButtonConfig();
+    config.topup_saweria = !config.topup_saweria;
+    saveButtonConfig(config);
+    await sendAdminMenu(ctx);
+});
+
+bot.action(/^toggle_trial_btn_(on|off)$/, async (ctx) => {
+  try {
+    const match = ctx.match || [];
+    const mode = match[1];
+
+    // Log saat tombol diklik
+    console.log(`Toggle tombol trial: ${ctx.from.id} ingin ${mode}`);
+
+    if (!adminIds.includes(ctx.from.id)) return;
+
+    const newStatus = mode === 'on' ? 1 : 0;
+
+    db.run('UPDATE ui_config SET show_trial_button = ? WHERE id = 1', [newStatus], async (err) => {
+      if (err) {
+        logger.error('❌ Gagal update tombol trial:', err.message);
+        return await ctx.answerCbQuery('❌ Gagal mengubah status.');
+      }
+
+      await ctx.answerCbQuery('✅ Status tombol trial diperbarui.');
+
+      // Hapus pesan admin lama
+      try {
+        await ctx.telegram.deleteMessage(ctx.chat.id, ctx.callbackQuery.message.message_id);
+      } catch (e) {}
+
+      // Kirim ulang menu admin
+      await sendAdminMenu(ctx);
+    });
+  } catch (error) {
+    logger.error('❌ ERROR toggle_trial_btn:', error.message);
+    await ctx.answerCbQuery('❌ Terjadi kesalahan.');
+  }
+});
+
+bot.action(/toggle_sewascript_btn_(on|off)/, async (ctx) => {
+    const action = ctx.match[1]; // "on" atau "off"
+    const newValue = action === 'on' ? 1 : 0;
+
+    db.run(`UPDATE ui_config SET show_sewa_script_button = ? WHERE id = 1`, [newValue], function (err) {
+        if (err) {
+            logger.error('❌ Gagal update show_sewa_script_button:', err.message);
+            return ctx.answerCbQuery('Gagal mengubah status tombol.');
+        }
+
+        logger.info(`✅ Tombol Sewa Script diubah ke ${newValue === 1 ? 'ON' : 'OFF'}`);
+        ctx.answerCbQuery(`Tombol Sewa Script ${newValue === 1 ? 'diaktifkan ✅' : 'dinonaktifkan ❌'}`);
+        return sendAdminMenu(ctx); // Refresh tampilan menu admin
+    });
+});
+
+bot.action(/^toggle_upgrade_reseller_btn_(on|off)$/, async (ctx) => {
+  try {
+    const mode = ctx.match[1];
+    if (!adminIds.includes(ctx.from.id)) return;
+    const newStatus = mode === 'on' ? 1 : 0;
+
+    db.run('UPDATE ui_config SET show_upgrade_reseller_button = ? WHERE id = 1', [newStatus], async (err) => {
+      if (err) return ctx.answerCbQuery('❌ Gagal mengubah status.');
+      await ctx.answerCbQuery('✅ Status tombol Upgrade Reseller diperbarui.');
+      try { await ctx.telegram.deleteMessage(ctx.chat.id, ctx.callbackQuery.message.message_id); } catch (e) {}
+      await sendAdminMenu(ctx);
+    });
+  } catch (error) {
+    logger.error('❌ ERROR toggle_upgrade_reseller_btn:', error.message);
+    await ctx.answerCbQuery('❌ Terjadi kesalahan.');
+  }
+});
+
+async function sendAdminMenu(ctx) {
+    const config = loadButtonConfig();
+    const userId = ctx.from.id;
+    const chatId = ctx.chat.id;
+    
+    const showTrial = await new Promise((resolve) => {
+    db.get('SELECT show_trial_button FROM ui_config WHERE id = 1', (err, row) => {
+        if (err) {
+            logger.error('❌ Gagal ambil show_trial_button:', err.message);
+            return resolve(1);
+        }
+        if (!row) {
+            logger.warn('⚠️ Row kosong untuk show_trial_button!');
+            return resolve(1);
+        }
+        logger.debug(`✅ show_trial_button: ${row.show_trial_button}`);
+        resolve(row.show_trial_button === 1 ? 1 : 0);
+    });
+});
+
+const showSewaScript = await new Promise((resolve) => {
+    db.get('SELECT show_sewa_script_button FROM ui_config WHERE id = 1', (err, row) => {
+        if (err) {
+            logger.error('❌ Gagal ambil show_sewa_script_button:', err.message);
+            return resolve(1);
+        }
+        if (!row) {
+            logger.warn('⚠️ Row kosong untuk show_sewa_script_button!');
+            return resolve(1);
+        }
+        logger.debug(`✅ show_sewa_script_button: ${row.show_sewa_script_button}`);
+        resolve(row.show_sewa_script_button === 1 ? 1 : 0);
+    });
+});
+// Ambil status tombol upgrade reseller dari database dulu!
+const showUpgradeReseller = await new Promise((resolve) => {
+  db.get('SELECT show_upgrade_reseller_button FROM ui_config WHERE id = 1', (err, row) => {
+    if (err) return resolve(true); // Default aktif kalau error
+    resolve(row?.show_upgrade_reseller_button === 1);
+  });
+});
+    const adminKeyboard = [
+        [{ text: '✏️ Tambah Server', callback_data: 'addserver' }, { text: '❌ Hapus Server', callback_data: 'deleteserver' }],
+        [{ text: '💲 Edit Harga', callback_data: 'editserver_harga' }, { text: '📝 Edit Nama', callback_data: 'nama_server_edit' }],
+        [{ text: '🌐 Edit Domain', callback_data: 'editserver_domain' }, { text: '🔑 Edit Auth', callback_data: 'editserver_auth' }],
+        [{ text: '📊 Edit Quota', callback_data: 'editserver_quota' }, { text: '📶 Edit Limit IP', callback_data: 'editserver_limit_ip' }],
+        [{ text: '🔢 Edit Batas Create', callback_data: 'editserver_batas_create_akun' }, { text: '🔢 Edit Total Create', callback_data: 'editserver_total_create_akun' }],
+        [{ text: '💵 Tambah Saldo', callback_data: 'addsaldo_user' }, { text: '📋 List Server', callback_data: 'listserver' }],
+        [{ text: '♻️ Reset Server', callback_data: 'resetdb' }, { text: 'ℹ️ Detail Server', callback_data: 'detailserver' }],
+        [{ text: '🎁 Set Bonus TopUp', callback_data: 'bonus_topup_setting' }, { text: '📜 Log Bonus TopUp', callback_data: 'log_bonus_topup' }],
+        [{ text: `${config.topup_saldo ? '✅' : '❌'} Topup QRIS Orkut`, callback_data: 'toggle_topup_saldo' }, { text: `${config.topup_saweria ? '✅' : '❌'} Topup QRIS Saweria`, callback_data: 'toggle_topup_saweria' }],
+        [{text: `${showTrial ? '✅' : '❌'} Tombol Trial`, callback_data: `toggle_trial_btn_${showTrial ? 'off' : 'on'}`}, {text: `${showSewaScript ? '✅' : '❌'} Tombol Sewa Script`, callback_data: `toggle_sewascript_btn_${showSewaScript ? 'off' : 'on'}`}],
+        [{ text: '📈 Hasil Penjualan', callback_data: 'statistik_penjualan' }, { text: '📑 Log Topup', callback_data: 'log_topup' }],
+        [{ text: '👥 List Reseller', callback_data: 'listreseller' }, { text: `${showUpgradeReseller ? '✅' : '❌'} Tombol Upgrade Reseller`, callback_data: `toggle_upgrade_reseller_btn_${showUpgradeReseller ? 'off' : 'on'}` }], 
+        [{ text: '🔙 KEMBALI', callback_data: 'send_main_menu' }]
+    ];
+
+    const messageText = `
+━━━━━━━━━━━━━━━━━━━━━━
+      🏷️ *≡ MENU ADMIN VPN ≡* 🏷️
+━━━━━━━━━━━━━━━━━━━━━━
+💸 *» Pilih Menu Admin Dibawah Ini:*`;
+
+    // Hapus pesan admin sebelumnya (opsional, jika ingin clean)
+    if (typeof lastMenus !== 'undefined' && lastMenus[userId]) {
+        try { await ctx.telegram.deleteMessage(chatId, lastMenus[userId]); } catch (e) {}
+        delete lastMenus[userId];
+    }
+
+    // Jika callback, edit pesan, jika gagal kirim baru
+    if (ctx.updateType === 'callback_query') {
+        try {
+            const sent = await ctx.editMessageText(messageText, {
+                parse_mode: 'Markdown',
+                reply_markup: { inline_keyboard: adminKeyboard }
+            });
+            if (sent?.message_id && typeof lastMenus !== 'undefined') lastMenus[userId] = sent.message_id;
+            return sent;
+        } catch (error) {
+            // Kalau gagal edit, lanjut kirim pesan baru
+        }
+    }
+
+    // Kirim pesan baru jika bukan callback atau edit gagal
+    const sent = await ctx.reply(messageText, {
+        parse_mode: 'Markdown',
+        reply_markup: { inline_keyboard: adminKeyboard }
+    });
+    if (sent?.message_id && typeof lastMenus !== 'undefined') lastMenus[userId] = sent.message_id;
+    return sent;
+}
+bot.action('sewascript_daftar', async (ctx) => {
+    try {
+        await ctx.deleteMessage();
+    } catch (e) {
+        console.warn("Gagal menghapus pesan sebelumnya:", e.message);
+    }
+
+    userState[ctx.from.id] = { step: 'sewascript_daftar_pilih_bulan' };
+
+    await ctx.reply('📅 Pilih Durasi Sewa Script:', {
+        reply_markup: {
+            inline_keyboard: [
+                [
+                    { text: '1 Bulan 10K', callback_data: 'daftar_1bln' },
+                    { text: '2 Bulan 20K', callback_data: 'daftar_2bln' },
+                    { text: '3 Bulan 30K', callback_data: 'daftar_3bln' }
+                ],
+                [{ text: '🔙 KEMBALI', callback_data: 'service_sewascript' }]
+            ]
+        }
+    });
+});
+bot.action('sewascript_perpanjang', async (ctx) => {
+    try {
+        await ctx.deleteMessage();
+    } catch (e) {
+        console.warn("Gagal menghapus pesan sebelumnya:", e.message);
+    }
+
+    userState[ctx.from.id] = { step: 'sewascript_perpanjang_pilih_bulan' };
+
+    await ctx.reply('📅 Pilih Durasi Perpanjangan Script:', {
+        reply_markup: {
+            inline_keyboard: [
+                [
+                    { text: '1 Bulan 10K', callback_data: 'perpanjang_1bln' },
+                    { text: '2 Bulan 20K', callback_data: 'perpanjang_2bln' },
+                    { text: '3 Bulan 30K', callback_data: 'perpanjang_3bln' }
+                ],
+                [{ text: '🔙 KEMBALI', callback_data: 'service_sewascript' }]
+            ]
+        }
+    });
+});
+bot.action(/^daftar_(\d+)bln$/, async (ctx) => {
+  try {
+    await ctx.deleteMessage();
+  } catch (e) {
+    console.warn('Gagal hapus pesan tombol:', e.message);
+  }
+
+  const bulan = parseInt(ctx.match[1]);
+  userState[ctx.from.id] = {
+    step: 'sewascript_create_input',
+    bulan
+  };
+  await ctx.reply('♂️ *Masukkan username:*', { parse_mode: 'Markdown' });
+});
+
+bot.action(/^perpanjang_(\d+)bln$/, async (ctx) => {
+  try {
+    await ctx.deleteMessage();
+  } catch (e) {
+    console.warn('Gagal hapus pesan tombol:', e.message);
+  }
+
+  const bulan = parseInt(ctx.match[1]);
+  userState[ctx.from.id] = {
+    step: 'sewascript_perpanjang_ip_manual',
+    bulan
+  };
+  await ctx.reply('🌀 *Masukkan IP yang ingin diperpanjang:*', { parse_mode: 'Markdown' });
+});
+bot.action('service_sewascript', async (ctx) => {
+  try {
+    await ctx.answerCbQuery();
+  } catch (e) {
+    logger.warn('answerCbQuery error:', e.message);
+  }
+
+  if (!ctx) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+
+  await handleServiceAction(ctx, 'sewascript');
+});
+
+bot.action('toggle_sewascript_button', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.answerCbQuery('❌ Tidak diizinkan', { show_alert: true });
+  }
+
+  db.get('SELECT show_sewa_script_button FROM ui_config WHERE id = 1', (err, row) => {
+    if (err) {
+      logger.error('❌ Gagal baca tombol sewa script:', err.message);
+      return ctx.answerCbQuery('⚠️ Gagal membaca status', { show_alert: true });
+    }
+
+    const current = row?.show_sewa_script_button === 1;
+    const newStatus = current ? 0 : 1;
+
+    db.run('UPDATE ui_config SET show_sewa_script_button = ? WHERE id = 1', [newStatus], (err) => {
+      if (err) {
+        logger.error('❌ Gagal update tombol sewa script:', err.message);
+        return ctx.answerCbQuery('⚠️ Gagal mengubah status', { show_alert: true });
+      }
+
+      const statusText = newStatus === 1 ? '✅ Diaktifkan' : '🚫 Dinonaktifkan';
+      ctx.answerCbQuery(`📜 Tombol Sewa Script ${statusText}`, { show_alert: true });
+
+    });
+  });
+});
+bot.action('service_create', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await handleServiceAction(ctx, 'create');
+});
+bot.action('trial_ssh', async (ctx) => {
+  if (!ctx || !ctx.match) { return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' }); }
+  await startSelectServer(ctx, 'trial', 'ssh');
+});
+
+bot.action('trial_vmess', async (ctx) => {
+  if (!ctx || !ctx.match) { return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' }); }
+  await startSelectServer(ctx, 'trial', 'vmess');
+});
+
+bot.action('trial_vless', async (ctx) => {
+  if (!ctx || !ctx.match) { return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' }); }
+  await startSelectServer(ctx, 'trial', 'vless');
+});
+
+bot.action('trial_trojan', async (ctx) => {
+  if (!ctx || !ctx.match) { return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' }); }
+  await startSelectServer(ctx, 'trial', 'trojan');
+});
+
+bot.action('trial_shadowsocks', async (ctx) => {
+  if (!ctx || !ctx.match) { return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' }); }
+  await startSelectServer(ctx, 'trial', 'shadowsocks');
+});
+
+bot.action('service_trial', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await handleServiceAction(ctx, 'trial');
+});
+bot.action('service_renew', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await handleServiceAction(ctx, 'renew');
+});
+
+bot.action('send_main_menu', async (ctx) => {
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id;
+
+  try {
+    await ctx.answerCbQuery();
+
+    if (lastMenus[userId]) {
+      try {
+        await ctx.telegram.deleteMessage(chatId, lastMenus[userId]);
+      } catch (e) {
+        console.warn(`⚠️ Gagal hapus menu lama dari ${userId}:`, e.message);
+      }
+    }
+
+    const sent = await sendMainMenu(ctx);
+    if (sent?.message_id) {
+      lastMenus[userId] = sent.message_id;
+    }
+
+  } catch (error) {
+    logger.error('❌ Gagal handle send_main_menu:', error.message);
+    await ctx.reply('❌ *Gagal memproses menu utama.*', { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('create_vmess', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'create', 'vmess');
+});
+
+bot.action('create_vless', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'create', 'vless');
+});
+
+bot.action('create_trojan', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'create', 'trojan');
+});
+
+bot.action('create_shadowsocks', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'create', 'shadowsocks');
+});
+
+bot.action('create_ssh', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'create', 'ssh');
+});
+
+bot.action('renew_vmess', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'renew', 'vmess');
+});
+
+bot.action('renew_vless', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'renew', 'vless');
+});
+
+bot.action('renew_trojan', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'renew', 'trojan');
+});
+
+bot.action('renew_shadowsocks', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'renew', 'shadowsocks');
+});
+
+bot.action('renew_ssh', async (ctx) => {
+  if (!ctx || !ctx.match) {
+    return ctx.reply('❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.', { parse_mode: 'Markdown' });
+  }
+  await startSelectServer(ctx, 'renew', 'ssh');
+});
+async function startSelectServer(ctx, action, type, page = 0) {
+  try {
+    logger.info(`Memulai proses ${action} untuk ${type} di halaman ${page + 1}`);
+
+    // Ambil role user dan diskon reseller
+    const userId = ctx.from.id;
+    const userRole = await new Promise((resolve, reject) => {
+        db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+            if (err) reject(err);
+            else resolve(row ? row.role : 'member');
+        });
+    });
+
+    let resellerDiscount = 0;
+    if (userRole === 'reseller') {
+        resellerDiscount = await new Promise((resolve, reject) => {
+            db.get('SELECT discount_percent FROM reseller_config WHERE id = 1', (err, row) => {
+                if (err) reject(err);
+                else resolve(row ? row.discount_percent : 0);
+            });
+        });
+    }
+    // End of reseller discount fetch
+
+    db.all('SELECT * FROM Server', [], (err, servers) => {
+      if (err) {
+        logger.error('⚠️ Error fetching servers:', err.message);
+        return ctx.reply('⚠️ *PERHATIAN!* Tidak ada server yang tersedia saat ini. Coba lagi nanti!', { parse_mode: 'Markdown' });
+      }
+
+      if (servers.length === 0) {
+        logger.info('Tidak ada server yang tersedia');
+        return ctx.reply('⚠️ *PERHATIAN!* Tidak ada server yang tersedia saat ini. Coba lagi nanti!', { parse_mode: 'Markdown' });
+      }
+
+      const serversPerPage = 6;
+      const totalPages = Math.ceil(servers.length / serversPerPage);
+      const currentPage = Math.min(Math.max(page, 0), totalPages - 1);
+      const start = currentPage * serversPerPage;
+      const end = start + serversPerPage;
+      const currentServers = servers.slice(start, end);
+
+      const keyboard = [];
+      for (let i = 0; i < currentServers.length; i += 2) {
+        const row = [];
+        const server1 = currentServers[i];
+        const server2 = currentServers[i + 1];
+        const server1Text = `${server1.nama_server}`;
+        row.push({ text: server1Text, callback_data: `${action}_username_${type}_${server1.id}` });
+
+        if (server2) {
+          const server2Text = `${server2.nama_server}`;
+          row.push({ text: server2Text, callback_data: `${action}_username_${type}_${server2.id}` });
+        }
+        keyboard.push(row);
+      }
+
+        if (action === 'trial') {
+          userState[ctx.chat.id] = { step: `execute_trial_${type}`, page: currentPage, serverId: null };
+       } else {
+          userState[ctx.chat.id] = { step: `${action}_username_${type}`, page: currentPage };
+       }
+
+      const navButtons = [];
+      if (totalPages > 1) {
+        if (currentPage > 0) {
+          navButtons.push({ text: '⬅️ Back', callback_data: `navigate_${action}_${type}_${currentPage - 1}` });
+        }
+        if (currentPage < totalPages - 1) {
+          navButtons.push({ text: '➡️ Next', callback_data: `navigate_${action}_${type}_${currentPage + 1}` });
+        }
+      }
+      if (navButtons.length > 0) {
+        keyboard.push(navButtons);
+      }
+      keyboard.push([{ text: '🔙 KEMBALI ke Menu Utama', callback_data: 'send_main_menu' }]);
+
+      const serverList = currentServers.map(server => {
+        let hargaPerHariTampilan = server.harga;
+        // Terapkan diskon untuk tampilan jika user adalah reseller
+        if (userRole === 'reseller' && resellerDiscount > 0) {
+            hargaPerHariTampilan = Math.floor(server.harga * (100 - resellerDiscount) / 100);
+        }
+
+        const hargaPer30HariTampilan = hargaPerHariTampilan * 30;
+        const isFull = server.total_create_akun >= server.batas_create_akun;
+        return `🌐 *${server.nama_server}*\n` +
+               `💰 Harga per hari: Rp${hargaPerHariTampilan}\n` + // Menggunakan harga yang disesuaikan
+               `📅 Harga per 30 hari: Rp${hargaPer30HariTampilan}\n` + // Menggunakan harga yang disesuaikan
+               `📊 Quota: ${server.quota}GB\n` +
+               `🔢 Limit IP: ${server.iplimit} IP\n` +
+               (isFull ? `⚠️ *Server Penuh*` : `👥 Total Create Akun: ${server.total_create_akun}/${server.batas_create_akun}`);
+      }).join('\n\n');
+
+      if (ctx.updateType === 'callback_query') {
+        ctx.editMessageText(`📋 *Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
+          reply_markup: {
+            inline_keyboard: keyboard
+          },
+          parse_mode: 'Markdown'
+        });
+      } else {
+        ctx.reply(`📋 *Halaman ${currentPage + 1} dari ${totalPages}):*\n\n${serverList}`, {
+          reply_markup: {
+            inline_keyboard: keyboard
+          },
+          parse_mode: 'Markdown'
+        });
+      }
+      userState[ctx.chat.id] = { step: `${action}_username_${type}`, page: currentPage };
+    });
+  } catch (error) {
+    logger.error(`❌ Error saat memulai proses ${action} untuk ${type}:`, error);
+    await ctx.reply(`❌ *GAGAL!* Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.`, { parse_mode: 'Markdown' });
+  }
+}
+
+bot.command('unlimitedtrial', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('❌ Anda tidak memiliki izin.');
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 2 || isNaN(args[1])) {
+    return ctx.reply('⚠️ Format salah. Gunakan: /unlimitedtrial <user_id>');
+  }
+
+  const targetUserId = parseInt(args[1]);
+
+  if (adminIds.includes(targetUserId)) {
+    return;
+  }
+
+  db.run('INSERT OR IGNORE INTO unlimited_trial_users (user_id) VALUES (?)', [targetUserId], function(err) {
+    if (err) {
+      logger.error('Gagal menambahkan user unlimited trial:', err.message);
+      return ctx.reply('❌ Gagal menambahkan user unlimited trial.');
+    }
+
+    ctx.reply(`✅ User \`${targetUserId}\` sekarang bisa trial tanpa batas.`, { parse_mode: 'Markdown' });
+  });
+});
+
+bot.command('listunlimitedtrial', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) return;
+
+  const page = 1;
+  showUnlimitedTrialPage(ctx, page);
+});
+
+bot.action(/^unlimitedtrial_(next|prev)_(\d+)$/, async (ctx) => {
+  const direction = ctx.match[1];
+  let page = parseInt(ctx.match[2]);
+
+  page = direction === 'next' ? page + 1 : page - 1;
+  if (page < 1) page = 1;
+
+  await ctx.answerCbQuery();
+  showUnlimitedTrialPage(ctx, page, ctx.callbackQuery.message.message_id);
+});
+
+function showUnlimitedTrialPage(ctx, page = 1, messageId = null) {
+  const limit = 10;
+  const offset = (page - 1) * limit;
+
+  db.all(`SELECT user_id FROM unlimited_trial_users ORDER BY user_id LIMIT ? OFFSET ?`, [limit, offset], (err, rows) => {
+    if (err) {
+      logger.error('❌ Gagal mengambil daftar unlimited trial:', err.message);
+      return ctx.reply('❌ Terjadi kesalahan.');
+    }
+
+    if (rows.length === 0) {
+      return ctx.reply('📭 Tidak ada data pengguna unlimited trial.');
+    }
+
+    const text = `📋 *Daftar User Unlimited Trial (Halaman ${page}):*\n\n` +
+      rows.map((row, i) => `${offset + i + 1}. \`${row.user_id}\``).join('\n');
+
+    db.get(`SELECT COUNT(*) AS total FROM unlimited_trial_users`, (err, countRow) => {
+      const total = countRow?.total || 0;
+      const totalPages = Math.ceil(total / limit);
+
+      const buttons = [];
+      if (page > 1) buttons.push({ text: '⏮️ Prev', callback_data: `unlimitedtrial_prev_${page}` });
+      if (page < totalPages) buttons.push({ text: 'Next ⏭️', callback_data: `unlimitedtrial_next_${page}` });
+
+      const replyOptions = {
+        parse_mode: 'Markdown',
+        reply_markup: {
+          inline_keyboard: buttons.length ? [buttons] : []
+        }
+      };
+
+      if (messageId) {
+        ctx.telegram.editMessageText(ctx.chat.id, messageId, null, text, replyOptions).catch(() => {});
+      } else {
+        ctx.reply(text, replyOptions);
+      }
+    });
+  });
+}
+
+bot.command('removeunlimitedtrial', (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) return;
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 2 || isNaN(args[1])) {
+    return ctx.reply('⚠️ Format salah. Gunakan: /removeunlimitedtrial <user_id>');
+  }
+
+  const targetId = parseInt(args[1]);
+
+  db.run('DELETE FROM unlimited_trial_users WHERE user_id = ?', [targetId], function (err) {
+    if (err) {
+      logger.error('❌ Gagal menghapus user dari unlimited trial:', err.message);
+      return ctx.reply('❌ Gagal menghapus user.');
+    }
+
+    if (this.changes === 0) {
+      return ctx.reply(`ℹ️ User \`${targetId}\` tidak ditemukan di daftar unlimited.`, { parse_mode: 'Markdown' });
+    }
+
+    ctx.reply(`✅ Izin trial unlimited untuk user \`${targetId}\` telah dicabut.`, { parse_mode: 'Markdown' });
+  });
+});
+
+// [UPDATE: Perintah /setreseller]
+bot.command('setreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 2) {
+    return ctx.reply('⚠️ Format salah. Gunakan: `/setreseller <user_id>`', { parse_mode: 'Markdown' });
+  }
+
+  const targetUserId = parseInt(args[1]);
+  if (isNaN(targetUserId)) {
+    return ctx.reply('⚠️ `user_id` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  if (adminIds.includes(targetUserId)) {
+      return ctx.reply('⚠️ Tidak dapat mengubah role admin lain.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE users SET role = 'reseller' WHERE user_id = ?", [targetUserId], function(err) {
+    if (err) {
+      logger.error('❌ Kesalahan saat mengatur role reseller:', err.message);
+      return ctx.reply('❌ Kesalahan saat mengatur role reseller.', { parse_mode: 'Markdown' });
+    }
+    if (this.changes === 0) {
+      return ctx.reply('⚠️ Pengguna tidak ditemukan atau sudah menjadi reseller.', { parse_mode: 'Markdown' });
+    }
+    ctx.reply(`✅ Pengguna \`${targetUserId}\` berhasil diatur sebagai *Reseller*.`, { parse_mode: 'Markdown' });
+    bot.telegram.sendMessage(targetUserId, '🎉 Selamat! Akun Anda telah diupgrade menjadi *Reseller*! Nikmati harga khusus dan fitur reseller.', { parse_mode: 'Markdown' }).catch(e => logger.warn(`Gagal kirim notif reseller ke ${targetUserId}: ${e.message}`));
+  });
+});
+
+// [UPDATE: Perintah /unsetreseller]
+bot.command('unsetreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 2) {
+    return ctx.reply('⚠️ Format salah. Gunakan: `/unsetreseller <user_id>`', { parse_mode: 'Markdown' });
+  }
+
+  const targetUserId = parseInt(args[1]);
+  if (isNaN(targetUserId)) {
+    return ctx.reply('⚠️ `user_id` harus berupa angka.', { parse_mode: 'Markdown' });
+  }
+
+  if (adminIds.includes(targetUserId)) {
+      return ctx.reply('⚠️ Tidak dapat mengubah role admin lain.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE users SET role = 'member' WHERE user_id = ?", [targetUserId], function(err) {
+    if (err) {
+      logger.error('❌ Kesalahan saat mengatur role member:', err.message);
+      return ctx.reply('❌ Kesalahan saat mengatur role member.', { parse_mode: 'Markdown' });
+    }
+    if (this.changes === 0) {
+      return ctx.reply('⚠️ Pengguna tidak ditemukan atau sudah menjadi member.', { parse_mode: 'Markdown' });
+    }
+    ctx.reply(`✅ Pengguna \`${targetUserId}\` berhasil diubah menjadi *Member Biasa*.`, { parse_mode: 'Markdown' });
+    bot.telegram.sendMessage(targetUserId, '😔 Informasi: Role akun Anda telah diubah menjadi *Member Biasa*. Jika Anda merasa ini adalah kesalahan, silakan hubungi admin.', { parse_mode: 'Markdown' }).catch(e => logger.warn(`Gagal kirim notif member ke ${targetUserId}: ${e.message}`));
+  });
+});
+
+// [UPDATE: Perintah /listreseller]
+bot.action('listreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    await ctx.answerCbQuery('❌ Anda tidak memiliki izin untuk melihat daftar reseller.', { show_alert: true });
+    return;
+  }
+  await ctx.answerCbQuery();
+  await sendPaginatedResellerList(ctx, 1);
+});
+
+bot.action(/^listreseller_(next|prev)_(\d+)$/, async (ctx) => {
+  const direction = ctx.match[1];
+  let page = parseInt(ctx.match[2]);
+
+  page = direction === 'next' ? page + 1 : page - 1;
+  if (page < 1) page = 1;
+
+  await ctx.answerCbQuery();
+  await sendPaginatedResellerList(ctx, page, ctx.callbackQuery.message.message_id);
+});
+
+// COMMAND: /listreseller
+// ✅ Command utama: hanya 1 versi
+bot.command('listreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('❌ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  logger.info(`[LISTRESELLER] Admin ${userId} meminta daftar reseller halaman 1`);
+  await sendPaginatedResellerList(ctx, 1);
+});
+
+// ✅ Navigasi tombol next/prev
+bot.action(/^listreseller_(next|prev)_(\d+)$/, async (ctx) => {
+  const direction = ctx.match[1];
+  let page = parseInt(ctx.match[2]);
+
+  page = direction === 'next' ? page + 1 : page - 1;
+  if (page < 1) page = 1;
+
+  await ctx.answerCbQuery();
+  logger.info(`[LISTRESELLER] Navigasi ke halaman ${page}`);
+  await sendPaginatedResellerList(ctx, page, ctx.callbackQuery.message.message_id);
+});
+
+async function sendPaginatedResellerList(ctx, page = 1, messageId = null) {
+  const limit = 10;
+  const offset = (page - 1) * limit;
+
+  try {
+    logger.info(`[LISTRESELLER] Query halaman ${page} (offset ${offset})`);
+
+    const resellers = await new Promise((resolve, reject) => {
+      db.all(
+        `SELECT user_id, saldo FROM users WHERE role = 'reseller' ORDER BY user_id LIMIT ? OFFSET ?`,
+        [limit, offset],
+        (err, rows) => (err ? reject(err) : resolve(rows))
+      );
+    });
+
+    const totalResellers = await new Promise((resolve, reject) => {
+      db.get(
+        `SELECT COUNT(*) AS count FROM users WHERE role = 'reseller'`,
+        (err, row) => (err ? reject(err) : resolve(row.count))
+      );
+    });
+
+    if (resellers.length === 0) {
+      const msg = '📭 Belum ada reseller terdaftar.';
+      return messageId
+        ? ctx.telegram.editMessageText(ctx.chat.id, messageId, null, msg)
+        : ctx.reply(msg);
+    }
+
+    let message = `👥 *Daftar Reseller (Halaman ${page}):*\n\n`;
+    for (const reseller of resellers) {
+      message += `🆔 \`${reseller.user_id}\`\n💰 Saldo: Rp${(reseller.saldo || 0).toLocaleString('id-ID')}\n\n`;
+    }
+
+    const totalPages = Math.ceil(totalResellers / limit);
+    const navButtons = [];
+
+    // Tampilkan tombol hanya kalau ada halaman berikut/previous
+    if (page > 1) {
+      navButtons.push({ text: '⬅️ Prev', callback_data: `listreseller_prev_${page}` });
+    }
+    if (page < totalPages) {
+      navButtons.push({ text: 'Next ➡️', callback_data: `listreseller_next_${page}` });
+    }
+
+    const replyOptions = {
+      parse_mode: 'Markdown',
+      reply_markup: {
+        inline_keyboard: navButtons.length > 0 ? [navButtons] : []
+      }
+    };
+
+    if (messageId) {
+      try {
+        await ctx.telegram.editMessageText(ctx.chat.id, messageId, null, message, replyOptions);
+      } catch (e) {
+        logger.error('❌ Gagal editMessageText:', e.stack || e.message || e);
+        await ctx.reply(message, replyOptions);
+      }
+    } else {
+      await ctx.reply(message, replyOptions);
+    }
+
+  } catch (err) {
+    logger.error('❌ Gagal menampilkan daftar reseller:', err.stack || err.message || err);
+    await ctx.reply('❌ Terjadi kesalahan saat mengambil daftar reseller.');
+  }
+}
+
+// [UPDATE: Perintah /setdiskonreseller]
+bot.command('setdiskonreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  const args = ctx.message.text.split(' ');
+  if (args.length !== 2 || isNaN(args[1]) || parseInt(args[1]) < 0 || parseInt(args[1]) > 100) {
+    return ctx.reply('⚠️ Format salah. Gunakan: `/setdiskonreseller <persen>` (angka antara 0-100)', { parse_mode: 'Markdown' });
+  }
+
+  const discountPercent = parseInt(args[1]);
+
+  db.run("UPDATE reseller_config SET discount_percent = ? WHERE id = 1", [discountPercent], function(err) {
+    if (err) {
+      logger.error('❌ Kesalahan saat mengatur diskon reseller:', err.message);
+      return ctx.reply('❌ Kesalahan saat mengatur diskon reseller.', { parse_mode: 'Markdown' });
+    }
+    ctx.reply(`✅ Diskon reseller berhasil diatur menjadi *${discountPercent}%*.`, { parse_mode: 'Markdown' });
+  });
+});
+
+// [UPDATE: Perintah /resetdiskonreseller]
+bot.command('resetdiskonreseller', async (ctx) => {
+  const userId = ctx.from.id;
+  if (!adminIds.includes(userId)) {
+    return ctx.reply('⚠️ Anda tidak memiliki izin untuk menggunakan perintah ini.', { parse_mode: 'Markdown' });
+  }
+
+  db.run("UPDATE reseller_config SET discount_percent = 0 WHERE id = 1", function(err) {
+    if (err) {
+      logger.error('❌ Kesalahan saat mereset diskon reseller:', err.message);
+      return ctx.reply('❌ Kesalahan saat mereset diskon reseller.', { parse_mode: 'Markdown' });
+    }
+    ctx.reply('✅ Diskon reseller berhasil direset menjadi *0%*.', { parse_mode: 'Markdown' });
+  });
+});
+
+
+bot.action(/navigate_(\w+)_(\w+)_(\d+)/, async (ctx) => {
+  const [, action, type, page] = ctx.match;
+  await startSelectServer(ctx, action, type, parseInt(page, 10));
+});
+
+bot.action(/^(create|renew|trial)_username_(vmess|vless|trojan|shadowsocks|ssh)_(.+)$/, async (ctx) => {
+  await ctx.telegram.answerCbQuery(ctx.callbackQuery.id);
+
+  const match = ctx.match || [];
+  const action = match[1];
+  const type = match[2];
+  const serverId = match[3];
+
+  if (!action || !type || !serverId) {
+    return ctx.reply('❌ *Perintah tidak dikenali.*', { parse_mode: 'Markdown' });
+  }
+
+  if (action === 'trial') {
+  const userId = ctx.from.id;
+  const today = new Date().toISOString().split('T')[0];
+
+  if (userId == ADMIN) {
+    return await handleTrial(ctx, type, serverId);
+  }
+
+  db.get('SELECT batas_create_akun, total_create_akun FROM Server WHERE id = ?', [serverId], (err, server) => {
+    if (err) {
+      logger.error('❌ Error fetching server details:', err.message);
+      return ctx.reply('❌ *Terjadi kesalahan saat mengambil detail server.*', { parse_mode: 'Markdown' });
+    }
+
+    if (!server) {
+      return ctx.reply('❌ *Server tidak ditemukan.*', { parse_mode: 'Markdown' });
+    }
+
+    const { batas_create_akun, total_create_akun } = server;
+
+    if (total_create_akun >= batas_create_akun) {
+      return ctx.reply('❌ *Server penuh. Trial tidak dapat dibuat di server ini.*', { parse_mode: 'Markdown' });
+    }
+
+    db.get('SELECT count FROM TrialLog WHERE user_id = ? AND date = ?', [userId, today], async (err, row) => {
+      if (err) {
+        logger.error('❌ Error saat cek log trial:', err);
+        return ctx.reply('❌ *Terjadi kesalahan saat memproses trial. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+      }
+
+      const trialCount = row?.count || 0;
+
+      db.get('SELECT * FROM unlimited_trial_users WHERE user_id = ?', [userId], async (err, result) => {
+        if (err) {
+          logger.error('❌ Error cek unlimited trial:', err.message);
+          return ctx.reply('❌ Terjadi kesalahan saat memeriksa hak trial.', { parse_mode: 'Markdown' });
+        }
+
+        const isUnlimited = result != null;
+
+        if (!isUnlimited && trialCount >= 2) {
+          return ctx.reply('⚠️ *Kamu sudah trial hari ini, Gass Order* 😖', { parse_mode: 'Markdown' });
+        }
+
+        await handleTrial(ctx, type, serverId);
+
+        if (!isUnlimited) {
+          const newCount = trialCount + 1;
+          db.run(`
+            INSERT INTO TrialLog (user_id, date, count)
+            VALUES (?, ?, ?)
+            ON CONFLICT(user_id, date) DO UPDATE SET count = ?
+          `, [userId, today, newCount, newCount]);
+        }
+      });
+    });
+  });
+
+  } else {
+
+    userState[ctx.chat.id] = { step: `username_${action}_${type}`, serverId, type, action };
+
+    db.get('SELECT batas_create_akun, total_create_akun FROM Server WHERE id = ?', [serverId], async (err, server) => {
+      if (err) {
+        logger.error('⚠️ Error fetching server details:', err.message);
+        return ctx.reply('❌ *Terjadi kesalahan saat mengambil detail server.*', { parse_mode: 'Markdown' });
+      }
+
+      if (!server) {
+        return ctx.reply('❌ *Server tidak ditemukan.*', { parse_mode: 'Markdown' });
+      }
+
+      const { batas_create_akun, total_create_akun } = server;
+
+      if (total_create_akun >= batas_create_akun) {
+        return ctx.reply('❌ *Server penuh. Tidak dapat membuat akun baru di server ini.*', { parse_mode: 'Markdown' });
+      }
+
+      await ctx.reply('👤 *Masukkan username:*', { parse_mode: 'Markdown' });
+    });
+  }
+});
+async function handleTrial(ctx, type, serverId) {
+  try {
+    const username = `trial${Math.floor(Math.random() * 10000)}`;
+    const password = Math.random().toString(36).slice(-6);
+    const exp = 1;
+    const quota = 1;
+    const iplimit = 1;
+
+    let msg;
+    switch (type) {
+      case 'vmess':
+        msg = await trialvmess(username, exp, quota, iplimit, serverId);
+        break;
+      case 'vless':
+        msg = await trialvless(username, exp, quota, iplimit, serverId);
+        break;
+      case 'trojan':
+        msg = await trialtrojan(username, exp, quota, iplimit, serverId);
+        break;
+      case 'shadowsocks':
+        msg = await trialshadowsocks(username, exp, quota, iplimit, serverId);
+        break;
+      case 'ssh':
+        msg = await trialssh(username, password, exp, iplimit, serverId);
+        break;
+      default:
+        msg = '❌ *Tipe layanan tidak dikenali.*';
+    }
+
+    if (msg) {
+      await ctx.reply(msg, { parse_mode: 'Markdown' });
+    }
+
+  } catch (error) {
+    logger.error(`❌ Error trial ${type}:`, error);
+    await ctx.reply('❌ *Gagal membuat akun trial. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+  } finally {
+    delete userState[ctx.chat.id];
+  }
+}
+function kaburMark(text) {
+  return text.replace(/[_*[\]()~`>#+\-=|{}.!\\]/g, '\\$&');
+}
+
+async function showLoading(ctx) {
+  const waitMsg = await ctx.reply("⏳ Mohon menunggu.");
+
+  const dots = [".", "..", "...", " "];
+  let i = 0;
+
+  const intervalId = setInterval(async () => {
+    i = (i + 1) % dots.length;
+    try {
+      await ctx.telegram.editMessageText(
+        ctx.chat.id,
+        waitMsg.message_id,
+        null,
+        `⏳ Mohon menunggu${dots[i]}`
+      );
+    } catch (e) {
+      clearInterval(intervalId);
+    }
+  }, 1000);
+
+  return { messageId: waitMsg.message_id, intervalId: intervalId };
+}
+
+bot.on('text', async (ctx, next) => {
+    const userId = ctx.from.id;
+    const teks = ctx.message?.text?.trim();
+    const state = userState[userId];
+
+    if (typeof teks !== 'string' || teks.length === 0) {
+        return;
+    }
+
+    if (teks.startsWith('/')) {
+        return next();
+    }
+
+    console.log(`📩 Input dari ${userId}: ${ctx.message.text}`);
+    logger.info(`📩 Input teks dari ${userId}: ${ctx.message.text}`);
+
+    if (global.depositState && global.depositState[userId]?.action === 'request_amount_saweria') {
+        const input = ctx.message.text.trim();
+        const nominal = parseInt(input.replace(/[^\d]/g, ''), 10);
+
+        if (isNaN(nominal) || nominal < 5000) {
+            return ctx.reply('❌ *Nominal tidak valid. Minimal Rp5000.*', { parse_mode: 'Markdown' });
+        }
+
+        delete global.depositState[userId];
+        await ctx.reply(`⏳ Memproses QRIS Saweria untuk Rp${nominal}...`);
+        await processDepositSaweria(ctx, nominal);
+        return;
+    }
+
+    if (state && state.step === 'sewascript_create_input') {
+        const username = ctx.message.text.trim();
+
+        if (!/^[a-zA-Z0-9]{3,20}$/.test(username)) {
+            return ctx.reply('❌ *Username tidak valid. Harus 3-20 karakter alfanumerik.*', { parse_mode: 'Markdown' });
+        }
+
+        userState[userId] = {
+            step: 'sewascript_create_input_ip',
+            username,
+            bulan: state.bulan
+        };
+
+        await ctx.reply('🏷️ *Masukkan IP Address:*', { parse_mode: 'Markdown' });
+        return;
+    }
+
+    if (state && state.step === 'sewascript_create_input_ip') {
+        const ip = ctx.message.text.trim();
+        const { username, bulan } = state;
+
+        if (!/^\d{1,3}(\.\d{1,3}){3}$/.test(ip)) {
+            return ctx.reply('❌ *Format IP tidak valid.* Masukkan IP seperti 123.45.67.89', { parse_mode: 'Markdown' });
+        }
+
+        const priceharga = 10000 * bulan;
+
+        db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], async (err, user) => {
+            if (err || !user) {
+                logger.error(`Error mengambil saldo user ${userId} untuk sewa script:`, err?.message);
+                return ctx.reply('❌ Terjadi kesalahan mengambil saldo pengguna.', { parse_mode: 'Markdown' });
+            }
+
+            if (user.saldo < priceharga) {
+                logger.warn(`Saldo user ${userId} tidak cukup (Rp${user.saldo}) untuk sewa script Rp${priceharga}`);
+                return ctx.reply('❌ *Saldo Anda tidak cukup.*', { parse_mode: 'Markdown' });
+            }
+
+            const { exec } = require('child_process');
+            const cmd = `/usr/local/sbin/xwanregis ${username} ${bulan} ${ip}`;
+            logger.info(`Menjalankan perintah sewa script untuk user ${userId}: ${cmd}`);
+            const loadingState = await showLoading(ctx);
+            const waitMsgId = loadingState.messageId;
+            const intervalId = loadingState.intervalId;
+
+            let outputMessage;
+            let successScriptAction = false;
+
+            try {
+                const { error, stdout, stderr } = await new Promise((resolve) => {
+                    exec(cmd, (error, stdout, stderr) => {
+                        resolve({ error, stdout, stderr });
+                    });
+                });
+
+                if (error) {
+                    logger.error(`Error saat eksekusi literegis untuk user ${userId}:`, error.message);
+                    outputMessage = `❌ Gagal daftar script:\n\n${stderr || error.message}`;
+                } else if (/gagal|error/i.test(stdout)) {
+                    logger.warn(`Literegis mengembalikan pesan gagal untuk user ${userId}:\n${stdout}`);
+                    outputMessage = `❌ Gagal daftar script:\n\n${stdout}`;
+                } else {
+                    successScriptAction = true;
+                    outputMessage = `✅ Pendaftaran IP Berhasil:\n${stdout}`;
+                    logger.info(`✅ Literegis berhasil untuk user ${userId}`);
+                }
+            } catch (e) {
+                logger.error(`Exception saat menjalankan literegis untuk user ${userId}:`, e.message);
+                outputMessage = `❌ Terjadi kesalahan internal saat memproses pendaftaran script. Silakan coba lagi nanti.`;
+            } finally {
+                clearInterval(intervalId);
+                try {
+                    await ctx.telegram.deleteMessage(ctx.chat.id, waitMsgId);
+                } catch (e) {
+                    logger.warn(`Gagal menghapus pesan loading untuk user ${userId}: ${e.message}`);
+                }
+            }
+
+            try {
+                await ctx.reply(outputMessage, { parse_mode: 'HTML' });
+            } catch (e) {
+                logger.error(`Gagal mengirim pesan hasil sewa script untuk user ${userId}:`, e.message);
+            }
+
+            if (successScriptAction) {
+                db.run('UPDATE users SET saldo = saldo - ? WHERE user_id = ?', [priceharga, userId], (errUpdateSaldo) => {
+                    if (errUpdateSaldo) {
+                        logger.error('⚠️ Kesalahan saat mengurangi saldo pengguna untuk sewa script (setelah sukses):', errUpdateSaldo.message);
+                        bot.telegram.sendMessage(ADMIN, `🚨 *PERHATIAN: SALDO GAGAL DIKURANGI SETELAH SEWA SCRIPT SUKSES!*
+User ID: \`${userId}\`
+Username TG: \`@${ctx.from.username || 'N/A'}\`
+Jenis: Sewa Script
+Jumlah: Rp${priceharga.toLocaleString('id-ID')}
+Pesan Error: ${errUpdateSaldo.message}
+*SCRIPT MUNGKIN SUDAH TERDAFTAR TAPI SALDO BELUM TERPOTONG!*`, { parse_mode: 'Markdown' }).catch(e => logger.error("Gagal kirim notif darurat:", e.message));
+                    } else {
+                        logger.info(`✅ Saldo Rp${priceharga} berhasil dikurangi untuk user ${userId} (Sewa Script berhasil)`);
+                    }
+                });
+            } else {
+                logger.info(`⚠️ Saldo user ${userId} TIDAK dikurangi karena sewa script gagal.`);
+            }
+        });
+
+        delete userState[userId];
+        return;
+    }
+
+    if (state && state.step === 'sewascript_perpanjang_ip_manual') {
+        const ip = ctx.message.text.trim();
+        const bulan = state.bulan;
+
+        if (!/^\d{1,3}(\.\d{1,3}){3}$/.test(ip)) {
+            return ctx.reply('❌ *Format IP tidak valid.* Masukkan IP seperti 123.45.67.89', { parse_mode: 'Markdown' });
+        }
+
+        const priceharga = 10000 * bulan;
+
+        db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], async (err, user) => {
+            if (err || !user) {
+                logger.error(`Error mengambil saldo user ${userId} untuk perpanjang script:`, err?.message);
+                return ctx.reply('❌ Terjadi kesalahan mengambil saldo pengguna.', { parse_mode: 'Markdown' });
+            }
+
+            if (user.saldo < priceharga) {
+                logger.warn(`Saldo user ${userId} tidak cukup (Rp${user.saldo}) untuk perpanjang script Rp${priceharga}`);
+                return ctx.reply('❌ *Saldo Anda tidak cukup untuk memperpanjang.*', { parse_mode: 'Markdown' });
+            }
+
+            const { exec } = require('child_process');
+            const jumlahHari = bulan * 30;
+            const cmd = `/usr/local/sbin/xwanextend ${ip} ${jumlahHari}`;
+            logger.info(`Menjalankan perintah perpanjang script untuk user ${userId}: ${cmd}`);
+            const loadingState = await showLoading(ctx);
+            const waitMsgId = loadingState.messageId;
+            const intervalId = loadingState.intervalId;
+
+            let outputMessage;
+            let successScriptAction = false;
+
+            try {
+                const { error, stdout, stderr } = await new Promise((resolve) => {
+                    exec(cmd, (error, stdout, stderr) => {
+                        resolve({ error, stdout, stderr });
+                    });
+                });
+
+                if (error) {
+                    logger.error(`Error saat eksekusi liteextend untuk user ${userId}:`, error.message);
+                    outputMessage = `❌ Gagal memperpanjang script:\n\n${stderr || error.message}`;
+                } else if (/gagal|error/i.test(stdout)) {
+                    logger.warn(`Liteextend mengembalikan pesan gagal untuk user ${userId}:\n${stdout}`);
+                    outputMessage = `❌ Gagal memperpanjang script:\n\n${stdout}`;
+                } else {
+                    successScriptAction = true;
+                    outputMessage = `✅ Perpanjangan IP Berhasil:\n${stdout}`;
+                    logger.info(`✅ Liteextend berhasil untuk user ${userId}`);
+                }
+            } catch (e) {
+                logger.error(`Exception saat menjalankan liteextend untuk user ${userId}:`, e.message);
+                outputMessage = `❌ Terjadi kesalahan internal saat memproses perpanjangan script. Silakan coba lagi nanti.`;
+            } finally {
+                clearInterval(intervalId);
+                try {
+                    await ctx.telegram.deleteMessage(ctx.chat.id, waitMsgId);
+                } catch (e) {
+                    logger.warn(`Gagal menghapus pesan loading untuk user ${userId}: ${e.message}`);
+                }
+            }
+
+            try {
+                await ctx.reply(outputMessage, { parse_mode: 'HTML' });
+            } catch (e) {
+                logger.error(`Gagal mengirim pesan hasil perpanjang script untuk user ${userId}:`, e.message);
+            }
+
+            if (successScriptAction) {
+                db.run('UPDATE users SET saldo = saldo - ? WHERE user_id = ?', [priceharga, userId], (errUpdateSaldo) => {
+                    if (errUpdateSaldo) {
+                        logger.error('⚠️ Kesalahan saat mengurangi saldo pengguna untuk perpanjang script (setelah sukses):', errUpdateSaldo.message);
+                        bot.telegram.sendMessage(ADMIN, `🚨 *PERHATIAN: SALDO GAGAL DIKURANGI SETELAH PERPANJANG SCRIPT SUKSES!*
+User ID: \`${userId}\`
+Username TG: \`@${ctx.from.username || 'N/A'}\`
+Jenis: Perpanjang Script
+Jumlah: Rp${priceharga.toLocaleString('id-ID')}
+Pesan Error: ${errUpdateSaldo.message}
+*SCRIPT MUNGKIN SUDAH DIPERPANJANG TAPI SALDO BELUM TERPOTONG!*`, { parse_mode: 'Markdown' }).catch(e => logger.error("Gagal kirim notif darurat:", e.message));
+                    } else {
+                        logger.info(`✅ Saldo Rp${priceharga} berhasil dikurangi untuk user ${userId} (Perpanjang Script berhasil)`);
+                    }
+                });
+            } else {
+                logger.info(`⚠️ Saldo user ${userId} TIDAK dikurangi karena perpanjang script gagal.`);
+            }
+        });
+
+        delete userState[userId];
+        return;
+    }
+
+    if (state && state.step === 'atur_bonus_input') {
+        const [status, minStr, persenStr] = ctx.message.text.trim().split(/\s+/);
+        const min = parseInt(minStr, 10);
+        const persen = parseInt(persenStr, 10);
+
+        if (!status || isNaN(min) || isNaN(persen)) {
+            return ctx.reply('⚠️ Format salah. Gunakan: `on|off <minimal_topup> <persen_bonus>`\nContoh: `on 10000 25`', { parse_mode: 'Markdown' });
+        }
+
+        const enabled = status.toLowerCase() === 'on' ? 1 : 0;
+        db.run('UPDATE bonus_config SET enabled = ?, min_topup = ?, bonus_percent = ? WHERE id = 1',
+            [enabled, min, persen],
+            (err) => {
+                if (err) {
+                    logger.error('❌ Gagal update bonus config:', err.message);
+                    return ctx.reply('❌ Gagal menyimpan pengaturan bonus.');
+                }
+                ctx.reply(`✅ Bonus Top Up *${enabled ? 'Aktif' : 'Nonaktif'}*
+📌 Minimal Top Up: Rp${min}
+🎁 Bonus: ${persen}%`, {
+                    parse_mode: 'Markdown'
+                });
+                delete userState[userId];
+            }
+        );
+        return;
+    }
+
+    if (state && state.step.startsWith('username_')) {
+        state.username = ctx.message.text.trim();
+        if (!state.username) {
+            return ctx.reply('❌ *Username tidak valid. Masukkan username yang valid.*', { parse_mode: 'Markdown' });
+        }
+        if (state.username.length < 3 || state.username.length > 20) {
+            return ctx.reply('❌ *Username harus terdiri dari 3 hingga 20 karakter.*', { parse_mode: 'Markdown' });
+        }
+        if (/[^a-zA-Z0-9]/.test(state.username)) {
+            return ctx.reply('❌ *Username tidak boleh mengandung karakter khusus atau spasi.*', { parse_mode: 'Markdown' });
+        }
+        const { username, serverId, type, action } = state;
+        if (action === 'create') {
+            if (type === 'ssh') {
+                userState[userId].step = `password_${state.action}_${state.type}`;
+                await ctx.reply('🔑 *Masukkan password:*', { parse_mode: 'Markdown' });
+            } else {
+                userState[userId].step = `exp_${state.action}_${state.type}`;
+                await ctx.reply('⏳ *Masukkan masa aktif (hari):*', { parse_mode: 'Markdown' });
+            }
+        } else if (action === 'renew') {
+            userState[userId].step = `exp_${state.action}_${state.type}`;
+            await ctx.reply('⏳ *Masukkan masa aktif (hari):*', { parse_mode: 'Markdown' });
+        }
+        return;
+    }
+
+    if (state && state.step.startsWith('password_')) {
+        state.password = ctx.message.text.trim();
+        if (!state.password) {
+            return ctx.reply('❌ *Password tidak valid. Masukkan password yang valid.*', { parse_mode: 'Markdown' });
+        }
+        if (state.password.length < 1) {
+            return ctx.reply('❌ *Password harus terdiri dari minimal 1 karakter.*', { parse_mode: 'Markdown' });
+        }
+        if (/[^a-zA-Z0-9]/.test(state.password)) {
+            return ctx.reply('❌ *Password tidak boleh mengandung karakter khusus atau spasi.*', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = `exp_${state.action}_${state.type}`;
+        await ctx.reply('⏳ *Masukkan masa aktif (hari):*', { parse_mode: 'Markdown' });
+        return;
+    }
+
+    if (state && state.step.startsWith('exp_')) {
+        const expInput = ctx.message.text.trim();
+        if (!/^\d+$/.test(expInput)) {
+            return ctx.reply('❌ *Masa aktif tidak valid. Masukkan angka yang valid.*', { parse_mode: 'Markdown' });
+        }
+        const exp = parseInt(expInput, 10);
+        if (isNaN(exp) || exp <= 0) {
+            return ctx.reply('❌ *Masa aktif tidak valid. Masukkan angka yang valid.*', { parse_mode: 'Markdown' });
+        }
+        if (exp > 365) {
+            return ctx.reply('❌ *Masa aktif tidak boleh lebih dari 365 hari.*', { parse_mode: 'Markdown' });
+        }
+        state.exp = exp;
+
+        db.get('SELECT quota, iplimit, harga, nama_server, domain FROM Server WHERE id = ?', [state.serverId], async (err, server) => {
+            if (err) {
+                logger.error('⚠️ Error fetching server details:', err.message);
+                return ctx.reply('❌ *Terjadi kesalahan saat mengambil detail server.*', { parse_mode: 'Markdown' });
+            }
+
+            if (!server) {
+                return ctx.reply('❌ *Server tidak ditemukan.*', { parse_mode: 'Markdown' });
+            }
+
+            const harga = server.harga;
+            let totalHarga = harga * state.exp;
+
+            const userRole = await new Promise((resolve) => {
+                db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+                    resolve(row ? row.role : 'member');
+                });
+            });
+
+            let resellerDiscount = 0;
+            if (userRole === 'reseller') {
+                resellerDiscount = await new Promise((resolve) => {
+                    db.get('SELECT discount_percent FROM reseller_config WHERE id = 1', (err, row) => {
+                        if (err) reject(err);
+                        else resolve(row ? row.discount_percent : 0);
+                    });
+                });
+                totalHarga = Math.floor(totalHarga * (100 - resellerDiscount) / 100);
+            }
+
+            db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], async (err, user) => {
+                if (err) {
+                    logger.error('⚠️ Kesalahan saat mengambil saldo pengguna:', err.message);
+                    return ctx.reply('❌ *Terjadi kesalahan saat mengambil saldo pengguna.*', { parse_mode: 'Markdown' });
+                }
+
+                if (!user) {
+                    return ctx.reply('❌ *Pengguna tidak ditemukan.*', { parse_mode: 'Markdown' });
+                }
+
+                const saldo = user.saldo;
+
+                if (saldo < totalHarga) {
+                    delete userState[userId];
+                    return ctx.reply(`❌ *Saldo Anda tidak mencukupi untuk melakukan transaksi ini. Saldo Anda: Rp${saldo.toLocaleString('id-ID')}, Harga: Rp${totalHarga.toLocaleString('id-ID')}*`, { parse_mode: 'Markdown' });
+                }
+
+                let msg;
+                let successAction = false;
+                let actionTypeLabel = '';
+                const loadingState = await showLoading(ctx);
+                const waitMsgId = loadingState.messageId;
+                const intervalId = loadingState.intervalId;
+
+                try {
+                    logger.info(`Mencoba ${state.action} ${state.type} untuk user ${userId} di server ${server.nama_server}`);
+                    if (state.action === 'create') {
+                        actionTypeLabel = 'Buat Akun';
+                        switch (state.type) {
+                            case 'vmess': msg = await createvmess(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'vless': msg = await createvless(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'trojan': msg = await createtrojan(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'shadowsocks': msg = await createshadowsocks(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'ssh': msg = await createssh(state.username, state.password, exp, server.iplimit, state.serverId); break;
+                            default: msg = '❌ *Tipe layanan tidak dikenali.*'; break;
+                        }
+                    } else if (state.action === 'renew') {
+                        actionTypeLabel = 'Perpanjang Akun';
+                        switch (state.type) {
+                            case 'vmess': msg = await renewvmess(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'vless': msg = await renewvless(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'trojan': msg = await renewtrojan(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'shadowsocks': msg = await renewshadowsocks(state.username, exp, server.quota, server.iplimit, state.serverId); break;
+                            case 'ssh': msg = await renewssh(state.username, exp, server.iplimit, state.serverId); break;
+                            default: msg = '❌ *Tipe layanan tidak dikenali.*'; break;
+                        }
+                    }
+
+                    if (msg && typeof msg === 'string' && !msg.toLowerCase().includes('gagal') && !msg.toLowerCase().includes('error')) {
+                        successAction = true;
+                        logger.info(`✅ Aksi ${actionTypeLabel} ${state.type} berhasil untuk user ${userId}.`);
+                    } else {
+                        logger.warn(`Aksi ${actionTypeLabel} ${state.type} mengembalikan pesan gagal/error untuk user ${userId}: ${msg}`);
+                        msg = msg || `❌ Gagal ${actionTypeLabel} akun. Mohon coba lagi atau hubungi admin.`;
+                    }
+                } catch (e) {
+                    logger.error(`Error saat memanggil fungsi ${actionTypeLabel} akun ${state.type} untuk user ${userId}:`, e.message);
+                    msg = '❌ Terjadi kesalahan internal saat memproses akun Anda. Mohon coba lagi nanti.';
+                    successAction = false;
+                } finally {
+                    clearInterval(intervalId);
+                    try {
+                        await ctx.telegram.deleteMessage(ctx.chat.id, waitMsgId);
+                    } catch (e) {
+                        logger.warn(`Gagal menghapus pesan loading untuk user ${userId}: ${e.message}`);
+                    }
+                }
+
+                if (!successAction) {
+                    delete userState[userId];
+                    return ctx.reply(msg, { parse_mode: 'Markdown' });
+                }
+
+                db.run('UPDATE users SET saldo = saldo - ? WHERE user_id = ?', [totalHarga, userId], (err) => {
+                    if (err) {
+                        logger.error('⚠️ Kesalahan saat mengurangi saldo pengguna (setelah sukses API):', err.message);
+                        bot.telegram.sendMessage(ADMIN, `🚨 *PERHATIAN: SALDO GAGAL DIKURANGI!*
+User ID: \`${userId}\`
+Username TG: \`@${ctx.from.username || 'N/A'}\`
+Produk: ${state.type.toUpperCase()}
+Jenis: ${actionTypeLabel}
+Jumlah: Rp${totalHarga.toLocaleString('id-ID')}
+Pesan Error: ${err.message}
+*AKUN MUNGKIN SUDAH TERBUAT TAPI SALDO BELUM TERPOTONG!*`, { parse_mode: 'Markdown' }).catch(e => logger.error("Gagal kirim notif darurat:", e.message));
+
+                    } else {
+                        logger.info(`✅ Saldo Rp${totalHarga} berhasil dikurangi untuk user ${userId} (${actionTypeLabel} ${state.type})`);
+                    }
+                });
+
+                db.run('UPDATE Server SET total_create_akun = total_create_akun + 1 WHERE id = ?', [state.serverId], (err) => {
+                    if (err) {
+                        logger.error('⚠️ Kesalahan saat menambahkan total_create_akun (setelah sukses API):', err.message);
+                    }
+                });
+
+                const userRoleForLog = await new Promise((resolve) => {
+                    db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+                        resolve(row ? row.role : 'member');
+                    });
+                });
+
+                db.run(`INSERT INTO log_penjualan (
+                    user_id,
+                    username,
+                    nama_server,
+                    tipe_akun,
+                    harga,
+                    masa_aktif_hari,
+                    waktu_transaksi,
+                    action_type,
+                    user_role
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`, [
+                    ctx.from.id,
+                    ctx.from.username || '',
+                    server.nama_server || 'Unknown',
+                    state.type,
+                    totalHarga,
+                    state.exp,
+                    new Date().toISOString(),
+                    state.action,
+                    userRoleForLog
+                ], (err) => {
+                    if (err) {
+                        logger.warn('⚠️ Gagal mencatat log penjualan (setelah sukses API):', err.message);
+                    } else {
+                        logger.info(`✅ Log penjualan dicatat: ${ctx.from.id} - ${state.type} - ${state.action} - Rp${totalHarga} - Role: ${userRoleForLog}`);
+                    }
+                });
+
+                await afterAccountTransaction({
+                    userId: userId,
+                    username: ctx.from.username,
+                    produk: state.type.toUpperCase(),
+                    serverId: state.serverId,
+                    jenis: actionTypeLabel,
+                    durasi: state.exp,
+                    accountUsername: state.username
+                });
+
+                await ctx.reply(msg, { parse_mode: 'Markdown' });
+                delete userState[userId];
+            });
+        });
+        return;
+    }
+
+    if (state && state.step === 'addserver') {
+        const domain = ctx.message.text.trim();
+        if (!domain) {
+            return ctx.reply('⚠️ *Domain tidak boleh kosong.* Silahkan masukkan domain server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_auth';
+        userState[userId].domain = domain;
+        await ctx.reply('🔑 *Silahkan masukkan auth server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_auth') {
+        const auth = ctx.message.text.trim();
+        if (!auth) {
+            return ctx.reply('⚠️ *Auth tidak boleh kosong.* Silahkan masukkan auth server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_nama_server';
+        userState[userId].auth = auth;
+        await ctx.reply('🏷️ *Silahkan masukkan nama server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_nama_server') {
+        const nama_server = ctx.message.text.trim();
+        if (!nama_server) {
+            return ctx.reply('⚠️ *Nama server tidak boleh kosong.* Silahkan masukkan nama server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_quota';
+        userState[userId].nama_server = nama_server;
+        await ctx.reply('📊 *Silahkan masukkan quota server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_quota') {
+        const quota = parseInt(ctx.message.text.trim(), 10);
+        if (isNaN(quota)) {
+            return ctx.reply('⚠️ *Quota tidak valid.* Silahkan masukkan quota server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_iplimit';
+        userState[userId].quota = quota;
+        await ctx.reply('🔢 *Silahkan masukkan limit IP server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_iplimit') {
+        const iplimit = parseInt(ctx.message.text.trim(), 10);
+        if (isNaN(iplimit)) {
+            return ctx.reply('⚠️ *Limit IP tidak valid.* Silahkan masukkan limit IP server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_batas_create_akun';
+        userState[userId].iplimit = iplimit;
+        await ctx.reply('🔢 *Silahkan masukkan batas create akun server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_batas_create_akun') {
+        const batas_create_akun = parseInt(ctx.message.text.trim(), 10);
+        if (isNaN(batas_create_akun)) {
+            return ctx.reply('⚠️ *Batas create akun tidak valid.* Silahkan masukkan batas create akun server yang valid.', { parse_mode: 'Markdown' });
+        }
+        userState[userId].step = 'addserver_harga';
+        userState[userId].batas_create_akun = batas_create_akun;
+        await ctx.reply('💰 *Silahkan masukkan harga server:*', { parse_mode: 'Markdown' });
+        return;
+    } else if (state && state.step === 'addserver_harga') {
+        const harga = parseFloat(ctx.message.text.trim());
+        if (isNaN(harga) || harga <= 0) {
+            return ctx.reply('⚠️ *Harga tidak valid.* Silahkan masukkan harga server yang valid.', { parse_mode: 'Markdown' });
+        }
+        const { domain, auth, nama_server, quota, iplimit, batas_create_akun } = state;
+
+        try {
+            db.run('INSERT INTO Server (domain, auth, nama_server, quota, iplimit, batas_create_akun, harga, total_create_akun) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+                [domain, auth, nama_server, quota, iplimit, batas_create_akun, harga, 0], function(err) {
+                    if (err) {
+                        logger.error('Error saat menambahkan server:', err.message);
+                        ctx.reply('❌ *Terjadi kesalahan saat menambahkan server baru.*', { parse_mode: 'Markdown' });
+                    } else {
+                        ctx.reply(`✅ *Server baru dengan domain ${domain} telah berhasil ditambahkan.*\n\n📄 *Detail Server:*\n- Domain: ${domain}\n- Auth: ${auth}\n- Nama Server: ${nama_server}\n- Quota: ${quota}\n- Limit IP: ${iplimit}\n- Batas Create Akun: ${batas_create_akun}\n- Harga: Rp ${harga}`, { parse_mode: 'Markdown' });
+                    }
+                });
+        } catch (error) {
+            logger.error('Error saat menambahkan server:', error);
+            await ctx.reply('❌ *Terjadi kesalahan saat menambahkan server baru.*', { parse_mode: 'Markdown' });
+        }
+        delete userState[userId];
+        return;
+    }
+
+    if (state && state.step === 'add_saldo') {
+        const amountStr = ctx.message.text.trim();
+        const amount = parseInt(amountStr, 10);
+
+        if (isNaN(amount) || amount <= 0) {
+            return ctx.reply('⚠️ *Jumlah saldo tidak valid. Masukkan angka positif.*', { parse_mode: 'Markdown' });
+        }
+
+        try {
+
+            const targetUserId = state.userId;
+            const changes = await new Promise((resolve, reject) => {
+                db.run('UPDATE users SET saldo = saldo + ? WHERE user_id = ?', [amount, targetUserId], function(err) {
+                    if (err) {
+                        logger.error('⚠️ Kesalahan saat menambahkan saldo user:', err.message);
+                        reject(err);
+                    } else {
+                        resolve(this.changes);
+                    }
+                });
+            });
+
+            if (changes > 0) {
+                ctx.reply(`✅ *Saldo sebesar \`${amount}\` berhasil ditambahkan ke user ID \`${targetUserId}\`.*`, { parse_mode: 'Markdown' });
+            } else {
+                ctx.reply('⚠️ *Pengguna tidak ditemukan atau saldo tidak berubah.*', { parse_mode: 'Markdown' });
+            }
+        } catch (err) {
+            logger.error('❌ Terjadi kesalahan saat menambahkan saldo user:', err.message);
+            ctx.reply('❌ *Terjadi kesalahan saat menambahkan saldo user.*', { parse_mode: 'Markdown' });
+        }
+        delete userState[userId];
+        return;
+    }
+
+    const editSteps = ['edit_batas_create_akun', 'edit_limit_ip', 'edit_quota', 'edit_auth', 'edit_domain', 'edit_nama', 'edit_total_create_akun'];
+    if (state && editSteps.includes(state.step)) {
+        const newValue = ctx.message.text.trim();
+        let query;
+        let fieldName;
+        let isNumeric = false;
+
+        switch (state.step) {
+            case 'edit_batas_create_akun':
+                query = 'UPDATE Server SET batas_create_akun = ? WHERE id = ?';
+                fieldName = 'batas create akun';
+                isNumeric = true;
+                break;
+            case 'edit_limit_ip':
+                query = 'UPDATE Server SET iplimit = ? WHERE id = ?';
+                fieldName = 'limit IP';
+                isNumeric = true;
+                break;
+            case 'edit_quota':
+                query = 'UPDATE Server SET quota = ? WHERE id = ?';
+                fieldName = 'quota';
+                isNumeric = true;
+                break;
+            case 'edit_auth':
+                query = 'UPDATE Server SET auth = ? WHERE id = ?';
+                fieldName = 'auth';
+                break;
+            case 'edit_domain':
+                query = 'UPDATE Server SET domain = ? WHERE id = ?';
+                fieldName = 'domain';
+                break;
+            case 'edit_nama':
+                query = 'UPDATE Server SET nama_server = ? WHERE id = ?';
+                fieldName = 'nama server';
+                break;
+            case 'edit_total_create_akun':
+                query = 'UPDATE Server SET total_create_akun = ? WHERE id = ?';
+                fieldName = 'total create akun';
+                isNumeric = true;
+                break;
+        }
+
+        if (isNumeric && (isNaN(parseInt(newValue, 10)) || parseInt(newValue, 10) < 0)) {
+            return ctx.reply(`⚠️ *${fieldName} tidak valid.* Masukkan angka positif yang valid.`, { parse_mode: 'Markdown' });
+        }
+        if (!newValue) {
+            return ctx.reply(`⚠️ *${fieldName} tidak boleh kosong.*`, { parse_mode: 'Markdown' });
+        }
+
+        try {
+            const valueToStore = isNumeric ? parseInt(newValue, 10) : newValue;
+            const changes = await new Promise((resolve, reject) => {
+                db.run(query, [valueToStore, state.serverId], function(err) {
+                    if (err) {
+                        logger.error(`⚠️ Kesalahan saat mengedit ${fieldName} server:`, err.message);
+                        reject(err);
+                    } else {
+                        resolve(this.changes);
+                    }
+                });
+            });
+
+            if (changes > 0) {
+                ctx.reply(`✅ *${fieldName} server berhasil diubah menjadi \`${newValue}\`.*`, { parse_mode: 'Markdown' });
+            } else {
+                ctx.reply(`⚠️ *Server tidak ditemukan atau ${fieldName} tidak berubah.*`, { parse_mode: 'Markdown' });
+            }
+        } catch (error) {
+            logger.error(`❌ Error saat mengedit ${fieldName} server:`, error.message);
+            ctx.reply(`❌ *Terjadi kesalahan saat mengedit ${fieldName} server.*`, { parse_mode: 'Markdown' });
+        }
+        delete userState[userId];
+        return;
+    }
+
+    if (state && state.step === 'edit_harga') {
+        const hargaStr = ctx.message.text.trim();
+        const hargaBaru = parseFloat(hargaStr);
+
+        if (isNaN(hargaBaru) || hargaBaru <= 0) {
+            return ctx.reply('⚠️ *Harga tidak valid. Masukkan angka positif yang valid.*', { parse_mode: 'Markdown' });
+        }
+
+        try {
+            const changes = await new Promise((resolve, reject) => {
+                db.run('UPDATE Server SET harga = ? WHERE id = ?', [hargaBaru, state.serverId], function(err) {
+                    if (err) {
+                        logger.error('⚠️ Kesalahan saat mengedit harga server:', err.message);
+                        reject(err);
+                    } else {
+                        resolve(this.changes);
+                    }
+                });
+            });
+
+            if (changes > 0) {
+                ctx.reply(`✅ *Harga server berhasil diubah menjadi \`Rp${hargaBaru}\`.*`, { parse_mode: 'Markdown' });
+            } else {
+                ctx.reply('⚠️ *Server tidak ditemukan atau harga tidak berubah.*', { parse_mode: 'Markdown' });
+            }
+        } catch (error) {
+            logger.error('❌ Error saat mengedit harga server:', error.message);
+            ctx.reply('❌ *Terjadi kesalahan saat mengedit harga server.*', { parse_mode: 'Markdown' });
+        }
+        delete userState[userId];
+        return;
+    }
+});
+
+
+bot.action('addserver', async (ctx) => {
+  try {
+    logger.info('📥 Proses tambah server dimulai');
+    await ctx.answerCbQuery();
+    await ctx.reply('🌐 *Silahkan masukkan domain/ip server:*', { parse_mode: 'Markdown' });
+    userState[ctx.chat.id] = { step: 'addserver' };
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses tambah server:', error);
+    await ctx.reply('❌ *GAGAL! Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+  }
+});
+bot.action('detailserver', async (ctx) => {
+  try {
+    logger.info('📋 Proses detail server dimulai');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT * FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('⚠️ Kesalahan saat mengambil detail server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil detail server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      logger.info('⚠️ Tidak ada server yang tersedia');
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia saat ini.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = [];
+    for (let i = 0; i < servers.length; i += 2) {
+      const row = [];
+      row.push({
+        text: `${servers[i].nama_server}`,
+        callback_data: `server_detail_${servers[i].id}`
+      });
+      if (i + 1 < servers.length) {
+        row.push({
+          text: `${servers[i + 1].nama_server}`,
+          callback_data: `server_detail_${servers[i + 1].id}`
+        });
+      }
+      buttons.push(row);
+    }
+
+    await ctx.reply('📋 *Silahkan pilih server untuk melihat detail:*', {
+      reply_markup: { inline_keyboard: buttons },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('⚠️ Kesalahan saat mengambil detail server:', error);
+    await ctx.reply('⚠️ *Terjadi kesalahan saat mengambil detail server.*', { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('listserver', async (ctx) => {
+  try {
+    logger.info('📜 Proses daftar server dimulai');
+    await ctx.answerCbQuery();
+
+    // Ambil role user dan diskon reseller
+    const userId = ctx.from.id;
+    const userRole = await new Promise((resolve, reject) => {
+        db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+            if (err) reject(err);
+            else resolve(row ? row.role : 'member');
+        });
+    });
+
+    let resellerDiscount = 0;
+    if (userRole === 'reseller') {
+        resellerDiscount = await new Promise((resolve, reject) => {
+            db.get('SELECT discount_percent FROM reseller_config WHERE id = 1', (err, row) => {
+                if (err) reject(err);
+                else resolve(row ? row.discount_percent : 0);
+            });
+        });
+    }
+    // End of reseller discount fetch
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT * FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('⚠️ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      logger.info('⚠️ Tidak ada server yang tersedia');
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia saat ini.*', { parse_mode: 'Markdown' });
+    }
+
+    let serverList = '📜 *Daftar Server* 📜\n\n';
+    servers.forEach((server, index) => {
+      let hargaPerHariTampilan = server.harga;
+      // Terapkan diskon untuk tampilan jika user adalah reseller
+      if (userRole === 'reseller' && resellerDiscount > 0) {
+          hargaPerHariTampilan = Math.floor(server.harga * (100 - resellerDiscount) / 100);
+      }
+      const hargaPer30HariTampilan = hargaPerHariTampilan * 30;
+
+      serverList += `🌐 *${server.nama_server}*\n` +
+                    `💰 Harga per hari: Rp${hargaPerHariTampilan}\n` + // Menggunakan harga yang disesuaikan
+                    `📅 Harga per 30 hari: Rp${hargaPer30HariTampilan}\n` + // Menggunakan harga yang disesuaikan
+                    `📊 Quota: ${server.quota}GB\n` +
+                    `🔢 Limit IP: ${server.iplimit} IP\n` +
+                    `👥 Total Create Akun: ${server.total_create_akun}/${server.batas_create_akun}\n\n`;
+    });
+
+    serverList += `\nTotal Jumlah Server: ${servers.length}`;
+
+    await ctx.reply(serverList, { parse_mode: 'Markdown' });
+  } catch (error) {
+    logger.error('⚠️ Kesalahan saat mengambil daftar server:', error);
+    await ctx.reply('⚠️ *Terjadi kesalahan saat mengambil daftar server.*', { parse_mode: 'Markdown' });
+  }
+});
+bot.action('resetdb', async (ctx) => {
+  try {
+    await ctx.answerCbQuery();
+    await ctx.reply('🚨 *PERHATIAN! Anda akan menghapus semua server yang tersedia. Apakah Anda yakin?*', {
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: '✅ Ya', callback_data: 'confirm_resetdb' }],
+          [{ text: '❌ Tidak', callback_data: 'cancel_resetdb' }]
+        ]
+      },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Error saat memulai proses reset database:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('confirm_resetdb', async (ctx) => {
+  try {
+    await ctx.answerCbQuery();
+    await new Promise((resolve, reject) => {
+      db.run('DELETE FROM Server', (err) => {
+        if (err) {
+          logger.error('❌ Error saat mereset tabel Server:', err.message);
+          return reject('❗️ *PERHATIAN! Terjadi KESALAHAN SERIUS saat mereset database. Harap segera hubungi administrator!*');
+        }
+        resolve();
+      });
+    });
+    await ctx.reply('🚨 *PERHATIAN! Database telah DIRESET SEPENUHNYA. Semua server telah DIHAPUS TOTAL.*', { parse_mode: 'Markdown' });
+  } catch (error) {
+    logger.error('❌ Error saat mereset database:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('cancel_resetdb', async (ctx) => {
+  try {
+    await ctx.answerCbQuery();
+    await ctx.reply('❌ *Proses reset database dibatalkan.*', { parse_mode: 'Markdown' });
+  } catch (error) {
+    logger.error('❌ Error saat membatalkan reset database:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('deleteserver', async (ctx) => {
+  try {
+    logger.info('🗑️ Proses hapus server dimulai');
+    await ctx.answerCbQuery();
+
+    db.all('SELECT * FROM Server', [], (err, servers) => {
+      if (err) {
+        logger.error('⚠️ Kesalahan saat mengambil daftar server:', err.message);
+        return ctx.reply('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*', { parse_mode: 'Markdown' });
+      }
+
+      if (servers.length === 0) {
+        logger.info('⚠️ Tidak ada server yang tersedia');
+        return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia saat ini.*', { parse_mode: 'Markdown' });
+      }
+
+      const keyboard = servers.map(server => {
+        return [{ text: server.nama_server, callback_data: `confirm_delete_server_${server.id}` }];
+      });
+      keyboard.push([{ text: '🔙 KEMBALI ke Menu Utama', callback_data: 'kembali_ke_menu' }]);
+
+      ctx.reply('🗑️ *Pilih server yang ingin dihapus:*', {
+        reply_markup: {
+          inline_keyboard: keyboard
+        },
+        parse_mode: 'Markdown'
+      });
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses hapus server:', error);
+    await ctx.reply('❌ *GAGAL! Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('cek_saldo', async (ctx) => {
+  try {
+    const userId = ctx.from.id;
+
+    const row = await new Promise((resolve, reject) => {
+      db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], (err, row) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat memeriksa saldo:', err.message);
+          return reject('❌ *Terjadi kesalahan saat memeriksa saldo Anda. Silahkan coba lagi nanti.*');
+        }
+        resolve(row);
+      });
+    });
+
+    if (row) {
+      await ctx.reply(`📊 *Cek Saldo*\n\n🆔 ID Telegram: ${userId}\n💰 Sisa Saldo: Rp${row.saldo}`,
+      {
+        parse_mode: 'Markdown',
+        reply_markup: {
+          inline_keyboard: [
+            [{ text: '💸 Top Up', callback_data: 'menu_topup' }, { text: '📝 Menu Utama', callback_data: 'send_main_menu' }]
+          ]
+        }
+      });
+    } else {
+      await ctx.reply('⚠️ *Anda belum memiliki saldo. Silahkan tambahkan saldo terlebih dahulu.*', { parse_mode: 'Markdown' });
+    }
+
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memeriksa saldo:', error);
+    await ctx.reply(`❌ *${error.message}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+const getUsernameById = async (userId) => {
+  try {
+    const telegramUser = await bot.telegram.getChat(userId);
+    return telegramUser.username || telegramUser.first_name;
+  } catch (err) {
+    logger.error('❌ Kesalahan saat mengambil username dari Telegram:', err.message);
+    throw new Error('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil username dari Telegram.*');
+  }
+};
+
+bot.action('addsaldo_user', async (ctx) => {
+  try {
+    logger.info('Add saldo user process started');
+    await ctx.answerCbQuery();
+
+    const users = await new Promise((resolve, reject) => {
+      db.all('SELECT id, user_id FROM Users LIMIT 20', [], (err, users) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar user.*');
+        }
+        resolve(users);
+      });
+    });
+
+    const totalUsers = await new Promise((resolve, reject) => {
+      db.get('SELECT COUNT(*) as count FROM Users', [], (err, row) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat menghitung total user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat menghitung total user.*');
+        }
+        resolve(row.count);
+      });
+    });
+
+    const buttons = [];
+    for (let i = 0; i < users.length; i += 2) {
+      const row = [];
+      const username1 = await getUsernameById(users[i].user_id);
+      row.push({
+        text: username1 || users[i].user_id,
+        callback_data: `add_saldo_${users[i].id}`
+      });
+      if (i + 1 < users.length) {
+        const username2 = await getUsernameById(users[i + 1].user_id);
+        row.push({
+          text: username2 || users[i + 1].user_id,
+          callback_data: `add_saldo_${users[i + 1].id}`
+        });
+      }
+      buttons.push(row);
+    }
+
+    const currentPage = 0;
+    const replyMarkup = {
+      inline_keyboard: [...buttons]
+    };
+
+    if (totalUsers > 20) {
+      replyMarkup.inline_keyboard.push([{
+        text: '➡️ Next',
+        callback_data: `next_users_${currentPage + 1}`
+      }]);
+    }
+
+    await ctx.reply('📊 *Silahkan pilih user untuk menambahkan saldo:*', {
+      reply_markup: replyMarkup,
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses tambah saldo user:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action(/next_users_(\d+)/, async (ctx) => {
+  const currentPage = parseInt(ctx.match[1]);
+  const offset = currentPage * 20;
+
+  try {
+    logger.info(`Next users process started for page ${currentPage + 1}`);
+    await ctx.answerCbQuery();
+
+    const users = await new Promise((resolve, reject) => {
+      db.all(`SELECT id, user_id FROM Users LIMIT 20 OFFSET ${offset}`, [], (err, users) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar user.*');
+        }
+        resolve(users);
+      });
+    });
+
+    const totalUsers = await new Promise((resolve, reject) => {
+      db.get('SELECT COUNT(*) as count FROM Users', [], (err, row) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat menghitung total user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat menghitung total user.*');
+        }
+        resolve(row.count);
+      });
+    });
+
+    const buttons = [];
+    for (let i = 0; i < users.length; i += 2) {
+      const row = [];
+      const username1 = await getUsernameById(users[i].user_id);
+      row.push({
+        text: username1 || users[i].user_id,
+        callback_data: `add_saldo_${users[i].id}`
+      });
+      if (i + 1 < users.length) {
+        const username2 = await getUsernameById(users[i + 1].user_id);
+        row.push({
+          text: username2 || users[i + 1].user_id,
+          callback_data: `add_saldo_${users[i + 1].id}`
+        });
+      }
+      buttons.push(row);
+    }
+
+    const replyMarkup = {
+      inline_keyboard: [...buttons]
+    };
+
+    const navigationButtons = [];
+    if (currentPage > 0) {
+      navigationButtons.push([{
+        text: '⬅️ Back',
+        callback_data: `prev_users_${currentPage - 1}`
+      }]);
+    }
+    if (offset + 20 < totalUsers) {
+      navigationButtons.push([{
+        text: '➡️ Next',
+        callback_data: `next_users_${currentPage + 1}`
+      }]);
+    }
+
+    replyMarkup.inline_keyboard.push(...navigationButtons);
+
+    await ctx.editMessageReplyMarkup(replyMarkup);
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memproses next users:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action(/prev_users_(\d+)/, async (ctx) => {
+  const currentPage = parseInt(ctx.match[1]);
+  const offset = (currentPage - 1) * 20;
+
+  try {
+    logger.info(`Previous users process started for page ${currentPage}`);
+    await ctx.answerCbQuery();
+
+    const users = await new Promise((resolve, reject) => {
+      db.all(`SELECT id, user_id FROM Users LIMIT 20 OFFSET ${offset}`, [], (err, users) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar user.*');
+        }
+        resolve(users);
+      });
+    });
+
+    const totalUsers = await new Promise((resolve, reject) => {
+      db.get('SELECT COUNT(*) as count FROM Users', [], (err, row) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat menghitung total user:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat menghitung total user.*');
+        }
+        resolve(row.count);
+      });
+    });
+
+    const buttons = [];
+    for (let i = 0; i < users.length; i += 2) {
+      const row = [];
+      const username1 = await getUsernameById(users[i].user_id);
+      row.push({
+        text: username1 || users[i].user_id,
+        callback_data: `add_saldo_${users[i].id}`
+      });
+      if (i + 1 < users.length) {
+        const username2 = await getUsernameById(users[i + 1].user_id);
+        row.push({
+          text: username2 || users[i + 1].user_id,
+          callback_data: `add_saldo_${users[i + 1].id}`
+        });
+      }
+      buttons.push(row);
+    }
+
+    const replyMarkup = {
+      inline_keyboard: [...buttons]
+    };
+
+    const navigationButtons = [];
+    if (currentPage > 0) {
+      navigationButtons.push([{
+        text: '⬅️ Back',
+        callback_data: `prev_users_${currentPage - 1}`
+      }]);
+    }
+    if (offset + 20 < totalUsers) {
+      navigationButtons.push([{
+        text: '➡️ Next',
+        callback_data: `next_users_${currentPage}`
+      }]);
+    }
+
+    replyMarkup.inline_keyboard.push(...navigationButtons);
+
+    await ctx.editMessageReplyMarkup(replyMarkup);
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memproses previous users:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('editserver_limit_ip', async (ctx) => {
+  try {
+    logger.info('Edit server limit IP process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_limit_ip_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('📊 *Silahkan pilih server untuk mengedit limit IP:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit limit IP server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('editserver_batas_create_akun', async (ctx) => {
+  try {
+    logger.info('Edit server batas create akun process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_batas_create_akun_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('📊 *Silahkan pilih server untuk mengedit batas create akun:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit batas create akun server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('editserver_total_create_akun', async (ctx) => {
+  try {
+    logger.info('Edit server total create akun process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_total_create_akun_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('📊 *Silahkan pilih server untuk mengedit total create akun:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit total create akun server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('editserver_quota', async (ctx) => {
+  try {
+    logger.info('Edit server quota process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_quota_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('📊 *Silahkan pilih server untuk mengedit quota:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit quota server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+bot.action('editserver_auth', async (ctx) => {
+  try {
+    logger.info('Edit server auth process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_auth_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('🌐 *Silahkan pilih server untuk mengedit auth:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit auth server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('editserver_harga', async (ctx) => {
+  try {
+    logger.info('Edit server harga process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_harga_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('💰 *Silahkan pilih server untuk mengedit harga:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit harga server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('editserver_domain', async (ctx) => {
+  try {
+    logger.info('Edit server domain process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_domain_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('🌐 *Silahkan pilih server untuk mengedit domain:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit domain server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('nama_server_edit', async (ctx) => {
+  try {
+    logger.info('Edit server nama process started');
+    await ctx.answerCbQuery();
+
+    const servers = await new Promise((resolve, reject) => {
+      db.all('SELECT id, nama_server FROM Server', [], (err, servers) => {
+        if (err) {
+          logger.error('❌ Kesalahan saat mengambil daftar server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil daftar server.*');
+        }
+        resolve(servers);
+      });
+    });
+
+    if (servers.length === 0) {
+      return ctx.reply('⚠️ *PERHATIAN! Tidak ada server yang tersedia untuk diedit.*', { parse_mode: 'Markdown' });
+    }
+
+    const buttons = servers.map(server => ({
+      text: server.nama_server,
+      callback_data: `edit_nama_${server.id}`
+    }));
+
+    const inlineKeyboard = [];
+    for (let i = 0; i < buttons.length; i += 2) {
+      inlineKeyboard.push(buttons.slice(i, i + 2));
+    }
+
+    await ctx.reply('🏷️ *Silahkan pilih server untuk mengedit nama:*', {
+      reply_markup: { inline_keyboard: inlineKeyboard },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses edit nama server:', error);
+    await ctx.reply(`❌ *${error}*`, { parse_mode: 'Markdown' });
+  }
+});
+
+bot.action('topup_saldo', async (ctx) => {
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id;
+
+  try {
+    await ctx.answerCbQuery();
+    logger.info(`🔍 User ${userId} memulai proses top-up saldo.`);
+
+    if (lastMenus[userId]) {
+      try {
+        await bot.telegram.deleteMessage(chatId, lastMenus[userId]);
+        logger.info(`🧹 Menu lama milik ${userId} berhasil dihapus`);
+        delete lastMenus[userId];
+      } catch (e) {
+        console.warn(`⚠️ Gagal menghapus menu sebelumnya untuk ${userId}:`, e.message);
+      }
+    }
+
+    if (!global.depositState) global.depositState = {};
+    global.depositState[userId] = { action: 'request_amount', amount: '' };
+
+    const keyboard = keyboard_nomor();
+
+        const sent = await ctx.reply(
+      '💳 Topup Saldo Otomatis QRIS\n━━━━━━━━━━━━━━━━━━━━━━\nMasukkan nominal topup:\n\nRp 0,00\n\nMinimal topup Rp 100\n━━━━━━━━━━━━━━━━━━━━━━\nGunakan tombol di bawah untuk input nominal.',
+      {
+        reply_markup: { inline_keyboard: keyboard },
+        parse_mode: 'Markdown'
+      }
+    );
+
+    if (sent && sent.message_id) {
+      lastMenus[userId] = sent.message_id;
+    }
+
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses top-up saldo:', error);
+    try {
+      await ctx.reply(
+        '❌ *GAGAL! Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.*',
+        { parse_mode: 'Markdown' }
+      );
+    } catch (e) {
+      logger.error('Gagal kirim pesan error:', e.message);
+    }
+  }
+});
+// =========== TOPUP QRIS SAWERIA ===========
+bot.action('topup_saweria', async (ctx) => {
+  const userId = ctx.from.id;
+  const chatId = ctx.chat.id;
+
+  try {
+    await ctx.answerCbQuery();
+    logger.info(`🔍 User ${userId} memulai proses top-up saldo.`);
+
+    if (lastMenus[userId]) {
+      try {
+        await bot.telegram.deleteMessage(chatId, lastMenus[userId]);
+        logger.info(`🧹 Menu lama milik ${userId} berhasil dihapus`);
+        delete lastMenus[userId];
+      } catch (e) {
+        console.warn(`⚠️ Gagal menghapus menu sebelumnya untuk ${userId}:`, e.message);
+      }
+    }
+
+    // ✅ Simpan state bahwa user diminta masukkan nominal
+    if (!global.depositState) global.depositState = {};
+    global.depositState[userId] = {
+      action: 'request_amount_saweria',
+      amount: ''
+    };
+
+    logger.info(`📝 Menunggu input nominal dari user ${userId}`);
+
+    // Kirim instruksi ke user
+    const sent = await ctx.reply(
+      '💰 *Silahkan ketik nominal top-up yang ingin Anda bayarkan melalui QRIS Saweria.*\n\nContoh: `1000`',
+      { parse_mode: 'Markdown' }
+    );
+
+    // Simpan ID pesan agar bisa dihapus nantinya
+    if (sent && sent.message_id) {
+      lastMenus[userId] = sent.message_id;
+    }
+
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memulai proses top-up Saweria:', error);
+    try {
+      await ctx.reply(
+        '❌ *GAGAL!* Terjadi kesalahan saat memproses top-up Saweria Anda. Silahkan coba lagi nanti.',
+        { parse_mode: 'Markdown' }
+      );
+    } catch (e) {
+      logger.error('Gagal kirim pesan error:', e.message);
+    }
+  }
+});
+
+
+bot.action(/^saweria_nominal_(\d+)$/, async (ctx) => {
+  const userId = ctx.from.id;
+  const amount = parseInt(ctx.match[1]);
+
+  delete global.depositState[userId];
+
+  await ctx.answerCbQuery();
+  await ctx.reply(`🔄 Memproses QRIS Saweria untuk Rp${amount}...`);
+
+  await processDepositSaweria(ctx, amount);
+});
+
+
+
+
+bot.action('bonus_topup_setting', async (ctx) => {
+    await ctx.answerCbQuery();
+    db.get('SELECT * FROM bonus_config WHERE id = 1', (err, row) => {
+        if (err || !row) {
+            return ctx.reply('❌ Gagal mengambil pengaturan bonus.');
+        }
+
+        ctx.reply(`⚙️ *Pengaturan Bonus Top Up*
+
+` +
+            `Status: *${row.enabled ? 'Aktif ✅' : 'Nonaktif ❌'}*
+` +
+            `Minimal TopUp: *Rp${row.min_topup}*
+` +
+            `Bonus: *${row.bonus_percent}%*
+
+` +
+            `Klik tombol di bawah ini untuk mengatur:`, {
+            parse_mode: 'Markdown',
+            reply_markup: {
+                inline_keyboard: [
+                    [{ text: '🔧 Atur Bonus TopUp', callback_data: 'atur_bonus_topup' }]
+                ]
+            }
+        });
+    });
+});
+
+
+bot.action('atur_bonus_topup', async (ctx) => {
+    await ctx.answerCbQuery();
+
+    userState[ctx.chat.id] = { step: 'atur_bonus_input' };
+    await ctx.reply('✍️ Kirim format:\n`on|off <minimal_topup> <persen_bonus>`\n\nContoh:\n`on 10000 25`', {
+        parse_mode: 'Markdown'
+    });
+});
+
+bot.action('log_bonus_topup', async (ctx) => {
+  await ctx.answerCbQuery();
+  const userId = ctx.from.id;
+
+  db.all('SELECT * FROM bonus_log ORDER BY id DESC LIMIT 10', [], (err, rows) => {
+    if (err || rows.length === 0) {
+      return ctx.reply('⚠️ Belum ada data bonus');
+    }
+
+    const isi = rows.map((row, i) => {
+      const username = row.username ? `\`${row.username}\`` : `\`${row.user_id}\``;
+      const formattedTimestamp = new Date(row.timestamp).toLocaleString('id-ID', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+
+      return `*${i + 1}.* ${username}\n🆔 ID: \`${row.user_id}\`\n💸 TopUp: Rp${row.amount}\n🎁 Bonus: Rp${row.bonus}\n🕒 ${formattedTimestamp}`;
+    }).join('\n\n');
+
+    ctx.reply(`📋 *Riwayat Bonus Top Up (10 Terbaru)*\n\n${isi}`, {
+      parse_mode: 'Markdown'
+    });
+  });
+});
+
+bot.action('log_topup', async (ctx) => {
+  await ctx.answerCbQuery();
+
+  db.all('SELECT * FROM topup_log ORDER BY id DESC LIMIT 10', [], (err, rows) => {
+    if (err || rows.length === 0) {
+      return ctx.reply('⚠️ Belum ada data topup');
+    }
+
+    const isi = rows.map((row, i) => {
+      const username = row.username ? `\`${row.username}\`` : `\`${row.user_id}\``;
+      // Gunakan kolom 'waktu'
+      const formattedTimestamp = new Date(row.waktu).toLocaleString('id-ID', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+
+      return `*${i + 1}.* ${username}\n🆔 ID: \`${row.user_id}\`\n💸 TopUp: Rp${row.amount}\n🕒 ${formattedTimestamp}`;
+    }).join('\n\n');
+
+    ctx.reply(`📋 *Riwayat Top Up (10 Terbaru)*\n\n${isi}`, {
+      parse_mode: 'Markdown'
+    });
+  });
+});
+
+function prosesBonusTopUp(user_id, username, original_amount) {
+  return new Promise((resolve, reject) => {
+    db.get('SELECT * FROM bonus_config WHERE id = 1', (err, config) => {
+      if (err || !config) return resolve(); // lanjut aja walaupun gagal
+
+      if (config.enabled && original_amount >= config.min_topup) {
+        const bonus = Math.floor(original_amount * config.bonus_percent / 100);
+
+        db.run('UPDATE users SET saldo = saldo + ? WHERE user_id = ?', [bonus, user_id], (err2) => {
+          if (err2) return resolve(); // tetap resolve supaya lanjut
+
+          db.run('INSERT INTO bonus_log (user_id, username, amount, bonus, timestamp) VALUES (?, ?, ?, ?, ?)', [
+            user_id,
+            username || '',
+            original_amount,
+            bonus,
+            new Date().toISOString()
+          ], () => {
+            // Kirim pesan setelah log bonus
+            bot.telegram.sendMessage(user_id, `🎁 *Bonus Top Up!* Kamu dapat saldo tambahan *Rp${bonus}* (${config.bonus_percent}%)`, {
+              parse_mode: 'Markdown'
+            });
+            resolve();
+          });
+        });
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+function logTopup(user_id, username, amount, method) {
+  db.run(
+    'INSERT INTO topup_log (user_id, username, amount, method, waktu) VALUES (?, ?, ?, ?, ?)',
+    [
+      user_id,
+      username || '',
+      amount,
+      method,
+      new Date().toISOString()
+    ],
+    (err) => {
+      if (err) {
+        logger.error('❌ Gagal insert ke topup_log:', err.message);
+      } else {
+        logger.info(`✅ Log Topup: ${user_id} - ${username} - Rp${amount} - ${method}`);
+      }
+    }
+  );
+}
+
+bot.action(/edit_harga_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit harga server dengan ID: ${serverId}`);
+  userState[ctx.chat.id] = { step: 'edit_harga', serverId: serverId };
+
+  await ctx.reply('💰 *Silahkan masukkan harga server baru:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/add_saldo_(\d+)/, async (ctx) => {
+  const userId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk menambahkan saldo user dengan ID: ${userId}`);
+  userState[ctx.chat.id] = { step: 'add_saldo', userId: userId };
+
+  await ctx.reply('📊 *Silahkan masukkan jumlah saldo yang ingin ditambahkan:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_batas_create_akun_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit batas create akun server dengan ID: ${serverId}`);
+  userState[ctx.chat.id] = { step: 'edit_batas_create_akun', serverId: serverId };
+
+  await ctx.reply('📊 *Silahkan masukkan batas create akun server baru:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_total_create_akun_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit total create akun server dengan ID: ${serverId}`);
+  userState[ctx.chat.id] = { step: 'edit_total_create_akun', serverId: serverId };
+
+  await ctx.reply('📊 *Silahkan masukkan total create akun server baru:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_limit_ip_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit limit IP server dengan ID: ${serverId}`);
+  userState[ctx.chat.id] = { step: 'edit_limit_ip', serverId: serverId };
+
+  await ctx.reply('📊 *Silahkan masukkan limit IP server baru:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_quota_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit quota server dengan ID: ${serverId}`);
+  userState[ctx.chat.id] = { step: 'edit_quota', serverId: serverId };
+
+  await ctx.reply('📊 *Silahkan masukkan quota server baru:*', {
+    reply_markup: { inline_keyboard: keyboard_nomor() },
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_auth_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit auth server dengan ID: ${serverId}`);
+
+  userState[ctx.chat.id] = {
+    step: 'edit_auth',
+    serverId: serverId
+  };
+
+  await ctx.reply('✏️ *Silahkan kirim auth server baru sekarang:*', {
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_domain_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit domain server dengan ID: ${serverId}`);
+
+  userState[ctx.chat.id] = {
+    step: 'edit_domain',
+    serverId: serverId
+  };
+
+  await ctx.reply('🌐 *Silahkan kirim domain server baru sekarang:*', {
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/edit_nama_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  logger.info(`User ${ctx.from.id} memilih untuk mengedit nama server dengan ID: ${serverId}`);
+
+  userState[ctx.chat.id] = {
+    step: 'edit_nama',
+    serverId: serverId
+  };
+
+  await ctx.reply('🏷️ *Silahkan kirim nama server baru sekarang:*', {
+    parse_mode: 'Markdown'
+  });
+});
+bot.action(/confirm_delete_server_(\d+)/, async (ctx) => {
+  try {
+    db.run('DELETE FROM Server WHERE id = ?', [ctx.match[1]], function(err) {
+      if (err) {
+        logger.error('Error deleting server:', err.message);
+        return ctx.reply('⚠️ *PERHATIAN! Terjadi kesalahan saat menghapus server.*', { parse_mode: 'Markdown' });
+      }
+
+      if (this.changes === 0) {
+        logger.info('Server tidak ditemukan');
+        return ctx.reply('⚠️ *PERHATIAN! Server tidak ditemukan.*', { parse_mode: 'Markdown' });
+      }
+
+      logger.info(`Server dengan ID ${ctx.match[1]} berhasil dihapus`);
+      ctx.reply('✅ *Server berhasil dihapus.*', { parse_mode: 'Markdown' });
+    });
+  } catch (error) {
+    logger.error('Kesalahan saat menghapus server:', error);
+    await ctx.reply('❌ *GAGAL! Terjadi kesalahan saat memproses permintaan Anda. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+  }
+});
+bot.action(/server_detail_(\d+)/, async (ctx) => {
+  const serverId = ctx.match[1];
+  try {
+    const server = await new Promise((resolve, reject) => {
+      db.get('SELECT * FROM Server WHERE id = ?', [serverId], (err, server) => {
+        if (err) {
+          logger.error('⚠️ Kesalahan saat mengambil detail server:', err.message);
+          return reject('⚠️ *PERHATIAN! Terjadi kesalahan saat mengambil detail server.*');
+        }
+        resolve(server);
+      });
+    });
+
+    if (!server) {
+      logger.info('⚠️ Server tidak ditemukan');
+      return ctx.reply('⚠️ *PERHATIAN! Server tidak ditemukan.*', { parse_mode: 'Markdown' });
+    }
+
+    const serverDetails = `📋 *Detail Server* 📋\n\n` +
+      `🌐 *Domain:* \`${server.domain}\`\n` +
+      `🔑 *Auth:* \`${server.auth}\`\n` +
+      `🏷️ *Nama Server:* \`${server.nama_server}\`\n` +
+      `📊 *Quota:* \`${server.quota}\`\n` +
+      `📶 *Limit IP:* \`${server.iplimit}\`\n` +
+      `🔢 *Batas Create Akun:* \`${server.batas_create_akun}\`\n` +
+      `📋 *Total Create Akun:* \`${server.total_create_akun}\`\n` +
+      `💵 *Harga:* \`Rp ${server.harga}\`\n\n`;
+
+    await ctx.reply(serverDetails, { parse_mode: 'Markdown' });
+  } catch (error) {
+    logger.error('⚠️ Kesalahan saat mengambil detail server:', error);
+    await ctx.reply('⚠️ *Terjadi kesalahan saat mengambil detail server.*', { parse_mode: 'Markdown' });
+  }
+});
+
+bot.on('callback_query', async (ctx) => {
+  const userId = ctx.from.id;
+  const data = ctx.callbackQuery.data;
+  const userStateData = userState[ctx.chat.id];
+
+  // Pastikan ini ditangani hanya sekali per callback
+  await ctx.answerCbQuery();
+
+  if (global.depositState && global.depositState[userId] && global.depositState[userId].action === 'request_amount') {
+    await handleDepositState(ctx, userId, data);
+  } else if (userStateData) {
+    switch (userStateData.step) {
+      case 'add_saldo':
+        await handleAddSaldo(ctx, userStateData, data);
+        break;
+      case 'edit_batas_create_akun':
+        await handleEditBatasCreateAkun(ctx, userStateData, data);
+        break;
+      case 'edit_limit_ip':
+        await handleEditiplimit(ctx, userStateData, data);
+        break;
+      case 'edit_quota':
+        await handleEditQuota(ctx, userStateData, data);
+        break;
+      case 'edit_auth':
+        await handleEditAuth(ctx, userStateData, data);
+        break;
+      case 'edit_domain':
+        await handleEditDomain(ctx, userStateData, data);
+        break;
+      case 'edit_harga':
+        await handleEditHarga(ctx, userStateData, data);
+        break;
+      case 'edit_nama':
+        await handleEditNama(ctx, userStateData, data);
+        break;
+      case 'edit_total_create_akun':
+        await handleEditTotalCreateAkun(ctx, userStateData, data);
+        break;
+      // [UPDATE: Menambahkan handler untuk listreseller_ callback di sini]
+      case 'listreseller_': // Ini bukan step yang disimpan, tapi callback_data
+        const parts = data.split('_');
+        const direction = parts[1];
+        let page = parseInt(parts[2]);
+        page = direction === 'next' ? page + 1 : page - 1;
+        if (page < 1) page = 1;
+        await sendPaginatedResellerList(ctx, page, ctx.callbackQuery.message.message_id);
+        break;
+    }
+  }
+});
+
+async function handleDepositState(ctx, userId, data) {
+  let state = global.depositState[userId];
+  if (!state) return;
+
+  let currentAmount = state.amount || '';
+  const action = state.action;
+
+  if (data === 'delete') {
+    currentAmount = currentAmount.slice(0, -1);
+  } else if (data === 'confirm') {
+    if (!currentAmount || currentAmount.length === 0) {
+      return await ctx.answerCbQuery('⚠️ Jumlah tidak boleh kosong!', { show_alert: true });
+    }
+
+    if (parseInt(currentAmount) < 100) {
+      return await ctx.answerCbQuery('⚠️ Jumlah minimal top-up adalah 100 Ya Kak...!!!', { show_alert: true });
+    }
+
+    // Hapus pesan input nominal
+    try {
+      await ctx.deleteMessage();
+    } catch (e) {
+      logger.warn(`⚠️ Gagal menghapus pesan top-up konfirmasi: ${e.message}`);
+    }
+
+    // Jalankan proses sesuai jenis topup
+    if (action === 'request_amount_saweria') {
+      await processDepositSaweria(ctx, currentAmount);
+    } else {
+      global.depositState[userId].action = 'confirm_amount';
+      await processDeposit(ctx, currentAmount);
+    }
+
+    // Hapus state
+    delete global.depositState[userId];
+    return;
+  } else {
+    const maxDigits = action === 'request_amount_saweria' ? 8 : 12;
+    if (currentAmount.length < maxDigits) {
+      currentAmount += data;
+    } else {
+      return await ctx.answerCbQuery(`⚠️ Jumlah maksimal adalah ${maxDigits} digit!`, { show_alert: true });
+    }
+  }
+
+  global.depositState[userId].amount = currentAmount;
+
+  const newMessage =
+    action === 'request_amount_saweria'
+      ? `💰 Masukkan nominal topup Saweria QRIS:\n\nNominal saat ini: *Rp${currentAmount}*`
+      : `💳 Topup Saldo Otomatis QRIS\n━━━━━━━━━━━━━━━━━━━━━━\nMasukkan nominal topup:\n\nRp ${currentAmount}\n\nMinimal topup Rp 100\n━━━━━━━━━━━━━━━━━━━━━━\nGunakan tombol di bawah untuk input nominal.`;
+
+  try {
+    await ctx.editMessageText(newMessage, {
+      reply_markup: { inline_keyboard: keyboard_nomor() },
+      parse_mode: 'Markdown'
+    });
+  } catch (error) {
+    if (error.description && error.description.includes('message is not modified')) {
+      return;
+    }
+    logger.error('❌ Gagal update pesan nominal top-up:', error);
+  }
+}
+
+
+
+async function handleAddSaldo(ctx, userStateData, data) {
+  let currentSaldo = userStateData.saldo || '';
+
+  if (data === 'delete') {
+    currentSaldo = currentSaldo.slice(0, -1);
+  } else if (data === 'confirm') {
+    if (currentSaldo.length === 0) {
+      return await ctx.answerCbQuery('⚠️ *Jumlah saldo tidak boleh kosong!*', { show_alert: true });
+    }
+
+    try {
+      await updateUserSaldo(userStateData.userId, currentSaldo);
+      ctx.reply(`✅ *Saldo user berhasil ditambahkan.*\n\n📄 *Detail Saldo:*\n- Jumlah Saldo: *Rp ${currentSaldo}*`, { parse_mode: 'Markdown' });
+    } catch (err) {
+      ctx.reply('❌ *Terjadi kesalahan saat menambahkan saldo user.*', { parse_mode: 'Markdown' });
+    }
+    delete userState[ctx.chat.id];
+    return;
+  } else {
+    if (!/^[0-9]+$/.test(data)) {
+      return await ctx.answerCbQuery('⚠️ *Jumlah saldo tidak valid!*', { show_alert: true });
+    }
+    if (currentSaldo.length < 10) {
+      currentSaldo += data;
+    } else {
+      return await ctx.answerCbQuery('⚠️ *Jumlah saldo maksimal adalah 10 karakter!*', { show_alert: true });
+    }
+  }
+
+  userStateData.saldo = currentSaldo;
+  const newMessage = `📊 *Silahkan masukkan jumlah saldo yang ingin ditambahkan:*\n\nJumlah saldo saat ini: *${currentSaldo}*`;
+  if (newMessage !== ctx.callbackQuery.message.text) {
+    await ctx.editMessageText(newMessage, {
+      reply_markup: { inline_keyboard: keyboard_nomor() },
+      parse_mode: 'Markdown'
+    });
+  }
+}
+
+async function handleEditBatasCreateAkun(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'batasCreateAkun', 'batas create akun', 'UPDATE Server SET batas_create_akun = ? WHERE id = ?');
+}
+
+async function handleEditTotalCreateAkun(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'totalCreateAkun', 'total create akun', 'UPDATE Server SET total_create_akun = ? WHERE id = ?');
+}
+
+async function handleEditiplimit(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'iplimit', 'limit IP', 'UPDATE Server SET iplimit = ? WHERE id = ?');
+}
+
+async function handleEditQuota(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'quota', 'quota', 'UPDATE Server SET quota = ? WHERE id = ?');
+}
+
+async function handleEditAuth(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'auth', 'auth', 'UPDATE Server SET auth = ? WHERE id = ?');
+}
+
+async function handleEditDomain(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'domain', 'domain', 'UPDATE Server SET domain = ? WHERE id = ?');
+}
+
+async function handleEditHarga(ctx, userStateData, data) {
+  let currentAmount = userStateData.amount || '';
+
+  if (data === 'delete') {
+    currentAmount = currentAmount.slice(0, -1);
+  } else if (data === 'confirm') {
+    if (currentAmount.length === 0) {
+      return await ctx.answerCbQuery('⚠️ *Jumlah tidak boleh kosong!*', { show_alert: true });
+    }
+    const hargaBaru = parseFloat(currentAmount);
+    if (isNaN(hargaBaru) || hargaBaru <= 0) {
+      return ctx.reply('❌ *Harga tidak valid. Masukkan angka yang valid.*', { parse_mode: 'Markdown' });
+    }
+    try {
+      await updateServerField(userStateData.serverId, hargaBaru, 'UPDATE Server SET harga = ? WHERE id = ?');
+      ctx.reply(`✅ *Harga server berhasil diupdate.*\n\n📄 *Detail Server:*\n- Harga Baru: *Rp ${hargaBaru}*`, { parse_mode: 'Markdown' });
+    } catch (err) {
+      ctx.reply('❌ *Terjadi kesalahan saat mengupdate harga server.*', { parse_mode: 'Markdown' });
+    }
+    delete userState[ctx.chat.id];
+    return;
+  } else {
+    if (!/^\d+$/.test(data)) {
+      return await ctx.answerCbQuery('⚠️ *Hanya angka yang diperbolehkan!*', { show_alert: true });
+    }
+    if (currentAmount.length < 12) {
+      currentAmount += data;
+    } else {
+      return await ctx.answerCbQuery('⚠️ *Jumlah maksimal adalah 12 digit!*', { show_alert: true });
+    }
+  }
+
+  userStateData.amount = currentAmount;
+  const newMessage = `💰 *Silahkan masukkan harga server baru:*\n\nJumlah saat ini: *Rp ${currentAmount}*`;
+  if (newMessage !== ctx.callbackQuery.message.text) {
+    await ctx.editMessageText(newMessage, {
+      reply_markup: { inline_keyboard: keyboard_nomor() },
+      parse_mode: 'Markdown'
+    });
+  }
+}
+
+async function handleEditNama(ctx, userStateData, data) {
+  await handleEditField(ctx, userStateData, data, 'name', 'nama server', 'UPDATE Server SET nama_server = ? WHERE id = ?');
+}
+
+async function handleEditField(ctx, userStateData, data, field, fieldName, query) {
+  let currentValue = userStateData[field] || '';
+
+  if (data === 'delete') {
+    currentValue = currentValue.slice(0, -1);
+  } else if (data === 'confirm') {
+    if (currentValue.length === 0) {
+      return await ctx.answerCbQuery(`⚠️ *${fieldName} tidak boleh kosong!*`, { show_alert: true });
+    }
+    try {
+      await updateServerField(userStateData.serverId, currentValue, query);
+      ctx.reply(`✅ *${fieldName} server berhasil diupdate.*\n\n📄 *Detail Server:*\n- ${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)}: *${currentValue}*`, { parse_mode: 'Markdown' });
+    } catch (err) {
+      ctx.reply(`❌ *Terjadi kesalahan saat mengupdate ${fieldName} server.*`, { parse_mode: 'Markdown' });
+    }
+    delete userState[ctx.chat.id];
+    return;
+  } else {
+    if (!/^[a-zA-Z0-9.-]+$/.test(data)) {
+      return await ctx.answerCbQuery(`⚠️ *${fieldName} tidak valid!*`, { show_alert: true });
+    }
+    if (currentValue.length < 253) {
+      currentValue += data;
+    } else {
+      return await ctx.answerCbQuery(`⚠️ *${fieldName} maksimal adalah 253 karakter!*`, { show_alert: true });
+    }
+  }
+
+  userStateData[field] = currentValue;
+  const newMessage = `📊 *Silahkan masukkan ${fieldName} server baru:*\n\n${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} saat ini: *${currentValue}*`;
+  if (newMessage !== ctx.callbackQuery.message.text) {
+    await ctx.editMessageText(newMessage, {
+      reply_markup: { inline_keyboard: keyboard_nomor() },
+      parse_mode: 'Markdown'
+    });
+  }
+}
+async function updateUserSaldo(userId, saldo) {
+  return new Promise((resolve, reject) => {
+    db.run('UPDATE Users SET saldo = saldo + ? WHERE id = ?', [saldo, userId], function (err) {
+      if (err) {
+        logger.error('⚠️ Kesalahan saat menambahkan saldo user:', err.message);
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+async function updateServerField(serverId, value, query) {
+  return new Promise((resolve, reject) => {
+    db.run(query, [value, serverId], function (err) {
+      if (err) {
+        logger.error(`⚠️ Kesalahan saat mengupdate server field:`, err.message);
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+function generateRandomAmount(baseAmount) {
+  const random = Math.floor(Math.random() * 99) + 1;
+  return baseAmount + random;
+}
+
+global.depositState = {};
+global.pendingDeposits = {};
+let lastRequestTime = 0;
+const requestInterval = 1000;
+
+db.all('SELECT * FROM pending_deposits WHERE status = "pending"', [], (err, rows) => {
+  if (err) {
+    logger.error('Gagal load pending_deposits:', err.message);
+    return;
+  }
+  rows.forEach(row => {
+    global.pendingDeposits[row.unique_code] = {
+      amount: row.amount,
+      originalAmount: row.original_amount,
+      userId: row.user_id,
+      username: row.username,
+      timestamp: row.timestamp,
+      status: row.status,
+      qrMessageId: row.qr_message_id
+    };
+  });
+  logger.info('Pending deposit loaded:', Object.keys(global.pendingDeposits).length);
+});
+
+const config = {
+    storeName: NAMA_STORE,
+    auth_username: MERCHANT_ID,
+    auth_token: API_KEY,
+    baseQrString: DATA_QRIS,
+    logoPath: 'logo.png'
+};
+
+const qris = new QRISPayment(config);
+
+async function processDeposit(ctx, amount) {
+  const currentTime = Date.now();
+
+  if (currentTime - lastRequestTime < requestInterval) {
+    await ctx.reply('⚠️ *Terlalu banyak permintaan. Silahkan tunggu sebentar sebelum mencoba lagi.*', { parse_mode: 'Markdown' });
+    return;
+  }
+
+  lastRequestTime = currentTime;
+  const userId = ctx.from.id;
+  const uniqueCode = `user-${userId}-${currentTime}`;
+
+  const finalAmount = generateRandomAmount(parseInt(amount));
+
+  if (!global.pendingDeposits) {
+    global.pendingDeposits = {};
+  }
+
+  try {
+
+let waitMsg = await ctx.reply("⏳ Mohon menunggu.");
+
+const dots = [".", "..", "...", " "];
+let i = 0;
+const interval = setInterval(async () => {
+  i = (i + 1) % dots.length;
+  try {
+    await ctx.telegram.editMessageText(ctx.chat.id, waitMsg.message_id, null, `⏳ Mohon menunggu${dots[i]}`);
+  } catch (e) {
+    clearInterval(interval);
+  }
+}, 1000);
+
+await new Promise(resolve => setTimeout(resolve, 5000));
+clearInterval(interval);
+
+const { qrBuffer } = await qris.generateQR(finalAmount);
+
+const caption =
+  `🧾 *Pembayaran:*\n\n` +
+  `💵 Nominal: Rp ${finalAmount}\n` +
+  `⏳ Batas: 5 menit\n` +
+  `⚠️ Transfer *harus* sesuai\n\n` +
+  `✅ Otomatis terverifikasi\n` +
+  `📌 Jangan tutup halaman ini`;
+
+const inlineKeyboard = [
+  [
+    {
+      text: "📢 Join Grup",
+      url: "https://t.me/pxstoree"
+    }
+  ],
+  [
+    {
+      text: "❌ Batal Topup",
+      callback_data: `batal_topup_${uniqueCode}`
+    }
+  ]
+];
+
+const qrMessage = await ctx.replyWithPhoto(
+  { source: qrBuffer },
+  {
+    caption,
+    parse_mode: "Markdown",
+    reply_markup: { inline_keyboard: inlineKeyboard }
+  }
+);
+
+await ctx.deleteMessage(waitMsg.message_id);
+
+global.pendingDeposits[uniqueCode] = {
+  amount: finalAmount,
+  originalAmount: amount,
+  userId,
+  username: ctx.from.username || `user_${ctx.from.id}`,
+  timestamp: Date.now(),
+  status: 'pending',
+  qrMessageId: qrMessage.message_id
+};
+
+await insertPendingDeposit(uniqueCode, userId, ctx.from.username || `user_${ctx.from.id}`, finalAmount, amount, qrMessage.message_id);
+
+delete global.depositState[userId];
+
+
+  } catch (error) {
+    logger.error('❌ Kesalahan saat memproses deposit:', error);
+
+    if (global.depositState && global.depositState[userId]) {
+        delete global.depositState[userId];
+    }
+    if (global.pendingDeposits && global.pendingDeposits[uniqueCode]) {
+        delete global.pendingDeposits[uniqueCode];
+    }
+    await deletePendingDeposit(uniqueCode);
+
+    await ctx.reply('❌ *GAGAL! Terjadi kesalahan saat memproses pembayaran. Silahkan coba lagi nanti.*', { parse_mode: 'Markdown' });
+  }
+}
+
+function insertPendingDeposit(uniqueCode, userId, username, finalAmount, originalAmount, qrMessageId) {
+  return new Promise((resolve, reject) => {
+    db.run(
+      `INSERT INTO pending_deposits (unique_code, user_id, username, amount, original_amount, timestamp, status, qr_message_id)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [uniqueCode, userId, username, finalAmount, originalAmount, Date.now(), 'pending', qrMessageId],
+      (err) => {
+        if (err) {
+          logger.error('Gagal insert pending_deposits:', err.message);
+          reject(err);
+        } else {
+          resolve();
+        }
+      }
+    );
+  });
+}
+
+function deletePendingDeposit(uniqueCode) {
+  return new Promise((resolve, reject) => {
+    db.run('DELETE FROM pending_deposits WHERE unique_code = ?', [uniqueCode], (err) => {
+      if (err) {
+        logger.error('Gagal hapus pending_deposits (error):', err.message);
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+async function checkQRISStatus() {
+  try {
+    const pendingDeposits = Object.entries(global.pendingDeposits);
+    
+    for (const [uniqueCode, deposit] of pendingDeposits) {
+      if (deposit.status !== 'pending') continue;
+      
+      const depositAge = Date.now() - deposit.timestamp;
+      if (depositAge > 5 * 60 * 1000) {
+        try {
+          if (deposit.qrMessageId) {
+            await bot.telegram.deleteMessage(deposit.userId, deposit.qrMessageId);
+          }
+          await bot.telegram.sendMessage(deposit.userId, 
+            '❌ *Pembayaran Expired*\n\n' +
+            'Waktu pembayaran telah habis. Silahkan klik Top Up lagi untuk mendapatkan QR baru.',
+            { parse_mode: 'Markdown' }
+          );
+        } catch (error) {
+          logger.error('Error deleting expired payment messages:', error);
+        }
+        delete global.pendingDeposits[uniqueCode];
+        db.run('DELETE FROM pending_deposits WHERE unique_code = ?', [uniqueCode], (err) => {
+          if (err) logger.error('Gagal hapus pending_deposits (expired):', err.message);
+        });
+        continue;
+      }
+
+      try {
+        const result = await qris.checkPayment(uniqueCode, deposit.amount);
+        
+        if (result.success && result.data.status === 'PAID') {
+          const transactionKey = `${result.data.reference}_${result.data.amount}`;
+          if (global.processedTransactions.has(transactionKey)) {
+            logger.info(`Transaction ${transactionKey} already processed, skipping...`);
+            continue;
+          }
+
+          if (parseInt(result.data.amount) !== deposit.amount) {
+            logger.info(`Amount mismatch for ${uniqueCode}: expected ${deposit.amount}, got ${result.data.amount}`);
+            continue;
+          }
+
+          const success = await processMatchingPayment(deposit, result.data, uniqueCode);
+          if (success) {
+            logger.info(`Payment processed successfully for ${uniqueCode}`);
+            delete global.pendingDeposits[uniqueCode];
+            db.run('DELETE FROM pending_deposits WHERE unique_code = ?', [uniqueCode], (err) => {
+              if (err) logger.error('Gagal hapus pending_deposits (success):', err.message);
+            });
+          }
+        }
+      } catch (error) {
+        logger.error(`Error checking payment status for ${uniqueCode}:`, error.message);
+      }
+    }
+  } catch (error) {
+    logger.error('Error in checkQRISStatus:', error);
+  }
+}
+
+function keyboard_abc() {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const buttons = [];
+  for (let i = 0; i < alphabet.length; i += 3) {
+    const row = alphabet.slice(i, i + 3).split('').map(char => ({
+      text: char,
+      callback_data: char
+    }));
+    buttons.push(row);
+  }
+  buttons.push([{ text: '🔙 Hapus', callback_data: 'delete' }, { text: '✅ Konfirmasi', callback_data: 'confirm' }]);
+  buttons.push([{ text: '🔙 KEMBALI ke Menu Utama', callback_data: 'send_main_menu' }]);
+  return buttons;
+}
+
+function keyboard_nomor() {
+  const alphabet = '1234567890';
+  const buttons = [];
+  for (let i = 0; i < alphabet.length; i += 3) {
+    const row = alphabet.slice(i, i + 3).split('').map(char => ({
+      text: char,
+      callback_data: char
+    }));
+    buttons.push(row);
+  }
+  buttons.push([{ text: '🔙 Hapus', callback_data: 'delete' }, { text: '✅ Konfirmasi', callback_data: 'confirm' }]);
+  buttons.push([{ text: '🔙 KEMBALI ke Menu Utama', callback_data: 'send_main_menu' }]);
+  return buttons;
+}
+
+function keyboard_full() {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  const buttons = [];
+  for (let i = 0; i < alphabet.length; i += 3) {
+    const row = alphabet.slice(i, i + 3).split('').map(char => ({
+      text: char,
+      callback_data: char
+    }));
+    buttons.push(row);
+  }
+  buttons.push([{ text: '🔙 Hapus', callback_data: 'delete' }, { text: '✅ Konfirmasi', callback_data: 'confirm' }]);
+  buttons.push([{ text: '🔙 KEMBALI ke Menu Utama', callback_data: 'send_main_menu' }]);
+  return buttons;
+}
+
+global.processedTransactions = new Set();
+async function updateUserBalance(userId, amount) {
+    return new Promise((resolve, reject) => {
+        db.run("UPDATE users SET saldo = saldo + ? WHERE user_id = ?",
+            [amount, userId],
+            function(err) {
+                if (err) {
+                    logger.error('Kesalahan saat mengupdate saldo pengguna:', err.message);
+                    reject(err);
+                    return;
+                }
+                resolve(this.changes);
+            }
+        );
+    });
+}
+
+async function getUserBalance(userId) {
+  return new Promise((resolve, reject) => {
+    db.get("SELECT saldo FROM users WHERE user_id = ?", [userId],
+      (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve(row);
+      }
+    );
+  });
+}
+
+function getBotGroupData() {
+  try {
+    if (!groupId || !BOT_TOKEN) {
+      logger.warn('❌ Konfigurasi grup tidak lengkap di .vars.json (GROUP_CHAT_ID atau BOT_TOKEN kosong). Notifikasi grup mungkin tidak berfungsi.');
+      return null;
+    }
+
+    return { keyGroup: BOT_TOKEN, chatId: groupId };
+
+  } catch (err) {
+    logger.error('❌ Terjadi kesalahan saat mendapatkan data grup:', err.message);
+    return null;
+  }
+}
+
+async function getIspNameFromExternalSource(domainOrIp) {
+  if (!domainOrIp || domainOrIp === '-') {
+    return 'N/A'; // Jika domain/IP tidak valid, kembalikan N/A
+  }
+  try {
+    // Menggunakan ip-api.com untuk lookup ISP
+    const response = await axios.get(`http://ip-api.com/json/${domainOrIp}?fields=isp`);
+    if (response.data && response.data.isp) {
+      return response.data.isp;
+    }
+    return 'Unknown ISP';
+  } catch (error) {
+    logger.error(`❌ Gagal mengambil ISP untuk ${domainOrIp}:`, error.message);
+    return 'Failed to get ISP'; 
+  }
+}
+
+function censorAccountUsername(username) {
+  if (!username || typeof username !== 'string') {
+    return 'N/A'; 
+  }
+  if (username.length <= 3) {
+    return username + 'xxx'; 
+  }
+ 
+  return username.substring(0, 3) + 'xxx';
+}
+
+
+async function sendTransactionLogToGroup({
+  trxNumber,
+  userRole,
+  tgUsername,
+  tgUserId,
+  serverName,
+  ispName,
+  domainName,
+  accountUsername,
+  serviceName,
+  limitQuota,
+  limitLogin,
+  trxType,
+  activeDays,
+  costValue,
+  hargaNormalPerHari,
+  saldoDikurangi,
+  userSaldoNow,
+  dateLabel,
+  timeLabel
+}) {
+  const groupData = getBotGroupData();
+  if (!groupData || !groupData.chatId || !groupData.keyGroup) {
+    logger.warn('❌ Data grup tidak lengkap (chatId atau keyGroup), notifikasi tidak dikirim.');
+    return;
+  }
+
+  // Tentukan emoji dan teks status berdasarkan role
+  let statusEmoji = '';
+  let statusText = '';
+  if (userRole === 'admin') {
+    statusEmoji = '👑';
+    statusText = 'Admin';
+  } else if (userRole === 'reseller') {
+    statusEmoji = '🏆';
+    statusText = 'Reseller';
+  } else {
+    statusEmoji = '👤';
+    statusText = 'Member';
+  }
+
+  // Terapkan sensor pada username akun sebelum ditampilkan
+  const censoredAccountUsername = censorAccountUsername(accountUsername);
+
+  const message = `
+<b>━━━━━━━━━━━━━━━━━━</b>
+<b>❇️ Transaksi Berhasil ❇️</b>
+<b>━━━━━━━━━━━━━━━━━━</b>
+📒 <b>» No Trx:</b> #${trxNumber}
+🌀 <b>» Status:</b> ${statusText} ${statusEmoji}
+♂️ <b>» Username:</b> ${tgUsername}
+📋 <b>» ID:</b> <code>${tgUserId}</code>
+🏷️ <b>» Server:</b> ${serverName}
+🏷️ <b>» ISP :</b> ${ispName}
+🏷️ <b>» Domain / IP :</b> <code>${domainName}</code>
+🏷️ <b>» Nama :</b> ${censoredAccountUsername}
+🏷️ <b>» Produk:</b> ${serviceName}
+🏷️ <b>» Limit Quota :</b> ${limitQuota} GB
+🏷️ <b>» Limit Login :</b> ${limitLogin} Hp
+🏷️ <b>» Type:</b> ${trxType}
+🏷️ <b>» Durasi akun:</b> ${activeDays} Hari Rp.${costValue.toLocaleString('id-ID')}
+🏷️ <b>» Harga Normal Perhari:</b> Rp.${hargaNormalPerHari.toLocaleString('id-ID')}
+🏷️ <b>» Saldo di kurangi:</b> Rp.${saldoDikurangi.toLocaleString('id-ID')}
+🏷️ <b>» Saldo saat ini:</b> Rp.${userSaldoNow.toLocaleString('id-ID')}
+🏷️ <b>» Tanggal:</b> ${dateLabel}
+🏷️ <b>» Waktu:</b> ${timeLabel}
+<b>━━━━━━━━━━━━━━━━━━</b>
+`;
+
+  try {
+    await axios.post(`https://api.telegram.org/bot${groupData.keyGroup}/sendMessage`, {
+      chat_id: groupData.chatId,
+      text: message,
+      parse_mode: 'HTML'
+    });
+
+    logger.info(`✅ Log transaksi #${trxNumber} dikirim ke grup ${groupData.chatId}`);
+  } catch (err) {
+    logger.error(`❌ Gagal kirim log transaksi ke grup: ${err.response?.data?.description || err.message}`);
+  }
+}
+// --- AKHIR FUNGSI sendTransactionLogToGroup ---
+
+// --- AKHIR FUNGSI sendTransactionLogToGroup ---
+
+
+// --- BAGIAN FUNGSI afterAccountTransaction (GANTI SELURUHNYA) ---
+async function afterAccountTransaction({
+  userId,
+  username,
+  produk,
+  serverId,
+  jenis,
+  durasi,
+  accountUsername // Ini adalah username akun VPN yang sebenarnya dari state.username
+}) {
+  try {
+    const now = new Date();
+
+    // Ambil informasi server dari DB
+    const serverDetails = await new Promise((resolve, reject) => {
+      db.get('SELECT nama_server, harga, domain, quota, iplimit FROM Server WHERE id = ?', [serverId], (err, row) => {
+        if (err) {
+          logger.error('❌ Gagal mengambil data server:', err.message);
+          return reject(err);
+        }
+        resolve(row || {});
+      });
+    });
+
+    const serverNamaTampilan = serverDetails.nama_server || '-';
+    const hargaPerHari = serverDetails.harga || 0;
+    const domainServer = serverDetails.domain || '-';
+    const quotaServer = serverDetails.quota || 0;
+    const iplimitServer = serverDetails.iplimit || 0;
+
+    // Panggil fungsi untuk mendapatkan ISP Name dari sumber eksternal
+    const ispServer = await getIspNameFromExternalSource(domainServer);
+
+    let totalHarga = hargaPerHari * durasi;
+
+    // Ambil role user saat ini
+    const userRole = await new Promise((resolve) => {
+        db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+            resolve(row ? row.role : 'member');
+        });
+    });
+
+    // Terapkan diskon reseller jika role adalah 'reseller'
+    if (userRole === 'reseller') {
+        const resellerDiscount = await new Promise((resolve) => {
+            db.get('SELECT discount_percent FROM reseller_config WHERE id = 1', (err, row) => {
+                if (err) reject(err);
+                else resolve(row ? row.discount_percent : 0);
+            });
+        });
+        totalHarga = Math.floor(totalHarga * (100 - resellerDiscount) / 100);
+    }
+
+    // Ambil nomor transaksi terakhir
+    const trxNumber = await getLastTransactionNumber();
+
+    // Ambil saldo terbaru user
+    const saldo = await getUserSaldo(userId);
+
+    // Format tanggal dan waktu
+    const tanggal = now.toLocaleDateString('id-ID', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    }).replace(/\//g, '.');
+
+    const waktu = now.toLocaleTimeString('id-ID', {
+      hour: '2-digit',
+      minute: '2-digit'
+    }).replace(/\./g, ':') + ' WIB';
+
+    // Kirim log transaksi ke grup
+    await sendTransactionLogToGroup({
+      trxNumber,
+      userRole: adminIds.includes(userId) ? 'admin' : userRole,
+      tgUsername: username ? (username.startsWith('@') ? username : `@${username}`) : 'Tidak tersedia',
+      tgUserId: userId,
+      serverName: serverNamaTampilan,
+      ispName: ispServer,
+      domainName: domainServer,
+      accountUsername: accountUsername, // Pastikan ini meneruskan username yang sebenarnya
+      serviceName: produk || 'Tidak diketahui',
+      limitQuota: quotaServer,
+      limitLogin: iplimitServer,
+      trxType: jenis || 'Create',
+      activeDays: durasi || 0,
+      costValue: totalHarga || 0,
+      hargaNormalPerHari: hargaPerHari || 0,
+      saldoDikurangi: totalHarga || 0,
+      userSaldoNow: saldo || 0,
+      dateLabel: tanggal,
+      timeLabel: waktu
+    });
+
+    logger.info(`✅ afterAccountTransaction selesai untuk user ${userId}, transaksi #${trxNumber}`);
+  } catch (error) {
+    logger.error(`❌ Error afterAccountTransaction user ${userId}:`, error?.stack || error?.message || error);
+  }
+}
+
+
+// Dapatkan nomor transaksi terakhir
+function getLastTransactionNumber() {
+  return new Promise((resolve, reject) => {
+    db.get('SELECT id FROM log_penjualan ORDER BY id DESC LIMIT 1', (err, row) => {
+      if (err) return reject(err);
+      resolve(row ? row.id + 1 : 1000);
+    });
+  });
+}
+
+// Ambil saldo user dari database
+function getUserSaldo(userId) {
+  return new Promise((resolve, reject) => {
+    db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], (err, row) => {
+      if (err) return reject(err);
+      resolve(row ? row.saldo : 0);
+    });
+  });
+}
+
+async function sendPaymentSuccessNotificationByUserId(userId, deposit, currentBalance, username = 'Tidak tersedia') {
+  try {
+    const saldo = await new Promise((resolve, reject) => {
+      db.get('SELECT saldo FROM users WHERE user_id = ?', [userId], (err, row) => {
+        if (err) reject(err);
+        else resolve(row ? row.saldo : 0);
+      });
+    });
+
+    const hasBonus = deposit.bonus && deposit.bonus > 0 && deposit.bonus_percent;
+    const bonusText = hasBonus
+      ? `🎁 Bonus Top Up: *Rp${deposit.bonus}* (${deposit.bonus_percent}%)\n`
+      : '';
+
+    const messageText =
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `✅ *Pembayaran Berhasil ✅*\n` +
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `🏷️ *» Username:* \`${username}\`\n` +
+      `🏷️ *» ID Pengguna:* \`${userId}\`\n` +
+      `🏷️ *» Nominal:* Rp ${deposit.amount}\n` +
+      `🏷️ *» Saldo Ditambahkan:* Rp ${deposit.originalAmount}\n` +
+      bonusText +
+      `🏷️ *» Saldo Sekarang:* Rp ${saldo.toLocaleString('id-ID')}`;
+
+    await bot.telegram.sendMessage(userId, messageText, {
+      parse_mode: 'Markdown',
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '💸 Top Up', callback_data: 'menu_topup' },
+            { text: '📝 Menu Utama', callback_data: 'send_main_menu' }
+          ]
+        ]
+      }
+    });
+
+    // Hapus pesan QRIS (jika ada)
+    if (deposit.qrMessageId) {
+      try {
+        await bot.telegram.deleteMessage(userId, deposit.qrMessageId);
+      } catch (e) {
+        logger.warn(`Gagal hapus pesan QRIS user ${userId} (message_id ${deposit.qrMessageId}): ${e.message}`);
+      }
+    }
+
+    // Kirim juga ke grup
+    const group = getBotGroupData();
+    if (group) {
+      const { keyGroup, chatId } = group;
+
+      const messageToGroup =
+        `━━━━━━━━━━━━━━━━━━\n` +
+        `❇️ *Top Up Berhasil* ❇️\n` +
+        `━━━━━━━━━━━━━━━━━━\n` +
+        `🏷️ *» Username:* \`@${username}\`\n` +
+        `🏷️ *» ID:* \`${userId}\`\n` +
+        `🏷️ *» Nominal:* Rp${deposit.amount.toLocaleString('id-ID')}\n` +
+        `🏷️ *» Bonus Top Up:* Rp${(deposit.bonus || 0).toLocaleString('id-ID')} (${deposit.bonus_percent || 0}%)\n` +
+        `🏷️ *» Saldo Sekarang:* Rp${currentBalance.toLocaleString('id-ID')}`;
+
+      try {
+        await axios.post(`https://api.telegram.org/bot${keyGroup}/sendMessage`, {
+          chat_id: chatId,
+          text: messageToGroup,
+          parse_mode: 'Markdown'
+        });
+      } catch (err) {
+        const errorMessage = `❗ Gagal kirim ke grup:\n${err.response?.data?.description || err.message}`;
+        logger.warn(errorMessage);
+
+        // Kirim error ke user
+        await bot.telegram.sendMessage(userId, `⚠️ *Gagal kirim notifikasi ke grup.*\n\n${errorMessage}`, {
+          parse_mode: 'Markdown'
+        });
+      }
+    }
+
+// === [UPGRADE TO RESELLER via TOPUP] ===
+try {
+  const row = await new Promise((resolve, reject) => {
+    db.get('SELECT role FROM users WHERE user_id = ?', [userId], (err, row) => {
+      if (err) reject(err); else resolve(row);
+    });
+  });
+
+  if (row && row.role !== 'reseller' && deposit.originalAmount >= UPGRADE_RESELLER_TOPUP_THRESHOLD) {
+    db.run("UPDATE users SET role = 'reseller' WHERE user_id = ?", [userId], (err) => {
+      if (!err) {
+        bot.telegram.sendMessage(userId, 
+          '🎉 Selamat! Karena topup kamu ≥ Rp30.000, akunmu otomatis di-upgrade menjadi *Reseller*! Nikmati harga khusus & fitur reseller.',
+          { parse_mode: 'Markdown' }
+        );
+        if (ADMIN) {
+          bot.telegram.sendMessage(ADMIN, 
+            `📢 User @${username || userId} (${userId}) otomatis di-upgrade Reseller via Topup.`, 
+            { parse_mode: 'Markdown' }
+          );
+        }
+        logger.info(`[UPGRADE] User ${userId} berhasil upgrade reseller otomatis via topup.`);
+      }
+    });
+  }
+} catch(e) {
+  logger.error('Gagal auto-upgrade reseller via topup:', e.message);
+}
+// === [END UPGRADE to Reseller] ===
+
+    return true;
+  } catch (error) {
+    logger.error('❌ Error sending payment notification (by userId):', error);
+    return false;
+  }
+}
+
+async function processMatchingPayment(deposit, matchingTransaction, uniqueCode) {
+  // Pastikan username tersedia
+  if (!deposit.username) {
+    try {
+      const telegramUser = await bot.telegram.getChat(deposit.userId);
+      deposit.username = telegramUser.username ? `@${telegramUser.username}` : 'Tidak tersedia';
+    } catch (e) {
+      deposit.username = 'Tidak tersedia';
+    }
+  }
+
+  // Cegah duplikasi transaksi
+  const transactionKey = `${matchingTransaction.reference_id}_${matchingTransaction.amount}`;
+  if (global.processedTransactions.has(transactionKey)) {
+    logger.info(`Transaction ${transactionKey} already processed, skipping...`);
+    return false;
+  }
+
+  try {
+    // Update saldo utama
+    logger.info(`Update saldo untuk user ${deposit.userId}, amount: ${deposit.originalAmount}`);
+    await updateUserBalance(deposit.userId, Number(deposit.originalAmount));
+
+    // Ambil config bonus
+    const config = await new Promise((resolve, reject) => {
+      db.get('SELECT * FROM bonus_config WHERE id = 1', (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
+
+    // Hitung bonus jika memenuhi syarat
+    let bonus = 0;
+    let bonusPercent = 0;
+
+    if (config?.enabled && deposit.originalAmount >= config.min_topup) {
+      bonus = Math.floor(deposit.originalAmount * config.bonus_percent / 100);
+      bonusPercent = config.bonus_percent;
+
+      deposit.bonus = bonus;
+      deposit.bonus_percent = bonusPercent;
+
+      // Tambah bonus ke saldo dan log
+      await prosesBonusTopUp(deposit.userId, deposit.username, deposit.originalAmount);
+    } else {
+      deposit.bonus = 0;
+      deposit.bonus_percent = 0;
+    }
+
+    // Catat topup ke log
+    await logTopup(deposit.userId, deposit.username, deposit.originalAmount, 'QRIS Orkut');
+
+    // Ambil saldo terkini
+    const userBalance = await new Promise((resolve, reject) => {
+      db.get('SELECT saldo FROM users WHERE user_id = ?', [deposit.userId], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
+
+    if (!userBalance) throw new Error('User balance not found after update');
+
+    // Kirim notifikasi
+    const notificationSent = await sendPaymentSuccessNotificationByUserId(
+      deposit.userId,
+      {
+        amount: deposit.originalAmount,
+        originalAmount: deposit.originalAmount,
+        bonus: deposit.bonus,
+        bonus_percent: deposit.bonus_percent,
+        qrMessageId: deposit.qrMessageId
+      },
+      userBalance.saldo,
+      deposit.username
+    );
+
+    if (notificationSent) {
+      global.processedTransactions.add(transactionKey);
+
+      // Hapus dari global dan database
+      delete global.pendingDeposits[uniqueCode];
+      db.run('DELETE FROM pending_deposits WHERE unique_code = ?', [uniqueCode], (err) => {
+        if (err) logger.error('Gagal hapus pending_deposits (success):', err.message);
+      });
+
+      return true;
+    }
+
+    return false;
+  } catch (error) {
+    logger.error('❌ Error processing payment:', error);
+    return false;
+  }
+}
+
+setInterval(async () => {
+  try {
+    await checkQRISStatus();
+  } catch (err) {
+    logger.error("❌ Gagal cek status QRIS:", err.message);
+  }
+}, 10000);
+
+async function kirimFileKeTelegram() {
+  const form = new FormData();
+
+  if (!fs.existsSync(FOLDER_TEMPATDB)) {
+    console.log("❌ File tidak ditemukan:", FOLDER_TEMPATDB);
+    return;
+  }
+
+  form.append("chat_id", ADMIN);
+  form.append("document", fs.createReadStream(FOLDER_TEMPATDB));
+
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+      method: "POST",
+      body: form,
+    });
+
+    const data = await res.json();
+    if (data.ok) {
+      console.log(`[${new Date().toLocaleTimeString()}] ✅ File terkirim ke Telegram.`);
+    } else {
+      console.error("❌ Gagal mengirim file:", data.description);
+    }
+  } catch (err) {
+    console.error("❌ Error saat mengirim file:", err.message);
+  }
+}
+
+setInterval(kirimFileKeTelegram, 2 * 60 * 60 * 1000);
+
+function resetUserSaldo(userId) {
+  return new Promise((resolve, reject) => {
+    db.run(
+      'UPDATE users SET saldo = 0 WHERE user_id = ? AND saldo > 0',
+      [userId],
+      function (err) {
+        if (err) return reject(err);
+        resolve(this.changes > 0);
+      }
+    );
+  });
+}
+
+function getUserSaldoById(userId) {
+  return new Promise((resolve, reject) => {
+    db.get(
+      'SELECT user_id, saldo FROM users WHERE user_id = ?',
+      [userId],
+      (err, row) => {
+        if (err) return reject(err);
+        resolve(row || null);
+      }
+    );
+  });
+}
+
+function getUsersWithSaldo(limit, offset) {
+  return new Promise((resolve, reject) => {
+    db.all(
+      'SELECT user_id, saldo FROM users WHERE saldo > 0 ORDER BY saldo DESC LIMIT ? OFFSET ?',
+      [limit, offset],
+      (err, rows) => {
+        if (err) return reject(err);
+        resolve(rows || []);
+      }
+    );
+  });
+}
+
+bot.command('ceksaldo', async (ctx) => {
+  const adminOnly = true;
+  const userId = ctx.from.id;
+
+  if (adminOnly && !adminIds.includes(userId)) {
+    return ctx.reply('❌ Anda tidak memiliki izin untuk menggunakan perintah ini.');
+  }
+
+  const input = ctx.message.text.split(' ')[1];
+  if (!input) return ctx.reply('⚠️ Contoh: /ceksaldo 123456789');
+
+  const targetId = parseInt(input);
+  if (isNaN(targetId)) {
+    return ctx.reply('❌ Hanya mendukung ID, bukan username. Contoh: /ceksaldo 123456789');
+  }
+
+  try {
+    const user = await getUserSaldoById(targetId);
+    if (!user) return ctx.reply('❌ User tidak ditemukan.');
+
+    const saldo = `Rp${user.saldo.toLocaleString('id-ID')}`;
+
+    ctx.reply(`📋 *Saldo User:*\n🆔 \`${user.user_id}\`\n💰 ${saldo}`, {
+      parse_mode: 'Markdown'
+    });
+  } catch (err) {
+    logger.error('❌ Gagal cek saldo:', err);
+    ctx.reply('❌ Terjadi kesalahan saat memeriksa saldo.');
+  }
+});
+
+function reduceUserSaldoByInput(userId, amount) {
+  return new Promise((resolve, reject) => {
+    db.run(
+      'UPDATE users SET saldo = saldo - ? WHERE user_id = ? AND saldo >= ?',
+      [amount, userId, amount],
+      function (err) {
+        if (err) return reject(err);
+        resolve(this.changes > 0);
+      }
+    );
+  });
+}
+
+bot.command('kurangisaldo', async (ctx) => {
+  const adminId = ctx.from.id;
+  if (!adminIds.includes(adminId)) {
+    return ctx.reply('❌ Anda tidak memiliki izin untuk menggunakan perintah ini.');
+  }
+
+  const args = ctx.message.text.trim().split(' ');
+  if (args.length !== 3) {
+    return ctx.reply('⚠️ Format salah. Contoh: /kurangisaldo 123456789 5000');
+  }
+
+  const targetId = parseInt(args[1]);
+  const amount = parseInt(args[2]);
+
+  if (isNaN(targetId) || isNaN(amount) || amount <= 0) {
+    return ctx.reply('❌ Format salah. Gunakan ID dan nominal angka yang valid.');
+  }
+
+  try {
+    const user = await getUserSaldoById(targetId);
+    if (!user) {
+      return ctx.reply('❌ User tidak ditemukan.');
+    }
+
+    if (user.saldo < amount) {
+      return ctx.reply(`❌ Saldo user hanya Rp${user.saldo.toLocaleString('id-ID')}, tidak cukup.`);
+    }
+
+    const success = await reduceUserSaldoByInput(targetId, amount);
+    if (!success) {
+      return ctx.reply('❌ Gagal mengurangi saldo. Mungkin saldo tidak cukup.');
+    }
+
+    const newUser = await getUserSaldoById(targetId);
+    const newSaldo = `Rp${newUser.saldo.toLocaleString('id-ID')}`;
+
+    return ctx.reply(`✅ Saldo berhasil dikurangi.\n\n🆔 \`${newUser.user_id}\`\n💰 Saldo Sekarang: *${newSaldo}*`, {
+      parse_mode: 'Markdown'
+    });
+  } catch (err) {
+    logger.error('❌ Gagal mengurangi saldo user:', err);
+    return ctx.reply('❌ Terjadi kesalahan saat mengurangi saldo.');
+  }
+});
+
+bot.command('resetsaldo', async (ctx) => {
+  const adminOnly = true;
+  const userId = ctx.from.id;
+
+  if (adminOnly && !adminIds.includes(userId)) {
+    return ctx.reply('❌ Anda tidak memiliki izin untuk menggunakan perintah ini.');
+  }
+
+  const input = ctx.message.text.split(' ')[1];
+  if (!input) return ctx.reply('⚠️ Contoh: /resetsaldo 123456789 atau /resetsaldo @user');
+
+  try {
+    const success = await resetUserSaldo(input);
+    if (success) {
+      ctx.reply(`✅ Saldo untuk user *${input}* telah direset ke 0.`, { parse_mode: 'Markdown' });
+    } else {
+      ctx.reply(`❌ Gagal reset saldo. Mungkin user tidak ditemukan atau saldonya sudah 0.`);
+    }
+  } catch (err) {
+    logger.error('❌ Gagal reset saldo:', err);
+    ctx.reply('❌ Terjadi kesalahan saat mereset saldo.');
+  }
+});
+
+
+
+function getTotalUserWithSaldo() {
+  return new Promise((resolve, reject) => {
+    db.get('SELECT COUNT(*) as count FROM users WHERE saldo > 0', (err, row) => {
+      if (err) return reject(err);
+      resolve(row.count);
+    });
+  });
+}
+
+async function sendPaginatedUserSaldo(ctx, page = 1, isEdit = false) {
+  const perPage = 10;
+  const offset = (page - 1) * perPage;
+
+  try {
+    const [users, total] = await Promise.all([
+      getUsersWithSaldo(perPage, offset),
+      getTotalUserWithSaldo()
+    ]);
+
+    if (users.length === 0) {
+      return ctx.reply('📭 Tidak ada data saldo untuk ditampilkan.');
+    }
+
+    let message = `<b>📋 Daftar Saldo User (Halaman ${page})</b>\n\n`;
+
+    for (const user of users) {
+      message +=`🆔 <code>${user.user_id}</code>\n` +
+                 `💰 Rp.${user.saldo.toLocaleString('id-ID')}\n\n`;
+    }
+
+    const hasNext = offset + perPage < total;
+
+    const keyboard = {
+      inline_keyboard: [[
+        ...(page > 1 ? [{ text: '⬅️ Prev', callback_data: `listsaldo_${page - 1}` }] : []),
+        ...(hasNext ? [{ text: '➡️ Next', callback_data: `listsaldo_${page + 1}` }] : [])
+      ]]
+    };
+
+    if (isEdit && ctx.callbackQuery?.message) {
+      return ctx.telegram.editMessageText(
+        ctx.chat.id,
+        ctx.callbackQuery.message.message_id,
+        null,
+        message,
+        { parse_mode: 'HTML', reply_markup: keyboard }
+      );
+    } else {
+      return ctx.reply(message, {
+        parse_mode: 'HTML',
+        reply_markup: keyboard
+      });
+    }
+
+  } catch (err) {
+    logger.error('❌ Gagal mengambil daftar saldo:', err);
+    return ctx.reply('❌ Terjadi kesalahan saat mengambil daftar saldo.');
+  }
+}
+
+bot.on('callback_query', async (ctx) => {
+  const userId = ctx.from.id;
+  const data = ctx.callbackQuery.data;
+  const userStateData = userState[ctx.chat.id];
+
+  // Pastikan ini ditangani hanya sekali per callback
+  await ctx.answerCbQuery();
+
+  // Check if the callback data is for paginated saldo list
+  if (data.startsWith('listsaldo_')) {
+    const page = parseInt(data.split('_')[1], 10);
+    await sendPaginatedUserSaldo(ctx, page, true);
+  }
+  // [UPDATE: Menambahkan handler untuk listreseller_ callback di sini]
+  else if (data.startsWith('listreseller_')) {
+      const parts = data.split('_');
+      const direction = parts[1];
+      let page = parseInt(parts[2]);
+      page = direction === 'next' ? page + 1 : page - 1;
+      if (page < 1) page = 1;
+      await sendPaginatedResellerList(ctx, page, ctx.callbackQuery.message.message_id);
+  }
+  // Tambahkan penanganan callback lainnya di sini jika ada
+  else if (userStateData) { // Existing userState handling logic
+      // Periksa apakah ini callback dari keyboard_nomor atau keyboard_abc
+      const isNumericInput = !isNaN(parseInt(data, 10)) || data === 'delete' || data === 'confirm';
+      const isAlphaNumericInput = /^[a-zA-Z0-9.-]+$/.test(data) || data === 'delete' || data === 'confirm';
+
+      if (global.depositState[ctx.from.id] && global.depositState[ctx.from.id].action === 'request_amount' && isNumericInput) {
+          await handleDepositState(ctx, ctx.from.id, data);
+      } else {
+          switch (userStateData.step) {
+              case 'add_saldo':
+                  if (isNumericInput) await handleAddSaldo(ctx, userStateData, data);
+                  break;
+              case 'edit_batas_create_akun':
+                  if (isNumericInput) await handleEditBatasCreateAkun(ctx, userStateData, data);
+                  break;
+              case 'edit_limit_ip':
+                  if (isNumericInput) await handleEditiplimit(ctx, userStateData, data);
+                  break;
+              case 'edit_quota':
+                  if (isNumericInput) await handleEditQuota(ctx, userStateData, data);
+                  break;
+              case 'edit_auth':
+                  if (isAlphaNumericInput) await handleEditAuth(ctx, userStateData, data);
+                  break;
+              case 'edit_domain':
+                  if (isAlphaNumericInput) await handleEditDomain(ctx, userStateData, data);
+                  break;
+              case 'edit_harga':
+                  if (isNumericInput) await handleEditHarga(ctx, userStateData, data);
+                  break;
+              case 'edit_nama':
+                  if (isAlphaNumericInput) await handleEditNama(ctx, userStateData, data);
+                  break;
+              case 'edit_total_create_akun':
+                  if (isNumericInput) await handleEditTotalCreateAkun(ctx, userStateData, data);
+                  break;
+              // Tambahkan case untuk callback_data yang tidak memerlukan input dari keyboard_nomor/abc
+              default:
+                  // Jika callback_data tidak cocok dengan state yang sedang aktif,
+                  // biarkan aksi default atau berikan pesan error.
+                  logger.warn(`Unhandled callback_query: ${data} for userState.step: ${userStateData.step}`);
+                  // Opsional: ctx.reply('Perintah tidak dikenal atau sesi telah berakhir.');
+                  break;
+          }
+      }
+  }
+});
+
+
+bot.command('listsaldo', async (ctx) => {
+  if (!adminIds.includes(ctx.from.id)) {
+    return ctx.reply('❌ Anda tidak memiliki izin untuk melihat daftar saldo.');
+  }
+
+  await sendPaginatedUserSaldo(ctx, 1);
+});
+
+// [UPDATE: Fungsi downgradeInactiveResellers]
+async function downgradeInactiveResellers() {
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+
+    db.all(`SELECT user_id, username FROM users WHERE role = 'reseller'`, [], async (err, resellers) => {
+        if (err) {
+            logger.error('❌ Error mengambil daftar reseller untuk downgrade:', err.message);
+            return;
+        }
+
+        for (const reseller of resellers) {
+            // Jangan downgrade admin jika mereka juga reseller
+            if (adminIds.includes(reseller.user_id)) {
+                continue;
+            }
+
+            db.get(`
+                SELECT COUNT(*) AS total_transactions
+                FROM log_penjualan
+                WHERE user_id = ? AND waktu_transaksi >= ? AND action_type IN ('create', 'renew')
+            `, [reseller.user_id, thirtyDaysAgo], (err, row) => {
+                if (err) {
+                    logger.error(`❌ Error cek transaksi reseller ${reseller.user_id}:`, err.message);
+                    return;
+                }
+
+                const totalTransactions = row?.total_transactions || 0;
+
+                if (totalTransactions < 3) {
+                    db.run(`UPDATE users SET role = 'member' WHERE user_id = ?`, [reseller.user_id], (err) => {
+                        if (err) {
+                            logger.error(`❌ Gagal downgrade reseller ${reseller.user_id}:`, err.message);
+                        } else {
+                            logger.info(`📉 Reseller ${reseller.user_id} didowngrade ke member (transaksi: ${totalTransactions})`);
+                            bot.telegram.sendMessage(reseller.user_id,
+                                '⚠️ *Pemberitahuan Penting: Role Reseller Anda telah dinonaktifkan.*\n\n' +
+                                'Anda telah didowngrade menjadi *Member Biasa* karena jumlah transaksi Anda dalam 30 hari terakhir kurang dari 3 transaksi. ' +
+                                'Jika Anda ingin menjadi Reseller kembali, silakan hubungi administrator.',
+                                { parse_mode: 'Markdown' }
+                            ).catch(e => logger.warn(`Gagal kirim notif downgrade ke ${reseller.user_id}: ${e.message}`));
+                        }
+                    });
+                } else {
+                    logger.info(`✅ Reseller ${reseller.user_id} aktif (transaksi: ${totalTransactions})`);
+                }
+            });
+        }
+    });
+}
+// [END UPDATE]
+
+
+process.on('uncaughtException', (err) => {
+  console.error('🔥 Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('🔥 Unhandled Rejection:', reason);
+});
+
+app.listen(port)
+  .on('listening', () => {
+    logger.info(`Express server listening on port ${port}`);
+    bot.launch().then(() => {
+      logger.info("Bot launched");
+      // [UPDATE: Menjalankan pengecekan downgrade reseller secara berkala]
+      setInterval(() => {
+        logger.info('🔁 Menjalankan pengecekan downgrade reseller...');
+        downgradeInactiveResellers();
+      }, 6 * 60 * 60 * 1000); // Tiap 6 jam
+      // [END UPDATE]
+    }).catch((err) => {
+      logger.error("Bot failed to launch:", err);
+    });
+  })
+  .on('error', (err) => {
+    logger.error("Express failed to start:", err.message);
+    bot.launch().catch(err => {
+      logger.error("Bot fallback launch error:", err.message);
+    });
+  });
