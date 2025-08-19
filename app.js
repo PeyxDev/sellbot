@@ -576,11 +576,11 @@ const tombolSewaScriptAktif = await new Promise((resolve) => {
   // Menentukan teks status berdasarkan role
   let statusText = '';
   if (adminIds.includes(userId)) { // Cek jika user adalah admin
-    statusText = `<code>» Status      : Admin</code>`;
+    statusText = `» Status      <code>:</code> Admin`;
   } else if (userRole === 'reseller') {
-    statusText = `<code>» Status      : Reseller</code>`;
+    statusText = `» Status      <code>:</code> Reseller`;
   } else {
-    statusText = `<code>» Status      : Member</code>`; // Mengubah emoji untuk Member
+    statusText = `» Status      <code>:</code> Member`; // Mengubah emoji untuk Member
   }
 
   // Pesan utama dengan format yang sudah padat dan rapi
@@ -590,22 +590,22 @@ const tombolSewaScriptAktif = await new Promise((resolve) => {
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 <b>INFORMASI USER</b>
 ${statusText}
-<code>» Username    : ${userName}</code>
-<code>» Your ID     : ${userId}</code>
-<code>» Saldo       : Rp.${saldo.toLocaleString('id-ID')}</code>
+» Username    <code>:</code> ${userName}
+» Your ID     <code>:</code> ${userId}
+» Saldo       <code>:</code> Rp.${saldo.toLocaleString('id-ID')}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 <b>STATISTIK ANDA</b>
-<code>» Hari Ini    : ${userToday} akun</code>
-<code>» Minggu Ini  : ${userWeek} akun</code>
-<code>» Bulan Ini   : ${userMonth} akun</code>
+» Hari Ini    <code>:</code> ${userToday} <i>akun</i>
+» Minggu Ini  <code>:</code> ${userWeek} <i>akun</i>
+» Bulan Ini   <code>:</code> ${userMonth} <i>akun</i>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 <b>STATISTIK GLOBAL</b>
-<code>» Hari Ini    : ${globalToday} akun</code>
-<code>» Minggu Ini  : ${globalWeek} akun</code>
-<code>» Bulan Ini   : ${globalMonth} akun</code>
-<code>» Total Server: ${jumlahServer}</code>
-<code>» Total User  : ${jumlahPengguna}</code>
-<code>» Runtime Bot : ${uptimeFormatted}</code>
+» Hari Ini    <code>:</code> ${globalToday} <i>akun</i>
+» Minggu Ini  <code>:</code> ${globalWeek} <i>akun</i>
+» Bulan Ini   <code>:</code> ${globalMonth} <i>akun</i>
+» Total Server<code>:</code> ${jumlahServer} <i>aktif</i>
+» Total User  <code>:</code> ${jumlahPengguna} <i>akun</i>
+» Runtime Bot <code>:</code> ${uptimeFormatted}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 <b>BONUS TOP UP</b>
 <blockquote><b>» Topup 10k-50k bonus 5%</b>
